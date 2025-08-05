@@ -733,9 +733,16 @@
             <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
               <div class="card-body p-4 p-lg-5">
 
-                <form action="forms/contact.php" method="post" class="php-email-form">
+                <form action="https://formsubmit.co/direction.gasinsary@gmail.com" method="post" class="php-email-form">
                   <div class="row gy-4">
+ <!-- Champ honeypot -->
+  <input type="text" name="_honey" style="display:none">
 
+  <!-- Empêche les robots d’utiliser le formulaire -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Redirection vers la page d’accueil -->
+  <input type="hidden" name="_next" value="https://gasinsary.github.io">
                     <div class="col-12">
                       <input type="text" name="name" class="form-control" placeholder="Nom" required="">
                     </div>
