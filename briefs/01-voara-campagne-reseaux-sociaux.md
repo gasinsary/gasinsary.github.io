@@ -41,8 +41,8 @@ Idée : la botanique de Madagascar présentée comme une maison de haute parfume
 
 | # | Format | Dimensions | Contenu | Texte fourni |
 |---|---|---|---|---|
-| 1 | Post Instagram | 1080 × 1350 px | Lancement du produit | « Nouveau. Sérum Éclat Baobab. » / « L'éclat vient de loin. » |
-| 2 | Post Instagram | 1080 × 1350 px | Un ingrédient expliqué | « Huile de baobab : trois bienfaits pour votre peau » / Nourrit. Protège. Illumine. |
+| 1 | Post Instagram | 1080 × 1350 px | Lancement du produit | Étiquette « Nouveau » / « L'éclat vient de loin. » / « Sérum Éclat Baobab · 30 ml » |
+| 2 | Post Instagram | 1080 × 1350 px | Un ingrédient expliqué | Étiquette « L'ingrédient » / « Huile de baobab » / Nourrit · Protège · Illumine |
 | 3 | Post Instagram | 1080 × 1350 px | Engagement de la marque | « 92 % d'ingrédients d'origine naturelle » (chiffre fictif) |
 | 4 | Story | 1080 × 1920 px | Appel à l'action | « Votre nouveau geste du matin » / bouton « Découvrir » |
 | 5 | Carrousel, 4 vues | 1080 × 1350 px chacune | Routine en trois gestes | Couverture : « Votre matin en 3 gestes » / 01 Nettoyer / 02 Appliquer / 03 Protéger |
