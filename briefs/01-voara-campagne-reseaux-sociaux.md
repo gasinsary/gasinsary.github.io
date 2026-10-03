@@ -12,26 +12,30 @@ Digital Prod produit en volume des contenus pour des marques de beauté (Sephora
 
 - **Nom** : Voara. Vérifié rapidement : aucune marque de soins connue sous ce nom, mais ce n'est pas une recherche de dépôt de marque. Le nom peut être changé.
 - **Activité** : soins du visage naturels, formulés avec des actifs végétaux de Madagascar (huile de baobab, vanille, ravintsara, centella).
-- **Positionnement** : beauté naturelle haut de gamme, sincère, sans surpromesse.
+- **Positionnement** : soin botanique de luxe, sobre, sans surpromesse.
 - **Cible** : femmes de 25 à 40 ans, urbaines, attentives à la composition des produits.
-- **Ton** : calme, lumineux, précis. Phrases courtes. Pas de point d'exclamation.
+- **Ton** : calme, rare, précis. Phrases courtes. Pas de point d'exclamation.
 - **Produit mis en avant** : Sérum Éclat Baobab, flacon de 30 ml.
 
-## Mini-charte proposée
+## Direction artistique : le luxe calme
 
-Vous restez libre de l'ajuster : c'est votre direction artistique qui est jugée.
+La planche complète, avec les maquettes de principe de chaque visuel, est dans `briefs/voara-direction-artistique.html` (à ouvrir dans un navigateur).
+
+Idée : la botanique de Madagascar présentée comme une maison de haute parfumerie. Rare, calme, précis.
 
 | Couleur | Code | Usage |
 |---|---|---|
-| Crème | `#F6EFE6` | Fonds |
-| Vert sauge | `#8A9A7B` | Aplats, pictogrammes |
-| Terracotta | `#C8754F` | Accent, boutons |
-| Brun profond | `#3B2A20` | Textes |
-| Or doux | `#C9A45C` | Filets, détails |
+| Noir végétal | `#1E2823` | Fond des visuels « signature », textes sur fond clair |
+| Ivoire | `#F4EFE7` | Fond clair, textes sur fond sombre |
+| Sable | `#D8C8B4` | Aplats secondaires, fonds de photo |
+| Or champagne | `#B89B6A` | Filets, chiffres, un mot en italique (5 % au plus) |
+| Ambre | `#8A5A3B` | Verre du flacon, petites étiquettes sur fond clair |
 
-- **Titres** : Cormorant Garamond (Google Fonts, gratuite).
-- **Textes** : Jost ou DM Sans (Google Fonts, gratuites).
-- **Images** : photos libres de droits (Unsplash, Pexels) ou maquettes de flacon. Notez les sources utilisées.
+- **Titres** : Cormorant Garamond Light, un seul mot en italique.
+- **Étiquettes et textes** : Jost. Étiquettes en capitales très espacées.
+- **Logo** : le mot VOARA en capitales très espacées, sans symbole, centré en bas de chaque visuel.
+- **Photo** : flacon ambré, pierre et lin, lumière latérale, un seul accessoire végétal. Pas de visage.
+- **Règles** : 60 % de vide, un message par visuel, marges de 90 px, ni dégradé ni effet métallique.
 
 ## Ce qu'il faut créer
 
@@ -41,7 +45,7 @@ Vous restez libre de l'ajuster : c'est votre direction artistique qui est jugée
 | 2 | Post Instagram | 1080 × 1350 px | Un ingrédient expliqué | « Huile de baobab : trois bienfaits pour votre peau » / Nourrit. Protège. Illumine. |
 | 3 | Post Instagram | 1080 × 1350 px | Engagement de la marque | « 92 % d'ingrédients d'origine naturelle » (chiffre fictif) |
 | 4 | Story | 1080 × 1920 px | Appel à l'action | « Votre nouveau geste du matin » / bouton « Découvrir » |
-| 5 | Carrousel, 4 vues | 1080 × 1350 px chacune | Routine en trois gestes | Couverture : « Votre routine du matin en 3 gestes » / 1. Nettoyer / 2. Appliquer le sérum / 3. Protéger |
+| 5 | Carrousel, 4 vues | 1080 × 1350 px chacune | Routine en trois gestes | Couverture : « Votre matin en 3 gestes » / 01 Nettoyer / 02 Appliquer / 03 Protéger |
 
 Contraintes :
 - Story : rien d'important dans les 250 px du haut et du bas (zones couvertes par l'interface).

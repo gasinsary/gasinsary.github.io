@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voara - Direction artistique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --noir: #1E2823;      /* Noir végétal */
+    --ivoire: #F4EFE7;    /* Ivoire */
+    --sable: #D8C8B4;     /* Sable */
+    --or: #B89B6A;        /* Or champagne */
+    --ambre: #8A5A3B;     /* Ambre */
+    --titre: "Cormorant Garamond", Georgia, serif;
+    --texte: "Jost", "Segoe UI", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ivoire); color: var(--noir); font: 300 17px/1.6 var(--texte); }
+  .page { max-width: 1080px; margin: 0 auto; padding: 56px 24px 96px; }
+  .etiquette { font: 400 12px/1 var(--texte); letter-spacing: .28em; text-transform: uppercase; color: var(--ambre); }
+  h1 { font: 300 clamp(44px, 8vw, 84px)/1 var(--titre); letter-spacing: .32em; margin: 18px 0 10px; text-transform: uppercase; }
+  h2 { font: 400 34px/1.15 var(--titre); margin: 72px 0 6px; }
+  h3 { font: 500 13px/1.3 var(--texte); letter-spacing: .2em; text-transform: uppercase; margin: 0 0 10px; }
+  p { margin: 0 0 12px; max-width: 68ch; }
+  .filet { width: 64px; height: 1px; background: var(--or); margin: 18px 0 28px; }
+  .intro { font: 300 italic 26px/1.35 var(--titre); max-width: 34ch; }
+  .grille { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .carte { background: #fff; border: 1px solid #e6ddcf; padding: 22px; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin-bottom: 6px; }
+  .oui li::marker { color: var(--or); }
+  .non { color: #6b5a4c; }
+
+  /* Palette */
+  .palette { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+  .couleur { border: 1px solid #e6ddcf; background: #fff; }
+  .couleur i { display: block; height: 120px; }
+  .couleur div { padding: 12px 14px 14px; font-size: 14px; line-height: 1.45; }
+  .couleur b { display: block; font: 500 15px var(--texte); }
+  .couleur code { font: 400 13px ui-monospace, Consolas, monospace; }
+  .dosage { display: flex; height: 26px; margin-top: 22px; border: 1px solid #e6ddcf; }
+  .dosage span { display: block; }
+  .legende { font-size: 14px; margin-top: 8px; }
+
+  /* Typographie */
+  .specimen { background: var(--noir); color: var(--ivoire); padding: 40px 32px; }
+  .specimen .grand { font: 300 clamp(40px, 7vw, 76px)/1.05 var(--titre); }
+  .specimen .grand em { font-style: italic; color: var(--or); }
+  .specimen .petit { font: 400 12px var(--texte); letter-spacing: .3em; text-transform: uppercase; margin-top: 22px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; background: #fff; }
+  th, td { text-align: left; padding: 10px 12px; border: 1px solid #e6ddcf; vertical-align: top; }
+  th { font: 500 12px var(--texte); letter-spacing: .14em; text-transform: uppercase; }
+  .defile { overflow-x: auto; }
+
+  /* Logo */
+  .logos { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .logo { display: grid; place-items: center; height: 190px; text-align: center; }
+  .logo .mot { font: 400 34px/1 var(--titre); letter-spacing: .42em; padding-left: .42em; text-transform: uppercase; }
+  .logo .base { font: 400 9px/1 var(--texte); letter-spacing: .34em; text-transform: uppercase; margin-top: 12px; }
+  .logo.clair { background: #fff; border: 1px solid #e6ddcf; }
+  .logo.sombre { background: var(--noir); color: var(--ivoire); }
+  .logo.sombre .base { color: var(--or); }
+
+  /* Maquettes de principe */
+  .maquettes { display: flex; flex-wrap: wrap; gap: 26px; align-items: flex-start; }
+  figure { margin: 0; }
+  figcaption { font-size: 13px; line-height: 1.45; margin-top: 10px; max-width: 270px; }
+  figcaption b { font-weight: 500; display: block; }
+  .v { position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .post { width: 270px; height: 337.5px; padding: 22px; }
+  .story { width: 216px; height: 384px; padding: 50px 18px; }
+  .vue { width: 200px; height: 250px; padding: 18px; }
+  .sombre { background: var(--noir); color: var(--ivoire); }
+  .clair { background: var(--ivoire); color: var(--noir); border: 1px solid #e6ddcf; }
+  .v .tag { font: 400 7px/1 var(--texte); letter-spacing: .34em; text-transform: uppercase; }
+  .sombre .tag { color: var(--or); }
+  .clair .tag { color: var(--ambre); }
+  .v .t { font: 300 25px/1.08 var(--titre); }
+  .v .t em { font-style: italic; }
+  .v .s { font: 300 8.5px/1.5 var(--texte); letter-spacing: .08em; }
+  .v .sig { font: 400 9px/1 var(--titre); letter-spacing: .42em; padding-left: .42em; text-transform: uppercase; margin-top: auto; }
+  .v .f { width: 26px; height: 1px; background: var(--or); margin: 9px auto; flex: none; }
+  .flacon { flex: none; }
+  .photo { background: linear-gradient(160deg, #cdbba4, #a98f72); color: #fff; display: grid; place-items: center; font: 400 8px var(--texte); letter-spacing: .2em; text-transform: uppercase; }
+  .zone { position: absolute; left: 0; right: 0; height: 50px; border: 1px dashed rgba(184, 155, 106, .7); font: 400 7px var(--texte); letter-spacing: .12em; color: var(--or); display: grid; place-items: center; text-transform: uppercase; }
+  .bouton { border: 1px solid var(--ivoire); padding: 7px 18px; font: 400 8px var(--texte); letter-spacing: .28em; text-transform: uppercase; }
+  .chiffre { font: 300 104px/0.9 var(--titre); color: var(--or); }
+  .num { font: 300 italic 54px/1 var(--titre); color: var(--or); }
+  .clair .num { color: var(--ambre); }
+  .ligne-or { position: absolute; left: 0; right: 0; top: 62%; height: 1px; background: var(--or); opacity: .8; }
+  .trois { display: flex; gap: 12px; font: 400 8px var(--texte); letter-spacing: .22em; text-transform: uppercase; }
+  .trois span + span { border-left: 1px solid var(--or); padding-left: 12px; }
+  .cases li { list-style: "\2610  "; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="etiquette">Projet concept · Direction artistique</div>
+  <h1>Voara</h1>
+  <div class="filet"></div>
+  <p class="intro">Le luxe calme : la botanique de Madagascar présentée comme une maison de haute parfumerie.</p>
+
+  <h2>1. L'idée</h2>
+  <div class="filet"></div>
+  <div class="grille">
+    <div class="carte">
+      <h3>Trois mots</h3>
+      <p><strong>Rare.</strong> Un ingrédient, une origine, rien d'autre.</p>
+      <p><strong>Calme.</strong> Beaucoup de vide, peu de mots, aucun effet.</p>
+      <p><strong>Précis.</strong> Alignements stricts, détails fins, finitions nettes.</p>
+    </div>
+    <div class="carte">
+      <h3>Ce qui fait premium</h3>
+      <ul class="oui">
+        <li>Au moins 60 % de vide sur chaque visuel</li>
+        <li>Un seul message par visuel</li>
+        <li>Une seule source de lumière, des ombres douces</li>
+        <li>L'or en touche, jamais en aplat</li>
+        <li>Des capitales très espacées pour les petits textes</li>
+      </ul>
+    </div>
+    <div class="carte">
+      <h3>À éviter</h3>
+      <ul class="non">
+        <li>Dégradés, reflets et ombres portées sur le texte</li>
+        <li>Or brillant ou effet métallique</li>
+        <li>Plus de deux typographies</li>
+        <li>Feuillages et fleurs en décor partout</li>
+        <li>Points d'exclamation, pictogrammes, autocollants « promo »</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>2. Palette</h2>
+  <div class="filet"></div>
+  <div class="palette">
+    <div class="couleur"><i style="background:#1E2823"></i><div><b>Noir végétal</b><code>#1E2823</code><br>Fond des visuels « signature », textes sur fond clair</div></div>
+    <div class="couleur"><i style="background:#F4EFE7"></i><div><b>Ivoire</b><code>#F4EFE7</code><br>Fond clair, textes sur fond sombre</div></div>
+    <div class="couleur"><i style="background:#D8C8B4"></i><div><b>Sable</b><code>#D8C8B4</code><br>Aplats secondaires, fonds de photo</div></div>
+    <div class="couleur"><i style="background:#B89B6A"></i><div><b>Or champagne</b><code>#B89B6A</code><br>Filets, chiffres, un mot en italique. Jamais de petit texte sur ivoire.</div></div>
+    <div class="couleur"><i style="background:#8A5A3B"></i><div><b>Ambre</b><code>#8A5A3B</code><br>Verre du flacon, petites étiquettes sur fond clair</div></div>
+  </div>
+  <div class="dosage" aria-hidden="true">
+    <span style="width:38%;background:#1E2823"></span><span style="width:34%;background:#F4EFE7"></span><span style="width:16%;background:#D8C8B4"></span><span style="width:7%;background:#8A5A3B"></span><span style="width:5%;background:#B89B6A"></span>
+  </div>
+  <p class="legende">Dosage sur l'ensemble de la campagne : le noir végétal et l'ivoire portent tout, l'or ne dépasse pas 5 %.</p>
+
+  <h2>3. Typographie</h2>
+  <div class="filet"></div>
+  <div class="specimen">
+    <div class="grand">L'éclat vient <em>de loin.</em></div>
+    <div class="petit">Sérum Éclat Baobab · 30 ml</div>
+  </div>
+  <div class="defile">
+  <table>
+    <tr><th>Rôle</th><th>Police</th><th>Réglages sur un visuel de 1080 px</th></tr>
+    <tr><td>Titres</td><td>Cormorant Garamond Light (300)</td><td>90 à 110 px, interligne 105 %. Un seul mot en italique, éventuellement en or.</td></tr>
+    <tr><td>Grands chiffres</td><td>Cormorant Garamond Light</td><td>380 à 420 px, en or champagne.</td></tr>
+    <tr><td>Étiquettes</td><td>Jost Regular (400), capitales</td><td>26 à 30 px, approche +300.</td></tr>
+    <tr><td>Texte courant</td><td>Jost Light (300)</td><td>32 à 36 px, interligne 150 %. Trois lignes au maximum.</td></tr>
+  </table>
+  </div>
+  <p class="legende">Deux polices, trois tailles par visuel. Les deux sont gratuites sur Google Fonts.</p>
+
+  <h2>4. Logo</h2>
+  <div class="filet"></div>
+  <p>Un mot en capitales très espacées, sans symbole : c'est le plus sûr et le plus élégant. Si vous voulez un signe, limitez-vous à un trait fin (une fleur de baobab ou un V dans un cercle), utilisé seul sur le bouchon du flacon.</p>
+  <div class="logos">
+    <div class="logo clair"><div><div class="mot">Voara</div><div class="base">Botanique de Madagascar</div></div></div>
+    <div class="logo sombre"><div><div class="mot">Voara</div><div class="base">Botanique de Madagascar</div></div></div>
+  </div>
+  <p class="legende">Cormorant Garamond Regular, approche +420. Sur chaque visuel : centré en bas, à 90 px du bord, toujours à la même taille.</p>
+
+  <h2>5. Photographie</h2>
+  <div class="filet"></div>
+  <div class="grille">
+    <div class="carte">
+      <h3>Le flacon</h3>
+      <p>Verre ambré ou dépoli, compte-gouttes noir mat, étiquette ivoire. Une maquette gratuite de flacon de sérum suffit. Recherche : « amber dropper bottle mockup ».</p>
+    </div>
+    <div class="carte">
+      <h3>La mise en scène</h3>
+      <p>Pierre brute, lin, plâtre. Lumière latérale, ombre longue et douce. Un seul accessoire : une gousse de vanille, une feuille, un fruit de baobab ouvert.</p>
+    </div>
+    <div class="carte">
+      <h3>Le traitement</h3>
+      <p>Tons chauds, saturation réduite d'environ 20 %, noirs légèrement relevés. Pas de visage : au plus une main ou un grain de peau en très gros plan.</p>
+    </div>
+  </div>
+  <p class="legende">Sources libres de droits : Unsplash, Pexels. Mots-clés : « baobab fruit », « skincare serum stone », « vanilla pod minimal », « linen shadow ». Notez chaque source utilisée.</p>
+
+  <h2>6. Mise en page</h2>
+  <div class="filet"></div>
+  <ul class="oui">
+    <li>Marges de 90 px sur les quatre côtés (visuel de 1080 px de large).</li>
+    <li>Tout est centré, ou tout est aligné à gauche : choisissez et gardez-le sur toute la campagne. Les maquettes ci-dessous sont centrées.</li>
+    <li>Ordre de lecture fixe : étiquette, titre, filet d'or, précision, logo.</li>
+    <li>Filet d'or de 2 px d'épaisseur et 100 px de long.</li>
+    <li>Fonds sombres et clairs en alternance d'un post à l'autre.</li>
+  </ul>
+
+  <h2>7. Maquettes de principe</h2>
+  <div class="filet"></div>
+  <p>Ce sont des schémas de placement à l'échelle, pas des visuels finis. Les rectangles beiges indiquent l'emplacement d'une photo.</p>
+
+  <h3 style="margin-top:28px">Les trois posts (1080 × 1350 px)</h3>
+  <div class="maquettes">
+    <figure>
+      <div class="v post sombre">
+        <div class="tag">Nouveau</div>
+        <svg class="flacon" width="78" height="168" viewBox="0 0 78 168" style="margin:16px 0 12px" aria-hidden="true">
+          <ellipse cx="44" cy="160" rx="34" ry="5" fill="#000" opacity=".35"/>
+          <rect x="29" y="2" width="20" height="30" rx="4" fill="#0f1512"/>
+          <rect x="25" y="30" width="28" height="14" rx="2" fill="#151c18"/>
+          <rect x="9" y="44" width="60" height="114" rx="10" fill="#8A5A3B"/>
+          <rect x="9" y="44" width="14" height="114" rx="7" fill="#a8744f" opacity=".7"/>
+          <rect x="17" y="80" width="44" height="52" fill="#F4EFE7"/>
+          <rect x="27" y="96" width="24" height="1.5" fill="#1E2823"/>
+          <rect x="31" y="104" width="16" height="1" fill="#B89B6A"/>
+        </svg>
+        <div class="t">L'éclat vient <em>de loin.</em></div>
+        <div class="f"></div>
+        <div class="s">Sérum Éclat Baobab · 30 ml</div>
+        <div class="sig">Voara</div>
+      </div>
+      <figcaption><b>Post 1 : le lancement</b>Fond noir végétal. Le flacon seul, centré, éclairé de côté. C'est le visuel signature, et la couverture du projet.</figcaption>
+    </figure>
+    <figure>
+      <div class="v post clair" style="padding:0 0 22px">
+        <div class="photo" style="width:100%;height:150px;flex:none">Photo · fruit de baobab</div>
+        <div class="tag" style="margin-top:20px">L'ingrédient</div>
+        <div class="t" style="margin-top:10px">Huile de <em>baobab</em></div>
+        <div class="f"></div>
+        <div class="trois"><span>Nourrit</span><span>Protège</span><span>Illumine</span></div>
+        <div class="sig">Voara</div>
+      </div>
+      <figcaption><b>Post 2 : l'ingrédient</b>Fond ivoire. Photo en pleine largeur sur la moitié haute. Trois bienfaits en un mot chacun, séparés par un filet d'or.</figcaption>
+    </figure>
+    <figure>
+      <div class="v post sombre">
+        <div class="tag">Notre engagement</div>
+        <div class="chiffre" style="margin-top:34px">92<span style="font-size:44px"> %</span></div>
+        <div class="f" style="margin-top:16px"></div>
+        <div class="s" style="font-size:10px;letter-spacing:.14em">d'ingrédients<br>d'origine naturelle</div>
+        <div class="sig">Voara</div>
+      </div>
+      <figcaption><b>Post 3 : l'engagement</b>Purement typographique. Le chiffre en or occupe le tiers central. Aucune image.</figcaption>
+    </figure>
+  </div>
+
+  <h3 style="margin-top:44px">La story (1080 × 1920 px)</h3>
+  <div class="maquettes">
+    <figure>
+      <div class="v story sombre" style="justify-content:flex-end">
+        <div class="photo" style="position:absolute;inset:0;opacity:.55">Photo · flacon sur pierre</div>
+        <div class="zone" style="top:0">Zone à laisser vide</div>
+        <div class="zone" style="bottom:0">Zone à laisser vide</div>
+        <div style="position:relative">
+          <div class="tag" style="color:var(--ivoire)">Sérum Éclat Baobab</div>
+          <div class="t" style="margin:10px 0 14px;font-size:27px">Votre nouveau geste <em>du matin</em></div>
+          <span class="bouton">Découvrir</span>
+        </div>
+      </div>
+      <figcaption style="max-width:216px"><b>Story</b>Photo plein cadre, assombrie de 40 à 50 %. Texte et bouton dans le tiers bas, hors des 250 px du haut et du bas.</figcaption>
+    </figure>
+  </div>
+
+  <h3 style="margin-top:44px">Le carrousel (4 vues de 1080 × 1350 px)</h3>
+  <div class="maquettes" style="gap:6px">
+    <div class="v vue sombre"><div class="ligne-or"></div><div class="tag">La routine</div><div class="t" style="margin-top:34px;font-size:22px">Votre matin en <em>3 gestes</em></div><div class="sig">Voara</div></div>
+    <div class="v vue clair"><div class="ligne-or"></div><div class="num" style="margin-top:14px">01</div><div class="t" style="font-size:20px;margin-top:8px">Nettoyer</div><div class="s" style="margin-top:50px">À l'eau tiède,<br>sans frotter.</div><div class="sig">Voara</div></div>
+    <div class="v vue sombre"><div class="ligne-or"></div><div class="num" style="margin-top:14px">02</div><div class="t" style="font-size:20px;margin-top:8px">Appliquer</div><div class="s" style="margin-top:50px">Trois gouttes de sérum,<br>du centre vers l'extérieur.</div><div class="sig">Voara</div></div>
+    <div class="v vue clair"><div class="ligne-or"></div><div class="num" style="margin-top:14px">03</div><div class="t" style="font-size:20px;margin-top:8px">Protéger</div><div class="s" style="margin-top:50px">Une crème de jour,<br>puis une protection solaire.</div><div class="sig">Voara</div></div>
+  </div>
+  <p class="legende" style="margin-top:12px">Le filet d'or traverse les quatre vues à la même hauteur : il se prolonge quand on fait défiler. Fonds sombres et clairs en alternance, grand numéro en italique : en or sur fond sombre, en ambre sur fond clair.</p>
+
+  <h2>8. Avant d'exporter</h2>
+  <div class="filet"></div>
+  <ul class="cases">
+    <li>Le logo est au même endroit et à la même taille sur les huit visuels.</li>
+    <li>Aucun texte à moins de 90 px d'un bord.</li>
+    <li>Pas plus de trois tailles de texte par visuel.</li>
+    <li>L'or n'est utilisé que pour un filet, un chiffre ou un mot.</li>
+    <li>Le plus petit texte reste lisible sur un téléphone (28 px au minimum).</li>
+    <li>Les photos ont toutes la même température de couleur.</li>
+  </ul>
+
+</div>
+</body>
+</html>

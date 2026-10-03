@@ -43,13 +43,13 @@ galerie:
   - /portfolio/campagne-reseaux-sociaux-voara/img/planche-3.webp
   - /portfolio/campagne-reseaux-sociaux-voara/img/planche-4.webp
 
-contexte: "L'objectif de cet exercice : lancer le Sérum Éclat Baobab auprès de femmes de 25 à 40 ans attentives à la composition de leurs soins. La campagne devait installer une marque calme et lumineuse, et rester parfaitement lisible sur un écran de téléphone."
+contexte: "L'objectif de cet exercice : lancer le Sérum Éclat Baobab auprès de femmes de 25 à 40 ans attentives à la composition de leurs soins. La campagne devait installer une marque de soin haut de gamme, calme et précise, et rester parfaitement lisible sur un écran de téléphone."
 
 titre_etapes: "Déroulé de la création"
 etapes:
   - titre: "Direction artistique"
     icone: bi-palette
-    texte: "Nous avons posé une mini-charte : une palette de crème, de vert sauge et de terracotta, une typographie à empattements pour les titres, et une place fixe pour le logo sur chaque visuel."
+    texte: "Nous avons posé une direction sobre, inspirée de la haute parfumerie : un noir végétal profond, de l'ivoire, une touche d'or champagne, une typographie à empattements pour les titres et une place fixe pour le logo sur chaque visuel."
   - titre: "Posts et story"
     icone: bi-instagram
     texte: "Chaque post porte un seul message : le lancement, un ingrédient, un engagement de la marque. La story reprend le produit avec un appel à l'action, en respectant les zones couvertes par l'interface d'Instagram."
