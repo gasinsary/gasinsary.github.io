@@ -15,7 +15,9 @@ Dernière mise à jour : 03/10/2026
 
 ## En cours
 
-- Le propriétaire doit vérifier la version de test, puis donner (ou non) son accord pour la mise en production.
+- **Pas de mise en production pour l'instant** (décision du propriétaire, 03/10/2026) : le site est d'abord mis à jour sur la version de test.
+- **Âge automatique** dans la fiche « À propos » de l'accueil (« 33 ans » écrit en dur) : en attente de la date de naissance du propriétaire (ou seulement mois et année s'il préfère ne pas publier le jour). Prévu : calcul par Jekyll à la génération + mise à jour en JavaScript à chaque visite.
+- **Audit rendu** dans [AUDIT.md](AUDIT.md) : en attente du choix du propriétaire sur ce qu'il faut corriger en premier.
 
 ## Version de test en ligne (staging)
 
@@ -34,10 +36,11 @@ But : voir le site en ligne avant de le mettre en production. Marche à suivre :
 
 ## Problèmes connus, non traités
 
+Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rappel des principaux :
+
 - Le formulaire de contact affiche probablement une erreur même quand l'envoi réussit : `assets/vendor/php-email-form/validate.js` attend la réponse `OK`, que formsubmit.co ne renvoie pas. Non testé.
 - L'accueil et la page portfolio n'ont pas de titre `<h1>` (les titres principaux sont des `<h2>`). À corriger pour le SEO, avec un ajustement CSS (`.hero .content h2`).
 - La section témoignages de l'accueil est désactivée (commentaire HTML) et ne contient que du texte de remplissage.
-- Le pied de page affiche « Copyright 2025 ».
 - `assets/img/portfolio/portfolio-2.jpg` n'est plus utilisée.
 - Fautes de frappe dans les textes d'origine, conservées telles quelles (« échatillon », « Acceuil », « Visuelle »...).
 - Le défilement vers les sections depuis une autre page (ex. `/#contact`) n'a pas pu être vérifié visuellement.
@@ -85,3 +88,8 @@ But : voir le site en ligne avant de le mettre en production. Marche à suivre :
 - Dépôt `gasinsary/staging-t4sj762s` créé, clé de déploiement dédiée ajoutée, branche `staging` poussée, GitHub Pages activé.
 - Vérifié en ligne : les trois pages répondent, le HTML généré par le vrai Jekyll est identique au rendu de test local, aucun lien interne cassé, aucun lien ne sort du sous-dossier de test, aucune erreur dans la console, balise `noindex` présente.
 - `sitemap.xml` généré (accueil, portfolio, page Aquafish, `mpatk.html`) ; le fichier de vérification Google en est bien exclu. Les fichiers de documentation, `forms/` et `_config.yml` ne sont pas publiés.
+
+**Mises à jour du contenu et audit**
+- Année du copyright automatique : calculée par Jekyll (`site.time`) dans `_includes/footer.html`, puis mise à jour à chaque visite par `assets/js/main.js` (classe `annee-courante`).
+- Audit complet (erreurs visiteur, SEO, expérience prospect, affichage mobile/tablette/ordinateur, accessibilité) : résultats dans `AUDIT.md`. Aucune correction de l'audit n'a encore été appliquée.
+- Le formulaire de contact n'a volontairement pas été envoyé pendant l'audit (cela expédie un e-mail au propriétaire).

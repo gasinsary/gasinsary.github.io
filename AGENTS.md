@@ -2,6 +2,7 @@
 
 Ce fichier est lu automatiquement par les assistants de code. Il décrit le projet et les règles à suivre.
 **Avant de travailler, lire aussi [HISTORIQUE.md](HISTORIQUE.md)** : il dit ce qui est fait, ce qui est en cours et ce qui reste à faire.
+Les défauts connus du site et l'ordre de traitement proposé sont dans [AUDIT.md](AUDIT.md).
 **À la fin de chaque session, mettre à jour HISTORIQUE.md** (journal daté + listes « en cours » / « à faire »).
 
 ## Le projet

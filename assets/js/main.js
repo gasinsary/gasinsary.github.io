@@ -219,4 +219,11 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Année en cours (copyright du pied de page)
+   */
+  document.querySelectorAll('.annee-courante').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
+
 })();
