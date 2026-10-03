@@ -1,0 +1,14 @@
+# Catégories du portfolio (boutons de filtre + étiquette sur chaque carte).
+# "filtre" est la classe CSS utilisée par le filtre de la grille.
+
+social:
+  nom: "Contenu social"
+  filtre: filter-web
+
+graphique:
+  nom: "Graphique"
+  filtre: filter-graphics
+
+illustration:
+  nom: "Illustration web & UI"
+  filtre: filter-motion

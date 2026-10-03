@@ -1,0 +1,211 @@
+---
+layout: default
+---
+{%- assign nom_court = page.titre_court | default: page.title -%}
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}"><i class="bi bi-house"></i> Acceuil</a></li>
+            <li class="breadcrumb-item"><a href="{{ '/portfolio/' | relative_url }}">Portfolio</a></li>
+            <li class="breadcrumb-item active current">{{ nom_court | escape }}</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="title-wrapper">
+        <h1>{{ page.title | escape }}</h1>
+        {%- if page.intro %}
+        <p>{{ page.intro | escape }}</p>
+        {%- endif %}
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-right">
+          <div class="position-sticky" style="top: 130px">
+            <div class="portfolio-details-media">
+              <div class="main-image">
+                <div class="portfolio-details-slider swiper init-swiper" data-aos="zoom-in">
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 1000,
+                      "autoplay": {
+                        "delay": 6000
+                      },
+                      "effect": "creative",
+                      "creativeEffect": {
+                        "prev": {
+                          "shadow": true,
+                          "translate": [0, 0, -400]
+                        },
+                        "next": {
+                          "translate": ["100%", 0, 0]
+                        }
+                      },
+                      "slidesPerView": 1,
+                      "navigation": {
+                        "nextEl": ".swiper-button-next",
+                        "prevEl": ".swiper-button-prev"
+                      }
+                    }
+                  </script>
+                  <div class="swiper-wrapper">
+                    {%- for image in page.galerie %}
+                    <div class="swiper-slide">
+                      <img src="{{ image | relative_url }}" alt="{{ nom_court | escape }} - image {{ forloop.index }}" class="img-fluid">
+                    </div>
+                    {%- endfor %}
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+              <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="row g-2 mt-3">
+                  {%- for image in page.galerie %}
+                  <div class="col-3">
+                    <img src="{{ image | relative_url }}" alt="{{ nom_court | escape }} - miniature {{ forloop.index }}" class="img-fluid glightbox">
+                  </div>
+                  {%- endfor %}
+                </div>
+              </div>
+
+              {%- if page.outils %}
+              <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
+                {%- for outil in page.outils %}
+                <span>{{ outil | escape }}</span>
+                {%- endfor %}
+              </div>
+              {%- endif %}
+            </div>
+          </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="portfolio-details-content">
+              <div class="project-meta">
+                <div class="badge-wrapper">
+                  <span class="project-badge">{{ page.badge | default: site.data.categories[page.categorie].nom | escape }}</span>
+                </div>
+                <div class="date-client">
+                  {%- if page.date_projet %}
+                  <div class="meta-item">
+                    <i class="bi bi-calendar-check"></i>
+                    <span>{{ page.date_projet | escape }}</span>
+                  </div>
+                  {%- endif %}
+                  {%- if page.prestation %}
+                  <div class="meta-item">
+                    <i class="bi bi-buildings"></i>
+                    <span>{{ page.prestation | escape }}</span>
+                  </div>
+                  {%- endif %}
+                </div>
+              </div>
+
+              <h2 class="project-title">Contexte et objectifs du projet</h2>
+
+              <div class="project-overview">
+                <p class="lead">
+                  {{ page.contexte | escape }}
+                </p>
+              {%- if page.etapes %}
+              <div class="project-features" >
+                <h3><i class="bi bi-clipboard-data"></i>{{ page.titre_etapes | default: "Processus de conception" | escape }}</h3>
+              </div>
+
+                <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
+                  {%- for etape in page.etapes %}
+                  <div class="accordion-item" data-aos="fade-up"{% unless forloop.first %} data-aos-delay="{{ forloop.index0 | times: 100 }}"{% endunless %}>
+                    <h2 class="accordion-header">
+                      <button class="accordion-button{% unless forloop.first %} collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-{{ forloop.index }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="portfolio-details-collapse-{{ forloop.index }}">
+                        <i class="bi {{ etape.icone | default: 'bi-check2-circle' }} me-2"></i>{{ etape.titre | escape }}
+                      </button>
+                    </h2>
+                    <div id="portfolio-details-collapse-{{ forloop.index }}" class="accordion-collapse collapse{% if forloop.first %} show{% endif %}" data-bs-parent="#portfolio-details-projectAccordion">
+                      <div class="accordion-body">
+                        <p>{{ etape.texte | escape }}</p>
+                      </div>
+                    </div>
+                  </div>
+                  {%- endfor %}
+                </div>
+              {%- endif %}
+              </div>
+
+              {%- if page.resultat %}
+              <div class="project-features" data-aos="fade-up" data-aos-delay="300">
+                <h3><i class="bi bi-card-image"></i> Résultat final</h3>
+                <div class="row g-3">
+                  <p>{{ page.resultat | escape }}</p>
+                </div>
+              </div>
+              {%- endif %}
+
+              <div class="project-features" data-aos="fade-up" data-aos-delay="300">
+                <h3><i class="bi bi-stars"></i> Fiche projet</h3>
+                <div class="row g-3">
+                  <div class="col ms-4">
+                    <ul class="feature-list">
+                      {%- if page.client %}
+                      {% include ligne-fiche.html icone="bi-file-person" libelle="Client" valeur=page.client %}
+                      {%- endif %}
+                      {%- if page.type_projet %}
+                      {% include ligne-fiche.html icone="bi-easel" libelle="Type de projet" valeur=page.type_projet %}
+                      {%- endif %}
+                      {%- if page.outils %}
+                      {%- assign liste_outils = page.outils | join: ", " %}
+                      {% include ligne-fiche.html icone="bi-palette" libelle="Outils utilisés" valeur=liste_outils %}
+                      {%- endif %}
+                      {%- if page.livrables %}
+                      {% include ligne-fiche.html icone="bi-cart-check" libelle="Livrables" valeur=page.livrables %}
+                      {%- endif %}
+                      {%- if page.date_projet %}
+                      {% include ligne-fiche.html icone="bi-calendar-check" libelle="Date" valeur=page.date_projet %}
+                      {%- endif %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {%- if page.temoignage %}
+              <div class="project-features" data-aos="fade-up" data-aos-delay="300">
+                <h3><i class="bi bi-chat-right-quote-fill"></i> Mot du client</h3>
+
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bi bi-quote quote-icon-left fs-2 text-secondary"></i>
+                      <span>{{ page.temoignage.texte | escape }}</span>
+                    </p>
+                    <p class="text-end">-- <i>{{ page.temoignage.auteur | escape }}</i>--</p>
+                  </div>
+
+              </div>
+              {%- endif %}
+
+              <div class="project-features" data-aos="fade-up" data-aos-delay="300">
+                <h3><i class="bi bi-whatsapp"></i> Maintenant</h3>
+                <div class="row g-3">
+                  <p>Vous avez un projet de création graphique ou renforcer l'image de votre entreprise ? N'hesitez pas à nous contacter pour en discuter ensemble</p>
+                </div>
+              </div>
+
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="{{ '/#contact' | relative_url }}" class="btn-view-project">Contactez maintenant</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->

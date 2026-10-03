@@ -1,85 +1,12 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Gas'in Sary | Graphiste & Développeur web à Madagascar</title>
-  <meta name="description" content="Création de sites web modernes, logo professionnels et identités visuelles pour entrepreneurs, startups et PME. Freelance basé à Madagascar - Portfolio gas'in Sary.">
-  <meta name="keywords" content="graphiste freelance, développeur web, création site internet, logo professionnel, site vitrine, branding, identité visuelle, webdesigner, portfolio graphiste, freelance Madagascar, création site pas cher">
-  <meta name="author" content="Gas'in Sary">
-  <link rel="canonical" href="https://gasinsary.github.io/">
-  <!-- Pour google et les réseaux sociaux -->
-  <meta property="og:title" content="Gas'in Sary - Création graphique & web" />
-  <meta property="og:description" content="Graphiste et développeur web freelance. Sites vitrines, logos, et branding professionnel pour vos projets." />
-  <meta property="og:image" content="https://gasinsary.github.io/images/preview.jpg">
-  <meta property="og:url" content="https://gasinsary.github.io/" />
-  <meta property="og:type" content="website"/>
-  <meta name="twitter:card" content="summary_large_image" />
-
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Gas'in Sary
-  * Template URL: gasinsary.github.io
-  * Updated: Feb 21 2025 with Bootstrap v5.3.3
-  * Author: Lemirador
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="https://gasinsary.github.io" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-         <img src="assets/img/logo.svg" alt="Logo de Gas'in Sary, agence de communication visuelle et développement web à Madagascar"> 
-        <!--<h1 class="sitename">EasyFolio</h1>-->
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="https://gasinsary.github.io" class="active">Accueil</a></li>
-          <li><a href="#about">A propos</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="https://gasinsary.github.io/portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="header-social-links">
-        <a href="https://www.facebook.com/gasinsary" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/gasin.sary" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/gasinsary" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
-    </div>
-  </header>
-
-  <main class="main">
-
+---
+layout: default
+titre_seo: "Gas'in Sary | Graphiste & Développeur web à Madagascar"
+description: "Création de sites web modernes, logo professionnels et identités visuelles pour entrepreneurs, startups et PME. Freelance basé à Madagascar - Portfolio gas'in Sary."
+keywords: "graphiste freelance, développeur web, création site internet, logo professionnel, site vitrine, branding, identité visuelle, webdesigner, portfolio graphiste, freelance Madagascar, création site pas cher"
+titre_partage: "Gas'in Sary - Création graphique & web"
+description_partage: "Graphiste et développeur web freelance. Sites vitrines, logos, et branding professionnel pour vos projets."
+supabase: true
+---
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
@@ -99,7 +26,7 @@
           </div>
           <div class="col-lg-6">
             <div class="hero-image">
-              <img src="assets/img/profile/profilS.png" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+              <img src="{{ '/assets/img/profile/profilS.png' | relative_url }}" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
               <div class="shape-1"></div>
               <div class="shape-2"></div>
             </div>
@@ -131,7 +58,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
             <div class="about-image">
-              <img src="assets/img/profile/MiradoR.jpg" alt="Mirado R - CEO @ Gas'in Sary" class="img-fluid rounded-4">
+              <img src="{{ '/assets/img/profile/MiradoR.jpg' | relative_url }}" alt="Mirado R - CEO @ Gas'in Sary" class="img-fluid rounded-4">
             </div>
           </div>
 
@@ -193,7 +120,7 @@
 
               <div class="signature mt-4">
                 <div class="signature-image">
-                  <img src="assets/img/misc/sign.svg" alt="Signature Mirado R- CEO à Gas'in Sary" class="img-fluid">
+                  <img src="{{ '/assets/img/misc/sign.svg' | relative_url }}" alt="Signature Mirado R- CEO à Gas'in Sary" class="img-fluid">
                 </div>
                 <div class="signature-info">
                   <h4>Mirado .R</h4>
@@ -367,82 +294,10 @@
 
           <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="Création d'identité visuelle réaliser par Gas'in Sary" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-2.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-active"><i class="bi bi-eye"></i></a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Graphique</span>
-                  <h3>Identité visuelle</h3>
-                  <p>Identité visuelle et charte graphique</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-4.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-active"><i class="bi bi-eye"></i></a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Contenu social</span>
-                  <h3>Visuelle pour réseau sociaux</h3>
-                  <p>Photo de couverture pour page facebook</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="Création de logo réaliser par Gas'in Sary" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-1.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-active"><i class="bi bi-eye"></i></a>
-                     
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Graphique</span>
-                  <h3>Echantillon de logo</h3>
-                  <p>Echantillon de logos qui ont l'autorisation d'être partagés</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="Création d'illustration - by Gas'in Sary" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-6.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-active"><i class="bi bi-eye"></i></a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                   <span class="category">Illustration web & UI</span>
-                  <h3>Illustration</h3>
-                  <p>Visuelle d'illustration pour un site web</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+            {%- assign realisations = site.projets | concat: site.data.visuels | where: "accueil", true | sort: "ordre" -%}
+            {%- for realisation in realisations %}
+{% include carte-portfolio.html item=realisation %}
+            {%- endfor %}
 
           </div><!-- End Portfolio Container -->
             
@@ -450,7 +305,7 @@
           
         </div>
           
-                <section id="services" class="services section">
+                <section class="services section">
 
 
 
@@ -459,7 +314,7 @@
         <div class="row align-items-center">
           <div class="col text-center">
             
-            <a href="https://gasinsary.github.io/portfolio" class="btn btn-outline-primary">Voir tous nos projets</a>
+            <a href="{{ '/portfolio/' | relative_url }}" class="btn btn-outline-primary">Voir tous nos projets</a>
           </div>          
         </div>
        </div> 
@@ -515,7 +370,7 @@
                       Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis minus consequatur. Enim ut eos quo.
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/person-m-7.webp" class="profile-img" alt="">
+                      <img src="{{ '/assets/img/person/person-m-7.webp' | relative_url }}" class="profile-img" alt="">
                       <div class="profile-info">
                         <h3>Saul Goodman</h3>
                         <span>Client</span>
@@ -524,7 +379,7 @@
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
+                      <img src="{{ '/assets/img/person/person-m-7.webp' | relative_url }}" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>
@@ -543,7 +398,7 @@
                       Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum. Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas voluptatem iure dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/person-f-8.webp" class="profile-img" alt="">
+                      <img src="{{ '/assets/img/person/person-f-8.webp' | relative_url }}" class="profile-img" alt="">
                       <div class="profile-info">
                         <h3>Sara Wilsson</h3>
                         <span>Designer</span>
@@ -552,7 +407,7 @@
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-f-8.webp" class="featured-img" alt="">
+                      <img src="{{ '/assets/img/person/person-f-8.webp' | relative_url }}" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>
@@ -573,7 +428,7 @@
                       Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic nostrum suscipit corrupti nam expedita adipisci aut optio.
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/person-m-9.webp" class="profile-img" alt="">
+                      <img src="{{ '/assets/img/person/person-m-9.webp' | relative_url }}" class="profile-img" alt="">
                       <div class="profile-info">
                         <h3>Matt Brandon</h3>
                         <span>Freelancer</span>
@@ -582,7 +437,7 @@
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-m-9.webp" class="featured-img" alt="">
+                      <img src="{{ '/assets/img/person/person-m-9.webp' | relative_url }}" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>
@@ -601,7 +456,7 @@
                       Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est voluptatibus architecto laborum.
                     </p>
                     <div class="profile d-flex align-items-center">
-                      <img src="assets/img/person/person-f-10.webp" class="profile-img" alt="">
+                      <img src="{{ '/assets/img/person/person-f-10.webp' | relative_url }}" class="profile-img" alt="">
                       <div class="profile-info">
                         <h3>Jena Karlis</h3>
                         <span>Store Owner</span>
@@ -610,7 +465,7 @@
                   </div>
                   <div class="col-lg-4 d-none d-lg-block">
                     <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-f-10.webp" class="featured-img" alt="">
+                      <img src="{{ '/assets/img/person/person-f-10.webp' | relative_url }}" class="featured-img" alt="">
                     </div>
                   </div>
                 </div>
@@ -742,7 +597,7 @@
   <input type="hidden" name="_captcha" value="false">
 
   <!-- Redirection vers la page d’accueil -->
-  <input type="hidden" name="_next" value="https://gasinsary.github.io">
+  <input type="hidden" name="_next" value="{{ '/' | absolute_url }}">
                     <div class="col-12">
                       <input type="text" name="name" class="form-control" placeholder="Nom" required="">
                     </div>
@@ -779,47 +634,3 @@
       </div>
 
     </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright 2025 | </span>  <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.facebook.com/gasinsary" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/gasin.sary" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/gasinsary" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed and Developed by <a href="https://gasinsary.github.io/">Gas'in Sary</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>

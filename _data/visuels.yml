@@ -1,0 +1,44 @@
+# Visuels simples du portfolio : une image qui s'ouvre en grand, sans page détaillée.
+# (Les projets avec une page détaillée sont dans le dossier _projets/.)
+#
+#   ordre     : position dans la grille (du plus petit au plus grand)
+#   accueil   : true = aussi affiché dans l'extrait de la page d'accueil
+#   categorie : social, graphique ou illustration (voir _data/categories.yml)
+
+- title: "Visuelle pour réseau sociaux"
+  ordre: 2
+  categorie: social
+  image: /assets/img/portfolio/portfolio-3.jpg
+  alt: "Visuelle pour réseau sociaux - by Gas'in Sary"
+  resume: "Image destinée aux posts Facebooks, Instagram, LinkedIn, etc"
+
+- title: "Visuelle pour réseau sociaux"
+  ordre: 3
+  accueil: true
+  categorie: social
+  image: /assets/img/portfolio/portfolio-4.jpg
+  alt: "Photo de couverture Facebook - by Gas'in Sary"
+  resume: "Photo de couverture pour page facebook"
+
+- title: "Echantillon de logo"
+  ordre: 4
+  accueil: true
+  categorie: graphique
+  image: /assets/img/portfolio/portfolio-1.jpg
+  alt: "Création de logo réaliser par Gas'in Sary"
+  resume: "Echantillon de logos qui ont l'autorisation d'être partagés"
+
+- title: "Illustration"
+  ordre: 5
+  categorie: illustration
+  image: /assets/img/portfolio/portfolio-5.jpg
+  alt: "Création d'illustration - by Gas'in Sary"
+  resume: "Visuelle d'illustration pour un site web"
+
+- title: "Illustration"
+  ordre: 6
+  accueil: true
+  categorie: illustration
+  image: /assets/img/portfolio/portfolio-6.jpg
+  alt: "Création d'illustration - by Gas'in Sary"
+  resume: "Visuelle d'illustration pour un site web"

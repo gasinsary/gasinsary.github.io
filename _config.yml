@@ -1,0 +1,46 @@
+# Configuration Jekyll du site Gas'in Sary
+# GitHub Pages reconstruit le site à chaque "git push".
+
+title: "Gas'in Sary"
+description: "Création de sites web modernes, logo professionnels et identités visuelles pour entrepreneurs, startups et PME. Freelance basé à Madagascar - Portfolio gas'in Sary."
+url: "https://gasinsary.github.io"
+# "baseurl" n'est volontairement PAS défini : GitHub Pages le règle tout seul.
+#   - dépôt de production (gasinsary.github.io) : baseurl vide
+#   - dépôt de test (ex. "test")               : baseurl = /test
+# Tous les liens internes doivent donc passer par le filtre "relative_url".
+lang: fr
+author: "Gas'in Sary"
+
+# Image utilisée pour les partages (Facebook, LinkedIn...) quand la page n'en définit pas
+image_partage: /images/preview.jpg
+
+plugins:
+  - jekyll-sitemap
+
+# Un fichier dans _projets/ = une page /portfolio/<nom-du-fichier>/
+collections:
+  projets:
+    output: true
+    permalink: /portfolio/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projets
+    values:
+      layout: projet
+      body_class: portfolio-details-page
+  - scope:
+      path: "googleaa7d45fdd426d7f9.html"
+    values:
+      sitemap: false
+
+exclude:
+  - README.md
+  - AGENTS.md
+  - CLAUDE.md
+  - HISTORIQUE.md
+  - forms/
+  - assets/scss/
+  - Gemfile
+  - Gemfile.lock

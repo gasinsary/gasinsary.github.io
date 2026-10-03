@@ -1,0 +1,11 @@
+.env
+.env.local
+.env.*.local
+
+# Config locale Claude Code (ne pas publier sur GitHub Pages)
+.mcp.json
+.claude/
+
+# Sortie de build Jekyll
+_site/
+.jekyll-cache/
