@@ -19,6 +19,12 @@ layout: default
         {%- if page.intro %}
         <p>{{ page.intro | escape }}</p>
         {%- endif %}
+        {%- if page.concept %}
+        <p class="mention-concept"><strong>Projet concept.</strong> La marque présentée est fictive : ce projet a été imaginé par Gas'in Sary pour illustrer son savoir-faire.</p>
+        {%- endif %}
+        {%- if page.brouillon %}
+        <p class="alert alert-warning mt-3 mb-0">Brouillon : les visuels de cette page sont provisoires.</p>
+        {%- endif %}
       </div>
     </div><!-- End Page Title -->
 
@@ -95,6 +101,9 @@ layout: default
               <div class="project-meta">
                 <div class="badge-wrapper">
                   <span class="project-badge">{{ page.badge | default: site.data.categories[page.categorie].nom | escape }}</span>
+                  {%- if page.concept %}
+                  <span class="project-badge ms-2">Projet concept</span>
+                  {%- endif %}
                 </div>
                 <div class="date-client">
                   {%- if page.date_projet %}

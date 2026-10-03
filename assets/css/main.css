@@ -2245,3 +2245,10 @@ section,
   background-color: color-mix(in srgb, var(--heading-color), transparent 80%);
   transform: translateY(-3px);
 }
+
+/* Page projet : mention « Projet concept » sous l'introduction */
+.page-title .title-wrapper .mention-concept {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-style: italic;
+}

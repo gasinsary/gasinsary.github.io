@@ -22,6 +22,7 @@ Décidé avec le propriétaire le 03/10/2026. À respecter dans tout nouveau tex
 - Titre de Mirado : « Fondateur » ou « Fondateur & directeur artistique » (jamais « CEO »).
 - Offre : design graphique, identités visuelles, sites web et applications. Clients à Madagascar et à l'international.
 - Ne pas citer le nom d'un client sans l'accord du propriétaire.
+- **Projets concept** : un projet réalisé pour une marque fictive porte `concept: true`. La carte et la page affichent alors « Projet concept ». Ne jamais présenter une marque fictive comme un vrai client, ni inventer de témoignage.
 - Tous les textes en français, sans mots anglais d'interface (« Phone », « Loading »...).
 
 ## Technique
@@ -44,6 +45,7 @@ Décidé avec le propriétaire le 03/10/2026. À respecter dans tout nouveau tex
 | `_data/visuels.yml` | Visuels simples (image seule, sans page détaillée) |
 | `_data/categories.yml` | Catégories et filtres du portfolio |
 | `portfolio/<nom>/img/` | Images d'un projet |
+| `briefs/` | Briefs de création des projets concept (non publiés) |
 | `assets/js/supabase.js` | Connexion Supabase (clé publique uniquement) |
 | `mpatk.html` | Politique de confidentialité du chatbot MPATKBOT. Sans rapport avec le site : **ne pas modifier** |
 | `googleaa7d45fdd426d7f9.html` | Vérification Google Search Console : **ne pas modifier ni supprimer** |
@@ -56,6 +58,7 @@ Décidé avec le propriétaire le 03/10/2026. À respecter dans tout nouveau tex
 - Chaque page définit `titre_seo` (ou `title`) et `description` dans son en-tête ; `_includes/head.html` produit le titre, la description, l'adresse canonique et les balises de partage.
 - Tout fichier Markdown ajouté à la racine (documentation) doit être listé dans `exclude` de `_config.yml`, sinon Jekyll le publie comme une page.
 - Dans un en-tête YAML, ne pas écrire `---` dans un commentaire.
+- **Brouillons** : une fiche de `_projets/` avec `brouillon: true` (et `sitemap: false`) apparaît dans le portfolio de la version de test seulement. En production, sa carte est masquée et sa page porte `noindex`, mais **la page existe quand même à son adresse** : avant une mise en production, vérifier qu'aucun brouillon ne contient d'images provisoires, ou passer la fiche en `published: false`.
 - **Images** : format WebP, 1024 px de large au maximum pour les visuels (1024 × 683 par défaut dans les modèles ; sinon préciser `largeur:` et `hauteur:`). Toute balise `<img>` porte `width` et `height`. `loading="lazy"` pour ce qui n'est pas visible au chargement.
 - **Image de partage** (réseaux sociaux) : champ `image_partage:` en JPG ou PNG ; sans lui, `image:` est utilisée.
 - **Diaporama Swiper** : la bibliothèque n'est chargée que si la page a `swiper: true` dans son en-tête (c'est le cas par défaut des pages de `_projets/`).

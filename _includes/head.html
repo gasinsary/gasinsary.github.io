@@ -16,8 +16,10 @@
   <meta name="keywords" content="{{ page.keywords | escape }}">
   {%- endif %}
   <meta name="author" content="{{ site.author | escape }}">
-  {%- if site.baseurl and site.baseurl != "" %}
-  <!-- Version de test : ne pas indexer -->
+  {%- assign ne_pas_indexer = page.brouillon -%}
+  {%- if site.baseurl and site.baseurl != "" -%}{%- assign ne_pas_indexer = true -%}{%- endif %}
+  {%- if ne_pas_indexer %}
+  <!-- Version de test ou page en brouillon : ne pas indexer -->
   <meta name="robots" content="noindex, nofollow">
   {%- endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">

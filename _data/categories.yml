@@ -12,3 +12,7 @@ graphique:
 illustration:
   nom: "Illustration web & UI"
   filtre: filter-motion
+
+campagne:
+  nom: "Campagne digitale"
+  filtre: filter-campagne

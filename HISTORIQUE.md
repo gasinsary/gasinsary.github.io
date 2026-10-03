@@ -20,6 +20,16 @@ Dernière mise à jour : 03/10/2026
 - **Formulaire de contact** : le propriétaire doit faire un envoi réel depuis la version de test pour confirmer que le message arrive et que la confirmation s'affiche.
 - **À faire valider par le propriétaire** : la relecture des textes réécrits, et le titre « Fondateur & directeur artistique » (proposé, appliqué, pas confirmé explicitement).
 
+## Portfolio : projets concept pour l'agence Digital Prod (en cours)
+
+- **Contexte** : le 02/10/2026, le propriétaire a reçu un e-mail de milan@digitalprod.com (Digital Prod, agence parisienne de production de contenus digitaux) lui demandant sa disponibilité en freelance, son tarif journalier et un portfolio récent. L'agence est réelle (SIREN 511 233 595, domaine officiel `digitalprod.com`) ; l'appartenance de l'expéditeur à l'agence n'a pas pu être confirmée publiquement.
+- **Contrainte** : les vrais projets du propriétaire n'ont pas l'accord des clients pour être publiés. Décision : deux **projets concept** (marques fictives, annoncés comme tels), ciblés sur ce que l'agence produit (réseaux sociaux, bannières, e-mailing pour des marques de beauté et de grande consommation).
+- **Fait** : briefs dans `briefs/`, fiches `_projets/campagne-reseaux-sociaux-voara.md` et `_projets/campagne-publicitaire-bao-fizz.md` en brouillon, avec des images provisoires dans `portfolio/<nom>/img/`.
+- **À faire par le propriétaire** : créer les visuels en suivant les briefs et remplacer les images provisoires (mêmes noms de fichiers).
+- **À faire ensuite** : relire les textes des deux pages par rapport aux visuels réels, retirer `brouillon` et `sitemap: false`, éventuellement passer `accueil: true`, puis rédiger la réponse à l'agence (tarif journalier à fixer avec le propriétaire).
+- **Questions sans réponse** : le projet Aquafish est-il un vrai client ? (s'il est fictif : `concept: true` et retirer le témoignage) ; faut-il mettre la nouvelle version en production avant de répondre à l'agence ?
+- Les noms Voara et Bao Fizz n'ont fait l'objet que d'une recherche web rapide, pas d'une recherche de marque déposée.
+
 ## Version de test en ligne (staging)
 
 But : voir le site en ligne avant de le mettre en production. Marche à suivre : voir « Publication » dans AGENTS.md.
@@ -120,3 +130,8 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 - Swiper (CSS et JS) chargé seulement quand `swiper: true` ; champ `image_partage` pour garder un JPG en image de partage.
 - Bloc de faux témoignages du modèle retiré de `index.html` (récupérable dans l'historique git, commit `e256df4`).
 - Outils utilisés pour la conversion (hors dépôt) : Pillow pour les WebP, sharp pour le rendu du logo.
+
+**Projets concept (étape 5 de l'audit, en cours)**
+- Briefs `briefs/01-voara-campagne-reseaux-sociaux.md` et `briefs/02-bao-fizz-campagne-publicitaire.md`.
+- Deux fiches projet en brouillon, catégorie « Campagne digitale » ajoutée, images provisoires générées.
+- Modèles : champs `concept` et `brouillon` (carte, page projet, balise `noindex`, filtres du portfolio masqués quand aucune réalisation visible ne les utilise).

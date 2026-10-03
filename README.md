@@ -22,6 +22,15 @@ Le site est généré par [Jekyll](https://jekyllrb.com/), intégré à GitHub P
 3. Remplir les champs du fichier (titres, description SEO, images, étapes...).
 4. `ordre` règle la position dans la grille ; `accueil: true` affiche aussi la carte sur la page d'accueil.
 
+## Projet concept et brouillon
+
+Dans l'en-tête d'une fiche de `_projets/` :
+
+- `concept: true` : la marque est fictive. « Projet concept » s'affiche sur la carte et sur la page.
+- `brouillon: true` et `sitemap: false` : le projet n'apparaît dans le portfolio que sur la version de test. Supprimer ces deux lignes quand les vrais visuels sont en place.
+
+Les briefs de création des projets concept sont dans le dossier `briefs/`.
+
 ## Ajouter un visuel simple
 
 Ajouter un bloc dans `_data/visuels.yml` (titre, catégorie, image, résumé). Image au format WebP, en 1024 × 683 px, dans `assets/img/portfolio/`.

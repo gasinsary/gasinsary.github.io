@@ -49,6 +49,7 @@ exclude:
   - CLAUDE.md
   - HISTORIQUE.md
   - AUDIT.md
+  - briefs/
   - forms/
   - assets/scss/
   - Gemfile

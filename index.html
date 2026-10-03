@@ -301,7 +301,10 @@ supabase: true
           <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
             {%- assign realisations = site.projets | concat: site.data.visuels | where: "accueil", true | sort: "ordre" -%}
+            {%- assign version_test = false -%}
+            {%- if site.baseurl and site.baseurl != "" -%}{%- assign version_test = true -%}{%- endif -%}
             {%- for realisation in realisations %}
+            {%- if realisation.brouillon and version_test == false %}{% continue %}{% endif %}
 {% include carte-portfolio.html item=realisation %}
             {%- endfor %}
 
