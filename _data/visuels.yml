@@ -15,7 +15,6 @@
 
 - title: "Visuel pour réseaux sociaux"
   ordre: 3
-  accueil: true
   categorie: social
   image: /assets/img/portfolio/portfolio-4.webp
   alt: "Photo de couverture Facebook - par Gas'in Sary"

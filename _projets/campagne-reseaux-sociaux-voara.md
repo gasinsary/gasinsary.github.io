@@ -2,11 +2,6 @@
 # Adresse de la page : /portfolio/campagne-reseaux-sociaux-voara/
 # Brief de création : briefs/01-voara-campagne-reseaux-sociaux.md
 
-# Brouillon : visible sur la version de test, masqué du portfolio en production.
-# Supprimer les deux lignes suivantes quand les vrais visuels sont en place.
-brouillon: true
-sitemap: false
-
 # Projet concept : la marque est fictive, c'est indiqué sur la carte et sur la page.
 concept: true
 
@@ -18,6 +13,7 @@ description: "Projet concept : posts Instagram, story et carrousel pour le lance
 
 # Carte dans la grille du portfolio
 ordre: 0.1
+accueil: true
 categorie: social
 titre_carte: "Campagne réseaux sociaux Voara"
 resume: "Posts, story et carrousel pour le lancement d'un sérum"
