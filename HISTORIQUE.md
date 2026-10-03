@@ -16,8 +16,9 @@ Dernière mise à jour : 03/10/2026
 ## En cours
 
 - **Pas de mise en production pour l'instant** (décision du propriétaire, 03/10/2026) : le site est d'abord mis à jour sur la version de test.
-- **Âge automatique** dans la fiche « À propos » de l'accueil (« 33 ans » écrit en dur) : en attente de la date de naissance du propriétaire (ou seulement mois et année s'il préfère ne pas publier le jour). Prévu : calcul par Jekyll à la génération + mise à jour en JavaScript à chaque visite.
-- **Audit rendu** dans [AUDIT.md](AUDIT.md) : en attente du choix du propriétaire sur ce qu'il faut corriger en premier.
+- **Corrections de l'audit** : le propriétaire a validé l'ordre de traitement proposé à la fin de [AUDIT.md](AUDIT.md). Étapes 1 (contact) et 2 (défauts mobiles) faites sur la version de test ; prochaine étape : 3 (titres `<h1>`, fautes, textes en anglais).
+- **Formulaire de contact** : le propriétaire doit faire un envoi réel depuis la version de test pour confirmer que le message arrive et que la confirmation s'affiche.
+- **Positionnement du site** (« freelance » / « agence » / « je » / « nous ») : une proposition a été faite au propriétaire (studio créatif fondé par Mirado, « nous » pour l'offre, « je » seulement dans le mot du fondateur) ; en attente de sa décision avant de réécrire les textes.
 
 ## Version de test en ligne (staging)
 
@@ -93,3 +94,11 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 - Année du copyright automatique : calculée par Jekyll (`site.time`) dans `_includes/footer.html`, puis mise à jour à chaque visite par `assets/js/main.js` (classe `annee-courante`).
 - Audit complet (erreurs visiteur, SEO, expérience prospect, affichage mobile/tablette/ordinateur, accessibilité) : résultats dans `AUDIT.md`. Aucune correction de l'audit n'a encore été appliquée.
 - Le formulaire de contact n'a volontairement pas été envoyé pendant l'audit (cela expédie un e-mail au propriétaire).
+
+**Corrections de l'audit, étapes 1 et 2**
+- Coordonnées centralisées dans `_config.yml` (`email`, `telephone`, `date_naissance`). Le numéro WhatsApp est le même que le téléphone (choix du propriétaire).
+- Âge automatique : calculé par Jekyll dans `index.html`, puis mis à jour à chaque visite par `main.js` (attribut `data-naissance`).
+- Téléphone, e-mail et WhatsApp cliquables (section contact et fiche « À propos ») ; bouton WhatsApp sur la page projet.
+- Formulaire : `assets/vendor/php-email-form/validate.js` n'est plus chargé. L'envoi est fait par `main.js` vers l'adresse AJAX de formsubmit.co (`data-ajax`), avec messages en français. Sans JavaScript, le formulaire s'envoie vers son `action` comme avant.
+- Mobile : fiche « À propos » réorganisée (téléphone et e-mail sur toute la largeur), marges latérales sur le titre de la page projet, icônes sociales masquées quand le menu est ouvert.
+- Styles ajoutés à la fin de `assets/css/main.css`, sous le titre « Ajustements Gas'in Sary ».

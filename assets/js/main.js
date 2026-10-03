@@ -226,4 +226,60 @@
     el.textContent = new Date().getFullYear();
   });
 
+  /**
+   * Âge calculé à partir de la date de naissance (fiche « À propos »)
+   */
+  document.querySelectorAll('[data-naissance]').forEach(el => {
+    const [annee, mois, jour] = el.dataset.naissance.split('-').map(Number);
+    if (!annee || !mois || !jour) return;
+    const aujourdhui = new Date();
+    let age = aujourdhui.getFullYear() - annee;
+    const anniversairePasse = aujourdhui.getMonth() + 1 > mois ||
+      (aujourdhui.getMonth() + 1 === mois && aujourdhui.getDate() >= jour);
+    if (!anniversairePasse) age--;
+    el.textContent = age + ' ans';
+  });
+
+  /**
+   * Formulaire de contact : envoi via formsubmit.co sans quitter la page.
+   * Sans JavaScript, le formulaire s'envoie normalement vers son attribut "action".
+   */
+  document.querySelectorAll('form[data-ajax]').forEach(form => {
+    const chargement = form.querySelector('.loading');
+    const erreur = form.querySelector('.error-message');
+    const succes = form.querySelector('.sent-message');
+    const bouton = form.querySelector('[type="submit"]');
+
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      chargement.classList.add('d-block');
+      erreur.classList.remove('d-block');
+      succes.classList.remove('d-block');
+      bouton.disabled = true;
+
+      fetch(form.dataset.ajax, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+      })
+        .then(reponse => reponse.json())
+        .then(resultat => {
+          if (String(resultat.success) !== 'true') throw new Error(resultat.message);
+          succes.classList.add('d-block');
+          form.reset();
+        })
+        .catch(() => {
+          erreur.textContent = "L'envoi n'a pas abouti. Réessayez, ou écrivez-nous directement par e-mail ou sur WhatsApp.";
+          erreur.classList.add('d-block');
+        })
+        .finally(() => {
+          chargement.classList.remove('d-block');
+          bouton.disabled = false;
+        });
+    });
+  });
+
 })();

@@ -81,24 +81,30 @@ supabase: true
                     </div>
                   </div>
 
-                  <div class="col-6">
-                    <div class="info-item">
-                      <span class="label">Phone</span>
-                      <span class="value">+261 32 84 718 67</span>
-                    </div>
-                  </div>
-
+                  {%- comment %} Âge : calculé à la génération du site, puis remis à jour à chaque visite par main.js {% endcomment %}
+                  {%- assign annee_naissance = site.date_naissance | date: "%Y" | plus: 0 -%}
+                  {%- assign age = site.time | date: "%Y" | minus: annee_naissance -%}
+                  {%- assign jour_actuel = site.time | date: "%m%d" | plus: 0 -%}
+                  {%- assign jour_naissance = site.date_naissance | date: "%m%d" | plus: 0 -%}
+                  {%- if jour_actuel < jour_naissance -%}{%- assign age = age | minus: 1 -%}{%- endif %}
                   <div class="col-6">
                     <div class="info-item">
                       <span class="label">Age</span>
-                      <span class="value">33 ans</span>
+                      <span class="value" data-naissance="{{ site.date_naissance }}">{{ age }} ans</span>
                     </div>
                   </div>
 
-                  <div class="col-6">
+                  <div class="col-12 col-md-6 col-lg-12 col-xxl-6">
+                    <div class="info-item">
+                      <span class="label">Phone</span>
+                      <span class="value"><a href="tel:{{ site.telephone | remove: ' ' }}">{{ site.telephone }}</a></span>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-12 col-xxl-6">
                     <div class="info-item">
                       <span class="label">Email</span>
-                      <span class="value">direction.gasinsary@gmail.com</span>
+                      <span class="value"><a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
                     </div>
                   </div>
 
@@ -567,12 +573,17 @@ supabase: true
               <div class="contact-info mt-5">
                 <div class="info-item d-flex mb-3">
                   <i class="bi bi-envelope-at me-3"></i>
-                  <span>direction.gasinsary@gmail.com</span>
+                  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
                 </div>
 
                 <div class="info-item d-flex mb-3">
                   <i class="bi bi-telephone me-3"></i>
-                  <span>+261 32 84 718 67</span>
+                  <a href="tel:{{ site.telephone | remove: ' ' }}">{{ site.telephone }}</a>
+                </div>
+
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-whatsapp me-3"></i>
+                  <a href="https://wa.me/{{ site.telephone | remove: ' ' | remove: '+' }}" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
                 </div>
 
                 <div class="info-item d-flex mb-4">
@@ -588,12 +599,12 @@ supabase: true
             <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
               <div class="card-body p-4 p-lg-5">
 
-                <form action="https://formsubmit.co/direction.gasinsary@gmail.com" method="post" class="php-email-form">
+                <form action="https://formsubmit.co/{{ site.email }}" data-ajax="https://formsubmit.co/ajax/{{ site.email }}" method="post" class="php-email-form">
                   <div class="row gy-4">
  <!-- Champ honeypot -->
   <input type="text" name="_honey" style="display:none">
 
-  <!-- Empêche les robots d’utiliser le formulaire -->
+  <!-- Pas de captcha formsubmit (incompatible avec l'envoi sans quitter la page) : le champ piège ci-dessus filtre les robots -->
   <input type="hidden" name="_captcha" value="false">
 
   <!-- Redirection vers la page d’accueil -->
@@ -615,11 +626,11 @@ supabase: true
                     </div>
 
                     <div class="col-12 text-center">
-                      <div class="loading">Loading</div>
+                      <div class="loading">Envoi en cours…</div>
                       <div class="error-message"></div>
                       <div class="sent-message">Votre message a été envoyé. Merci!</div>
 
-                      <button type="submit" class="btn btn-submit w-100">Envoyé Message</button>
+                      <button type="submit" class="btn btn-submit w-100">Envoyer le message</button>
                     </div>
 
                   </div>

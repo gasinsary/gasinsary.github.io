@@ -11,6 +11,13 @@ url: "https://gasinsary.github.io"
 lang: fr
 author: "Gas'in Sary"
 
+# Coordonnées affichées sur le site (liens téléphone, e-mail, WhatsApp, formulaire)
+email: direction.gasinsary@gmail.com
+telephone: "+261 32 84 718 67"
+
+# Sert à calculer l'âge affiché dans « À propos » (format année-mois-jour)
+date_naissance: "1992-02-21"
+
 # Image utilisée pour les partages (Facebook, LinkedIn...) quand la page n'en définit pas
 image_partage: /images/preview.jpg
 

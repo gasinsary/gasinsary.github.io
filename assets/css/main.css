@@ -2187,3 +2187,52 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Ajustements Gas'in Sary
+--------------------------------------------------------------*/
+/* Liens de contact (téléphone, e-mail, WhatsApp) : même apparence que le texte */
+.about .personal-info .info-item .value {
+  overflow-wrap: anywhere;
+}
+
+.about .personal-info .info-item .value a,
+.contact .contact-info .info-item a {
+  color: inherit;
+}
+
+.about .personal-info .info-item .value a:hover,
+.contact .contact-info .info-item a:hover {
+  color: var(--accent-color);
+}
+
+/* Page projet : marges latérales du titre et du fil d'Ariane sur petit écran */
+.page-title {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Menu mobile ouvert : les icônes sociales ne passent plus sous la croix de fermeture */
+@media (max-width: 1199px) {
+  .mobile-nav-active .header .header-social-links {
+    visibility: hidden;
+  }
+}
+
+/* Page projet : bouton WhatsApp à côté du bouton de contact */
+.portfolio-details .portfolio-details-content .cta-buttons .btn-whatsapp {
+  padding: 12px 28px;
+  background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
+  color: var(--heading-color);
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.portfolio-details .portfolio-details-content .cta-buttons .btn-whatsapp:hover {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 80%);
+  transform: translateY(-3px);
+}

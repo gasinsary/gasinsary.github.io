@@ -6,6 +6,15 @@ Méthode : lecture du code, mesures dans le navigateur à trois largeurs (mobile
 
 Limites : le formulaire de contact n'a pas été envoyé pour de vrai (cela expédie un e-mail). Les animations d'apparition ont été désactivées pendant les captures. Aucun test sur un vrai téléphone ni mesure de vitesse sur réseau mobile.
 
+## Suivi des corrections
+
+| Date | Points traités | État |
+|---|---|---|
+| 03/10/2026 | 1.2 liens téléphone, e-mail et WhatsApp ; 1.3 e-mail coupé ; 1.4 marges de la page projet ; 1.5 croix du menu mobile ; 1.9 âge automatique | Corrigé sur la version de test |
+| 03/10/2026 | 1.1 formulaire de contact | Réécrit sur la version de test. Vérifié avec des réponses simulées (succès, refus, panne réseau). **Reste à faire : un envoi réel par le propriétaire.** |
+
+Correction du rapport initial : le point 1.4 indiquait une quatrième miniature rognée sur mobile. Après mesure, les miniatures sont bien centrées ; seuls le texte d'introduction et le fil d'Ariane posaient problème.
+
 ## Résumé
 
 Le site est cohérent visuellement et ne déborde à aucune largeur. Les trois problèmes qui pèsent le plus :
@@ -21,7 +30,7 @@ Le site est cohérent visuellement et ne déborde à aucune largeur. Les trois p
 | 1.1 | Le formulaire affiche probablement une erreur alors que le message est parti. Le script attend la réponse `OK`, que formsubmit.co ne renvoie pas. Le visiteur croit à un échec. Vérifié : formsubmit accepte bien les envois du site. Non vérifié : l'affichage exact après envoi. | Accueil, contact | Haute |
 | 1.2 | Téléphone et e-mail sont du texte simple : impossible d'appeler ou d'écrire d'un geste. Aucun lien WhatsApp, alors qu'une icône WhatsApp figure sur la page projet. | Accueil, page projet | Haute |
 | 1.3 | Sur mobile, l'e-mail est coupé dans la fiche « À propos » (« direction.gasinsa… »). | Accueil | Moyenne |
-| 1.4 | Sur mobile, le texte d'introduction touche les deux bords de l'écran, le fil d'Ariane est coupé à droite et la quatrième miniature est rognée. | Page projet | Moyenne |
+| 1.4 | Sur mobile, le texte d'introduction touche les deux bords de l'écran et le fil d'Ariane est coupé à droite. | Page projet | Moyenne |
 | 1.5 | Sur mobile, menu ouvert : la croix de fermeture recouvre l'icône LinkedIn. | Toutes | Moyenne |
 | 1.6 | Une adresse inexistante affiche la page d'erreur de GitHub, en anglais, sans lien de retour. Il n'y a pas de page 404 du site. | Tout le site | Moyenne |
 | 1.7 | Sur l'accueil, le menu surligne « Resume » pendant qu'on regarde la section portfolio. | Accueil | Faible |
@@ -116,7 +125,7 @@ Accueil : 32 fichiers, 1,5 Mo.
 |---|---|---|---|
 | Accueil | Pas de débordement. Défauts 1.3, 1.5, 1.8. Page très longue. | Pas de débordement. | Cohérent. Défaut 1.7. |
 | Portfolio | Cohérent. Filtres sur deux lignes, lisibles. | Non capturé. | Cohérent. |
-| Projet Aquafish | Défaut 1.4. Diaporama, miniatures et accordéon fonctionnent. | Non capturé. | Cohérent. |
+| Projet Aquafish | Défaut 1.4 (corrigé). Diaporama, miniatures et accordéon fonctionnent. | Non capturé. | Cohérent. |
 
 Les miniatures de la page projet s'ouvrent bien en grand au clic.
 
