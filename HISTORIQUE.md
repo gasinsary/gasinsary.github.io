@@ -26,6 +26,7 @@ Dernière mise à jour : 03/10/2026
 - **Contrainte** : les vrais projets du propriétaire n'ont pas l'accord des clients pour être publiés. Décision : deux **projets concept** (marques fictives, annoncés comme tels), ciblés sur ce que l'agence produit (réseaux sociaux, bannières, e-mailing pour des marques de beauté et de grande consommation).
 - **Fait** : briefs dans `briefs/`, fiches `_projets/campagne-reseaux-sociaux-voara.md` et `_projets/campagne-publicitaire-bao-fizz.md` en brouillon, avec des images provisoires dans `portfolio/<nom>/img/`.
 - **Voara** : direction artistique « luxe calme » dans `briefs/voara-direction-artistique.html`. À la demande du propriétaire, les huit visuels et les cinq planches ont été **générés par l'assistant** (script `briefs/outils/generer-visuels-voara.py`, Pillow) : flacon dessiné, aucune photographie. Visuels en taille réelle dans `briefs/voara-visuels/`, planches du site dans `portfolio/campagne-reseaux-sociaux-voara/img/`. La fiche reste en brouillon : le propriétaire doit valider, et idéalement refaire les visuels avec ses outils (la fiche annonce Photoshop et Illustrator, ce qui n'est pas vrai des images générées).
+- **Voara, suite** : le 03/10/2026 au soir, le propriétaire a remplacé la couverture et les quatre planches par ses propres versions retravaillées (flacon et fruit de baobab photoréalistes, emblème végétal ajouté au logo). Les fichiers de `briefs/voara-visuels/` et le script correspondent donc à l'ancienne version générée, plus à ce qui est en ligne. Reste à confirmer avec lui : les outils à afficher sur la fiche, et le retrait de `brouillon`.
 - **Bao Fizz** : visuels à créer par le propriétaire en suivant le brief ; images provisoires en place.
 - **À faire ensuite** : relire les textes des deux pages par rapport aux visuels réels, retirer `brouillon` et `sitemap: false`, éventuellement passer `accueil: true`, puis rédiger la réponse à l'agence (tarif journalier à fixer avec le propriétaire).
 - **Questions sans réponse** : le projet Aquafish est-il un vrai client ? (s'il est fictif : `concept: true` et retirer le témoignage) ; faut-il mettre la nouvelle version en production avant de répondre à l'agence ?
@@ -140,3 +141,6 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 **Voara : direction artistique et visuels**
 - Planche de direction artistique (HTML) et brief alignés sur une direction « luxe calme » (noir végétal, ivoire, or champagne, Cormorant Garamond et Jost).
 - Huit visuels (3 posts, 1 story, 4 vues de carrousel) et cinq planches 1024 × 683 générés par script, à la place des images provisoires.
+
+**Voara : planches du propriétaire**
+- Les cinq images de `portfolio/campagne-reseaux-sociaux-voara/img/` sont désormais celles du propriétaire (WebP, 1024 × 683 px, vérifiées). Envoyées sur la version de test.
