@@ -8,22 +8,27 @@ Dernière mise à jour : 03/10/2026
 
 ## État actuel
 
-- **En production** (<https://gasinsary.github.io/>) : l'ancien site, en HTML écrit à la main (dernier commit `699624a`).
-- **En local, non commité, non publié** : la conversion du site à Jekyll + la connexion Supabase (détail ci-dessous).
-- **Jamais généré par le vrai Jekyll.** Vérifié seulement avec un moteur de rendu équivalent (LiquidJS) dans un dossier temporaire. Le premier vrai test sera la version de test en ligne.
+- **En production** (<https://gasinsary.github.io/>) : l'ancien site, en HTML écrit à la main (branche `main`, dernier commit `699624a`).
+- **Sur la version de test** (<https://gasinsary.github.io/staging-t4sj762s/>) : le site converti à Jekyll + la connexion Supabase (branche locale `staging`).
+- **En attente** : la validation de la version de test par le propriétaire, avant mise en production.
+- Attention : la branche `staging` n'existe que sur le dépôt de test et en local. Elle n'a pas été poussée sur le dépôt de production.
 
 ## En cours
 
-### Version de test en ligne (staging)
+- Le propriétaire doit vérifier la version de test, puis donner (ou non) son accord pour la mise en production.
+
+## Version de test en ligne (staging)
 
 But : voir le site en ligne avant de le mettre en production. Marche à suivre : voir « Publication » dans AGENTS.md.
 
 - Dépôt public `gasinsary/staging-t4sj762s`, créé le 03/10/2026. Adresse du site de test : <https://gasinsary.github.io/staging-t4sj762s/>.
+- En service depuis le 03/10/2026 : GitHub Pages activé (branche `main`, dossier racine). Le vrai Jekyll de GitHub génère le site sans erreur.
+- Accès en écriture depuis la machine du propriétaire : clé SSH dédiée (clé de déploiement du dépôt de test), alias `github-gis-staging` dans `~/.ssh/config`. L'alias `github-gis` (production) est une clé de déploiement qui ne donne accès qu'au dépôt de production.
 - Le dépôt est public parce que GitHub Pages ne publie pas un dépôt privé avec le plan gratuit. Le nom contient un suffixe aléatoire pour que l'adresse ne soit pas devinable, et le site de test porte une balise `noindex`. Limite : le dépôt reste visible sur le profil GitHub `gasinsary`.
 
 ## À faire ensuite
 
-1. Valider la version de test, puis publier la conversion Jekyll en production (accord du propriétaire obligatoire).
+1. Après accord du propriétaire : fusionner `staging` dans `main` et pousser sur `origin` (mise en production de la conversion Jekyll).
 2. Formulaire de contact : enregistrer les messages dans Supabase (table avec insertion publique seule, lecture réservée). Aujourd'hui il envoie à formsubmit.co.
 3. Ajouter les nouveaux projets du portfolio (le propriétaire veut mettre le portfolio à jour : c'est l'objectif de départ).
 
@@ -75,3 +80,8 @@ But : voir le site en ligne avant de le mettre en production. Marche à suivre :
 
 **Documents de passation**
 - Créés : `AGENTS.md`, `CLAUDE.md` (renvoie à AGENTS.md), `HISTORIQUE.md`.
+
+**Mise en service de la version de test**
+- Dépôt `gasinsary/staging-t4sj762s` créé, clé de déploiement dédiée ajoutée, branche `staging` poussée, GitHub Pages activé.
+- Vérifié en ligne : les trois pages répondent, le HTML généré par le vrai Jekyll est identique au rendu de test local, aucun lien interne cassé, aucun lien ne sort du sous-dossier de test, aucune erreur dans la console, balise `noindex` présente.
+- `sitemap.xml` généré (accueil, portfolio, page Aquafish, `mpatk.html`) ; le fichier de vérification Google en est bien exclu. Les fichiers de documentation, `forms/` et `_config.yml` ne sont pas publiés.
