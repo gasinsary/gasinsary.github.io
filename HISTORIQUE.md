@@ -16,9 +16,9 @@ Dernière mise à jour : 03/10/2026
 ## En cours
 
 - **Pas de mise en production pour l'instant** (décision du propriétaire, 03/10/2026) : le site est d'abord mis à jour sur la version de test.
-- **Corrections de l'audit** : le propriétaire a validé l'ordre de traitement proposé à la fin de [AUDIT.md](AUDIT.md). Étapes 1 (contact) et 2 (défauts mobiles) faites sur la version de test ; prochaine étape : 3 (titres `<h1>`, fautes, textes en anglais).
+- **Corrections de l'audit** : le propriétaire a validé l'ordre de traitement proposé à la fin de [AUDIT.md](AUDIT.md). Étapes 1 (contact), 2 (défauts mobiles) et 3 (titres `<h1>`, textes, positionnement) faites sur la version de test ; prochaine étape : 4 (poids : logo, photo, visuels en WebP, dimensions des images).
 - **Formulaire de contact** : le propriétaire doit faire un envoi réel depuis la version de test pour confirmer que le message arrive et que la confirmation s'affiche.
-- **Positionnement du site** (« freelance » / « agence » / « je » / « nous ») : une proposition a été faite au propriétaire (studio créatif fondé par Mirado, « nous » pour l'offre, « je » seulement dans le mot du fondateur) ; en attente de sa décision avant de réécrire les textes.
+- **À faire valider par le propriétaire** : la relecture des textes réécrits, et le titre « Fondateur & directeur artistique » (proposé, appliqué, pas confirmé explicitement).
 
 ## Version de test en ligne (staging)
 
@@ -54,6 +54,7 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 | Passer à Jekyll | Un seul modèle pour l'en-tête et le pied de page, un fichier par projet, balises SEO propres à chaque page, sitemap automatique. Le résultat publié reste du HTML pur |
 | Ne pas charger le portfolio depuis Supabase | Le contenu serait absent du HTML : mauvais pour le SEO et pas d'aperçu sur les réseaux sociaux |
 | Ne pas installer Ruby/Jekyll en local | Refus du propriétaire ; la validation passe par la version de test en ligne |
+| Positionnement « studio créatif », « nous » pour l'offre, « je » pour le fondateur | Mirado travaille avec sa femme (marketing) et, selon les projets, un graphiste et un développeur indépendants. « Agence en expansion » était faux et « freelance seul » aussi. Détail dans AGENTS.md |
 | Supabase chargé seulement sur l'accueil | Inutile ailleurs pour l'instant (`supabase: true` dans l'en-tête de la page) |
 
 ## Journal
@@ -102,3 +103,11 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 - Formulaire : `assets/vendor/php-email-form/validate.js` n'est plus chargé. L'envoi est fait par `main.js` vers l'adresse AJAX de formsubmit.co (`data-ajax`), avec messages en français. Sans JavaScript, le formulaire s'envoie vers son `action` comme avant.
 - Mobile : fiche « À propos » réorganisée (téléphone et e-mail sur toute la largeur), marges latérales sur le titre de la page projet, icônes sociales masquées quand le menu est ouvert.
 - Styles ajoutés à la fin de `assets/css/main.css`, sous le titre « Ajustements Gas'in Sary ».
+
+**Corrections de l'audit, étape 3**
+- Titres `<h1>` : accroche de l'accueil et titre de la page portfolio (styles `h1` ajoutés à côté des `h2` dans `main.css`).
+- Textes réécrits selon le positionnement décidé (voir « Ton et positionnement » dans AGENTS.md) : accroche, « À propos », parcours, services (applications ajoutées), contact, descriptions SEO.
+- Menu : « Resume » devient « Parcours » (l'ancre `#resume` est conservée). Pied de page et libellés traduits en français.
+- Fautes corrigées dans les pages, `_data/visuels.yml` et la fiche Aquafish.
+- Fiche « À propos » : la fonction passe sur toute la largeur sur mobile ; les quatre blocs de compétences ont la même hauteur.
+- Informations données par le propriétaire : clients internationaux réels (dont HEXOA et des particuliers), partenaires indépendants sur certains projets seulement. Le nom HEXOA n'est pas publié sur le site.

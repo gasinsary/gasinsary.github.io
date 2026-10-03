@@ -2,14 +2,14 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="{{ '/' | relative_url }}" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Logo de Gas'in Sary, agence de communication visuelle et développement web à Madagascar">
+        <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Logo de Gas'in Sary, studio de communication visuelle et de création web à Madagascar">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Accueil</a></li>
-          <li><a href="{{ '/#about' | relative_url }}">A propos</a></li>
-          <li><a href="{{ '/#resume' | relative_url }}">Resume</a></li>
+          <li><a href="{{ '/#about' | relative_url }}">À propos</a></li>
+          <li><a href="{{ '/#resume' | relative_url }}">Parcours</a></li>
           <li><a href="{{ '/portfolio/' | relative_url }}"{% if page.url contains '/portfolio/' %} class="active"{% endif %}>Portfolio</a></li>
           <li><a href="{{ '/#services' | relative_url }}">Services</a></li>
           <li><a href="{{ '/#contact' | relative_url }}">Contact</a></li>

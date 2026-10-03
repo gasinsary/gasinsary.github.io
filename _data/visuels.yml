@@ -5,40 +5,40 @@
 #   accueil   : true = aussi affiché dans l'extrait de la page d'accueil
 #   categorie : social, graphique ou illustration (voir _data/categories.yml)
 
-- title: "Visuelle pour réseau sociaux"
+- title: "Visuel pour réseaux sociaux"
   ordre: 2
   categorie: social
   image: /assets/img/portfolio/portfolio-3.jpg
-  alt: "Visuelle pour réseau sociaux - by Gas'in Sary"
-  resume: "Image destinée aux posts Facebooks, Instagram, LinkedIn, etc"
+  alt: "Visuel pour réseaux sociaux - par Gas'in Sary"
+  resume: "Image destinée aux posts Facebook, Instagram, LinkedIn, etc."
 
-- title: "Visuelle pour réseau sociaux"
+- title: "Visuel pour réseaux sociaux"
   ordre: 3
   accueil: true
   categorie: social
   image: /assets/img/portfolio/portfolio-4.jpg
-  alt: "Photo de couverture Facebook - by Gas'in Sary"
-  resume: "Photo de couverture pour page facebook"
+  alt: "Photo de couverture Facebook - par Gas'in Sary"
+  resume: "Photo de couverture pour page Facebook"
 
-- title: "Echantillon de logo"
+- title: "Échantillon de logos"
   ordre: 4
   accueil: true
   categorie: graphique
   image: /assets/img/portfolio/portfolio-1.jpg
-  alt: "Création de logo réaliser par Gas'in Sary"
-  resume: "Echantillon de logos qui ont l'autorisation d'être partagés"
+  alt: "Création de logos réalisée par Gas'in Sary"
+  resume: "Échantillon de logos que nous sommes autorisés à partager"
 
 - title: "Illustration"
   ordre: 5
   categorie: illustration
   image: /assets/img/portfolio/portfolio-5.jpg
-  alt: "Création d'illustration - by Gas'in Sary"
-  resume: "Visuelle d'illustration pour un site web"
+  alt: "Création d'illustration - par Gas'in Sary"
+  resume: "Illustration pour un site web"
 
 - title: "Illustration"
   ordre: 6
   accueil: true
   categorie: illustration
   image: /assets/img/portfolio/portfolio-6.jpg
-  alt: "Création d'illustration - by Gas'in Sary"
-  resume: "Visuelle d'illustration pour un site web"
+  alt: "Création d'illustration - par Gas'in Sary"
+  resume: "Illustration pour un site web"

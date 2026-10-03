@@ -3,10 +3,10 @@
 # /portfolio/identite-visuelle-aquafish-by-gasinsary/
 
 # Titres et référencement (SEO)
-title: "Création d'identité visuelle pour Aquafish Farms, entreprise d'aquaculture en alaska"
+title: "Création d'identité visuelle pour Aquafish Farms, entreprise d'aquaculture en Alaska"
 titre_court: "Identité visuelle Aquafish Farms"
 titre_seo: "Identité visuelle Aquafish Farms | Gas'in Sary"
-description: "Étude de cas : création du logo et de l'identité visuelle d'Aquafish Farms, entreprise d'aquaculture en Alaska, par l'agence Gas'in Sary."
+description: "Étude de cas : création du logo et de l'identité visuelle d'Aquafish Farms, entreprise d'aquaculture en Alaska, par le studio Gas'in Sary."
 
 # Carte dans la grille du portfolio
 ordre: 1
@@ -15,10 +15,10 @@ categorie: graphique
 titre_carte: "Identité visuelle"
 resume: "Identité visuelle et charte graphique"
 image: /assets/img/portfolio/aquafish.jpg
-alt: "Création d'identité visuelle réaliser par Gas'in Sary"
+alt: "Identité visuelle d'Aquafish Farms réalisée par Gas'in Sary"
 
 # Page détaillée
-intro: "Aquafish Farms est une entreprise familiale en Alaska spécialisée dans l'élevage de poissons en milieu contrôlé. Soucieuse de professionnaliser son image, elle nous a contactée pour concevoir une identité visuelle complète, adaptée à ses valeurs et à son secteur d'activité. Ce projet comprenait la création d'un logo vectoriel, d'une charte graphique, ainsi que la déclinaison sur différents support tels que les cartes de visite, les en-têtes de documents et les visuels destinés au digital."
+intro: "Aquafish Farms est une entreprise familiale en Alaska spécialisée dans l'élevage de poissons en milieu contrôlé. Soucieuse de professionnaliser son image, elle nous a contactés pour concevoir une identité visuelle complète, adaptée à ses valeurs et à son secteur d'activité. Ce projet comprenait la création d'un logo vectoriel, d'une charte graphique, ainsi que la déclinaison sur différents supports tels que les cartes de visite, les en-têtes de documents et les visuels destinés au digital."
 
 badge: "Identité visuelle"
 prestation: "Logo"
@@ -50,7 +50,7 @@ etapes:
     texte: "Nous avons commencé par des échanges avec les fondateurs pour mieux comprendre leur vision, leurs besoins et leur public cible. Un moodboard a été élaboré afin de définir l'univers graphique souhaité : une atmosphère aquatique, des couleurs naturelles, et une typographie simple et accessible."
   - titre: "Création du logo"
     icone: bi-vector-pen
-    texte: "A partir de ces éléments, plusieurs propositions ont été développées sur Adobe illustrator. Le logo retenu combine une forme fluide évoquant l'eau et une typographie simple à son image, pensée pour être lisible sur tous les supports."
+    texte: "A partir de ces éléments, plusieurs propositions ont été développées sur Adobe Illustrator. Le logo retenu combine une forme fluide évoquant l'eau et une typographie simple à son image, pensée pour être lisible sur tous les supports."
   - titre: "Déclinaisons graphiques"
     icone: bi-columns-gap
     texte: "Le logo a ensuite été décliné sur des cartes de visite, des papiers à en-tête et des visuels pour les réseaux sociaux. Un kit graphique complet a été remis à l'équipe, incluant tous les fichiers nécessaires à une utilisation professionnelle."

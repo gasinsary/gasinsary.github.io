@@ -12,6 +12,18 @@ Les défauts connus du site et l'ordre de traitement proposé sont dans [AUDIT.m
 - Le propriétaire n'est pas développeur de métier sur ces outils et écrit en **français** : répondre en français, en langage simple.
 - Priorité du propriétaire : le **référencement (SEO)**. Le contenu doit être dans le HTML généré, pas chargé en JavaScript.
 
+## Ton et positionnement des textes
+
+Décidé avec le propriétaire le 03/10/2026. À respecter dans tout nouveau texte.
+
+- Gas'in Sary est un **studio créatif** (jamais « agence »), fondé par Mirado avec sa femme, passionnée de marketing. C'est l'essence du studio.
+- Mirado pilote chaque projet et s'appuie, **selon les projets**, sur un graphiste et un développeur partenaires (indépendants). Ne pas parler de salariés, d'équipe permanente ni d'« expansion ».
+- **« Nous »** pour l'offre (services, portfolio, contact). **« Je »** uniquement dans le mot du fondateur et dans le récit du parcours.
+- Titre de Mirado : « Fondateur » ou « Fondateur & directeur artistique » (jamais « CEO »).
+- Offre : design graphique, identités visuelles, sites web et applications. Clients à Madagascar et à l'international.
+- Ne pas citer le nom d'un client sans l'accord du propriétaire.
+- Tous les textes en français, sans mots anglais d'interface (« Phone », « Loading »...).
+
 ## Technique
 
 - **Jekyll intégré à GitHub Pages** (déploiement depuis la branche, pas de GitHub Actions). Versions imposées par GitHub : Jekyll 3.10, Liquid 4. N'utiliser que des extensions autorisées par GitHub Pages (ex. `jekyll-sitemap`).
