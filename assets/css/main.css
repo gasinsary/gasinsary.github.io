@@ -2210,6 +2210,11 @@ section,
   color: var(--accent-color);
 }
 
+/* Logo de l'en-tête : la largeur suit la hauteur imposée */
+.header .logo img {
+  width: auto;
+}
+
 /* Page projet : marges latérales du titre et du fil d'Ariane sur petit écran */
 .page-title {
   padding-left: 16px;

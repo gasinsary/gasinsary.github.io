@@ -56,6 +56,10 @@ Décidé avec le propriétaire le 03/10/2026. À respecter dans tout nouveau tex
 - Chaque page définit `titre_seo` (ou `title`) et `description` dans son en-tête ; `_includes/head.html` produit le titre, la description, l'adresse canonique et les balises de partage.
 - Tout fichier Markdown ajouté à la racine (documentation) doit être listé dans `exclude` de `_config.yml`, sinon Jekyll le publie comme une page.
 - Dans un en-tête YAML, ne pas écrire `---` dans un commentaire.
+- **Images** : format WebP, 1024 px de large au maximum pour les visuels (1024 × 683 par défaut dans les modèles ; sinon préciser `largeur:` et `hauteur:`). Toute balise `<img>` porte `width` et `height`. `loading="lazy"` pour ce qui n'est pas visible au chargement.
+- **Image de partage** (réseaux sociaux) : champ `image_partage:` en JPG ou PNG ; sans lui, `image:` est utilisée.
+- **Diaporama Swiper** : la bibliothèque n'est chargée que si la page a `swiper: true` dans son en-tête (c'est le cas par défaut des pages de `_projets/`).
+- Le logo de l'en-tête est `assets/img/logo-header.webp` (15 Ko). `logo.svg` (559 Ko, bitmap incorporé) ne doit plus être chargé par les pages.
 
 ## Supabase
 

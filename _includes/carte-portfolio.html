@@ -8,7 +8,7 @@
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item {{ categorie.filtre }}">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="{{ item.image | relative_url }}" class="img-fluid" alt="{{ item.alt | default: item.title | escape }}" loading="lazy">
+                  <img src="{{ item.image | relative_url }}" width="{{ item.largeur | default: 1024 }}" height="{{ item.hauteur | default: 683 }}" class="img-fluid" alt="{{ item.alt | default: item.title | escape }}" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       {%- if item.url %}

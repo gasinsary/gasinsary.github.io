@@ -7,7 +7,7 @@
   {%- endif -%}
 {%- endunless -%}
 {%- assign seo_description = page.description | default: site.description -%}
-{%- assign seo_image = page.image | default: site.image_partage -%}
+{%- assign seo_image = page.image_partage | default: page.image | default: site.image_partage -%}
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>{{ seo_titre | escape }}</title>
@@ -43,7 +43,9 @@
   <link href="{{ '/assets/vendor/bootstrap-icons/bootstrap-icons.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/assets/vendor/aos/aos.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/assets/vendor/glightbox/css/glightbox.min.css' | relative_url }}" rel="stylesheet">
+  {%- if page.swiper %}
   <link href="{{ '/assets/vendor/swiper/swiper-bundle.min.css' | relative_url }}" rel="stylesheet">
+  {%- endif %}
 
   <!-- Main CSS File -->
   <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">

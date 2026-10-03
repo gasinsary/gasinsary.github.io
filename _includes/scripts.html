@@ -5,7 +5,9 @@
   <script src="{{ '/assets/vendor/glightbox/js/glightbox.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/vendor/isotope-layout/isotope.pkgd.min.js' | relative_url }}"></script>
+  {%- if page.swiper %}
   <script src="{{ '/assets/vendor/swiper/swiper-bundle.min.js' | relative_url }}"></script>
+  {%- endif %}
   {%- if page.supabase %}
 
   <!-- Supabase -->

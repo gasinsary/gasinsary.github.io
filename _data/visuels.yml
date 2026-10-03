@@ -1,4 +1,5 @@
 # Visuels simples du portfolio : une image qui s'ouvre en grand, sans page détaillée.
+# Images : format WebP conseillé, 1024 x 683 px (sinon préciser largeur: et hauteur:).
 # (Les projets avec une page détaillée sont dans le dossier _projets/.)
 #
 #   ordre     : position dans la grille (du plus petit au plus grand)
@@ -8,7 +9,7 @@
 - title: "Visuel pour réseaux sociaux"
   ordre: 2
   categorie: social
-  image: /assets/img/portfolio/portfolio-3.jpg
+  image: /assets/img/portfolio/portfolio-3.webp
   alt: "Visuel pour réseaux sociaux - par Gas'in Sary"
   resume: "Image destinée aux posts Facebook, Instagram, LinkedIn, etc."
 
@@ -16,7 +17,7 @@
   ordre: 3
   accueil: true
   categorie: social
-  image: /assets/img/portfolio/portfolio-4.jpg
+  image: /assets/img/portfolio/portfolio-4.webp
   alt: "Photo de couverture Facebook - par Gas'in Sary"
   resume: "Photo de couverture pour page Facebook"
 
@@ -24,14 +25,14 @@
   ordre: 4
   accueil: true
   categorie: graphique
-  image: /assets/img/portfolio/portfolio-1.jpg
+  image: /assets/img/portfolio/portfolio-1.webp
   alt: "Création de logos réalisée par Gas'in Sary"
   resume: "Échantillon de logos que nous sommes autorisés à partager"
 
 - title: "Illustration"
   ordre: 5
   categorie: illustration
-  image: /assets/img/portfolio/portfolio-5.jpg
+  image: /assets/img/portfolio/portfolio-5.webp
   alt: "Création d'illustration - par Gas'in Sary"
   resume: "Illustration pour un site web"
 
@@ -39,6 +40,6 @@
   ordre: 6
   accueil: true
   categorie: illustration
-  image: /assets/img/portfolio/portfolio-6.jpg
+  image: /assets/img/portfolio/portfolio-6.webp
   alt: "Création d'illustration - par Gas'in Sary"
   resume: "Illustration pour un site web"

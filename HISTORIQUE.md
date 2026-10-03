@@ -16,7 +16,7 @@ Dernière mise à jour : 03/10/2026
 ## En cours
 
 - **Pas de mise en production pour l'instant** (décision du propriétaire, 03/10/2026) : le site est d'abord mis à jour sur la version de test.
-- **Corrections de l'audit** : le propriétaire a validé l'ordre de traitement proposé à la fin de [AUDIT.md](AUDIT.md). Étapes 1 (contact), 2 (défauts mobiles) et 3 (titres `<h1>`, textes, positionnement) faites sur la version de test ; prochaine étape : 4 (poids : logo, photo, visuels en WebP, dimensions des images).
+- **Corrections de l'audit** : le propriétaire a validé l'ordre de traitement proposé à la fin de [AUDIT.md](AUDIT.md). Étapes 1 (contact), 2 (défauts mobiles), 3 (titres `<h1>`, textes, positionnement) et 4 (poids des pages) faites sur la version de test ; prochaine étape : 5 (contenu : ajouter des projets, dont des sites web, avec des titres précis). Elle dépend du propriétaire, qui doit fournir les projets.
 - **Formulaire de contact** : le propriétaire doit faire un envoi réel depuis la version de test pour confirmer que le message arrive et que la confirmation s'affiche.
 - **À faire valider par le propriétaire** : la relecture des textes réécrits, et le titre « Fondateur & directeur artistique » (proposé, appliqué, pas confirmé explicitement).
 
@@ -42,7 +42,8 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 - Le formulaire de contact affiche probablement une erreur même quand l'envoi réussit : `assets/vendor/php-email-form/validate.js` attend la réponse `OK`, que formsubmit.co ne renvoie pas. Non testé.
 - L'accueil et la page portfolio n'ont pas de titre `<h1>` (les titres principaux sont des `<h2>`). À corriger pour le SEO, avec un ajustement CSS (`.hero .content h2`).
 - La section témoignages de l'accueil est désactivée (commentaire HTML) et ne contient que du texte de remplissage.
-- `assets/img/portfolio/portfolio-2.jpg` n'est plus utilisée.
+- Fichiers conservés mais plus utilisés par les pages : `assets/img/portfolio/portfolio-2.jpg`, les anciens JPG et PNG remplacés par des WebP (sauf `aquafish.jpg` et `preview.jpg`, qui servent d'images de partage), `assets/img/logo.svg`, `assets/vendor/php-email-form/validate.js`. Ils peuvent être supprimés avec l'accord du propriétaire.
+- Pistes de poids restantes : les icônes Bootstrap (230 Ko pour une vingtaine d'icônes utilisées), les graisses de polices Google demandées en trop, Supabase chargé sur l'accueil sans être encore utilisé.
 - Fautes de frappe dans les textes d'origine, conservées telles quelles (« échatillon », « Acceuil », « Visuelle »...).
 - Le défilement vers les sections depuis une autre page (ex. `/#contact`) n'a pas pu être vérifié visuellement.
 
@@ -111,3 +112,11 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 - Fautes corrigées dans les pages, `_data/visuels.yml` et la fiche Aquafish.
 - Fiche « À propos » : la fonction passe sur toute la largeur sur mobile ; les quatre blocs de compétences ont la même hauteur.
 - Informations données par le propriétaire : clients internationaux réels (dont HEXOA et des particuliers), partenaires indépendants sur certains projets seulement. Le nom HEXOA n'est pas publié sur le site.
+
+**Corrections de l'audit, étape 4 (poids des pages)**
+- Logo de l'en-tête : `assets/img/logo-header.webp` (393 × 144 px, 15 Ko), rendu à partir de `logo.svg`.
+- Photo, illustration d'accueil, visuels du portfolio et galerie Aquafish convertis en WebP (qualité 80, mêmes dimensions). Images de l'accueil : environ 2,1 Mo → 0,2 Mo.
+- `width` et `height` sur toutes les images, `loading="lazy"` sous la ligne de flottaison, `fetchpriority="high"` sur l'illustration d'accueil.
+- Swiper (CSS et JS) chargé seulement quand `swiper: true` ; champ `image_partage` pour garder un JPG en image de partage.
+- Bloc de faux témoignages du modèle retiré de `index.html` (récupérable dans l'historique git, commit `e256df4`).
+- Outils utilisés pour la conversion (hors dépôt) : Pillow pour les WebP, sharp pour le rendu du logo.

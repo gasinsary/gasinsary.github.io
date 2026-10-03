@@ -60,7 +60,7 @@ layout: default
                   <div class="swiper-wrapper">
                     {%- for image in page.galerie %}
                     <div class="swiper-slide">
-                      <img src="{{ image | relative_url }}" alt="{{ nom_court | escape }} - image {{ forloop.index }}" class="img-fluid">
+                      <img src="{{ image | relative_url }}" width="1024" height="683"{% unless forloop.first %} loading="lazy"{% endunless %} alt="{{ nom_court | escape }} - image {{ forloop.index }}" class="img-fluid">
                     </div>
                     {%- endfor %}
                   </div>
@@ -73,7 +73,7 @@ layout: default
                 <div class="row g-2 mt-3">
                   {%- for image in page.galerie %}
                   <div class="col-3">
-                    <img src="{{ image | relative_url }}" alt="{{ nom_court | escape }} - miniature {{ forloop.index }}" class="img-fluid glightbox">
+                    <img src="{{ image | relative_url }}" width="1024" height="683" loading="lazy" alt="{{ nom_court | escape }} - miniature {{ forloop.index }}" class="img-fluid glightbox">
                   </div>
                   {%- endfor %}
                 </div>

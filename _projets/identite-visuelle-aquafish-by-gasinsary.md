@@ -14,7 +14,9 @@ accueil: true
 categorie: graphique
 titre_carte: "Identité visuelle"
 resume: "Identité visuelle et charte graphique"
-image: /assets/img/portfolio/aquafish.jpg
+image: /assets/img/portfolio/aquafish.webp
+# Image utilisée pour les partages sur les réseaux sociaux (JPG ou PNG de préférence)
+image_partage: /assets/img/portfolio/aquafish.jpg
 alt: "Identité visuelle d'Aquafish Farms réalisée par Gas'in Sary"
 
 # Page détaillée
@@ -32,14 +34,14 @@ outils:
   - After Effects
 
 galerie:
-  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/croquis.jpg
-  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/brouillon.jpg
-  - /assets/img/portfolio/aquafish.jpg
-  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/fond.jpg
-  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/fondcar.jpg
-  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/office.jpg
-  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/card.jpg
-  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/vans.jpg
+  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/croquis.webp
+  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/brouillon.webp
+  - /assets/img/portfolio/aquafish.webp
+  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/fond.webp
+  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/fondcar.webp
+  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/office.webp
+  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/card.webp
+  - /portfolio/identite-visuelle-aquafish-by-gasinsary/img/vans.webp
 
 contexte: "L'équipe d'Aquafish souhaitait moderniser son image et renforcer sa crédibilité auprès de ses partenaires et clients. L'objectif était de créer un logo professionnel, mémorable et facilement identifiable, tout en mettant en avant l'univers aquatique dans lequel l'entreprise évolue."
 

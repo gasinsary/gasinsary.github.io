@@ -37,6 +37,7 @@ defaults:
     values:
       layout: projet
       body_class: portfolio-details-page
+      swiper: true
   - scope:
       path: "googleaa7d45fdd426d7f9.html"
     values:
