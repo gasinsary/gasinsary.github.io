@@ -64,9 +64,13 @@ layout: default
                     }
                   </script>
                   <div class="swiper-wrapper">
+                    {%- comment %} Une image de la galerie est soit un chemin, soit un bloc "image:" + "alt:" {% endcomment %}
                     {%- for image in page.galerie %}
+                    {%- assign source = image.image | default: image -%}
+                    {%- assign texte_alt = image.alt -%}
+                    {%- unless texte_alt %}{% capture texte_alt %}{{ nom_court }} - image {{ forloop.index }}{% endcapture %}{% endunless %}
                     <div class="swiper-slide">
-                      <img src="{{ image | relative_url }}" width="1024" height="683"{% unless forloop.first %} loading="lazy"{% endunless %} alt="{{ nom_court | escape }} - image {{ forloop.index }}" class="img-fluid">
+                      <img src="{{ source | relative_url }}" width="1024" height="683"{% unless forloop.first %} loading="lazy"{% endunless %} alt="{{ texte_alt | escape }}" class="img-fluid">
                     </div>
                     {%- endfor %}
                   </div>
@@ -78,8 +82,11 @@ layout: default
               <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="row g-2 mt-3">
                   {%- for image in page.galerie %}
+                  {%- assign source = image.image | default: image -%}
+                  {%- assign texte_alt = image.alt -%}
+                  {%- unless texte_alt %}{% capture texte_alt %}{{ nom_court }} - image {{ forloop.index }}{% endcapture %}{% endunless %}
                   <div class="col-3">
-                    <img src="{{ image | relative_url }}" width="1024" height="683" loading="lazy" alt="{{ nom_court | escape }} - miniature {{ forloop.index }}" class="img-fluid glightbox">
+                    <img src="{{ source | relative_url }}" width="1024" height="683" loading="lazy" alt="{{ texte_alt | escape }} (miniature)" class="img-fluid glightbox">
                   </div>
                   {%- endfor %}
                 </div>
@@ -135,11 +142,11 @@ layout: default
                 <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
                   {%- for etape in page.etapes %}
                   <div class="accordion-item" data-aos="fade-up"{% unless forloop.first %} data-aos-delay="{{ forloop.index0 | times: 100 }}"{% endunless %}>
-                    <h2 class="accordion-header">
+                    <h4 class="accordion-header">
                       <button class="accordion-button{% unless forloop.first %} collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-{{ forloop.index }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="portfolio-details-collapse-{{ forloop.index }}">
                         <i class="bi {{ etape.icone | default: 'bi-check2-circle' }} me-2"></i>{{ etape.titre | escape }}
                       </button>
-                    </h2>
+                    </h4>
                     <div id="portfolio-details-collapse-{{ forloop.index }}" class="accordion-collapse collapse{% if forloop.first %} show{% endif %}" data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
                         <p>{{ etape.texte | escape }}</p>
@@ -204,7 +211,7 @@ layout: default
               <div class="project-features" data-aos="fade-up" data-aos-delay="300">
                 <h3><i class="bi bi-whatsapp"></i> Parlons de votre projet</h3>
                 <div class="row g-3">
-                  <p>Vous avez un projet de création graphique ou souhaitez renforcer l'image de votre entreprise ? N'hésitez pas à nous contacter pour en discuter ensemble.</p>
+                  <p>{{ page.appel | default: "Vous avez un projet de création graphique ou souhaitez renforcer l'image de votre entreprise ? N'hésitez pas à nous contacter pour en discuter ensemble." | escape }}</p>
                 </div>
               </div>
 
@@ -219,3 +226,29 @@ layout: default
       </div>
 
     </section><!-- /Portfolio Details Section -->
+
+    {%- assign image_donnees = page.image_partage | default: page.image | default: site.image_partage %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": {{ '/' | absolute_url | jsonify }} },
+            { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": {{ '/portfolio/' | absolute_url | jsonify }} },
+            { "@type": "ListItem", "position": 3, "name": {{ nom_court | jsonify }}, "item": {{ page.url | absolute_url | jsonify }} }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "name": {{ page.title | jsonify }},
+          "description": {{ page.description | jsonify }},
+          "url": {{ page.url | absolute_url | jsonify }},
+          "image": {{ image_donnees | absolute_url | jsonify }},
+          "inLanguage": "fr",
+          "creator": { "@type": "Organization", "name": {{ site.title | jsonify }}, "url": {{ '/' | absolute_url | jsonify }} }
+        }
+      ]
+    }
+    </script>

@@ -148,3 +148,8 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 **Voara publié dans le portfolio**
 - `brouillon` et `sitemap: false` retirés de la fiche ; `accueil: true` ajouté.
 - Accueil : pour garder quatre cartes, `accueil` a été retiré du visuel « Photo de couverture Facebook » de `_data/visuels.yml` (il reste dans la page portfolio).
+
+**Référencement des pages projet**
+- Modèle `projet.html` : données structurées JSON-LD (fil d'Ariane + réalisation), étapes en `h4` sous « Déroulé », libellés de la fiche sortis des titres, texte alternatif par image de galerie, champ `appel`.
+- Fiche Voara : titre et description centrés sur le service (visuels Instagram) et le lieu, textes alternatifs descriptifs, image de partage en JPG (`couverture.jpg`), appel à l'action propre au projet.
+- À faire de même pour Aquafish (textes alternatifs de la galerie) et, plus tard, pour Bao Fizz.

@@ -8,8 +8,8 @@ concept: true
 # Titres et référencement (SEO)
 title: "Campagne réseaux sociaux pour Voara, marque de soins naturels"
 titre_court: "Campagne réseaux sociaux Voara"
-titre_seo: "Campagne réseaux sociaux Voara (projet concept) | Gas'in Sary"
-description: "Projet concept : posts Instagram, story et carrousel pour le lancement d'un sérum de la marque de soins fictive Voara, créés par le studio Gas'in Sary."
+titre_seo: "Création de visuels Instagram : campagne Voara | Gas'in Sary"
+description: "Posts, story et carrousel Instagram pour le lancement d'un sérum. Projet concept de Gas'in Sary, studio de création de visuels à Antananarivo, Madagascar."
 
 # Carte dans la grille du portfolio
 ordre: 0.1
@@ -18,6 +18,8 @@ categorie: social
 titre_carte: "Campagne réseaux sociaux Voara"
 resume: "Posts, story et carrousel pour le lancement d'un sérum"
 image: /portfolio/campagne-reseaux-sociaux-voara/img/couverture.webp
+# Image utilisée pour les partages sur les réseaux sociaux (JPG)
+image_partage: /portfolio/campagne-reseaux-sociaux-voara/img/couverture.jpg
 alt: "Campagne réseaux sociaux pour la marque de soins Voara, projet concept de Gas'in Sary"
 
 # Page détaillée
@@ -34,10 +36,14 @@ outils:
   - Illustrator
 
 galerie:
-  - /portfolio/campagne-reseaux-sociaux-voara/img/planche-1.webp
-  - /portfolio/campagne-reseaux-sociaux-voara/img/planche-2.webp
-  - /portfolio/campagne-reseaux-sociaux-voara/img/planche-3.webp
-  - /portfolio/campagne-reseaux-sociaux-voara/img/planche-4.webp
+  - image: /portfolio/campagne-reseaux-sociaux-voara/img/planche-1.webp
+    alt: "Direction artistique de la marque de soins Voara : logo, palette de couleurs et typographies"
+  - image: /portfolio/campagne-reseaux-sociaux-voara/img/planche-2.webp
+    alt: "Trois posts Instagram pour le lancement du Sérum Éclat Baobab de Voara"
+  - image: /portfolio/campagne-reseaux-sociaux-voara/img/planche-3.webp
+    alt: "Story Instagram de la campagne Voara présentée dans un téléphone"
+  - image: /portfolio/campagne-reseaux-sociaux-voara/img/planche-4.webp
+    alt: "Carrousel Instagram en quatre vues : la routine du matin en trois gestes"
 
 contexte: "L'objectif de cet exercice : lancer le Sérum Éclat Baobab auprès de femmes de 25 à 40 ans attentives à la composition de leurs soins. La campagne devait installer une marque de soin haut de gamme, calme et précise, et rester parfaitement lisible sur un écran de téléphone."
 
@@ -52,6 +58,8 @@ etapes:
   - titre: "Carrousel"
     icone: bi-layout-three-columns
     texte: "Le carrousel présente la routine du matin en trois gestes. Les vues s'enchaînent visuellement pour donner envie de faire défiler jusqu'au bout."
+
+appel: "Vous voulez des visuels cohérents pour Instagram, Facebook ou LinkedIn ? Depuis Antananarivo, le studio Gas'in Sary crée vos posts, stories et carrousels. Parlons de votre projet."
 
 resultat: "La campagne forme un ensemble cohérent de huit visuels, prêts à être publiés, qui partagent les mêmes couleurs, les mêmes typographies et la même mise en page."
 ---

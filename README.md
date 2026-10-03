@@ -19,7 +19,7 @@ Le site est généré par [Jekyll](https://jekyllrb.com/), intégré à GitHub P
 
 1. Copier `_projets/identite-visuelle-aquafish-by-gasinsary.md` et renommer la copie. Le nom du fichier devient l'adresse : `_projets/mon-projet.md` donne `/portfolio/mon-projet/`.
 2. Mettre les images dans `portfolio/mon-projet/img/`, au format WebP, en 1024 × 683 px.
-3. Remplir les champs du fichier (titres, description SEO, images, étapes...).
+3. Remplir les champs du fichier (titres, description SEO, images, étapes...). Pour le référencement : nommer le service et le lieu dans `titre_seo` et `description`, et donner un `alt:` à chaque image de la galerie.
 4. `ordre` règle la position dans la grille ; `accueil: true` affiche aussi la carte sur la page d'accueil.
 
 ## Projet concept et brouillon

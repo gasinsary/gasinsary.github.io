@@ -2252,3 +2252,9 @@ section,
   font-size: 0.95rem;
   font-style: italic;
 }
+
+/* Page projet : libellés de la fiche (anciens h6, qui n'étaient pas de vrais titres) */
+.portfolio-details .feature-list .h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
