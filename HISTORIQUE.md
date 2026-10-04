@@ -8,9 +8,10 @@ Dernière mise à jour : 04/10/2026
 
 ## État actuel
 
-- **En production depuis le 04/10/2026** (<https://gasinsary.github.io/>) : le site Jekyll complet (accueil réorienté vers les clients étrangers, portfolio avec les projets concept Voara et Bao Fizz, connexion Supabase). Mise en production demandée explicitement par le propriétaire. La branche `main` du dépôt de production et la branche `staging` pointent sur le même commit.
-- **Version de test** (<https://gasinsary.github.io/staging-t4sj762s/>) : identique à la production à cette date. Elle reste l'endroit où vérifier tout changement avant de le publier.
-- Avant cette date, la production affichait l'ancien site en HTML écrit à la main (commit `699624a`).
+- **Production** (<https://gasinsary.github.io/>) : affiche encore l'ancien site en HTML écrit à la main (commit `699624a`). **La mise en production a été demandée par le propriétaire le 04/10/2026 mais n'a pas abouti** : la clé SSH du dépôt de production (alias `github-gis`, fichier `~/.ssh/id_ed25519_gis`) est une clé de déploiement en lecture seule, GitHub refuse l'envoi.
+- **Pour débloquer** : sur github.com, dans `gasinsary/gasinsary.github.io` > Settings > Deploy keys, supprimer la clé actuelle et la recréer avec la même clé publique en cochant « Allow write access » (à faire par le propriétaire). Ensuite : `git push origin main`.
+- La branche locale `main` est déjà avancée sur `staging` (fusion en avance rapide) : il ne reste que l'envoi.
+- **Version de test** (<https://gasinsary.github.io/staging-t4sj762s/>) : contient tout le travail, prêt à publier.
 
 ## En cours
 
@@ -176,4 +177,4 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 
 **Mise en production**
 - Bao Fizz : galerie ramenée à quatre images, mentions de la newsletter retirées de la fiche.
-- `staging` fusionnée dans `main` (avance rapide) et poussée sur `origin` à la demande du propriétaire.
+- `staging` fusionnée dans `main` en local (avance rapide). L'envoi sur `origin` a échoué : clé de déploiement en lecture seule.
