@@ -15,6 +15,9 @@ Limites : le formulaire de contact n'a pas été envoyé pour de vrai (cela exp�
 | 03/10/2026 | 2.1 titres `<h1>` sur l'accueil et le portfolio ; 2.6 description raccourcie ; section 3 : positionnement « studio », textes en anglais traduits, fautes corrigées | Corrigé sur la version de test |
 | 03/10/2026 | Vitesse de chargement : logo de l'en-tête (559 Ko → 15 Ko), photo et visuels convertis en WebP (4,5 Mo → 0,6 Mo au total), dimensions sur toutes les images, chargement différé, Swiper chargé seulement sur les pages projet ; 2.7 faux témoignages retirés du code | Corrigé sur la version de test |
 | 03/10/2026 | 2.3 (en partie) données structurées sur les pages projet (fil d'Ariane, réalisation) ; hiérarchie des titres et textes alternatifs des pages projet | Corrigé sur la version de test. Reste : données structurées de l'entreprise sur l'accueil |
+| 04/10/2026 | Accueil réécrit pour la vraie cible (clients étrangers, entreprises et agences) : accroche, titre Google, section « Travailler avec nous à distance », services, compétences, parcours, contact ; 2.3 données structurées de l'entreprise ; mots « devis » et « freelance » | Corrigé sur la version de test |
+
+**Attention : le rapport ci-dessous a été écrit en supposant des prospects à Madagascar.** Le propriétaire a précisé le 04/10/2026 que la cible est à l'étranger. Les conseils de référencement local (mots « Antananarivo » dans les titres, fiche Google Business) ne s'appliquent donc pas.
 
 Correction du rapport initial : le point 1.4 indiquait une quatrième miniature rognée sur mobile. Après mesure, les miniatures sont bien centrées ; seuls le texte d'introduction et le fil d'Ariane posaient problème.
 

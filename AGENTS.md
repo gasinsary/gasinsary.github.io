@@ -7,14 +7,20 @@ Les défauts connus du site et l'ordre de traitement proposé sont dans [AUDIT.m
 
 ## Le projet
 
-- Site vitrine de **Gas'in Sary**, agence de graphisme et de création de sites web à Antananarivo (Madagascar), dirigée par Mirado R.
+- Site vitrine de **Gas'in Sary**, studio de graphisme et de création de sites web basé à Antananarivo (Madagascar), dirigé par Mirado R.
+- **Cible du site : des clients étrangers**, pas des clients à Madagascar (précisé par le propriétaire le 04/10/2026). Deux publics : des **entreprises** qui commandent directement un logo, une identité ou un site, et des **agences** qui sous-traitent leur production graphique ou web. Francophones d'abord ; les anglophones sont acceptés, mais **le site reste en français**.
 - Production : <https://gasinsary.github.io/> — dépôt `gasinsary/gasinsary.github.io`, branche `main`, publié par GitHub Pages.
 - Le propriétaire n'est pas développeur de métier sur ces outils et écrit en **français** : répondre en français, en langage simple.
 - Priorité du propriétaire : le **référencement (SEO)**. Le contenu doit être dans le HTML généré, pas chargé en JavaScript.
 
 ## Ton et positionnement des textes
 
-Décidé avec le propriétaire le 03/10/2026. À respecter dans tout nouveau texte.
+Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouveau texte.
+
+- **Madagascar est un argument de travail à distance, pas une zone de clientèle** : studio francophone, une à deux heures de décalage avec Paris, tout se fait à distance. Ne pas écrire pour un prospect local (pas de « près de chez vous », pas de référencement local).
+- Le mot **« freelance »** est un mot recherché par cette cible (« graphiste freelance Madagascar ») : il est voulu dans le titre Google de l'accueil, dans le récit du parcours et dans le discours aux agences (« en sous-traitance, en freelance »). Le studio reste un « studio » dans le reste des textes.
+- Le mot « agence » désigne les **clients** agences, jamais Gas'in Sary.
+- Ne pas promettre ce que le propriétaire n'a pas confirmé (délai de réponse, moyens de paiement, nombre de retouches, tarifs).
 
 - Gas'in Sary est un **studio créatif** (jamais « agence »), fondé par Mirado avec sa femme, passionnée de marketing. C'est l'essence du studio.
 - Mirado pilote chaque projet et s'appuie, **selon les projets**, sur un graphiste et un développeur partenaires (indépendants). Ne pas parler de salariés, d'équipe permanente ni d'« expansion ».

@@ -68,6 +68,7 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 | Ne pas charger le portfolio depuis Supabase | Le contenu serait absent du HTML : mauvais pour le SEO et pas d'aperçu sur les réseaux sociaux |
 | Ne pas installer Ruby/Jekyll en local | Refus du propriétaire ; la validation passe par la version de test en ligne |
 | Positionnement « studio créatif », « nous » pour l'offre, « je » pour le fondateur | Mirado travaille avec sa femme (marketing) et, selon les projets, un graphiste et un développeur indépendants. « Agence en expansion » était faux et « freelance seul » aussi. Détail dans AGENTS.md |
+| Cible : clients étrangers (entreprises et agences), site en français uniquement | Décision du propriétaire le 04/10/2026. Madagascar devient un argument de travail à distance ; « freelance » revient dans le titre Google et le discours aux agences. Détail dans AGENTS.md |
 | Supabase chargé seulement sur l'accueil | Inutile ailleurs pour l'instant (`supabase: true` dans l'en-tête de la page) |
 
 ## Journal
@@ -153,3 +154,13 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 - Modèle `projet.html` : données structurées JSON-LD (fil d'Ariane + réalisation), étapes en `h4` sous « Déroulé », libellés de la fiche sortis des titres, texte alternatif par image de galerie, champ `appel`.
 - Fiche Voara : titre et description centrés sur le service (visuels Instagram) et le lieu, textes alternatifs descriptifs, image de partage en JPG (`couverture.jpg`), appel à l'action propre au projet.
 - À faire de même pour Aquafish (textes alternatifs de la galerie) et, plus tard, pour Bao Fizz.
+
+### 04/10/2026 (assistant : Claude)
+
+**Accueil réorienté vers les clients étrangers**
+- Accroche : « Logos et sites web : votre studio créatif à distance » ; bouton « Demander un devis ».
+- Titre Google : « Graphiste et développeur web freelance à Madagascar | Gas'in Sary » ; description et balises de partage réécrites (aussi dans `_config.yml`).
+- Nouvelle section `#distance` « Travailler avec nous à distance » (entreprises, agences, langues, décalage horaire, outils, devis), placée après les services.
+- Services réordonnés (logo et site d'abord), compétences rédigées en phrases, parcours allégé (répétitions de « passion », « sans diplôme formel »), fiche « À propos » : « Langues » à la place de « Nationalité », nom écrit « Mirado R. » partout.
+- Données structurées `ProfessionalService` à la fin de `index.html`.
+- **À faire confirmer par le propriétaire** (affirmations écrites sans confirmation explicite) : échanges possibles en visio, devis « au projet ou à la journée », disponibilité pendant les heures de bureau européennes, « Français, anglais » dans la fiche.

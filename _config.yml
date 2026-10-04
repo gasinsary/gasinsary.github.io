@@ -2,7 +2,7 @@
 # GitHub Pages reconstruit le site à chaque "git push".
 
 title: "Gas'in Sary"
-description: "Création de sites web, logos et identités visuelles pour entrepreneurs, startups et PME. Gas'in Sary, studio créatif basé à Antananarivo, Madagascar."
+description: "Studio créatif francophone basé à Madagascar : logos, identités visuelles et sites web pour les entreprises et les agences, en France et à l'international."
 url: "https://gasinsary.github.io"
 # "baseurl" n'est volontairement PAS défini : GitHub Pages le règle tout seul.
 #   - dépôt de production (gasinsary.github.io) : baseurl vide
