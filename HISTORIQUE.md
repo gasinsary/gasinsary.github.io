@@ -177,3 +177,6 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 **Mise en production**
 - Bao Fizz : galerie ramenée à quatre images, mentions de la newsletter retirées de la fiche.
 - `staging` fusionnée dans `main` (avance rapide) et poussée sur `origin` à la demande du propriétaire, après que celui-ci a donné l'accès en écriture à la clé de déploiement du dépôt de production.
+
+**Accueil : Bao Fizz à la place des logos**
+- À la demande du propriétaire : `accueil: true` sur la fiche Bao Fizz, retiré de « Échantillon de logos » dans `_data/visuels.yml` (qui reste dans la page portfolio). L'accueil affiche Voara, Bao Fizz, Aquafish et une illustration.

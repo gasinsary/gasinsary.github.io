@@ -13,6 +13,7 @@ description: "Un visuel de campagne décliné en quatre bannières publicitaires
 
 # Carte dans la grille du portfolio
 ordre: 0.2
+accueil: true
 categorie: campagne
 titre_carte: "Campagne publicitaire Bao Fizz"
 resume: "Un visuel décliné en bannières et en posts Instagram"
