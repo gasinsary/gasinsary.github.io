@@ -4,23 +4,23 @@ Document de passation entre sessions et entre assistants IA.
 Règles et organisation du projet : voir [AGENTS.md](AGENTS.md).
 **À mettre à jour à la fin de chaque session.**
 
-Dernière mise à jour : 03/10/2026
+Dernière mise à jour : 04/10/2026
 
 ## État actuel
 
-- **En production** (<https://gasinsary.github.io/>) : l'ancien site, en HTML écrit à la main (branche `main`, dernier commit `699624a`).
-- **Sur la version de test** (<https://gasinsary.github.io/staging-t4sj762s/>) : le site converti à Jekyll + la connexion Supabase (branche locale `staging`).
-- **En attente** : la validation de la version de test par le propriétaire, avant mise en production.
-- Attention : la branche `staging` n'existe que sur le dépôt de test et en local. Elle n'a pas été poussée sur le dépôt de production.
+- **En production depuis le 04/10/2026** (<https://gasinsary.github.io/>) : le site Jekyll complet (accueil réorienté vers les clients étrangers, portfolio avec les projets concept Voara et Bao Fizz, connexion Supabase). Mise en production demandée explicitement par le propriétaire. La branche `main` du dépôt de production et la branche `staging` pointent sur le même commit.
+- **Version de test** (<https://gasinsary.github.io/staging-t4sj762s/>) : identique à la production à cette date. Elle reste l'endroit où vérifier tout changement avant de le publier.
+- Avant cette date, la production affichait l'ancien site en HTML écrit à la main (commit `699624a`).
 
 ## En cours
 
-- **Pas de mise en production pour l'instant** (décision du propriétaire, 03/10/2026) : le site est d'abord mis à jour sur la version de test.
-- **Corrections de l'audit** : le propriétaire a validé l'ordre de traitement proposé à la fin de [AUDIT.md](AUDIT.md). Étapes 1 (contact), 2 (défauts mobiles), 3 (titres `<h1>`, textes, positionnement) et 4 (poids des pages) faites sur la version de test ; prochaine étape : 5 (contenu : ajouter des projets, dont des sites web, avec des titres précis). Elle dépend du propriétaire, qui doit fournir les projets.
-- **Formulaire de contact** : le propriétaire doit faire un envoi réel depuis la version de test pour confirmer que le message arrive et que la confirmation s'affiche.
-- **À faire valider par le propriétaire** : la relecture des textes réécrits, et le titre « Fondateur & directeur artistique » (proposé, appliqué, pas confirmé explicitement).
+- **Formulaire de contact** : jamais testé par un envoi réel. Le propriétaire doit envoyer un message depuis le site en production pour confirmer qu'il arrive et que la confirmation s'affiche.
+- **Affirmations publiées sans confirmation explicite du propriétaire** : échanges possibles en visio, devis « au projet ou à la journée », disponibilité pendant les heures de bureau européennes, « Français, anglais », titre « Fondateur & directeur artistique ». À corriger s'il en signale une fausse.
+- **Réponse à l'agence Digital Prod** : à rédiger avec le propriétaire (tarif journalier à fixer), maintenant que le portfolio est en ligne.
+- **Google Search Console** : déclarer `https://gasinsary.github.io/sitemap.xml` (à faire par le propriétaire).
+- **Audit** : étapes 1 à 4 faites, étape 5 (contenu) en partie avec les deux projets concept. Restent : page 404, contraste et accessibilité, refonte de « À propos » et des barres de compétences, une page par service.
 
-## Portfolio : projets concept pour l'agence Digital Prod (en cours)
+## Portfolio : projets concept pour l'agence Digital Prod (publiés)
 
 - **Contexte** : le 02/10/2026, le propriétaire a reçu un e-mail de milan@digitalprod.com (Digital Prod, agence parisienne de production de contenus digitaux) lui demandant sa disponibilité en freelance, son tarif journalier et un portfolio récent. L'agence est réelle (SIREN 511 233 595, domaine officiel `digitalprod.com`) ; l'appartenance de l'expéditeur à l'agence n'a pas pu être confirmée publiquement.
 - **Contrainte** : les vrais projets du propriétaire n'ont pas l'accord des clients pour être publiés. Décision : deux **projets concept** (marques fictives, annoncés comme tels), ciblés sur ce que l'agence produit (réseaux sociaux, bannières, e-mailing pour des marques de beauté et de grande consommation).
@@ -29,7 +29,7 @@ Dernière mise à jour : 03/10/2026
 - **Voara, suite** : le 03/10/2026 au soir, le propriétaire a remplacé la couverture et les quatre planches par ses propres versions retravaillées (flacon et fruit de baobab photoréalistes, emblème végétal ajouté au logo). Les fichiers de `briefs/voara-visuels/` et le script correspondent donc à l'ancienne version générée, plus à ce qui est en ligne. Le propriétaire a ensuite validé : outils Photoshop et Illustrator, `brouillon` retiré, projet affiché sur l'accueil (`accueil: true`), planche 4 remplacée par une version au logo harmonisé. **Le projet Voara est terminé et sera publié à la prochaine mise en production.**
 - **Bao Fizz** (04/10/2026) : direction artistique dans `briefs/bao-fizz-direction-artistique.html`. Les six formats (visuel principal, newsletter, quatre bannières) et les cinq planches ont été **générés par l'assistant** (script `briefs/outils/generer-visuels-bao-fizz.py`, Pillow) : canette et formes dessinées, aucune photographie. Fichiers dans `briefs/bao-fizz-visuels/` et `portfolio/campagne-publicitaire-bao-fizz/img/`. La fiche reste en **brouillon** tant que le propriétaire n'a pas validé ou remplacé les images, comme il l'a fait pour Voara.
 - **Bao Fizz, suite** (04/10/2026) : le propriétaire a remplacé la couverture et les quatre planches par ses versions (canettes et fruits photoréalistes, nouveau logo à feuilles) et en a ajouté deux : `planche-5` (direction artistique) et `planche-6` (posts Instagram). `brouillon` retiré : **le projet Bao Fizz est terminé et sera publié à la prochaine mise en production.** Il n'est pas affiché sur l'accueil (non demandé). `planche-6` a été fournie en 3000 × 3000 px : l'original est conservé dans `briefs/bao-fizz-visuels/originaux/`, la version du site est ramenée à 1024 × 683 px sur le même fond jaune. Le dossier `briefs/bao-fizz-visuels/` (hors `originaux/`), la planche HTML de direction artistique et le script décrivent l'ancienne version générée, plus ce qui est en ligne.
-- **À faire ensuite** : relire les textes des deux pages par rapport aux visuels réels, retirer `brouillon` et `sitemap: false`, éventuellement passer `accueil: true`, puis rédiger la réponse à l'agence (tarif journalier à fixer avec le propriétaire).
+- **Bao Fizz, version finale** (04/10/2026) : le propriétaire a encore modifié `planche-2` et supprimé `planche-3` et `planche-4` (bannières et newsletter en situation). La galerie compte quatre images : logo, direction artistique, bannières, posts Instagram. La fiche ne mentionne plus de newsletter.
 - **Questions sans réponse** : le projet Aquafish est-il un vrai client ? (s'il est fictif : `concept: true` et retirer le témoignage) ; faut-il mettre la nouvelle version en production avant de répondre à l'agence ?
 - Les noms Voara et Bao Fizz n'ont fait l'objet que d'une recherche web rapide, pas d'une recherche de marque déposée.
 
@@ -173,3 +173,7 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 **Bao Fizz publié dans le portfolio**
 - Images du propriétaire vérifiées (WebP, 1024 × 683 px), deux planches ajoutées à la galerie, `planche-6` mise au format.
 - Fiche alignée sur les nouvelles images : textes alternatifs, livrables, étapes, résultat ; image de partage `couverture.jpg` recréée à partir de la nouvelle couverture (le propriétaire avait supprimé l'ancienne).
+
+**Mise en production**
+- Bao Fizz : galerie ramenée à quatre images, mentions de la newsletter retirées de la fiche.
+- `staging` fusionnée dans `main` (avance rapide) et poussée sur `origin` à la demande du propriétaire.
