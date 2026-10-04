@@ -54,7 +54,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 | `briefs/` | Briefs de création des projets concept (non publiés) |
 | `assets/js/supabase.js` | Connexion Supabase (clé publique uniquement) |
 | `mpatk.html` | Politique de confidentialité du chatbot MPATKBOT. Sans rapport avec le site : **ne pas modifier** |
-| `googleaa7d45fdd426d7f9.html` | Vérification Google Search Console : **ne pas modifier ni supprimer** |
+| `googleaa7d45fdd426d7f9.html`, `google17eaf983518ef390.html` | Vérification Google Search Console (deux comptes Google) : **ne pas modifier ni supprimer** |
 
 ### Règles de code
 

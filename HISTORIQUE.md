@@ -17,7 +17,7 @@ Dernière mise à jour : 04/10/2026
 - **Formulaire de contact** : jamais testé par un envoi réel par l'assistant. Le propriétaire est prévenu (04/10/2026) et doit envoyer un message depuis le site en production pour confirmer qu'il arrive.
 - Les affirmations de l'accueil (visio, devis « au projet ou à la journée », disponibilité pendant les heures de bureau européennes, « Français, anglais », titre « Fondateur & directeur artistique ») ont été **confirmées par le propriétaire** le 04/10/2026.
 - **Réponse à l'agence Digital Prod** : à rédiger avec le propriétaire (tarif journalier à fixer), maintenant que le portfolio est en ligne.
-- **Google Search Console** : déclarer `https://gasinsary.github.io/sitemap.xml` (à faire par le propriétaire).
+- **Google Search Console** : le compte Google utilisé par le propriétaire le 04/10/2026 n'avait pas encore le site. Fichier de validation `google17eaf983518ef390.html` ajouté à la racine et publié. Reste au propriétaire : cliquer sur « Verify », puis déclarer `sitemap.xml` dans la rubrique Sitemaps.
 - **Audit** : étapes 1 à 4 faites, étape 5 (contenu) en partie avec les deux projets concept. Restent : page 404, contraste et accessibilité, refonte de « À propos » et des barres de compétences, une page par service.
 
 ## Portfolio : projets concept pour l'agence Digital Prod (publiés)

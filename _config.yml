@@ -42,6 +42,10 @@ defaults:
       path: "googleaa7d45fdd426d7f9.html"
     values:
       sitemap: false
+  - scope:
+      path: "google17eaf983518ef390.html"
+    values:
+      sitemap: false
 
 exclude:
   - README.md
