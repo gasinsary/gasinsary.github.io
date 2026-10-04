@@ -16,16 +16,18 @@ Le cœur de métier de Digital Prod est la déclinaison : un visuel de campagne 
 - **Ton** : énergique, joyeux, direct.
 - **Campagne** : lancement d'été. Accroche : « L'été a du peps. » Offre : « -20 % sur le pack découverte ». Bouton : « J'en profite ».
 
-## Mini-charte proposée
+## Direction artistique : du soleil en canette
 
-Vous restez libre de l'ajuster.
+La planche complète, avec les six formats, est dans `briefs/bao-fizz-direction-artistique.html` (à ouvrir dans un navigateur). Les fichiers des visuels sont dans `briefs/bao-fizz-visuels/`.
+
+Idée : une campagne joyeuse et franche. Fond jaune uni, grand disque corail derrière le produit, titre très gras en bleu nuit, canette inclinée.
 
 | Couleur | Code | Usage |
 |---|---|---|
 | Jaune soleil | `#FFC629` | Fond principal |
-| Corail | `#FF5A4E` | Accent, bouton |
+| Corail | `#FF5A4E` | Disque derrière le produit, offre « -20 % » |
 | Vert citron | `#9BD63F` | Parfum citron vert, détails |
-| Bleu nuit | `#14213D` | Textes |
+| Bleu nuit | `#14213D` | Titres, textes, bouton, filet des bannières |
 | Blanc | `#FFFFFF` | Respirations |
 
 - **Titres** : Archivo Black ou Bricolage Grotesque (Google Fonts, gratuites).

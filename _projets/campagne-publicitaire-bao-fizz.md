@@ -13,8 +13,8 @@ concept: true
 # Titres et référencement (SEO)
 title: "Campagne publicitaire déclinée pour Bao Fizz, boisson pétillante au baobab"
 titre_court: "Campagne publicitaire Bao Fizz"
-titre_seo: "Campagne publicitaire Bao Fizz (projet concept) | Gas'in Sary"
-description: "Projet concept : un visuel de campagne décliné en bannières publicitaires et en newsletter pour la boisson fictive Bao Fizz, par le studio Gas'in Sary."
+titre_seo: "Bannières publicitaires : campagne Bao Fizz | Gas'in Sary"
+description: "Un visuel de campagne décliné en quatre bannières publicitaires et une newsletter. Projet concept de Gas'in Sary, studio créatif freelance à Madagascar."
 
 # Carte dans la grille du portfolio
 ordre: 0.2
@@ -22,6 +22,8 @@ categorie: campagne
 titre_carte: "Campagne publicitaire Bao Fizz"
 resume: "Un visuel décliné en bannières et en newsletter"
 image: /portfolio/campagne-publicitaire-bao-fizz/img/couverture.webp
+# Image utilisée pour les partages sur les réseaux sociaux (JPG)
+image_partage: /portfolio/campagne-publicitaire-bao-fizz/img/couverture.jpg
 alt: "Campagne publicitaire pour la boisson Bao Fizz, projet concept de Gas'in Sary"
 
 # Page détaillée
@@ -38,10 +40,14 @@ outils:
   - Illustrator
 
 galerie:
-  - /portfolio/campagne-publicitaire-bao-fizz/img/planche-1.webp
-  - /portfolio/campagne-publicitaire-bao-fizz/img/planche-2.webp
-  - /portfolio/campagne-publicitaire-bao-fizz/img/planche-3.webp
-  - /portfolio/campagne-publicitaire-bao-fizz/img/planche-4.webp
+  - image: /portfolio/campagne-publicitaire-bao-fizz/img/planche-1.webp
+    alt: "Visuel principal de la campagne d'été Bao Fizz : trois canettes et l'accroche « L'été a du peps. »"
+  - image: /portfolio/campagne-publicitaire-bao-fizz/img/planche-2.webp
+    alt: "Quatre bannières publicitaires Bao Fizz : 728 × 90, 160 × 600, 300 × 600 et 300 × 250 pixels"
+  - image: /portfolio/campagne-publicitaire-bao-fizz/img/planche-3.webp
+    alt: "Bannières publicitaires Bao Fizz affichées dans une page web"
+  - image: /portfolio/campagne-publicitaire-bao-fizz/img/planche-4.webp
+    alt: "En-tête de newsletter Bao Fizz affiché dans une messagerie"
 
 contexte: "L'objectif de cet exercice : faire vivre une même campagne dans des formats très différents, du plus large au plus étroit, sans perdre ni le message ni la marque. L'accroche, le produit, l'offre et le bouton devaient rester lisibles partout."
 
@@ -49,13 +55,15 @@ titre_etapes: "Déroulé de la création"
 etapes:
   - titre: "Visuel principal"
     icone: bi-image
-    texte: "Nous avons d'abord conçu le visuel de référence : la canette, l'accroche « L'été a du peps. », l'offre de lancement et le bouton, dans une palette de jaune soleil et de corail."
+    texte: "Nous avons d'abord conçu le visuel de référence : la canette, l'accroche « L'été a du peps. », l'offre de lancement et le bouton, sur un fond jaune soleil, avec un grand disque corail derrière le produit."
   - titre: "Bannières publicitaires"
     icone: bi-grid-1x2
     texte: "Le visuel a été recomposé pour quatre formats standard : 300 × 250, 728 × 90, 160 × 600 et 300 × 600 pixels. Chaque bannière garde le logo, l'accroche, le produit et le bouton."
   - titre: "Newsletter"
     icone: bi-envelope-paper
     texte: "L'en-tête de newsletter reprend la campagne dans un format de 600 pixels de large, pensé pour la lecture sur téléphone comme sur ordinateur."
+
+appel: "Vous devez décliner une campagne en bannières, en e-mailing ou en visuels pour les réseaux sociaux ? Le studio Gas'in Sary prend en charge la production à distance, pour les marques comme pour les agences. Parlons de votre projet."
 
 resultat: "La campagne se décline en six visuels cohérents. Dans le format le plus contraint comme dans le plus généreux, la marque reste reconnaissable et le message complet."
 ---

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bao Fizz - Direction artistique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --jaune: #FFC629;       /* Jaune soleil */
+    --jaune-clair: #FFD660; /* Halo */
+    --corail: #FF5A4E;      /* Corail */
+    --vert: #9BD63F;        /* Vert citron */
+    --nuit: #14213D;        /* Bleu nuit */
+    --creme: #FFF8E7;
+    --titre: "Archivo Black", "Arial Black", Arial, sans-serif;
+    --texte: "Inter", "Segoe UI", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--creme); color: var(--nuit); font: 400 17px/1.6 var(--texte); }
+  .page { max-width: 1080px; margin: 0 auto; padding: 0 24px 96px; }
+  .entete { background: var(--jaune); margin: 0 -24px; padding: 56px 24px 48px; position: relative; overflow: hidden; }
+  .entete::after { content: ""; position: absolute; right: -90px; top: -60px; width: 340px; height: 340px; border-radius: 50%; background: var(--corail); box-shadow: 0 0 0 70px var(--jaune-clair); }
+  .entete > * { position: relative; z-index: 1; }
+  .etiquette { font: 700 12px/1 var(--texte); letter-spacing: .14em; text-transform: uppercase; }
+  h1 { font: 400 clamp(46px, 9vw, 92px)/.95 var(--titre); margin: 16px 0 14px; }
+  h1 span { color: var(--corail); }
+  .entete h1 span { color: #fff; }
+  h2 { font: 400 30px/1.15 var(--titre); margin: 64px 0 18px; }
+  h3 { font: 700 13px/1.3 var(--texte); letter-spacing: .1em; text-transform: uppercase; margin: 0 0 10px; }
+  p { margin: 0 0 12px; max-width: 68ch; }
+  .intro { font: 600 21px/1.4 var(--texte); max-width: 30ch; }
+  .grille { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .carte { background: #fff; border-radius: 16px; padding: 22px; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin-bottom: 6px; }
+  .oui li::marker { color: var(--corail); }
+  .non { color: #5b6477; }
+
+  .palette { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+  .couleur { background: #fff; border-radius: 16px; overflow: hidden; }
+  .couleur i { display: block; height: 110px; }
+  .couleur div { padding: 12px 14px 14px; font-size: 14px; line-height: 1.45; }
+  .couleur b { display: block; font: 700 15px var(--texte); }
+  .couleur code { font: 400 13px ui-monospace, Consolas, monospace; }
+  .dosage { display: flex; height: 26px; margin-top: 20px; border-radius: 13px; overflow: hidden; }
+  .legende { font-size: 14px; margin-top: 8px; }
+
+  .specimen { background: var(--jaune); border-radius: 16px; padding: 36px 30px; }
+  .specimen .grand { font: 400 clamp(40px, 8vw, 84px)/1 var(--titre); }
+  .specimen .offre { margin-top: 18px; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .specimen .offre b { font: 400 44px/1 var(--titre); color: var(--corail); }
+  .specimen .offre span { font: 700 18px var(--texte); }
+  .bouton { display: inline-block; margin-top: 20px; background: var(--nuit); color: #fff; font: 700 17px var(--texte); padding: 14px 34px; border-radius: 999px; }
+  .defile { overflow-x: auto; margin-top: 16px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; background: #fff; border-radius: 16px; overflow: hidden; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid #f0e6cf; vertical-align: top; }
+  th { font: 700 12px var(--texte); letter-spacing: .08em; text-transform: uppercase; }
+
+  .logos { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .logo { display: grid; place-items: center; height: 150px; border-radius: 16px; font: 400 40px/1 var(--titre); }
+  .logo.j { background: var(--jaune); }
+  .logo.b { background: #fff; }
+  .logo.n { background: var(--nuit); color: #fff; }
+  .logo span { color: var(--corail); margin-left: .22em; }
+
+  .formats { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; }
+  figure { margin: 0; }
+  figure img { display: block; max-width: 100%; height: auto; box-shadow: 0 10px 30px rgba(20, 33, 61, .14); }
+  figcaption { font-size: 13px; line-height: 1.45; margin-top: 10px; max-width: 300px; }
+  figcaption b { display: block; font-weight: 700; }
+  .cases li { list-style: "\2610  "; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="entete">
+    <div class="etiquette">Projet concept · Direction artistique</div>
+    <h1>BAO <span>FIZZ</span></h1>
+    <p class="intro">Du soleil en canette : une campagne joyeuse, franche, lisible en une seconde.</p>
+  </div>
+
+  <h2>1. L'idée</h2>
+  <div class="grille">
+    <div class="carte">
+      <h3>Trois mots</h3>
+      <p><strong>Solaire.</strong> Le jaune occupe tout l'espace.</p>
+      <p><strong>Franc.</strong> Des aplats, des formes simples, un titre énorme.</p>
+      <p><strong>Pétillant.</strong> Des bulles, des tranches d'agrume, une canette qui penche.</p>
+    </div>
+    <div class="carte">
+      <h3>Ce qui fait la campagne</h3>
+      <ul class="oui">
+        <li>Un fond jaune uni, partout</li>
+        <li>Un grand disque corail derrière le produit</li>
+        <li>Le titre en bleu nuit, très gras</li>
+        <li>Un seul bouton, toujours le même</li>
+        <li>La canette légèrement inclinée</li>
+      </ul>
+    </div>
+    <div class="carte">
+      <h3>À éviter</h3>
+      <ul class="non">
+        <li>Dégradés et photos en fond</li>
+        <li>Plus de trois couleurs par format</li>
+        <li>Texte posé sur la canette</li>
+        <li>Titre sur plus de trois lignes</li>
+        <li>Un bouton d'une autre couleur ou d'une autre forme</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>2. Palette</h2>
+  <div class="palette">
+    <div class="couleur"><i style="background:#FFC629"></i><div><b>Jaune soleil</b><code>#FFC629</code><br>Fond de tous les formats</div></div>
+    <div class="couleur"><i style="background:#FF5A4E"></i><div><b>Corail</b><code>#FF5A4E</code><br>Disque derrière le produit, offre « -20 % », mot FIZZ</div></div>
+    <div class="couleur"><i style="background:#14213D"></i><div><b>Bleu nuit</b><code>#14213D</code><br>Titres, textes, bouton, filet des bannières</div></div>
+    <div class="couleur"><i style="background:#9BD63F"></i><div><b>Vert citron</b><code>#9BD63F</code><br>Parfum citron vert : canette et tranches</div></div>
+    <div class="couleur"><i style="background:#FFFFFF"></i><div><b>Blanc</b><code>#FFFFFF</code><br>Corps de la canette, texte du bouton, bulles</div></div>
+  </div>
+  <div class="dosage" aria-hidden="true">
+    <span style="width:55%;background:#FFC629"></span><span style="width:18%;background:#FF5A4E"></span><span style="width:13%;background:#14213D"></span><span style="width:9%;background:#FFFFFF"></span><span style="width:5%;background:#9BD63F"></span>
+  </div>
+  <p class="legende">Le jaune domine. Le bleu nuit assure la lecture : sur fond jaune, il offre un contraste très élevé. Les deux autres parfums ont leur couleur sur la canette : orange pour la mangue, corail pour l'hibiscus.</p>
+
+  <h2>3. Typographie</h2>
+  <div class="specimen">
+    <div class="grand">L'été a du peps.</div>
+    <div class="offre"><b>-20 %</b><span>sur le pack découverte</span></div>
+    <span class="bouton">J'en profite</span>
+  </div>
+  <div class="defile">
+  <table>
+    <tr><th>Rôle</th><th>Police</th><th>Réglage</th></tr>
+    <tr><td>Titre et offre</td><td>Archivo Black</td><td>Le plus grand possible dans le format, interligne serré. Bleu nuit pour le titre, corail pour « -20 % ».</td></tr>
+    <tr><td>Précision de l'offre</td><td>Inter Bold</td><td>Environ un quart de la taille du titre.</td></tr>
+    <tr><td>Bouton</td><td>Inter Bold, blanc sur bleu nuit</td><td>Forme de pilule, toujours la même hauteur relative.</td></tr>
+  </table>
+  </div>
+  <p class="legende">Deux polices seulement, gratuites sur Google Fonts.</p>
+
+  <h2>4. Logo</h2>
+  <p>Un mot-symbole en Archivo Black : BAO en bleu nuit, FIZZ en corail. Sur fond sombre, BAO passe en blanc.</p>
+  <div class="logos">
+    <div class="logo j">BAO<span>FIZZ</span></div>
+    <div class="logo b">BAO<span>FIZZ</span></div>
+    <div class="logo n">BAO<span>FIZZ</span></div>
+  </div>
+
+  <h2>5. Le produit et les formes</h2>
+  <div class="grille">
+    <div class="carte">
+      <h3>La canette</h3>
+      <p>Corps blanc, disque de la couleur du parfum, « BAO FIZZ » en deux lignes. Toujours inclinée de quelques degrés, jamais droite.</p>
+    </div>
+    <div class="carte">
+      <h3>Le disque corail</h3>
+      <p>Placé derrière la canette, cerclé d'un halo jaune clair. C'est lui qui attire l'œil vers le produit.</p>
+    </div>
+    <div class="carte">
+      <h3>Bulles et agrumes</h3>
+      <p>Quelques bulles blanches en contour et une ou deux tranches de citron vert. En petit nombre : ce sont des accents, pas un décor.</p>
+    </div>
+  </div>
+
+  <h2>6. La règle de déclinaison</h2>
+  <p>Chaque format contient les quatre mêmes éléments, dans le même ordre de lecture : le logo, le titre, le produit, puis l'offre et le bouton. Seule la disposition change.</p>
+  <div class="defile">
+  <table>
+    <tr><th>Format</th><th>Disposition</th><th>Titre</th></tr>
+    <tr><td>Visuel principal, 1920 × 1080</td><td>Texte à gauche, trois canettes à droite</td><td>Deux lignes</td></tr>
+    <tr><td>Newsletter, 1200 × 600</td><td>Identique au visuel principal</td><td>Deux lignes</td></tr>
+    <tr><td>Pavé, 300 × 250</td><td>Texte à gauche, une canette à droite</td><td>Deux lignes</td></tr>
+    <tr><td>Bannière, 728 × 90</td><td>Tout sur une ligne : logo, titre, canette couchée, bouton</td><td>Une ligne</td></tr>
+    <tr><td>Skyscraper, 160 × 600</td><td>Tout empilé et centré, une canette</td><td>Trois lignes</td></tr>
+    <tr><td>Demi-page, 300 × 600</td><td>Tout empilé et centré, trois canettes</td><td>Deux lignes</td></tr>
+  </table>
+  </div>
+
+  <h2>7. Les six formats</h2>
+  <p>Les fichiers sont dans le dossier <code>bao-fizz-visuels/</code>, à côté de cette page.</p>
+
+  <h3 style="margin-top:26px">Visuel principal et newsletter</h3>
+  <div class="formats">
+    <figure>
+      <img src="bao-fizz-visuels/visuel-principal-1920x1080.webp" width="640" height="360" alt="Visuel principal Bao Fizz">
+      <figcaption style="max-width:640px"><b>Visuel principal, 1920 × 1080 px</b>La référence dont tout le reste découle.</figcaption>
+    </figure>
+    <figure>
+      <img src="bao-fizz-visuels/newsletter-1200x600.webp" width="400" height="200" alt="En-tête de newsletter Bao Fizz">
+      <figcaption style="max-width:400px"><b>En-tête de newsletter, 1200 × 600 px</b>Affiché à 600 px de large dans un e-mail.</figcaption>
+    </figure>
+  </div>
+
+  <h3 style="margin-top:40px">Les quatre bannières, à taille réelle</h3>
+  <div class="formats">
+    <figure>
+      <img src="bao-fizz-visuels/banniere-728x90@2x.webp" width="728" height="90" alt="Bannière 728 par 90">
+      <figcaption><b>Bannière, 728 × 90 px</b>Le format le plus contraint : une seule ligne.</figcaption>
+    </figure>
+  </div>
+  <div class="formats" style="margin-top:28px">
+    <figure>
+      <img src="bao-fizz-visuels/skyscraper-160x600@2x.webp" width="160" height="600" alt="Skyscraper 160 par 600">
+      <figcaption style="max-width:160px"><b>Skyscraper, 160 × 600 px</b>Titre sur trois lignes.</figcaption>
+    </figure>
+    <figure>
+      <img src="bao-fizz-visuels/demi-page-300x600@2x.webp" width="300" height="600" alt="Demi-page 300 par 600">
+      <figcaption><b>Demi-page, 300 × 600 px</b>Le seul format vertical assez grand pour les trois parfums.</figcaption>
+    </figure>
+    <figure>
+      <img src="bao-fizz-visuels/pave-300x250@2x.webp" width="300" height="250" alt="Pavé 300 par 250">
+      <figcaption><b>Pavé, 300 × 250 px</b>Le format le plus diffusé.</figcaption>
+    </figure>
+  </div>
+
+  <h2>8. Avant de livrer</h2>
+  <ul class="cases">
+    <li>Chaque format contient le logo, le titre, le produit, l'offre et le bouton.</li>
+    <li>Le bouton a la même couleur et la même forme partout.</li>
+    <li>Aucun texte ne passe sur la canette.</li>
+    <li>Chaque bannière porte un filet de 1 px.</li>
+    <li>Chaque fichier de bannière pèse moins de 150 Ko.</li>
+    <li>Le titre reste lisible dans la bannière 728 × 90.</li>
+  </ul>
+
+</div>
+</body>
+</html>
