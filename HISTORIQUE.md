@@ -17,7 +17,7 @@ Dernière mise à jour : 04/10/2026
 - **Formulaire de contact** : jamais testé par un envoi réel par l'assistant. Le propriétaire est prévenu (04/10/2026) et doit envoyer un message depuis le site en production pour confirmer qu'il arrive.
 - Les affirmations de l'accueil (visio, devis « au projet ou à la journée », disponibilité pendant les heures de bureau européennes, « Français, anglais », titre « Fondateur & directeur artistique ») ont été **confirmées par le propriétaire** le 04/10/2026.
 - **Réponse à l'agence Digital Prod** : à rédiger avec le propriétaire (tarif journalier à fixer), maintenant que le portfolio est en ligne.
-- **Google Search Console** : le compte Google utilisé par le propriétaire le 04/10/2026 n'avait pas encore le site. Fichier de validation `google17eaf983518ef390.html` ajouté à la racine et publié. Reste au propriétaire : cliquer sur « Verify », puis déclarer `sitemap.xml` dans la rubrique Sitemaps.
+- **Google Search Console** : le compte Google utilisé par le propriétaire le 04/10/2026 n'avait pas encore le site. Fichier de validation `google17eaf983518ef390.html` ajouté à la racine et publié. **Propriété validée et `sitemap.xml` déclaré par le propriétaire le 04/10/2026** (« Sitemap submitted successfully »). À surveiller dans les jours suivants : le nombre de pages découvertes et indexées.
 - **Audit** : étapes 1 à 4 faites, étape 5 (contenu) en partie avec les deux projets concept. Restent : page 404, contraste et accessibilité, refonte de « À propos » et des barres de compétences, une page par service.
 
 ## Portfolio : projets concept pour l'agence Digital Prod (publiés)
@@ -180,3 +180,7 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 
 **Accueil : Bao Fizz à la place des logos**
 - À la demande du propriétaire : `accueil: true` sur la fiche Bao Fizz, retiré de « Échantillon de logos » dans `_data/visuels.yml` (qui reste dans la page portfolio). L'accueil affiche Voara, Bao Fizz, Aquafish et une illustration.
+
+**Google Search Console**
+- Le propriétaire avait aussi envoyé le fichier de validation directement sur GitHub (« Add files via upload », commit `a27e8b5`) : fusionné avec le travail local (commit `76665bf`). Rappel : ne pas modifier le dépôt en ligne à la main, déposer les fichiers dans le dossier local.
+- Fichier de validation exclu du sitemap. Propriété validée, sitemap déclaré.
