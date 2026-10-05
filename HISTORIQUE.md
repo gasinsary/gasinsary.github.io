@@ -184,3 +184,15 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 **Google Search Console**
 - Le propriétaire avait aussi envoyé le fichier de validation directement sur GitHub (« Add files via upload », commit `a27e8b5`) : fusionné avec le travail local (commit `76665bf`). Rappel : ne pas modifier le dépôt en ligne à la main, déposer les fichiers dans le dossier local.
 - Fichier de validation exclu du sitemap. Propriété validée, sitemap déclaré.
+
+### 05/10/2026 (assistant : Claude)
+
+**Stratégie de mots-clés**
+- Recherche des concurrents sur cinq requêtes types. Conclusion : viser les requêtes « service + Madagascar + externalisation / sous-traitance / freelance », avec une page dédiée par sujet. Les concurrents (agences offshore de Madagascar) gagnent avec des pages ou des articles dédiés ; « graphiste freelance Madagascar » est tenu par des annuaires (MadaAllStar, Mission Madagascar, Graphistes Online), où le propriétaire devrait créer un profil.
+- Plan validé avec le propriétaire : 1) page pour les agences, 2) page « création de logo et d'identité visuelle », 3) blog (un article par mois, relu et enrichi par le propriétaire, jamais de production en série), 4) page « création de site web » quand un site pourra être montré.
+- Images : toutes les images chargées par les pages sont en WebP, avec dimensions et texte alternatif. Pistes non traitées : variantes réduites pour mobile (`srcset`), textes alternatifs de la galerie Aquafish, suppression de 33 anciens fichiers image non utilisés (garder `assets/img/logo.png`, cité dans les données structurées).
+
+**Page pour les agences**
+- Nouvelle page `/externalisation-creation-graphique-madagascar/` : prestations, raisons de travailler avec un studio à Madagascar (avec ses limites, dites clairement), déroulement, exemples (projets concept), questions fréquentes, appel à l'action. Données structurées `Service` et fil d'Ariane.
+- Lien « Agences » ajouté au menu, lien depuis le bloc « Vous êtes une agence » de l'accueil.
+- Sur la version de test seulement, en attente de relecture par le propriétaire. **À lui faire confirmer** : le travail en marque blanche, et la livraison des fichiers sources Photoshop et Illustrator.

@@ -47,6 +47,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 | `_includes/` | `head.html` (balises SEO), `header.html` (menu), `footer.html`, `scripts.html`, `carte-portfolio.html`, `ligne-fiche.html` |
 | `index.html` | Contenu de l'accueil |
 | `portfolio/index.html` | Liste de toutes les réalisations |
+| `externalisation-creation-graphique-madagascar/index.html` | Page de service pour les agences (sous-traitance graphique). Modèle à suivre pour les prochaines pages de services |
 | `_projets/*.md` | Un fichier par projet avec page détaillée ; le nom du fichier donne l'adresse `/portfolio/<nom>/` |
 | `_data/visuels.yml` | Visuels simples (image seule, sans page détaillée) |
 | `_data/categories.yml` | Catégories et filtres du portfolio |
@@ -60,7 +61,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 
 - **Tous les liens et chemins internes passent par le filtre `relative_url`** (ex. `{{ '/assets/css/main.css' | relative_url }}`). Ne jamais écrire `/assets/...` ou `https://gasinsary.github.io/...` en dur : la version de test vit sous un sous-dossier.
 - `baseurl` n'est volontairement pas défini dans `_config.yml` : GitHub Pages le règle selon le dépôt.
-- Les adresses existantes ne doivent pas changer (SEO) : `/`, `/portfolio/`, `/portfolio/identite-visuelle-aquafish-by-gasinsary/`.
+- Les adresses existantes ne doivent pas changer (SEO) : `/`, `/portfolio/`, les pages de `/portfolio/<projet>/` et `/externalisation-creation-graphique-madagascar/`.
 - Chaque page définit `titre_seo` (ou `title`) et `description` dans son en-tête ; `_includes/head.html` produit le titre, la description, l'adresse canonique et les balises de partage.
 - Tout fichier Markdown ajouté à la racine (documentation) doit être listé dans `exclude` de `_config.yml`, sinon Jekyll le publie comme une page.
 - Dans un en-tête YAML, ne pas écrire `---` dans un commentaire.
