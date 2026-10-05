@@ -4,7 +4,7 @@ Document de passation entre sessions et entre assistants IA.
 Règles et organisation du projet : voir [AGENTS.md](AGENTS.md).
 **À mettre à jour à la fin de chaque session.**
 
-Dernière mise à jour : 04/10/2026
+Dernière mise à jour : 05/10/2026
 
 ## État actuel
 
@@ -195,4 +195,5 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 **Page pour les agences**
 - Nouvelle page `/externalisation-creation-graphique-madagascar/` : prestations, raisons de travailler avec un studio à Madagascar (avec ses limites, dites clairement), déroulement, exemples (projets concept), questions fréquentes, appel à l'action. Données structurées `Service` et fil d'Ariane.
 - Lien « Agences » ajouté au menu, lien depuis le bloc « Vous êtes une agence » de l'accueil.
-- Sur la version de test seulement, en attente de relecture par le propriétaire. **À lui faire confirmer** : le travail en marque blanche, et la livraison des fichiers sources Photoshop et Illustrator.
+- Le propriétaire a confirmé le 05/10/2026 : travail en marque blanche, livraison des fichiers sources Photoshop et Illustrator, mise en page pour l'impression. **Page mise en production le 05/10/2026** à sa demande.
+- Prochaine page prévue : « création de logo et d'identité visuelle », sur le même modèle.
