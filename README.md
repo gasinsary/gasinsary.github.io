@@ -34,3 +34,12 @@ Les briefs de création des projets concept sont dans le dossier `briefs/`.
 ## Ajouter un visuel simple
 
 Ajouter un bloc dans `_data/visuels.yml` (titre, catégorie, image, résumé). Image au format WebP, en 1024 × 683 px, dans `assets/img/portfolio/`.
+
+## Ajouter un article au blog
+
+1. Copier un fichier de `_posts/` et renommer la copie sur le modèle `AAAA-MM-JJ-nom-de-l-article.md`. La date du nom est la date affichée ; le reste devient l'adresse : `_posts/2026-11-03-mon-article.md` donne `/blog/mon-article/`.
+2. Mettre l'image de couverture dans `assets/img/blog/`, en WebP (1024 × 683 px), avec une copie en JPG pour les partages sur les réseaux sociaux.
+3. Remplir l'en-tête : `title`, `titre_court`, `titre_seo`, `description`, `rubrique`, `resume`, `image`, `image_partage`, `alt`.
+4. Écrire le texte en dessous. Sous-titres avec `##`, listes avec `-`, gras avec `**mot**`.
+
+La page du blog, les cartes, les « articles récents » et la section « À lire aussi » se mettent à jour toutes seules. Les articles d'une même `rubrique` sont proposés en premier dans « À lire aussi ».

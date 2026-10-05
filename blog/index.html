@@ -1,0 +1,72 @@
+---
+layout: default
+title: "Blog"
+titre_seo: "Blog : logo, identité visuelle et création graphique | Gas'in Sary"
+description: "Conseils pratiques sur le logo, l'identité visuelle, la création graphique et le travail à distance avec un studio freelance, par Gas'in Sary."
+---
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}"><i class="bi bi-house"></i> Accueil</a></li>
+            <li class="breadcrumb-item active current">Blog</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="title-wrapper">
+        <h1>Le blog de Gas'in Sary</h1>
+        <p>Logo, identité visuelle, création graphique, travail à distance : des conseils pratiques pour préparer votre projet et bien travailler avec un studio créatif.</p>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Liste des articles : le plus récent en grand, les autres en cartes -->
+    <section id="articles" class="section">
+      <div class="container" data-aos="fade-up">
+        <div class="row g-4">
+          {%- for article in site.posts %}
+          {%- if forloop.first %}
+{% include carte-article.html article=article niveau="h2" une=true %}
+          {%- else %}
+{% include carte-article.html article=article niveau="h2" %}
+          {%- endif %}
+          {%- endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Appel à l'action -->
+    <section class="services section light-background">
+
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="mb-3">Un projet en tête ?</h2>
+        <p class="mb-4">Décrivez-nous votre besoin en quelques lignes. Nous revenons vers vous avec des questions précises et un devis.</p>
+        <a href="{{ '/#contact' | relative_url }}" class="btn btn-outline-primary me-2 mb-2">Demander un devis</a>
+        <a href="{{ '/portfolio/' | relative_url }}" class="btn btn-outline-primary mb-2">Voir nos réalisations</a>
+      </div>
+
+    </section>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": {{ '/' | absolute_url | jsonify }} },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": {{ page.url | absolute_url | jsonify }} }
+          ]
+        },
+        {
+          "@type": "Blog",
+          "name": "Le blog de Gas'in Sary",
+          "description": {{ page.description | jsonify }},
+          "url": {{ page.url | absolute_url | jsonify }},
+          "inLanguage": "fr",
+          "publisher": { "@type": "Organization", "name": {{ site.title | jsonify }}, "url": {{ '/' | absolute_url | jsonify }} }
+        }
+      ]
+    }
+    </script>

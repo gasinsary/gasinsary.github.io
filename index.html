@@ -471,6 +471,32 @@ supabase: true
 
     </section><!-- /Section : travailler à distance -->
 
+    <!-- Derniers articles du blog -->
+    <section id="blog" class="section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Derniers articles du blog</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Des conseils pratiques pour préparer votre projet de logo, d'identité visuelle ou de création graphique.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          {%- for article in site.posts limit: 3 %}
+{% include carte-article.html article=article %}
+          {%- endfor %}
+        </div>
+        <div class="text-center mt-5">
+          <a href="{{ '/blog/' | relative_url }}" class="btn btn-outline-primary">Tous les articles</a>
+        </div>
+      </div>
+
+    </section><!-- /Derniers articles du blog -->
+
     
 
     <!-- Contact Section -->

@@ -44,12 +44,16 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 | `_config.yml` | Réglages Jekyll |
 | `_layouts/default.html` | Squelette commun de toutes les pages |
 | `_layouts/projet.html` | Page détaillée d'un projet du portfolio |
-| `_includes/` | `head.html` (balises SEO), `header.html` (menu), `footer.html`, `scripts.html`, `carte-portfolio.html`, `ligne-fiche.html` |
+| `_layouts/article.html` | Page d'un article du blog |
+| `_includes/` | `head.html` (balises SEO), `header.html` (menu), `footer.html`, `scripts.html`, `carte-portfolio.html`, `ligne-fiche.html`, `carte-article.html` (carte d'un article), `date-fr.html` (date en français) |
 | `index.html` | Contenu de l'accueil |
 | `portfolio/index.html` | Liste de toutes les réalisations |
 | `externalisation-creation-graphique-madagascar/index.html` | Page de service pour les agences (sous-traitance graphique). Modèle à suivre pour les prochaines pages de services |
 | `creation-logo-identite-visuelle/index.html` | Page de service « logo et identité visuelle », pour les entreprises |
 | `_projets/*.md` | Un fichier par projet avec page détaillée ; le nom du fichier donne l'adresse `/portfolio/<nom>/` |
+| `blog/index.html` | Liste des articles du blog |
+| `_posts/AAAA-MM-JJ-nom.md` | Un fichier par article du blog ; le nom du fichier donne la date et l'adresse `/blog/<nom>/` |
+| `assets/img/blog/` | Images de couverture des articles |
 | `_data/visuels.yml` | Visuels simples (image seule, sans page détaillée) |
 | `_data/categories.yml` | Catégories et filtres du portfolio |
 | `portfolio/<nom>/img/` | Images d'un projet |
@@ -62,7 +66,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 
 - **Tous les liens et chemins internes passent par le filtre `relative_url`** (ex. `{{ '/assets/css/main.css' | relative_url }}`). Ne jamais écrire `/assets/...` ou `https://gasinsary.github.io/...` en dur : la version de test vit sous un sous-dossier.
 - `baseurl` n'est volontairement pas défini dans `_config.yml` : GitHub Pages le règle selon le dépôt.
-- Les adresses existantes ne doivent pas changer (SEO) : `/`, `/portfolio/`, les pages de `/portfolio/<projet>/`, `/externalisation-creation-graphique-madagascar/` et `/creation-logo-identite-visuelle/`.
+- Les adresses existantes ne doivent pas changer (SEO) : `/`, `/portfolio/`, les pages de `/portfolio/<projet>/`, `/externalisation-creation-graphique-madagascar/`, `/creation-logo-identite-visuelle/`, `/blog/` et les articles de `/blog/<nom>/` (ne pas renommer le fichier d'un article publié).
 - Chaque page définit `titre_seo` (ou `title`) et `description` dans son en-tête ; `_includes/head.html` produit le titre, la description, l'adresse canonique et les balises de partage.
 - Tout fichier Markdown ajouté à la racine (documentation) doit être listé dans `exclude` de `_config.yml`, sinon Jekyll le publie comme une page.
 - Dans un en-tête YAML, ne pas écrire `---` dans un commentaire.
@@ -72,6 +76,16 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 - **Image de partage** (réseaux sociaux) : champ `image_partage:` en JPG ou PNG ; sans lui, `image:` est utilisée.
 - **Diaporama Swiper** : la bibliothèque n'est chargée que si la page a `swiper: true` dans son en-tête (c'est le cas par défaut des pages de `_projets/`).
 - Le logo de l'en-tête est `assets/img/logo-header.webp` (15 Ko). `logo.svg` (559 Ko, bitmap incorporé) ne doit plus être chargé par les pages.
+
+### Blog
+
+- Un article = un fichier Markdown `_posts/AAAA-MM-JJ-nom.md`. Le modèle `article` et l'adresse `/blog/<nom>/` sont réglés dans `_config.yml` : ne pas les répéter dans l'article. Un article daté dans le futur n'est pas publié.
+- En-tête d'un article : `title`, `titre_court` (fil d'Ariane), `titre_seo`, `description`, `rubrique`, `resume` (texte de la carte), `image` (WebP, 1024 × 683, dans `assets/img/blog/`), `image_partage` (JPG), `alt`. Facultatifs : `maj` (date de mise à jour), `appel_titre` et `appel` (encart de fin d'article).
+- `rubrique` sert à proposer les articles similaires dans « À lire aussi » : réutiliser exactement les rubriques existantes (« Identité visuelle », « Conseils », « Travail à distance ») avant d'en créer une.
+- Dans le texte : sous-titres en `##` puis `###` (le `#` est réservé au titre de la page), liens internes avec `relative_url`, par exemple `[notre page logo]({{ '/creation-logo-identite-visuelle/' | relative_url }})`. Chaque article renvoie vers au moins une page de service et, si possible, un autre article.
+- Mêmes règles de ton que le reste du site : « nous », pas de promesse non confirmée, pas de client ni de témoignage inventé.
+- **Le propriétaire écrit ses articles et les envoie pour mise en ligne** (toutes les une à deux semaines) : garder son texte, corriger les fautes, proposer le titre SEO, la description et les liens internes, puis passer par la version de test.
+- Les quatre premiers articles ont été rédigés par l'assistant le 05/10/2026 avec des dates échelonnées du 25/08 au 02/10/2026, à la demande du propriétaire. Leurs illustrations sont produites par `briefs/outils/generer-visuels-blog.js`.
 
 ## Supabase
 

@@ -1,0 +1,7 @@
+{%- comment -%}
+  Écrit une date en français (ex. « 8 septembre 2026 »). include.date = la date à écrire.
+{%- endcomment -%}
+{%- assign mois_fr = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," -%}
+{%- assign indice_mois = include.date | date: "%-m" | minus: 1 -%}
+{%- assign jour = include.date | date: "%-d" -%}
+{{- jour }}{% if jour == "1" %}er{% endif %} {{ mois_fr[indice_mois] }} {{ include.date | date: "%Y" -}}

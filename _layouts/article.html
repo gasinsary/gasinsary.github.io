@@ -1,0 +1,148 @@
+---
+layout: default
+---
+{%- comment -%}
+  Page d'un article du blog (fichiers de _posts/).
+  Temps de lecture : environ 200 mots par minute.
+{%- endcomment -%}
+{%- assign minutes = content | strip_html | number_of_words | divided_by: 200 | plus: 1 | floor -%}
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}"><i class="bi bi-house"></i> Accueil</a></li>
+            <li class="breadcrumb-item"><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+            <li class="breadcrumb-item active current">{{ page.titre_court | default: page.title | escape }}</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="title-wrapper">
+        <h1>{{ page.title | escape }}</h1>
+        <p class="article-meta"><span class="rubrique">{{ page.rubrique | escape }}</span> · <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include date-fr.html date=page.date %}</time> · {{ minutes }} min de lecture</p>
+      </div>
+    </div><!-- End Page Title -->
+
+    <section class="article section">
+      <div class="container">
+        <div class="row g-5">
+
+          <div class="col-lg-8">
+            <article>
+              <img src="{{ page.image | relative_url }}" width="1024" height="683" class="article-couverture" alt="{{ page.alt | default: page.title | escape }}">
+
+              <div class="article-contenu">
+{{ content }}
+              </div>
+
+              <div class="article-appel">
+                <h2 class="h4">{{ page.appel_titre | default: "Un projet de logo, d'identité visuelle ou de site web ?" | escape }}</h2>
+                <p>{{ page.appel | default: "Gas'in Sary est un studio créatif francophone basé à Madagascar. Nous travaillons à distance pour des entreprises et des agences, en France et à l'international." | escape }}</p>
+                <a href="{{ '/#contact' | relative_url }}" class="btn btn-outline-primary me-2 mb-2">Demander un devis</a>
+                <a href="{{ '/portfolio/' | relative_url }}" class="btn btn-outline-primary mb-2">Voir nos réalisations</a>
+              </div>
+            </article>
+          </div>
+
+          <aside class="col-lg-4">
+            <div class="article-colonne">
+
+              <div class="article-encart">
+                <h2 class="h5">Articles récents</h2>
+                <ul class="article-recents">
+                  {%- assign n = 0 -%}
+                  {%- for recent in site.posts %}
+                  {%- if recent.url != page.url and n < 4 %}
+                  {%- assign n = n | plus: 1 %}
+                  <li>
+                    <a href="{{ recent.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ recent.image | relative_url }}" width="1024" height="683" alt="" loading="lazy"></a>
+                    <div>
+                      <a href="{{ recent.url | relative_url }}">{{ recent.title | escape }}</a>
+                      <time datetime="{{ recent.date | date: '%Y-%m-%d' }}">{% include date-fr.html date=recent.date %}</time>
+                    </div>
+                  </li>
+                  {%- endif %}
+                  {%- endfor %}
+                </ul>
+              </div>
+
+              <div class="article-encart">
+                <h2 class="h5">Nos services</h2>
+                <ul class="article-services">
+                  <li><a href="{{ '/creation-logo-identite-visuelle/' | relative_url }}"><i class="bi bi-bounding-box-circles"></i> Logo et identité visuelle</a></li>
+                  <li><a href="{{ '/externalisation-creation-graphique-madagascar/' | relative_url }}"><i class="bi bi-people"></i> Sous-traitance pour les agences</a></li>
+                  <li><a href="{{ '/#services' | relative_url }}"><i class="bi bi-grid"></i> Tous nos services</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles similaires : ceux de la même rubrique d'abord, puis les plus récents -->
+    <section class="section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>À lire aussi</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          {%- assign n = 0 -%}
+          {%- for autre in site.posts %}
+          {%- if autre.url != page.url and autre.rubrique == page.rubrique and n < 3 %}
+          {%- assign n = n | plus: 1 %}
+{% include carte-article.html article=autre %}
+          {%- endif %}
+          {%- endfor %}
+          {%- for autre in site.posts %}
+          {%- if autre.url != page.url and autre.rubrique != page.rubrique and n < 3 %}
+          {%- assign n = n | plus: 1 %}
+{% include carte-article.html article=autre %}
+          {%- endif %}
+          {%- endfor %}
+        </div>
+        <div class="text-center mt-5">
+          <a href="{{ '/blog/' | relative_url }}" class="btn btn-outline-primary">Tous les articles</a>
+        </div>
+      </div>
+
+    </section>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": {{ '/' | absolute_url | jsonify }} },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": {{ '/blog/' | absolute_url | jsonify }} },
+            { "@type": "ListItem", "position": 3, "name": {{ page.titre_court | default: page.title | jsonify }}, "item": {{ page.url | absolute_url | jsonify }} }
+          ]
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": {{ page.title | jsonify }},
+          "description": {{ page.description | jsonify }},
+          "image": {{ page.image_partage | default: page.image | absolute_url | jsonify }},
+          "datePublished": {{ page.date | date: "%Y-%m-%d" | jsonify }},
+          "dateModified": {{ page.maj | default: page.date | date: "%Y-%m-%d" | jsonify }},
+          "inLanguage": "fr",
+          "articleSection": {{ page.rubrique | jsonify }},
+          "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+          "author": { "@type": "Organization", "name": {{ site.title | jsonify }}, "url": {{ '/' | absolute_url | jsonify }} },
+          "publisher": { "@type": "Organization", "name": {{ site.title | jsonify }}, "logo": { "@type": "ImageObject", "url": {{ '/assets/img/logo.png' | absolute_url | jsonify }} } }
+        }
+      ]
+    }
+    </script>

@@ -28,7 +28,7 @@
   <meta property="og:description" content="{{ page.description_partage | default: seo_description | escape }}" />
   <meta property="og:image" content="{{ seo_image | absolute_url }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
-  <meta property="og:type" content="website"/>
+  <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}"/>
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicons -->

@@ -38,6 +38,13 @@ defaults:
       layout: projet
       body_class: portfolio-details-page
       swiper: true
+  # Blog : un fichier _posts/AAAA-MM-JJ-nom.md = un article à l'adresse /blog/nom/
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: article
+      permalink: /blog/:title/
   - scope:
       path: "googleaa7d45fdd426d7f9.html"
     values:

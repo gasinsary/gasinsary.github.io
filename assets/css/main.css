@@ -2263,3 +2263,313 @@ section,
 #exemples .portfolio-card {
   height: 100%;
 }
+
+/*--------------------------------------------------------------
+# Blog : cartes d'articles
+--------------------------------------------------------------*/
+.carte-article {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface-color);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.carte-article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
+}
+
+.carte-article .carte-article-image {
+  display: block;
+  overflow: hidden;
+}
+
+.carte-article .carte-article-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carte-article:hover .carte-article-image img {
+  transform: scale(1.04);
+}
+
+.carte-article .carte-article-corps {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px;
+}
+
+.carte-article-meta,
+.article-meta {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+.carte-article-meta {
+  margin-bottom: 10px;
+}
+
+.carte-article-meta .rubrique,
+.article-meta .rubrique {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.carte-article .carte-article-titre {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.carte-article .carte-article-titre a {
+  color: var(--heading-color);
+}
+
+.carte-article .carte-article-titre a:hover {
+  color: var(--accent-color);
+}
+
+.carte-article .carte-article-resume {
+  font-size: 0.95rem;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  margin-bottom: 18px;
+}
+
+.carte-article .carte-article-lien {
+  margin-top: auto;
+  font-weight: 500;
+}
+
+.carte-article .carte-article-lien i {
+  transition: margin 0.3s ease;
+}
+
+.carte-article .carte-article-lien:hover i {
+  margin-left: 4px;
+}
+
+/* Le plus récent, en tête de la page du blog : image à gauche, texte à droite */
+@media (min-width: 992px) {
+  .carte-article-une {
+    flex-direction: row;
+  }
+
+  .carte-article-une .carte-article-image {
+    flex: 0 0 55%;
+  }
+
+  .carte-article-une .carte-article-corps {
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .carte-article-une .carte-article-titre {
+    font-size: 1.75rem;
+  }
+
+  .carte-article-une .carte-article-resume {
+    font-size: 1.05rem;
+  }
+
+  .carte-article-une .carte-article-lien {
+    margin-top: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Blog : page d'un article
+--------------------------------------------------------------*/
+.page-title .title-wrapper .article-meta {
+  font-size: 0.85rem;
+}
+
+.article .article-couverture {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.article-contenu {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.article-contenu h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem;
+}
+
+.article-contenu h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2rem 0 0.75rem;
+}
+
+.article-contenu p,
+.article-contenu ul,
+.article-contenu ol {
+  margin-bottom: 1.25rem;
+}
+
+.article-contenu ul,
+.article-contenu ol {
+  padding-left: 1.4rem;
+}
+
+.article-contenu li {
+  margin-bottom: 0.4rem;
+}
+
+.article-contenu a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.article-contenu strong {
+  color: var(--heading-color);
+}
+
+.article-contenu img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.article-contenu blockquote {
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.25rem;
+  border-left: 4px solid var(--accent-color);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+  border-radius: 0 8px 8px 0;
+}
+
+.article-contenu blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.article-contenu table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.article-contenu th,
+.article-contenu td {
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+.article-contenu th {
+  color: var(--heading-color);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+}
+
+@media (max-width: 575px) {
+  .article-contenu table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+.article .article-appel {
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+}
+
+/* Colonne de droite : elle reste visible pendant la lecture sur grand écran */
+@media (min-width: 992px) {
+  .article .article-colonne {
+    position: sticky;
+    top: 110px;
+  }
+}
+
+.article .article-encart {
+  background-color: var(--surface-color);
+  border-radius: 15px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.article .article-encart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.article .article-recents li {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.article .article-recents li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.article .article-recents img {
+  display: block;
+  width: 84px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.article .article-recents div a {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--heading-color);
+}
+
+.article .article-recents div a:hover {
+  color: var(--accent-color);
+}
+
+.article .article-recents time {
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.article .article-services li {
+  padding: 8px 0;
+}
+
+.article .article-services a {
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+.article .article-services a:hover {
+  color: var(--accent-color);
+}
+
+.article .article-services i {
+  color: var(--accent-color);
+  margin-right: 8px;
+}

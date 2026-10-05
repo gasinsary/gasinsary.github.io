@@ -1,0 +1,20 @@
+{%- comment -%}
+  Carte d'un article du blog.
+  include.article = un article de _posts/.
+  Paramètres facultatifs : niveau (balise du titre, « h3 » par défaut), une (true : grande carte en tête de liste).
+{%- endcomment -%}
+{%- assign article = include.article -%}
+{%- assign niveau = include.niveau | default: "h3" -%}
+          <div class="{% if include.une %}col-12{% else %}col-lg-4 col-md-6{% endif %}">
+            <article class="carte-article{% if include.une %} carte-article-une{% endif %} h-100">
+              <a href="{{ article.url | relative_url }}" class="carte-article-image" tabindex="-1" aria-hidden="true">
+                <img src="{{ article.image | relative_url }}" width="1024" height="683" alt="{{ article.alt | default: article.title | escape }}"{% unless include.une %} loading="lazy"{% endunless %}>
+              </a>
+              <div class="carte-article-corps">
+                <p class="carte-article-meta"><span class="rubrique">{{ article.rubrique | escape }}</span> · <time datetime="{{ article.date | date: '%Y-%m-%d' }}">{% include date-fr.html date=article.date %}</time></p>
+                <{{ niveau }} class="carte-article-titre"><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></{{ niveau }}>
+                <p class="carte-article-resume">{{ article.resume | default: article.description | escape }}</p>
+                <a href="{{ article.url | relative_url }}" class="carte-article-lien" aria-label="Lire l'article : {{ article.title | escape }}">Lire l'article <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
