@@ -197,3 +197,7 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 - Lien « Agences » ajouté au menu, lien depuis le bloc « Vous êtes une agence » de l'accueil.
 - Le propriétaire a confirmé le 05/10/2026 : travail en marque blanche, livraison des fichiers sources Photoshop et Illustrator, mise en page pour l'impression. **Page mise en production le 05/10/2026** à sa demande.
 - Prochaine page prévue : « création de logo et d'identité visuelle », sur le même modèle.
+
+**Page « logo et identité visuelle »**
+- Nouvelle page `/creation-logo-identite-visuelle/` : contenu d'une identité, logo seul ou identité complète, déroulement, exemples (Aquafish, échantillon de logos, planches d'identité de Bao Fizz et Voara), questions fréquentes. Données structurées `Service` et fil d'Ariane. Pas de lien dans le menu (déjà sept entrées) : liens depuis la carte « Identité visuelle & logo » de l'accueil et depuis la page pour les agences.
+- Sur la version de test, en attente de relecture. **À faire confirmer** : la planche d'ambiance en début de projet, la présentation de plusieurs pistes de logo. **Question toujours sans réponse** : Aquafish est-il un vrai client ? La page le montre comme « étude détaillée » sans le qualifier.
