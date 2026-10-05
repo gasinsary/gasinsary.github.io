@@ -2258,3 +2258,8 @@ section,
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+
+/* Pages de service : les cartes d'exemples d'une même ligne ont la même hauteur */
+#exemples .portfolio-card {
+  height: 100%;
+}

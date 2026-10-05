@@ -181,32 +181,21 @@ description: "Logo, charte graphique et kit de marque créés à distance par un
             <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
           </svg>
         </div>
-        <p>Une étude détaillée, un échantillon de logos, et deux identités conçues pour des projets concept.</p>
+        <p>Trois identités conçues pour des projets concept, réalisés pour des marques fictives, et un échantillon de logos.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-4">
-          {%- assign etudes = site.projets | where: "categorie", "graphique" | sort: "ordre" -%}
-          {%- for etude in etudes %}
-          {%- unless etude.brouillon %}
-{% include carte-portfolio.html item=etude %}
-          {%- endunless %}
-          {%- endfor %}
+          {%- assign aquafish = site.projets | where: "slug", "identite-visuelle-aquafish-by-gasinsary" | first -%}
+          {%- assign baofizz = site.projets | where: "slug", "campagne-publicitaire-bao-fizz" | first -%}
+          {%- assign voara = site.projets | where: "slug", "campagne-reseaux-sociaux-voara" | first -%}
+{% include carte-portfolio.html item=aquafish %}
+{% include carte-portfolio.html item=baofizz categorie="graphique" image="/portfolio/campagne-publicitaire-bao-fizz/img/planche-5.webp" titre="Identité visuelle Bao Fizz" resume="Logo, variantes, palette, icônes et typographies" alt="Identité visuelle de Bao Fizz : variantes du logo, palette de couleurs, icônes et typographies" %}
+{% include carte-portfolio.html item=voara categorie="graphique" image="/portfolio/campagne-reseaux-sociaux-voara/img/planche-1.webp" titre="Identité visuelle Voara" resume="Logo, palette de couleurs et typographies" alt="Identité visuelle de Voara : logo, palette de couleurs et typographies" %}
           {%- assign logos = site.data.visuels | where: "categorie", "graphique" | sort: "ordre" -%}
           {%- for visuel in logos %}
 {% include carte-portfolio.html item=visuel %}
           {%- endfor %}
-        </div>
-
-        <div class="row g-4 mt-2">
-          <div class="col-md-6">
-            <a href="{{ '/portfolio/campagne-publicitaire-bao-fizz/' | relative_url }}"><img src="{{ '/portfolio/campagne-publicitaire-bao-fizz/img/planche-5.webp' | relative_url }}" width="1024" height="683" loading="lazy" class="img-fluid rounded-4" alt="Identité visuelle de Bao Fizz : variantes du logo, palette de couleurs, icônes et typographies"></a>
-            <p class="mt-3 mb-0"><strong>Bao Fizz</strong>, projet concept. Logo, variantes, palette, icônes et typographies d'une marque de boisson fictive.</p>
-          </div>
-          <div class="col-md-6">
-            <a href="{{ '/portfolio/campagne-reseaux-sociaux-voara/' | relative_url }}"><img src="{{ '/portfolio/campagne-reseaux-sociaux-voara/img/planche-1.webp' | relative_url }}" width="1024" height="683" loading="lazy" class="img-fluid rounded-4" alt="Identité visuelle de Voara : logo, palette de couleurs et typographies"></a>
-            <p class="mt-3 mb-0"><strong>Voara</strong>, projet concept. Logo, palette et typographies d'une marque de soins fictive.</p>
-          </div>
         </div>
 
         <div class="text-center mt-5">

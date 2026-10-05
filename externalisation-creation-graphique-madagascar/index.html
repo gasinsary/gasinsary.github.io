@@ -220,7 +220,8 @@ description: "Sous-traitance graphique pour les agences : déclinaisons de campa
         <div class="row g-4">
           {%- assign exemples = site.projets | where: "concept", true | sort: "ordre" | reverse -%}
           {%- for exemple in exemples %}
-          {%- unless exemple.brouillon %}
+          {%- comment %}Deux campagnes seulement. Aquafish figure sur la page logo.{% endcomment -%}
+          {%- unless exemple.brouillon or exemple.categorie == "graphique" %}
 {% include carte-portfolio.html item=exemple %}
           {%- endunless %}
           {%- endfor %}

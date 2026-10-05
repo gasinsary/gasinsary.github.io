@@ -2,19 +2,26 @@
   Carte de la grille portfolio.
   include.item = un projet (_projets/) ou un visuel (_data/visuels.yml).
   Un projet a une page détaillée (lien) ; un visuel s'ouvre en grand (lightbox).
+  Paramètres facultatifs : image, alt, titre, resume, categorie. Ils remplacent ceux de l'élément,
+  pour montrer un projet sous un autre angle (ex. sa planche de logo).
 {%- endcomment -%}
 {%- assign item = include.item -%}
-{%- assign categorie = site.data.categories[item.categorie] -%}
+{%- assign carte_categorie = include.categorie | default: item.categorie -%}
+{%- assign categorie = site.data.categories[carte_categorie] -%}
+{%- assign carte_image = include.image | default: item.image -%}
+{%- assign carte_alt = include.alt | default: item.alt | default: item.title -%}
+{%- assign carte_titre = include.titre | default: item.titre_carte | default: item.title -%}
+{%- assign carte_resume = include.resume | default: item.resume -%}
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item {{ categorie.filtre }}">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="{{ item.image | relative_url }}" width="{{ item.largeur | default: 1024 }}" height="{{ item.hauteur | default: 683 }}" class="img-fluid" alt="{{ item.alt | default: item.title | escape }}" loading="lazy">
+                  <img src="{{ carte_image | relative_url }}" width="{{ item.largeur | default: 1024 }}" height="{{ item.hauteur | default: 683 }}" class="img-fluid" alt="{{ carte_alt | escape }}" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       {%- if item.url %}
                       <a href="{{ item.url | relative_url }}" class="details-link" aria-label="Voir le projet {{ item.titre_court | default: item.title | escape }}"><i class="bi bi-arrow-right"></i></a>
                       {%- else %}
-                      <a href="{{ item.image | relative_url }}" class="glightbox preview-link" data-gallery="portfolio-gallery-active"><i class="bi bi-eye"></i></a>
+                      <a href="{{ carte_image | relative_url }}" class="glightbox preview-link" data-gallery="portfolio-gallery-active"><i class="bi bi-eye"></i></a>
                       {%- endif %}
                     </div>
                   </div>
@@ -22,11 +29,11 @@
                 <div class="portfolio-content">
                   <span class="category">{{ categorie.nom | escape }}{% if item.concept %} · Projet concept{% endif %}{% if item.brouillon %} · Brouillon{% endif %}</span>
                   {%- if item.url %}
-                  <h3><a href="{{ item.url | relative_url }}">{{ item.titre_carte | default: item.title | escape }}</a></h3>
+                  <h3><a href="{{ item.url | relative_url }}">{{ carte_titre | escape }}</a></h3>
                   {%- else %}
-                  <h3>{{ item.titre_carte | default: item.title | escape }}</h3>
+                  <h3>{{ carte_titre | escape }}</h3>
                   {%- endif %}
-                  <p>{{ item.resume | escape }}</p>
+                  <p>{{ carte_resume | escape }}</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
