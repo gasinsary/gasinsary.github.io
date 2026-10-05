@@ -27,7 +27,7 @@ intro: "Bao Fizz est une marque fictive de boisson pétillante au fruit du baoba
 
 badge: "Campagne digitale"
 prestation: "Bannières et réseaux sociaux"
-date_projet: "Octobre 2026"
+date_projet: "Janvier 2024"
 client: "Bao Fizz, marque fictive (projet concept)"
 type_projet: "Déclinaison d'une campagne publicitaire"
 livrables: "1 visuel principal, 4 bannières, 3 posts Instagram"

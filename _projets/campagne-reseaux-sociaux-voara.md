@@ -27,7 +27,7 @@ intro: "Voara est une marque fictive de soins du visage, formulés avec des acti
 
 badge: "Réseaux sociaux"
 prestation: "Campagne Instagram"
-date_projet: "Octobre 2026"
+date_projet: "Juin 2024"
 client: "Voara, marque fictive (projet concept)"
 type_projet: "Campagne de lancement sur les réseaux sociaux"
 livrables: "3 posts, 1 story, 1 carrousel de 4 vues"
