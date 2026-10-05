@@ -4,7 +4,7 @@
 
 title: "Comment rédiger un bon brief pour la création de votre logo"
 titre_court: "Rédiger un brief de logo"
-titre_seo: "Brief de création de logo : les 7 questions à préparer | Gas'in Sary"
+titre_seo: "Brief de création de logo : 7 questions à préparer | Gas'in Sary"
 description: "Un bon brief tient en une page et répond à sept questions. Le modèle à copier pour préparer la création de votre logo avec un graphiste ou un studio."
 rubrique: "Conseils"
 resume: "Un bon brief tient en une page et répond à sept questions. Voici lesquelles, les erreurs à éviter et un modèle à copier."

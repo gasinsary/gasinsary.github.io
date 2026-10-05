@@ -4,7 +4,7 @@
 
 title: "Logo, identité visuelle, charte graphique : quelles différences ?"
 titre_court: "Logo, identité visuelle, charte graphique"
-titre_seo: "Logo, identité visuelle, charte graphique : les différences | Gas'in Sary"
+titre_seo: "Logo, identité visuelle, charte graphique : les différences"
 description: "Logo, identité visuelle et charte graphique ne désignent pas la même chose. Ce que recouvre chaque mot, et comment savoir ce dont votre entreprise a besoin."
 rubrique: "Identité visuelle"
 resume: "Trois mots souvent confondus, qui désignent un signe, un système et un mode d'emploi. Voici comment les distinguer et savoir quoi demander."

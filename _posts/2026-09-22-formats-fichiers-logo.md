@@ -5,7 +5,7 @@
 title: "SVG, PNG, PDF, AI : quels fichiers demander pour votre logo ?"
 titre_court: "Les formats de fichiers d'un logo"
 titre_seo: "Formats de fichiers d'un logo : SVG, PNG, PDF, AI | Gas'in Sary"
-description: "Vectoriel ou image, SVG, PNG, JPG, PDF, AI : à quoi sert chaque format de logo, lequel envoyer à un imprimeur ou à un développeur, et la liste à vérifier à la livraison."
+description: "SVG, PNG, JPG, PDF, AI : à quoi sert chaque format de logo, lequel envoyer à un imprimeur ou à un développeur, et la liste à vérifier à la livraison."
 rubrique: "Identité visuelle"
 resume: "À quoi sert chaque format, lequel envoyer à votre imprimeur ou à votre développeur, et la liste à vérifier le jour de la livraison."
 image: /assets/img/blog/formats-fichiers-logo.webp
