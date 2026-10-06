@@ -16,7 +16,7 @@ Dernière mise à jour : 05/10/2026
 
 - **Formulaire de contact** : jamais testé par un envoi réel par l'assistant. Le propriétaire est prévenu (04/10/2026) et doit envoyer un message depuis le site en production pour confirmer qu'il arrive.
 - Les affirmations de l'accueil (visio, devis « au projet ou à la journée », disponibilité pendant les heures de bureau européennes, « Français, anglais », titre « Fondateur & directeur artistique ») ont été **confirmées par le propriétaire** le 04/10/2026.
-- **Réponse à l'agence Digital Prod** : à rédiger avec le propriétaire (tarif journalier à fixer), maintenant que le portfolio est en ligne.
+- **Réponse à l'agence Digital Prod** : rédigée le 06/10/2026 (en anglais, comme l'e-mail reçu) et remise au propriétaire pour envoi. Tarif journalier fixé par lui : 50 € par jour. Précision demandée par lui : travail en français, échanges écrits en anglais possibles, visios en français seulement.
 - **Google Search Console** : le compte Google utilisé par le propriétaire le 04/10/2026 n'avait pas encore le site. Fichier de validation `google17eaf983518ef390.html` ajouté à la racine et publié. **Propriété validée et `sitemap.xml` déclaré par le propriétaire le 04/10/2026** (« Sitemap submitted successfully »). À surveiller dans les jours suivants : le nombre de pages découvertes et indexées.
 - **Audit** : étapes 1 à 4 faites, étape 5 (contenu) en partie avec les deux projets concept. Restent : page 404, contraste et accessibilité, refonte de « À propos » et des barres de compétences, une page par service.
 
