@@ -272,12 +272,65 @@ function visuelSiteVitrine() {
   return svg(s);
 }
 
+// ---------------------------------------------------------------- 6. L'IA et le graphiste
+function visuelIA() {
+  let s = decor('#f1f0f7', '#e5e3f1', '#e0deee');
+  const y = 92, h = 420;
+
+  // À gauche : une grille de logos générés en série, presque identiques
+  const xg = 72, wg = 400;
+  s += carte(xg, y, wg, h, 22);
+  s += `<rect x="${xg}" y="${y}" width="${wg}" height="48" rx="22" fill="#6b6a8a"/><rect x="${xg}" y="${y + 26}" width="${wg}" height="22" fill="#6b6a8a"/>`;
+  s += texte(xg + wg / 2, y + 32, 'Générer des images', 20, BLANC, 700);
+  const variantes = [[BLEU, ORANGE], ['#2a86b5', ORANGE], [BLEU, '#f08a4b'], ['#1f8fb0', ORANGE], [BLEU, ORANGE], ['#2592b8', '#e06a2a']];
+  variantes.forEach(([c, p], i) => {
+    const cx = xg + 72 + (i % 3) * 128, cy = y + 128 + Math.floor(i / 3) * 150;
+    s += `<rect x="${cx - 52}" y="${cy - 52}" width="104" height="104" rx="16" fill="${GRIS_CLAIR}"/>`;
+    s += marque(cx, cy - 6, 28 + (i % 2) * 2, c, BLANC, p);
+    s += barre(cx - 26, cy + 34, 52 - (i % 3) * 6, 7, GRIS);
+    if (i === 4) s += `<rect x="${cx + 8}" y="${cy - 40}" width="22" height="26" fill="${GRIS_CLAIR}"/>`; // un détail raté
+  });
+  s += barre(xg + 40, y + h - 46, 110, 10, GRIS) + barre(xg + 160, y + h - 46, 60, 10, GRIS) + barre(xg + 230, y + h - 46, 130, 10, GRIS);
+
+  // Au centre : « contre »
+  s += `<circle cx="${W / 2}" cy="${y + h / 2}" r="30" fill="${NUIT}"/>`;
+  s += texte(W / 2, y + h / 2 + 8, 'vs', 24, BLANC, 700);
+
+  // À droite : le travail du graphiste, de la construction à la marque appliquée
+  const xd = 552, wd = 400;
+  s += carte(xd, y, wd, h, 22);
+  s += `<rect x="${xd}" y="${y}" width="${wd}" height="48" rx="22" fill="${BLEU}"/><rect x="${xd}" y="${y + 26}" width="${wd}" height="22" fill="${BLEU}"/>`;
+  s += texte(xd + wd / 2, y + 32, 'Construire une marque', 20, BLANC, 700);
+  // Croquis de construction
+  const kx = xd + 110, ky = y + 150;
+  [[0, 0, 62], [-26, 14, 30], [30, -18, 24], [-8, -34, 20]].forEach(([dx, dy, r]) => {
+    s += `<circle cx="${kx + dx}" cy="${ky + dy}" r="${r}" fill="none" stroke="#7fb069" stroke-width="1.5"/>`;
+  });
+  s += `<path d="M ${kx - 70} ${ky} H ${kx + 70} M ${kx} ${ky - 70} V ${ky + 70}" stroke="${BLEU}" stroke-width="1" stroke-dasharray="4 4"/>`;
+  s += marque(kx, ky, 40, BLEU, BLANC, ORANGE);
+  // Flèche vers les déclinaisons
+  s += `<path d="M ${xd + 212} ${ky} H ${xd + 252}" stroke="${NUIT}" stroke-width="3" stroke-linecap="round"/><path d="M ${xd + 244} ${ky - 8} l 10 8 l -10 8" fill="none" stroke="${NUIT}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`;
+  // Déclinaisons : couleur, une teinte, fond sombre
+  [[BLEU, BLANC, ORANGE, GRIS_CLAIR], [NUIT, BLANC, null, GRIS_CLAIR], [BLANC, NUIT, null, NUIT]].forEach(([c, v, p, fond], i) => {
+    const bx = xd + 270 + (i % 2) * 64, by = y + 100 + Math.floor(i / 2) * 64;
+    s += `<rect x="${bx}" y="${by}" width="54" height="54" rx="12" fill="${fond}"/>` + marque(bx + 27, by + 27, 16, c, v, p);
+  });
+  [NUIT, BLEU, ORANGE].forEach((c, i) => { s += `<rect x="${xd + 334}" y="${y + 164 + i * 18}" width="40" height="12" rx="4" fill="${c}"/>`; });
+  // Carte de visite et charte
+  s += `<rect x="${xd + 40}" y="${y + 262}" width="150" height="92" rx="10" fill="${NUIT}"/>` + marque(xd + 72, y + 294, 16, BLANC, NUIT, null) + barre(xd + 96, y + 288, 70, 9, BLANC) + barre(xd + 56, y + 326, 90, 6, '#6b84a0');
+  s += `<rect x="${xd + 214}" y="${y + 262}" width="150" height="92" rx="10" fill="${GRIS_CLAIR}"/>` + barre(xd + 230, y + 280, 80, 9, NUIT) + barre(xd + 230, y + 300, 118, 6, GRIS) + barre(xd + 230, y + 314, 100, 6, GRIS) + barre(xd + 230, y + 328, 112, 6, GRIS);
+  s += texte(xd + wd / 2, y + h - 22, 'Vectoriel · variantes · charte · droits', 15, '#5c6b7a', 600);
+
+  return svg(s);
+}
+
 const VISUELS = {
   'logo-identite-visuelle-charte-graphique-differences': visuelDifferences,
   'brief-creation-logo': visuelBrief,
   'formats-fichiers-logo': visuelFormats,
   'travailler-avec-graphiste-freelance-a-distance': visuelDistance,
   'pages-indispensables-site-vitrine': visuelSiteVitrine,
+  'ia-remplacer-graphiste': visuelIA,
 };
 
 (async () => {
