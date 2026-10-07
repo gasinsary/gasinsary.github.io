@@ -294,7 +294,6 @@ function visuelIA() {
   s += `<circle cx="340" cy="${bureau - 12}" r="16" fill="${PEAU}"/>`;
   // bras replié, main au menton
   s += `<path d="M 160 326 q -26 36 10 48 q 30 6 40 -62" fill="none" stroke="${CHEMISE}" stroke-width="30" stroke-linecap="round"/>`;
-  s += `<circle cx="214" cy="294" r="17" fill="${PEAU}"/>`;
   // cou et tête
   s += `<rect x="192" y="262" width="36" height="34" fill="${PEAU}"/>`;
   s += `<circle cx="210" cy="238" r="50" fill="${PEAU}"/>`;
@@ -304,6 +303,8 @@ function visuelIA() {
   s += `<circle cx="236" cy="236" r="4" fill="${NUIT}"/>`;
   s += `<path d="M 226 218 q 12 -8 24 -2" fill="none" stroke="${NUIT}" stroke-width="3" stroke-linecap="round"/>`;
   s += `<path d="M 238 262 h 12" stroke="${NUIT}" stroke-width="3" stroke-linecap="round"/>`;
+  // la main, devant le menton
+  s += `<circle cx="218" cy="286" r="17" fill="${PEAU}" stroke="#d8a687" stroke-width="3"/>`;
   // bureau
   s += `<rect x="70" y="${bureau}" width="400" height="14" rx="7" fill="${NUIT}"/>`;
   s += `<rect x="94" y="${bureau + 14}" width="14" height="${sol - bureau - 14}" fill="${NUIT}"/><rect x="432" y="${bureau + 14}" width="14" height="${sol - bureau - 14}" fill="${NUIT}"/>`;
