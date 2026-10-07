@@ -10,7 +10,7 @@ rubrique: "Conseils"
 resume: "L'IA produit des images en quelques secondes. Un graphiste produit des décisions. La différence se voit le jour où il faut imprimer, décliner, ou défendre un choix."
 image: /assets/img/blog/ia-remplacer-graphiste.webp
 image_partage: /assets/img/blog/ia-remplacer-graphiste.jpg
-alt: "Illustration : à gauche, des logos générés en série par une IA ; à droite, le croquis de construction et le logo d'un graphiste"
+alt: "Illustration : un graphiste réfléchit devant son ordinateur, face à un robot qui produit des images en série"
 appel_titre: "Vous hésitez entre une IA et un graphiste ?"
 appel: "Parlons de votre projet. Gas'in Sary conçoit des logos, des identités visuelles et des sites web à distance, avec un interlocuteur qui répond de ses choix."
 ---
@@ -26,7 +26,7 @@ Soyons honnêtes, c'est la seule façon d'être crédible sur ce sujet. Les outi
 - retoucher, détourer, agrandir une image ;
 - dépanner quand il faut un visuel de remplissage, tout de suite, sans enjeu.
 
-Les illustrations de ce blog en sont un exemple : elles ont été produites avec l'aide d'outils d'intelligence artificielle, à partir d'une direction précise, puis validées par le studio. L'outil a exécuté. Il n'a rien décidé.
+Dans tous ces cas, l'outil exécute une direction donnée par quelqu'un. Il ne décide rien.
 
 ## Un logo n'est pas une image
 

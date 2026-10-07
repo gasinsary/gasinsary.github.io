@@ -273,54 +273,91 @@ function visuelSiteVitrine() {
 }
 
 // ---------------------------------------------------------------- 6. L'IA et le graphiste
+// Un graphiste qui réfléchit devant son ordinateur, face à un robot qui produit des images à la chaîne.
 function visuelIA() {
   let s = decor('#f1f0f7', '#e5e3f1', '#e0deee');
-  const y = 92, h = 420;
+  const PEAU = '#f0c7a6', CHEVEUX = '#2b2b3a', CHEMISE = BLEU, PANTALON = '#2f3f55', ROBOT = '#8d8da8', ROBOT_FONCE = '#6b6b88', CYAN = '#5fd3f3';
+  const sol = 600, bureau = 432;
 
-  // À gauche : une grille de logos générés en série, presque identiques
-  const xg = 72, wg = 400;
-  s += carte(xg, y, wg, h, 22);
-  s += `<rect x="${xg}" y="${y}" width="${wg}" height="48" rx="22" fill="#6b6a8a"/><rect x="${xg}" y="${y + 26}" width="${wg}" height="22" fill="#6b6a8a"/>`;
-  s += texte(xg + wg / 2, y + 32, 'Générer des images', 20, BLANC, 700);
-  const variantes = [[BLEU, ORANGE], ['#2a86b5', ORANGE], [BLEU, '#f08a4b'], ['#1f8fb0', ORANGE], [BLEU, ORANGE], ['#2592b8', '#e06a2a']];
-  variantes.forEach(([c, p], i) => {
-    const cx = xg + 72 + (i % 3) * 128, cy = y + 128 + Math.floor(i / 3) * 150;
-    s += `<rect x="${cx - 52}" y="${cy - 52}" width="104" height="104" rx="16" fill="${GRIS_CLAIR}"/>`;
-    s += marque(cx, cy - 6, 28 + (i % 2) * 2, c, BLANC, p);
-    s += barre(cx - 26, cy + 34, 52 - (i % 3) * 6, 7, GRIS);
-    if (i === 4) s += `<rect x="${cx + 8}" y="${cy - 40}" width="22" height="26" fill="${GRIS_CLAIR}"/>`; // un détail raté
+  // ---- À gauche : le graphiste, assis derrière son bureau, face à son ordinateur
+  // chaise (dossier derrière le personnage)
+  s += `<rect x="112" y="300" width="34" height="${sol - 300}" rx="10" fill="#4a5568"/>`;
+  s += `<rect x="96" y="${sol - 14}" width="120" height="14" rx="7" fill="#4a5568"/>`;
+  // jambes et pieds, sous le bureau
+  s += `<rect x="176" y="${bureau + 14}" width="40" height="${sol - bureau - 26}" rx="8" fill="${PANTALON}"/>`;
+  s += `<rect x="226" y="${bureau + 14}" width="40" height="${sol - bureau - 26}" rx="8" fill="${PANTALON}"/>`;
+  s += `<rect x="170" y="${sol - 20}" width="56" height="20" rx="8" fill="${NUIT}"/><rect x="222" y="${sol - 20}" width="56" height="20" rx="8" fill="${NUIT}"/>`;
+  // torse
+  s += `<path d="M 142 ${bureau} v -92 a 46 46 0 0 1 46 -46 h 44 a 46 46 0 0 1 46 46 v 92 z" fill="${CHEMISE}"/>`;
+  // bras tendu vers le clavier
+  s += `<path d="M 262 324 q 60 20 76 92" fill="none" stroke="${CHEMISE}" stroke-width="30" stroke-linecap="round"/>`;
+  s += `<circle cx="340" cy="${bureau - 12}" r="16" fill="${PEAU}"/>`;
+  // bras replié, main au menton
+  s += `<path d="M 160 326 q -26 36 10 48 q 30 6 40 -62" fill="none" stroke="${CHEMISE}" stroke-width="30" stroke-linecap="round"/>`;
+  s += `<circle cx="214" cy="294" r="17" fill="${PEAU}"/>`;
+  // cou et tête
+  s += `<rect x="192" y="262" width="36" height="34" fill="${PEAU}"/>`;
+  s += `<circle cx="210" cy="238" r="50" fill="${PEAU}"/>`;
+  s += `<path d="M 160 232 a 50 50 0 0 1 100 0 q -16 -28 -50 -24 q -34 -4 -50 24 z" fill="${CHEVEUX}"/>`;
+  s += `<path d="M 160 232 q -6 30 8 46 v -42 z" fill="${CHEVEUX}"/>`;
+  // œil, sourcil levé, bouche pensive
+  s += `<circle cx="236" cy="236" r="4" fill="${NUIT}"/>`;
+  s += `<path d="M 226 218 q 12 -8 24 -2" fill="none" stroke="${NUIT}" stroke-width="3" stroke-linecap="round"/>`;
+  s += `<path d="M 238 262 h 12" stroke="${NUIT}" stroke-width="3" stroke-linecap="round"/>`;
+  // bureau
+  s += `<rect x="70" y="${bureau}" width="400" height="14" rx="7" fill="${NUIT}"/>`;
+  s += `<rect x="94" y="${bureau + 14}" width="14" height="${sol - bureau - 14}" fill="${NUIT}"/><rect x="432" y="${bureau + 14}" width="14" height="${sol - bureau - 14}" fill="${NUIT}"/>`;
+  // ordinateur portable, écran légèrement tourné vers le graphiste
+  s += `<path d="M 372 ${bureau} l 14 -126 a 10 10 0 0 1 10 -8 h 86 a 8 8 0 0 1 8 10 l -16 124 z" fill="${NUIT}"/>`;
+  s += `<path d="M 386 ${bureau - 8} l 12 -112 h 80 l -14 112 z" fill="${BLANC}"/>`;
+  s += `<path d="M 402 ${bureau - 106} h 56 l -2 14 h -56 z" fill="${GRIS}"/><path d="M 399 ${bureau - 82} h 48 l -2 14 h -48 z" fill="${GRIS_CLAIR}"/>`;
+  s += marque(440, bureau - 44, 13, BLEU, BLANC, null);
+  s += `<rect x="332" y="${bureau - 6}" width="150" height="8" rx="4" fill="#24425f"/>`;
+  // tasse
+  s += `<rect x="288" y="${bureau - 36}" width="32" height="36" rx="8" fill="${ORANGE}"/><path d="M 320 ${bureau - 28} a 9 9 0 0 1 0 18" fill="none" stroke="${ORANGE}" stroke-width="5"/>`;
+  // bulle de pensée : le croquis d'un logo, et un point d'interrogation
+  s += `<circle cx="250" cy="176" r="7" fill="${BLANC}"/><circle cx="270" cy="152" r="11" fill="${BLANC}"/>`;
+  s += `<rect x="262" y="24" width="200" height="118" rx="40" fill="${BLANC}"/>`;
+  s += `<circle cx="322" cy="83" r="32" fill="none" stroke="#7fb069" stroke-width="1.5"/><circle cx="336" cy="70" r="17" fill="none" stroke="#7fb069" stroke-width="1.5"/>`;
+  s += `<path d="M 282 83 H 362 M 322 43 V 123" stroke="${BLEU}" stroke-width="1" stroke-dasharray="4 4"/>`;
+  s += marque(322, 83, 19, BLEU, BLANC, ORANGE);
+  s += texte(414, 104, '?', 58, NUIT, 700);
+
+  // ---- Au centre
+  s += `<circle cx="${W / 2}" cy="300" r="32" fill="${NUIT}"/>`;
+  s += texte(W / 2, 309, 'vs', 26, BLANC, 700);
+
+  // ---- À droite : le robot et sa production d'images
+  const rx = 720;
+  s += `<rect x="${rx - 70}" y="${sol - 16}" width="140" height="16" rx="8" fill="${ROBOT_FONCE}"/>`;
+  s += `<rect x="${rx - 22}" y="${sol - 60}" width="44" height="48" rx="10" fill="${ROBOT_FONCE}"/>`;
+  s += `<rect x="${rx - 84}" y="${sol - 236}" width="168" height="180" rx="30" fill="${ROBOT}"/>`;
+  s += `<rect x="${rx - 50}" y="${sol - 200}" width="100" height="60" rx="12" fill="${ROBOT_FONCE}"/>`;
+  [0, 1, 2].forEach(i => { s += `<circle cx="${rx - 30 + i * 30}" cy="${sol - 170}" r="7" fill="${i === 1 ? ORANGE : CYAN}"/>`; });
+  s += `<rect x="${rx - 50}" y="${sol - 120}" width="100" height="10" rx="5" fill="${ROBOT_FONCE}"/><rect x="${rx - 50}" y="${sol - 100}" width="64" height="10" rx="5" fill="${ROBOT_FONCE}"/>`;
+  s += `<path d="M ${rx - 84} ${sol - 200} q -50 20 -40 90" fill="none" stroke="${ROBOT}" stroke-width="26" stroke-linecap="round"/>`;
+  s += `<circle cx="${rx - 124}" cy="${sol - 108}" r="18" fill="${ROBOT_FONCE}"/>`;
+  s += `<path d="M ${rx + 84} ${sol - 200} q 60 -10 76 -70" fill="none" stroke="${ROBOT}" stroke-width="26" stroke-linecap="round"/>`;
+  s += `<circle cx="${rx + 162}" cy="${sol - 272}" r="18" fill="${ROBOT_FONCE}"/>`;
+  s += `<rect x="${rx - 18}" y="${sol - 262}" width="36" height="30" fill="${ROBOT_FONCE}"/>`;
+  s += `<rect x="${rx - 74}" y="${sol - 372}" width="148" height="112" rx="28" fill="${ROBOT}"/>`;
+  s += `<rect x="${rx - 56}" y="${sol - 354}" width="112" height="70" rx="16" fill="${NUIT}"/>`;
+  s += `<rect x="${rx - 38}" y="${sol - 332}" width="26" height="12" rx="6" fill="${CYAN}"/><rect x="${rx + 12}" y="${sol - 332}" width="26" height="12" rx="6" fill="${CYAN}"/>`;
+  s += `<rect x="${rx - 20}" y="${sol - 308}" width="40" height="6" rx="3" fill="${CYAN}"/>`;
+  s += `<rect x="${rx - 4}" y="${sol - 410}" width="8" height="40" fill="${ROBOT_FONCE}"/><circle cx="${rx}" cy="${sol - 416}" r="12" fill="${ORANGE}"/>`;
+  s += `<rect x="${rx - 92}" y="${sol - 340}" width="18" height="40" rx="6" fill="${ROBOT_FONCE}"/><rect x="${rx + 74}" y="${sol - 340}" width="18" height="40" rx="6" fill="${ROBOT_FONCE}"/>`;
+  [[-14, 0], [-7, -22], [0, -44]].forEach(([dx, dy], i) => {
+    const cx = rx + 206 + dx, cy = sol - 290 + dy - i * 24;
+    s += `<g transform="rotate(${-8 + i * 8} ${cx} ${cy})">`;
+    s += `<rect x="${cx - 44}" y="${cy - 34}" width="88" height="68" rx="10" fill="${BLANC}"/>`;
+    s += marque(cx, cy - 4, 16, BLEU, BLANC, ORANGE) + barre(cx - 24, cy + 20, 48 - i * 8, 6, GRIS);
+    s += `</g>`;
   });
-  s += barre(xg + 40, y + h - 46, 110, 10, GRIS) + barre(xg + 160, y + h - 46, 60, 10, GRIS) + barre(xg + 230, y + h - 46, 130, 10, GRIS);
+  [0, 1, 2].forEach(i => { s += `<path d="M ${rx + 124} ${sol - 360 - i * 18} h ${26 - i * 6}" stroke="${CYAN}" stroke-width="4" stroke-linecap="round"/>`; });
 
-  // Au centre : « contre »
-  s += `<circle cx="${W / 2}" cy="${y + h / 2}" r="30" fill="${NUIT}"/>`;
-  s += texte(W / 2, y + h / 2 + 8, 'vs', 24, BLANC, 700);
-
-  // À droite : le travail du graphiste, de la construction à la marque appliquée
-  const xd = 552, wd = 400;
-  s += carte(xd, y, wd, h, 22);
-  s += `<rect x="${xd}" y="${y}" width="${wd}" height="48" rx="22" fill="${BLEU}"/><rect x="${xd}" y="${y + 26}" width="${wd}" height="22" fill="${BLEU}"/>`;
-  s += texte(xd + wd / 2, y + 32, 'Construire une marque', 20, BLANC, 700);
-  // Croquis de construction
-  const kx = xd + 110, ky = y + 150;
-  [[0, 0, 62], [-26, 14, 30], [30, -18, 24], [-8, -34, 20]].forEach(([dx, dy, r]) => {
-    s += `<circle cx="${kx + dx}" cy="${ky + dy}" r="${r}" fill="none" stroke="#7fb069" stroke-width="1.5"/>`;
-  });
-  s += `<path d="M ${kx - 70} ${ky} H ${kx + 70} M ${kx} ${ky - 70} V ${ky + 70}" stroke="${BLEU}" stroke-width="1" stroke-dasharray="4 4"/>`;
-  s += marque(kx, ky, 40, BLEU, BLANC, ORANGE);
-  // Flèche vers les déclinaisons
-  s += `<path d="M ${xd + 212} ${ky} H ${xd + 252}" stroke="${NUIT}" stroke-width="3" stroke-linecap="round"/><path d="M ${xd + 244} ${ky - 8} l 10 8 l -10 8" fill="none" stroke="${NUIT}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`;
-  // Déclinaisons : couleur, une teinte, fond sombre
-  [[BLEU, BLANC, ORANGE, GRIS_CLAIR], [NUIT, BLANC, null, GRIS_CLAIR], [BLANC, NUIT, null, NUIT]].forEach(([c, v, p, fond], i) => {
-    const bx = xd + 270 + (i % 2) * 64, by = y + 100 + Math.floor(i / 2) * 64;
-    s += `<rect x="${bx}" y="${by}" width="54" height="54" rx="12" fill="${fond}"/>` + marque(bx + 27, by + 27, 16, c, v, p);
-  });
-  [NUIT, BLEU, ORANGE].forEach((c, i) => { s += `<rect x="${xd + 334}" y="${y + 164 + i * 18}" width="40" height="12" rx="4" fill="${c}"/>`; });
-  // Carte de visite et charte
-  s += `<rect x="${xd + 40}" y="${y + 262}" width="150" height="92" rx="10" fill="${NUIT}"/>` + marque(xd + 72, y + 294, 16, BLANC, NUIT, null) + barre(xd + 96, y + 288, 70, 9, BLANC) + barre(xd + 56, y + 326, 90, 6, '#6b84a0');
-  s += `<rect x="${xd + 214}" y="${y + 262}" width="150" height="92" rx="10" fill="${GRIS_CLAIR}"/>` + barre(xd + 230, y + 280, 80, 9, NUIT) + barre(xd + 230, y + 300, 118, 6, GRIS) + barre(xd + 230, y + 314, 100, 6, GRIS) + barre(xd + 230, y + 328, 112, 6, GRIS);
-  s += texte(xd + wd / 2, y + h - 22, 'Vectoriel · variantes · charte · droits', 15, '#5c6b7a', 600);
-
+  // ---- Légendes
+  s += texte(270, sol + 52, 'Le graphiste', 27);
+  s += texte(rx, sol + 52, "L'IA", 27);
   return svg(s);
 }
 
