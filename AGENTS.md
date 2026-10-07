@@ -81,7 +81,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 
 - Un article = un fichier Markdown `_posts/AAAA-MM-JJ-nom.md`. Le modèle `article` et l'adresse `/blog/<nom>/` sont réglés dans `_config.yml` : ne pas les répéter dans l'article. Un article daté dans le futur n'est pas publié.
 - En-tête d'un article : `title`, `titre_court` (fil d'Ariane), `titre_seo`, `description`, `rubrique`, `resume` (texte de la carte), `image` (WebP, 1024 × 683, dans `assets/img/blog/`), `image_partage` (JPG), `alt`. Facultatifs : `maj` (date de mise à jour), `appel_titre` et `appel` (encart de fin d'article).
-- `rubrique` sert à proposer les articles similaires dans « À lire aussi » : réutiliser exactement les rubriques existantes (« Identité visuelle », « Conseils », « Travail à distance ») avant d'en créer une.
+- `rubrique` sert à proposer les articles similaires dans « À lire aussi » : réutiliser exactement les rubriques existantes (« Identité visuelle », « Conseils », « Travail à distance », « Création de site web ») avant d'en créer une.
 - Dans le texte : sous-titres en `##` puis `###` (le `#` est réservé au titre de la page), liens internes avec `relative_url`, par exemple `[notre page logo]({{ '/creation-logo-identite-visuelle/' | relative_url }})`. Chaque article renvoie vers au moins une page de service et, si possible, un autre article.
 - Mêmes règles de ton que le reste du site : « nous », pas de promesse non confirmée, pas de client ni de témoignage inventé.
 - **Le propriétaire écrit ses articles et les envoie pour mise en ligne** (toutes les une à deux semaines) : garder son texte, corriger les fautes, proposer le titre SEO, la description et les liens internes, puis passer par la version de test.

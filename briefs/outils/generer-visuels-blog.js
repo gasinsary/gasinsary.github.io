@@ -222,11 +222,62 @@ function visuelDistance() {
   return svg(s);
 }
 
+// ---------------------------------------------------------------- 5. Les pages d'un site vitrine
+function visuelSiteVitrine() {
+  let s = decor('#eef5f0', '#e0efe6', '#dcece3');
+
+  // La fenêtre de navigateur : l'accueil du site
+  const x = 92, y = 64, w = 560, h = 356;
+  s += carte(x, y, w, h, 18);
+  s += `<path d="M ${x} ${y + 18} a 18 18 0 0 1 18 -18 h ${w - 36} a 18 18 0 0 1 18 18 v 24 h ${-w} z" fill="${GRIS_CLAIR}"/>`;
+  [ORANGE, '#f2c94c', '#6fcf97'].forEach((c, i) => { s += `<circle cx="${x + 24 + i * 20}" cy="${y + 21}" r="6" fill="${c}"/>`; });
+  s += `<rect x="${x + 100}" y="${y + 11}" width="${w - 130}" height="20" rx="10" fill="${BLANC}"/>`;
+  // En-tête du site : logo et menu
+  s += marque(x + 44, y + 76, 15, BLEU, BLANC, null) + barre(x + 66, y + 70, 70, 12, NUIT);
+  [52, 40, 64, 48].forEach((l, i) => { s += barre(x + 300 + i * 66, y + 71, l, 10); });
+  // Bandeau d'accueil : promesse, bouton, illustration
+  s += barre(x + 44, y + 128, 230, 18, NUIT) + barre(x + 44, y + 156, 190, 18, NUIT);
+  s += barre(x + 44, y + 192, 250, 10) + barre(x + 44, y + 212, 210, 10);
+  s += `<rect x="${x + 44}" y="${y + 240}" width="110" height="34" rx="17" fill="${ORANGE}"/>`;
+  s += `<rect x="${x + 340}" y="${y + 116}" width="176" height="170" rx="16" fill="#e3f2f7"/>`;
+  s += marque(x + 428, y + 190, 44);
+  // Trois cartes de services
+  [0, 1, 2].forEach(i => {
+    const cx = x + 44 + i * 164;
+    s += `<rect x="${cx}" y="${y + 296}" width="144" height="44" rx="10" fill="${GRIS_CLAIR}"/>`;
+    s += `<rect x="${cx + 10}" y="${y + 306}" width="24" height="24" rx="7" fill="${BLEU}"/>` + barre(cx + 44, y + 313, 80, 10, GRIS);
+  });
+
+  // À droite : le téléphone, même site en version mobile
+  s += `<rect x="700" y="${y + 44}" width="150" height="300" rx="22" fill="${NUIT}" opacity="0.08"/>`;
+  s += `<rect x="700" y="${y + 32}" width="150" height="300" rx="22" fill="${NUIT}"/>`;
+  s += `<rect x="708" y="${y + 40}" width="134" height="284" rx="16" fill="${BLANC}"/>`;
+  s += marque(728, y + 66, 10, BLEU, BLANC, null) + barre(744, y + 61, 40, 10, NUIT) + barre(812, y + 61, 20, 10);
+  s += barre(722, y + 96, 100, 14, NUIT) + barre(722, y + 118, 76, 14, NUIT) + barre(722, y + 144, 106, 8) + barre(722, y + 160, 90, 8);
+  s += `<rect x="722" y="${y + 180}" width="70" height="26" rx="13" fill="${ORANGE}"/>`;
+  [0, 1, 2].forEach(i => { s += `<rect x="722" y="${y + 222 + i * 32}" width="106" height="24" rx="8" fill="${GRIS_CLAIR}"/>`; });
+
+  // En bas : les sept pages, comme un plan du site
+  const pages = ['Accueil', 'Services', 'Réalisations', 'À propos', 'Contact', 'Blog', 'Mentions'];
+  const pw = 112, gap = 18, x0 = (W - (7 * pw + 6 * gap)) / 2, py = 486;
+  s += `<path d="M ${x0 + pw / 2} ${py - 22} H ${x0 + 6 * (pw + gap) + pw / 2}" stroke="${BLEU}" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>`;
+  pages.forEach((nom, i) => {
+    const px = x0 + i * (pw + gap);
+    s += `<path d="M ${px + pw / 2} ${py - 22} V ${py}" stroke="${BLEU}" stroke-width="3"/>`;
+    s += carte(px, py, pw, 118, 12);
+    s += `<rect x="${px}" y="${py}" width="${pw}" height="14" rx="6" fill="${i === 0 ? ORANGE : BLEU}"/>`;
+    s += barre(px + 14, py + 30, 60, 8, NUIT) + barre(px + 14, py + 46, 84, 6) + barre(px + 14, py + 58, 70, 6) + barre(px + 14, py + 70, 78, 6);
+    s += texte(px + pw / 2, py + 104, nom, 15, NUIT, 700);
+  });
+  return svg(s);
+}
+
 const VISUELS = {
   'logo-identite-visuelle-charte-graphique-differences': visuelDifferences,
   'brief-creation-logo': visuelBrief,
   'formats-fichiers-logo': visuelFormats,
   'travailler-avec-graphiste-freelance-a-distance': visuelDistance,
+  'pages-indispensables-site-vitrine': visuelSiteVitrine,
 };
 
 (async () => {
