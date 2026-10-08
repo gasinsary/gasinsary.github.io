@@ -291,9 +291,17 @@ supabase: true
           <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
             <ul class="portfolio-filters isotope-filters">
               <li data-filter="*" class="filter-active">Tous</li>
-              <li data-filter=".filter-web">Contenu social</li>
-              <li data-filter=".filter-graphics">Graphique</li>
-              <li data-filter=".filter-motion">Illustration web & UI</li>
+              {%- comment %} Un filtre n'apparaît que si une carte de l'accueil l'utilise {% endcomment %}
+              {%- assign accueil_realisations = site.projets | concat: site.data.visuels | where: "accueil", true -%}
+              {%- for categorie in site.data.categories %}
+              {%- assign utilisee = false -%}
+              {%- for realisation in accueil_realisations %}
+              {%- if realisation.categorie == categorie[0] %}{%- assign utilisee = true -%}{%- endif %}
+              {%- endfor %}
+              {%- if utilisee %}
+              <li data-filter=".{{ categorie[1].filtre }}">{{ categorie[1].nom | escape }}</li>
+              {%- endif %}
+              {%- endfor %}
            
             </ul>
           </div>

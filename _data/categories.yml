@@ -16,3 +16,7 @@ illustration:
 campagne:
   nom: "Campagne digitale"
   filtre: filter-campagne
+
+web:
+  nom: "Sites & applications"
+  filtre: filter-app

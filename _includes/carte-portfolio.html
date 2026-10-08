@@ -27,7 +27,7 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <span class="category">{{ categorie.nom | escape }}{% if item.concept %} · Projet concept{% endif %}{% if item.brouillon %} · Brouillon{% endif %}</span>
+                  <span class="category">{{ categorie.nom | escape }}{% if item.concept %} · Projet concept{% endif %}{% if item.studio %} · Projet du studio{% endif %}{% if item.brouillon %} · Brouillon{% endif %}</span>
                   {%- if item.url %}
                   <h3><a href="{{ item.url | relative_url }}">{{ carte_titre | escape }}</a></h3>
                   {%- else %}

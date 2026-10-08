@@ -29,6 +29,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 - Offre : design graphique, identités visuelles, sites web et applications. Clients à Madagascar et à l'international.
 - Ne pas citer le nom d'un client sans l'accord du propriétaire.
 - **Projets concept** : un projet réalisé pour une marque fictive porte `concept: true`. La carte et la page affichent alors « Projet concept ». Ne jamais présenter une marque fictive comme un vrai client, ni inventer de témoignage.
+- **Projets du studio** : un produit créé par Gas'in Sary pour son propre compte (ex. Voolapp) porte `studio: true` : la carte et la page affichent « Projet du studio ». Captures d'écran sur données fictives uniquement, jamais de lien vers une page de connexion, pas de chiffres d'usage inventés.
 - Tous les textes en français, sans mots anglais d'interface (« Phone », « Loading »...).
 
 ## Technique
@@ -57,7 +58,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 | `_data/visuels.yml` | Visuels simples (image seule, sans page détaillée) |
 | `_data/categories.yml` | Catégories et filtres du portfolio |
 | `portfolio/<nom>/img/` | Images d'un projet |
-| `briefs/` | Briefs de création des projets concept (non publiés) |
+| `briefs/` | Briefs de création des projets concept, captures d'écran d'origine de Voolapp (`voolapp-captures/`) et outils de mise en scène (`outils/`) ; non publiés |
 | `assets/js/supabase.js` | Connexion Supabase (clé publique uniquement) |
 | `mpatk.html` | Politique de confidentialité du chatbot MPATKBOT. Sans rapport avec le site : **ne pas modifier** |
 | `googleaa7d45fdd426d7f9.html`, `google17eaf983518ef390.html` | Vérification Google Search Console (deux comptes Google) : **ne pas modifier ni supprimer** |

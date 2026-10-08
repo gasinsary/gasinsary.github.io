@@ -36,7 +36,6 @@
 
 - title: "Illustration"
   ordre: 6
-  accueil: true
   categorie: illustration
   image: /assets/img/portfolio/portfolio-6.webp
   alt: "Création d'illustration - par Gas'in Sary"
