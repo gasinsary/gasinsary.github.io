@@ -21,6 +21,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 - Le mot **« freelance »** est un mot recherché par cette cible (« graphiste freelance Madagascar ») : il est voulu dans le titre Google de l'accueil, dans le récit du parcours et dans le discours aux agences (« en sous-traitance, en freelance »). Le studio reste un « studio » dans le reste des textes.
 - Le mot « agence » désigne les **clients** agences, jamais Gas'in Sary.
 - Ne pas promettre ce que le propriétaire n'a pas confirmé (délai de réponse, moyens de paiement, nombre de retouches, tarifs).
+- **Offre web, confirmée le 08/10/2026** : site vitrine, site sur mesure, application web et mobile, boutique en ligne, refonte. Technologies à citer : React, Next.js, HTML/CSS, PHP, MySQL, PostgreSQL, intégration d'IA. Le client souscrit et possède son nom de domaine et son hébergement ; le studio met en place et garde un accès technique. Maintenance possible, « à discuter » (ne pas en fixer le contenu ni le prix). Intégration à partir des maquettes des agences : oui. Pas de page de mentions légales pour l'instant (choix du propriétaire).
 
 - Gas'in Sary est un **studio créatif** (jamais « agence »), fondé par Mirado avec sa femme, passionnée de marketing. C'est l'essence du studio.
 - Mirado pilote chaque projet et s'appuie, **selon les projets**, sur un graphiste et un développeur partenaires (indépendants). Ne pas parler de salariés, d'équipe permanente ni d'« expansion ».
@@ -51,6 +52,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 | `portfolio/index.html` | Liste de toutes les réalisations |
 | `externalisation-creation-graphique-madagascar/index.html` | Page de service pour les agences (sous-traitance graphique). Modèle à suivre pour les prochaines pages de services |
 | `creation-logo-identite-visuelle/index.html` | Page de service « logo et identité visuelle », pour les entreprises |
+| `creation-site-web/index.html` | Page de service « création de site web et d'application » (vitrine, sur mesure, application web et mobile, boutique, refonte) |
 | `_projets/*.md` | Un fichier par projet avec page détaillée ; le nom du fichier donne l'adresse `/portfolio/<nom>/` |
 | `blog/index.html` | Liste des articles du blog |
 | `_posts/AAAA-MM-JJ-nom.md` | Un fichier par article du blog ; le nom du fichier donne la date et l'adresse `/blog/<nom>/` |
@@ -67,7 +69,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 
 - **Tous les liens et chemins internes passent par le filtre `relative_url`** (ex. `{{ '/assets/css/main.css' | relative_url }}`). Ne jamais écrire `/assets/...` ou `https://gasinsary.github.io/...` en dur : la version de test vit sous un sous-dossier.
 - `baseurl` n'est volontairement pas défini dans `_config.yml` : GitHub Pages le règle selon le dépôt.
-- Les adresses existantes ne doivent pas changer (SEO) : `/`, `/portfolio/`, les pages de `/portfolio/<projet>/`, `/externalisation-creation-graphique-madagascar/`, `/creation-logo-identite-visuelle/`, `/blog/` et les articles de `/blog/<nom>/` (ne pas renommer le fichier d'un article publié).
+- Les adresses existantes ne doivent pas changer (SEO) : `/`, `/portfolio/`, les pages de `/portfolio/<projet>/`, `/externalisation-creation-graphique-madagascar/`, `/creation-logo-identite-visuelle/`, `/creation-site-web/`, `/blog/` et les articles de `/blog/<nom>/` (ne pas renommer le fichier d'un article publié).
 - Chaque page définit `titre_seo` (ou `title`) et `description` dans son en-tête ; `_includes/head.html` produit le titre, la description, l'adresse canonique et les balises de partage.
 - Tout fichier Markdown ajouté à la racine (documentation) doit être listé dans `exclude` de `_config.yml`, sinon Jekyll le publie comme une page.
 - Dans un en-tête YAML, ne pas écrire `---` dans un commentaire.
