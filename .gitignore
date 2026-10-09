@@ -9,3 +9,6 @@
 # Sortie de build Jekyll
 _site/
 .jekyll-cache/
+
+# Prospection (maquettes avec des marques réelles, listes de prospects) : jamais publiée
+prospection/
