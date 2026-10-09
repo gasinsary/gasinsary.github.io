@@ -260,18 +260,20 @@ description: "Site vitrine, sur mesure, application web ou mobile, boutique, ref
     <section id="exemples" class="portfolio section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Une application conçue par le studio</h2>
+        <h2>Nos réalisations web</h2>
         <div class="title-shape">
           <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
           </svg>
         </div>
-        <p>Voolapp est notre propre produit : nous en avons créé l'identité visuelle, l'interface et le développement. Le site que vous lisez est lui aussi une réalisation du studio. Par respect de la confidentialité de nos clients, certaines de nos réalisations ne sont pas publiées.</p>
+        <p>Un site vitrine imaginé pour une marque fictive, et Voolapp, notre propre application de gestion. Le site que vous lisez est lui aussi une réalisation du studio. Par respect de la confidentialité de nos clients, certaines de nos réalisations ne sont pas publiées.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-4 justify-content-center">
+          {%- assign vellane = site.projets | where: "slug", "site-vitrine-biscuiterie-maison-vellane" | first -%}
           {%- assign voolapp = site.projets | where: "slug", "application-web-gestion-commerciale-voolapp" | first -%}
+{% include carte-portfolio.html item=vellane %}
 {% include carte-portfolio.html item=voolapp %}
         </div>
         <div class="text-center mt-5">

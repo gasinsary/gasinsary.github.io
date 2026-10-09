@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Maison Vellane, planche d'identité</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { width: 1536px; height: 1024px; overflow: hidden; background: var(--creme); }
+    .planche { display: grid; grid-template-columns: 1.05fr 1fr; gap: 28px; padding: 56px; height: 100%; }
+    .bloc { background: var(--papier); border: 1px solid var(--ligne); border-radius: 26px; padding: 36px; }
+    .titre-bloc { font-size: 12.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--brun-doux); font-weight: 600; margin-bottom: 22px; }
+    .logo-grand { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 430px; background: var(--creme); border-radius: 20px; }
+    .logo-grand img { width: 120px; height: 120px; }
+    .logo-grand b { font-family: var(--titre); font-weight: 500; font-size: 64px; margin-top: 16px; letter-spacing: -0.01em; }
+    .logo-grand small { font-size: 15px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--brun-doux); }
+    .variantes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+    .variantes div { height: 150px; border-radius: 18px; display: flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--titre); font-size: 24px; }
+    .variantes img { width: 46px; height: 46px; }
+    .colonne { display: grid; grid-template-rows: auto auto 1fr; gap: 28px; }
+    .palette { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .palette div { height: 120px; border-radius: 16px; display: flex; flex-direction: column; justify-content: flex-end; padding: 12px; font-size: 13px; font-weight: 600; }
+    .palette span { font-weight: 400; opacity: 0.8; }
+    .typo { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .typo .aa { font-size: 84px; line-height: 1; }
+    .typo p { font-size: 15px; color: var(--brun-doux); margin-top: 10px; }
+    .boite { display: flex; align-items: center; gap: 26px; }
+    .boite img { width: 230px; }
+    .boite p { color: var(--brun-doux); font-size: 16px; }
+    .boite b { display: block; font-family: var(--titre); font-weight: 500; font-size: 26px; color: var(--brun); margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <div class="planche">
+    <div class="bloc">
+      <p class="titre-bloc">Logo</p>
+      <div class="logo-grand"><img src="../illus/embleme.svg" alt=""><b>Maison Vellane</b><small>Biscuiterie · 1962</small></div>
+      <div class="variantes">
+        <div style="background:#5f6e52; color:#f6efe3"><img src="../illus/embleme-clair.svg" alt="">Vellane</div>
+        <div style="background:#b5562f; color:#f6efe3"><img src="../illus/embleme-clair.svg" alt="">Vellane</div>
+        <div style="background:#3a2a1f; color:#f6efe3"><img src="../illus/embleme-clair.svg" alt="">Vellane</div>
+      </div>
+    </div>
+    <div class="colonne">
+      <div class="bloc">
+        <p class="titre-bloc">Couleurs</p>
+        <div class="palette">
+          <div style="background:#3a2a1f; color:#f6efe3">Brun<span>#3A2A1F</span></div>
+          <div style="background:#5f6e52; color:#f6efe3">Sauge<span>#5F6E52</span></div>
+          <div style="background:#b5562f; color:#f6efe3">Terracotta<span>#B5562F</span></div>
+          <div style="background:#e3ad63; color:#3a2a1f">Biscuit<span>#E3AD63</span></div>
+          <div style="background:#f6efe3; color:#3a2a1f; border:1px solid #e2d5bf">Crème<span>#F6EFE3</span></div>
+        </div>
+      </div>
+      <div class="bloc">
+        <p class="titre-bloc">Typographies</p>
+        <div class="typo">
+          <div><div class="aa" style="font-family:var(--titre)">Aa</div><p><b style="color:var(--brun)">Fraunces</b> · titres. Une serif chaleureuse, aux courbes de pâtisserie.</p></div>
+          <div><div class="aa" style="font-family:var(--texte); font-weight:500">Aa</div><p><b style="color:var(--brun)">DM Sans</b> · textes. Lisible en petit, sur l'écran comme sur l'emballage.</p></div>
+        </div>
+      </div>
+      <div class="bloc boite">
+        <img src="../illus/boite-collector.svg" alt="">
+        <div><b>La boîte métal</b><p>L'emblème, un sablé cannelé marqué d'un V, se décline sur les couvercles, les sachets et les étiquettes.</p></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -60,7 +60,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 | `_data/visuels.yml` | Visuels simples (image seule, sans page détaillée) |
 | `_data/categories.yml` | Catégories et filtres du portfolio |
 | `portfolio/<nom>/img/` | Images d'un projet |
-| `briefs/` | Briefs de création des projets concept, captures d'écran d'origine de Voolapp (`voolapp-captures/`) et outils de mise en scène (`outils/`) ; non publiés |
+| `briefs/` | Briefs de création des projets concept, maquette HTML du site Maison Vellane (`maison-vellane/`), captures d'écran d'origine de Voolapp (`voolapp-captures/`), outils de mise en scène (`outils/`, dont le module `mise-en-scene.js`) et documents de prospection (`prospection/`) ; non publiés |
 | `assets/js/supabase.js` | Connexion Supabase (clé publique uniquement) |
 | `mpatk.html` | Politique de confidentialité du chatbot MPATKBOT. Sans rapport avec le site : **ne pas modifier** |
 | `googleaa7d45fdd426d7f9.html`, `google17eaf983518ef390.html` | Vérification Google Search Console (deux comptes Google) : **ne pas modifier ni supprimer** |

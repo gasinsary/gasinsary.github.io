@@ -13,7 +13,6 @@ description: "Logo, charte graphique et déclinaisons pour une entreprise d'aqua
 
 # Carte dans la grille du portfolio
 ordre: 1
-accueil: true
 categorie: graphique
 titre_carte: "Identité visuelle Aquafish Farms"
 resume: "Logo, charte graphique et déclinaisons"

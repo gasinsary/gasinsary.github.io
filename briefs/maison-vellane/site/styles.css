@@ -1,0 +1,187 @@
+/* Maison Vellane : maquette du site vitrine (projet concept de Gas'in Sary) */
+:root {
+  --creme: #f6efe3;
+  --creme-fonce: #ecdfc9;
+  --papier: #fffaf2;
+  --brun: #3a2a1f;
+  --brun-doux: #6b5646;
+  --caramel: #c27a3e;
+  --terracotta: #b5562f;
+  --sauge: #5f6e52;
+  --ligne: #e2d5bf;
+  --titre: "Fraunces", Georgia, serif;
+  --texte: "DM Sans", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font-family: var(--texte); color: var(--brun); background: var(--creme); font-size: 17px; line-height: 1.6; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3 { font-family: var(--titre); font-weight: 500; line-height: 1.12; margin: 0; letter-spacing: -0.01em; }
+p { margin: 0; }
+.conteneur { width: min(1200px, 100% - 64px); margin: 0 auto; }
+.surtitre { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--caramel); font-weight: 600; }
+
+/* Boutons */
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 26px; border-radius: 999px; font-weight: 600; font-size: 16px; }
+.btn-plein { background: var(--brun); color: var(--papier); }
+.btn-contour { border: 1.5px solid var(--brun); }
+.btn-clair { background: var(--creme); color: var(--brun); }
+.fleche { font-family: var(--texte); }
+
+/* Bandeau d'annonce et en-tête */
+.annonce { background: var(--sauge); color: var(--creme); text-align: center; font-size: 14px; padding: 9px 16px; letter-spacing: 0.02em; }
+.entete { background: var(--creme); border-bottom: 1px solid var(--ligne); }
+.entete .conteneur { display: flex; align-items: center; justify-content: space-between; height: 84px; }
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo img { width: 42px; height: 42px; }
+.logo span { font-family: var(--titre); font-size: 26px; font-weight: 500; letter-spacing: -0.01em; }
+.logo small { display: block; font-family: var(--texte); font-size: 10.5px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--brun-doux); margin-top: -2px; }
+.menu { display: flex; gap: 34px; font-weight: 500; font-size: 15.5px; }
+.menu a.actif { color: var(--terracotta); }
+.menu-burger { display: none; width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--brun); align-items: center; justify-content: center; }
+.menu-burger i { display: block; width: 18px; height: 2px; background: var(--brun); box-shadow: 0 6px 0 var(--brun), 0 -6px 0 var(--brun); }
+
+/* Accueil : bandeau principal */
+.hero { padding: 44px 0 52px; }
+.hero .conteneur { display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 40px; }
+.hero h1 { font-size: 62px; margin: 16px 0 20px; }
+.hero h1 em { color: var(--terracotta); font-style: italic; }
+.hero p.chapo { font-size: 19px; color: var(--brun-doux); max-width: 520px; }
+.hero .actions { display: flex; gap: 14px; margin-top: 34px; }
+.hero .preuve { display: flex; gap: 30px; margin-top: 44px; padding-top: 26px; border-top: 1px solid var(--ligne); max-width: 520px; }
+.hero .preuve b { display: block; font-family: var(--titre); font-size: 32px; font-weight: 500; }
+.hero .preuve span { font-size: 14px; color: var(--brun-doux); }
+
+/* Réassurance */
+.reassurance { background: var(--papier); border-top: 1px solid var(--ligne); border-bottom: 1px solid var(--ligne); }
+.reassurance .conteneur { display: grid; grid-template-columns: repeat(4, 1fr); }
+.reassurance div.item { display: flex; align-items: center; gap: 14px; padding: 26px 18px; }
+.reassurance div.item + div.item { border-left: 1px solid var(--ligne); }
+.reassurance svg { flex: none; }
+.reassurance b { display: block; font-size: 15.5px; }
+.reassurance span { font-size: 13.5px; color: var(--brun-doux); }
+
+/* Sections */
+.section { padding: 96px 0; }
+.section-tete { display: flex; justify-content: space-between; align-items: end; margin-bottom: 44px; gap: 40px; }
+.section-tete h2 { font-size: 46px; margin-top: 12px; }
+.section-tete p { max-width: 420px; color: var(--brun-doux); }
+
+/* Cartes produits */
+.grille-produits { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+.produit { background: var(--papier); border-radius: 22px; overflow: hidden; border: 1px solid var(--ligne); }
+.produit img { aspect-ratio: 4 / 3; width: 100%; object-fit: cover; }
+.produit .corps { padding: 20px 22px 24px; }
+.produit .etiquette { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--caramel); font-weight: 600; }
+.produit h3 { font-size: 23px; margin: 8px 0 8px; }
+.produit p { font-size: 15px; color: var(--brun-doux); }
+.produit .pied { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--ligne); font-size: 14px; }
+.produit .pied b { font-weight: 600; }
+
+/* Savoir-faire */
+.savoir { background: var(--papier); }
+.savoir .conteneur { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+.savoir img { border-radius: 26px; }
+.savoir h2 { font-size: 46px; margin: 12px 0 20px; }
+.savoir p { color: var(--brun-doux); margin-bottom: 16px; }
+.chiffres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; }
+.chiffres div { border-top: 2px solid var(--brun); padding-top: 14px; }
+.chiffres b { display: block; font-family: var(--titre); font-size: 38px; font-weight: 500; }
+.chiffres span { font-size: 14px; color: var(--brun-doux); }
+
+/* Professionnels */
+.pro { background: var(--brun); color: var(--creme); }
+.pro .conteneur { display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; align-items: center; }
+.pro .surtitre { color: #e3ad63; }
+.pro h2 { font-size: 48px; margin: 12px 0 18px; }
+.pro p.chapo { color: #d9cbb6; max-width: 540px; }
+.offres { display: grid; gap: 14px; margin: 32px 0 34px; }
+.offre { display: flex; gap: 16px; padding: 18px 20px; border-radius: 16px; background: rgba(255, 250, 242, 0.06); border: 1px solid rgba(255, 250, 242, 0.12); }
+.offre i { flex: none; width: 40px; height: 40px; border-radius: 50%; background: #e3ad63; color: var(--brun); font-style: normal; font-weight: 700; display: grid; place-items: center; }
+.offre b { display: block; font-size: 17px; }
+.offre span { font-size: 15px; color: #d9cbb6; }
+
+/* Points de vente */
+.points { display: grid; grid-template-columns: 1fr 1.2fr; gap: 26px; }
+.boutique, .recherche { background: var(--papier); border: 1px solid var(--ligne); border-radius: 22px; padding: 34px; }
+.boutique h3, .recherche h3 { font-size: 28px; margin-bottom: 14px; }
+.boutique p { color: var(--brun-doux); margin-bottom: 6px; }
+.horaires { margin-top: 18px; display: grid; grid-template-columns: auto 1fr; gap: 6px 22px; font-size: 15px; }
+.champ { display: flex; gap: 10px; margin: 18px 0 22px; }
+.champ input { flex: 1; font: inherit; padding: 14px 20px; border-radius: 999px; border: 1.5px solid var(--ligne); background: var(--creme); }
+.villes { display: flex; flex-wrap: wrap; gap: 10px; }
+.villes span { padding: 8px 16px; border-radius: 999px; background: var(--creme); border: 1px solid var(--ligne); font-size: 14.5px; }
+
+/* Pied de page */
+.pied-page { background: #2b1f17; color: #cdbfa9; padding: 70px 0 30px; font-size: 15px; }
+.pied-page .conteneur > .colonnes { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.3fr; gap: 40px; }
+.pied-page .logo span { color: var(--creme); }
+.pied-page .logo small { color: #a8977f; }
+.pied-page h4 { color: var(--creme); font-family: var(--texte); font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 16px; }
+.pied-page ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+.lettre { display: flex; margin-top: 14px; }
+.lettre input { flex: 1; font: inherit; padding: 12px 16px; border-radius: 999px 0 0 999px; border: 0; background: #3c2d22; color: var(--creme); }
+.lettre button { font: inherit; font-weight: 600; padding: 0 20px; border: 0; border-radius: 0 999px 999px 0; background: #e3ad63; color: var(--brun); }
+.mentions { margin-top: 50px; padding-top: 22px; border-top: 1px solid #45362a; display: flex; justify-content: space-between; font-size: 13.5px; color: #8f7f6a; }
+
+/* Page intérieure : titre */
+.titre-page { padding: 60px 0 46px; border-bottom: 1px solid var(--ligne); }
+.fil { font-size: 14px; color: var(--brun-doux); margin-bottom: 18px; }
+.titre-page h1 { font-size: 58px; }
+.titre-page p { margin-top: 16px; max-width: 640px; color: var(--brun-doux); font-size: 18px; }
+.filtres { display: flex; gap: 10px; margin: 40px 0 34px; flex-wrap: wrap; }
+.filtres span { padding: 10px 20px; border-radius: 999px; border: 1.5px solid var(--ligne); font-weight: 500; font-size: 15px; background: var(--papier); }
+.filtres span.actif { background: var(--brun); color: var(--papier); border-color: var(--brun); }
+
+/* Formulaire professionnels */
+.pro-page .conteneur { display: grid; grid-template-columns: 1fr 1.15fr; gap: 60px; align-items: start; }
+.etapes { display: grid; gap: 22px; margin-top: 34px; }
+.etape { display: flex; gap: 18px; }
+.etape b.n { flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1.5px solid var(--brun); display: grid; place-items: center; font-family: var(--titre); font-size: 20px; font-weight: 500; }
+.etape strong { display: block; font-size: 17px; }
+.etape span { color: var(--brun-doux); font-size: 15.5px; }
+.formulaire { background: var(--papier); border: 1px solid var(--ligne); border-radius: 26px; padding: 40px; }
+.formulaire h2 { font-size: 34px; margin-bottom: 8px; }
+.formulaire > p { color: var(--brun-doux); margin-bottom: 26px; }
+.formulaire .ligne { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.formulaire label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+.formulaire label input, .formulaire label select, .formulaire label textarea { display: block; width: 100%; margin-top: 7px; font: inherit; font-weight: 400; padding: 13px 16px; border-radius: 12px; border: 1.5px solid var(--ligne); background: var(--creme); color: var(--brun); }
+.formulaire textarea { height: 110px; resize: none; }
+.choix { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.choix span { padding: 9px 15px; border-radius: 999px; border: 1.5px solid var(--ligne); font-weight: 500; font-size: 14px; background: var(--creme); }
+.choix span.actif { border-color: var(--terracotta); color: var(--terracotta); background: #f8e9df; }
+
+/* Téléphone */
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  .conteneur { width: calc(100% - 40px); }
+  .annonce { font-size: 12.5px; }
+  .entete .conteneur { height: 70px; }
+  .logo img { width: 34px; height: 34px; }
+  .logo span { font-size: 22px; }
+  .menu, .entete .btn { display: none; }
+  .menu-burger { display: flex; }
+  .hero { padding: 30px 0 26px; }
+  .hero .conteneur { grid-template-columns: 1fr; gap: 6px; }
+  .hero h1 { font-size: 42px; margin: 12px 0 14px; }
+  .hero p.chapo { font-size: 17px; }
+  .hero .actions { flex-direction: column; margin-top: 24px; }
+  .hero .actions .btn { justify-content: center; }
+  .hero .preuve { gap: 18px; margin-top: 26px; }
+  .hero .preuve b { font-size: 26px; }
+  .hero .visuel { margin: 18px auto 0; max-width: 340px; }
+  .reassurance .conteneur { grid-template-columns: 1fr 1fr; }
+  .reassurance div.item { padding: 18px 10px; }
+  .reassurance div.item:nth-child(3) { border-left: 0; }
+  .grille-produits { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .produit .corps { padding: 16px 16px 18px; }
+  .produit h3 { font-size: 20px; }
+  .produit p { font-size: 14px; }
+  .produit .pied { font-size: 13px; }
+  .produit .pied b { display: none; }
+  .section { padding: 60px 0; }
+  .section-tete { display: block; }
+  .section-tete h2 { font-size: 34px; }
+}
