@@ -176,6 +176,8 @@ Je redessine la page d'accueil de votre site actuel, avec votre logo, vos textes
 • une image « avant / après » qui compare votre site actuel et la proposition ;
 • une courte note avec les trois points qui gênent le plus vos visiteurs aujourd'hui.
 
+Le tout réuni dans un document PDF de présentation, avec les images en haute définition à part. Il s'agit d'une maquette, c'est-à-dire d'une proposition visuelle : votre site actuel n'est pas modifié et rien n'est mis en ligne.
+
 Comment ça se passe :
 1. Vous m'envoyez l'adresse de votre site et ce que vous aimeriez changer.
 2. Je vous pose une ou deux questions sur vos clients.
@@ -216,7 +218,7 @@ Q : Je n'ai pas de site, ce service est-il pour moi ?
 R : Pas vraiment : il part d'un site existant. Pour un premier site, voyez mon service de création de site vitrine.
 
 Q : Dans quel format recevrai-je la maquette ?
-R : En images haute définition (ordinateur et téléphone), avec l'image avant / après et la note. Les fichiers HTML sont disponibles en option.
+R : Un document PDF de présentation (avant / après, maquette sur ordinateur et sur téléphone, note en trois points) et les images en haute définition à part. En option, la page en HTML, prête à être intégrée par un développeur ; elle n'est pas mise en ligne.
 ```
 
 **Images** (dans `briefs/comeup-maquette/sortie/`, à mettre dans cet ordre)
