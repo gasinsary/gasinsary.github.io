@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="galerie-maquette.css">
+<style>
+  .gauche { position: absolute; left: 70px; top: 0; bottom: 0; width: 450px; display: flex; flex-direction: column; justify-content: center; }
+  h1 { font-size: 56px; margin: 16px 0 16px; }
+  h1 em { color: var(--orange); font-style: italic; }
+  .sous { font-size: 19px; font-weight: 600; color: var(--texte); margin-bottom: 10px; line-height: 1.45; }
+  .avant { position: absolute; left: 560px; top: 70px; width: 400px; transform: rotate(-2deg); }
+  .apres { position: absolute; left: 690px; top: 250px; width: 500px; }
+  .t1 { position: absolute; left: 572px; top: 42px; z-index: 2; }
+  .t2 { position: absolute; left: 1100px; top: 222px; z-index: 2; }
+  .fleche { left: 900px; top: 150px; }
+  .note { position: absolute; right: 70px; bottom: 26px; }
+</style></head>
+<body>
+  <div class="rond r1"></div><div class="rond r2"></div>
+  <div class="gauche">
+    <div class="sur">Refonte de site</div>
+    <h1>Voyez votre nouveau site <em>avant de le refaire</em></h1>
+    <div class="sous">La maquette de votre page d'accueil, sur ordinateur et sur téléphone</div>
+    <div class="coche"><i>✓</i>Avec votre logo, vos textes et vos photos</div>
+    <div class="coche"><i>✓</i>Version ordinateur et version téléphone</div>
+    <div class="coche"><i>✓</i>Image avant / après fournie</div>
+  </div>
+  <div class="avant fenetre ombre"><div class="barre"><b></b><b></b><b></b></div><img src="sortie/avant-ordinateur.png" alt=""></div>
+  <div class="t1"><span class="etiquette etiq-avant">Avant</span></div>
+  <div class="apres fenetre ombre"><div class="barre"><b></b><b></b><b></b></div><img src="../maison-vellane/captures/accueil.png" alt=""></div>
+  <div class="t2"><span class="etiquette etiq-apres">Après</span></div>
+  <div class="fleche">→</div>
+  <div class="note">Exemple sur une marque fictive (projet concept)</div>
+</body></html>

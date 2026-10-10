@@ -1,0 +1,12 @@
+/* Images du service ComeUp « maquette de la page d'accueil » : reprend le style du service bannière. */
+@import url("../comeup-banniere/galerie.css");
+.fenetre { background: #fff; border-radius: 12px; overflow: hidden; }
+.fenetre .barre { height: 22px; background: #eceef1; display: flex; align-items: center; gap: 5px; padding-left: 10px; }
+.fenetre .barre b { width: 8px; height: 8px; border-radius: 50%; background: #c9cfd6; }
+.fenetre img { display: block; width: 100%; }
+.tel { background: #1c1c1e; border-radius: 34px; padding: 9px; }
+.tel img { display: block; width: 100%; border-radius: 26px; }
+.etiq-avant { background: #8a95a1; }
+.etiq-apres { background: var(--orange); }
+.fleche { position: absolute; width: 64px; height: 64px; border-radius: 50%; background: var(--orange); color: #fff; display: grid; place-items: center; font-size: 30px; font-weight: 700; box-shadow: 0 10px 24px rgba(232, 117, 50, 0.35); z-index: 3; }
+.note { font-size: 12.5px; color: var(--texte); }

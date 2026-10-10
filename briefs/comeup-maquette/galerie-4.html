@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="galerie-maquette.css">
+<style>
+  .titre { position: absolute; left: 0; right: 0; top: 52px; text-align: center; }
+  h2 { font-size: 46px; margin-top: 10px; }
+  .etapes { position: absolute; left: 70px; right: 70px; top: 200px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .etape { background: var(--carte); border-radius: 18px; padding: 28px 28px 30px; }
+  .etape b { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--nuit); color: #fff; font-family: "DM Serif Display", serif; font-weight: 400; font-size: 26px; margin-bottom: 18px; }
+  .etape h3 { font-family: "DM Serif Display", serif; font-weight: 400; font-size: 26px; margin: 0 0 8px; }
+  .etape p { margin: 0; color: var(--texte); font-size: 16px; line-height: 1.55; }
+  .encart { position: absolute; left: 70px; right: 70px; bottom: 60px; background: var(--nuit); color: #fff; border-radius: 18px; padding: 24px 34px; display: flex; align-items: center; gap: 22px; }
+  .encart i { flex: none; width: 50px; height: 50px; border-radius: 50%; background: var(--orange); font-style: normal; font-size: 24px; display: grid; place-items: center; }
+  .encart b { font-family: "DM Serif Display", serif; font-weight: 400; font-size: 25px; display: block; }
+  .encart span { color: #c6d1dc; font-size: 16px; }
+</style></head>
+<body>
+  <div class="rond r2"></div>
+  <div class="titre"><div class="sur">Comment ça se passe</div><h2>Trois étapes, et vous voyez le résultat</h2></div>
+  <div class="etapes">
+    <div class="etape ombre"><b>1</b><h3>Votre site</h3><p>Vous m'envoyez l'adresse de votre site actuel et ce que vous aimeriez changer.</p></div>
+    <div class="etape ombre"><b>2</b><h3>Deux questions</h3><p>Je vous interroge sur vos clients, pour que la page leur parle vraiment.</p></div>
+    <div class="etape ombre"><b>3</b><h3>La maquette</h3><p>Je vous livre la page sur ordinateur et sur téléphone, puis j'intègre vos retours.</p></div>
+  </div>
+  <div class="encart ombre"><i>✓</i><div><b>La maquette vous appartient</b><span>Vous pouvez me confier la refonte complète, ou la remettre à votre propre prestataire.</span></div></div>
+</body></html>

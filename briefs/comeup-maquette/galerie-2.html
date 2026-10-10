@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="galerie-maquette.css">
+<style>
+  .gauche { position: absolute; left: 70px; top: 0; bottom: 0; width: 470px; display: flex; flex-direction: column; justify-content: center; }
+  h2 { font-size: 46px; margin: 12px 0 22px; }
+  .item { display: flex; gap: 16px; margin-bottom: 18px; }
+  .item i { flex: none; width: 40px; height: 40px; border-radius: 12px; background: var(--nuit); color: #fff; font-style: normal; font-weight: 700; display: grid; place-items: center; font-size: 17px; }
+  .item b { display: block; font-size: 18px; }
+  .item span { font-size: 15px; color: var(--texte); }
+  .ecran { position: absolute; left: 590px; top: 110px; width: 590px; }
+  .telephone { position: absolute; left: 1010px; top: 300px; width: 180px; }
+</style></head>
+<body>
+  <div class="rond r2"></div>
+  <div class="gauche">
+    <div class="sur">Ce que vous recevez</div>
+    <h2>Une proposition concrète</h2>
+    <div class="item"><i>1</i><div><b>La page d'accueil sur ordinateur</b><span>Votre logo, vos textes, vos photos, mis en page</span></div></div>
+    <div class="item"><i>2</i><div><b>La même page sur téléphone</b><span>Lisible sans zoomer, boutons faciles à toucher</span></div></div>
+    <div class="item"><i>3</i><div><b>Une image avant / après</b><span>Votre site actuel à côté de la proposition</span></div></div>
+    <div class="item"><i>4</i><div><b>Une note en trois points</b><span>Ce qui gêne le plus vos visiteurs aujourd'hui</span></div></div>
+  </div>
+  <div class="ecran fenetre ombre"><div class="barre"><b></b><b></b><b></b></div><img src="../maison-vellane/captures/accueil.png" alt=""></div>
+  <div class="telephone tel ombre"><img src="../maison-vellane/captures/mobile.png" alt=""></div>
+</body></html>

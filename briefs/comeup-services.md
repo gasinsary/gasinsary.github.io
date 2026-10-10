@@ -154,17 +154,16 @@ Pack trois réseaux : Facebook, LinkedIn et YouTube, avec deux révisions
 
 ---
 
-## 5. Nouveau service d'appel : maquette de la page d'accueil
+## 5. Nouveau service d'appel : maquette de la page d'accueil (réglages complets)
 
-**Catégorie** : Création site vitrine (ou Webdesign / maquette si cette catégorie existe)
-
-**Titre**
-
-```text
-Je vais redessiner la page d'accueil de votre site : maquette responsive
-```
-
-**Mots-clés** : refonte site internet, maquette site web, webdesign, page d'accueil, site responsive, site vitrine, redesign
+| Réglage | Valeur |
+|---|---|
+| Catégorie | Création site vitrine (ou « Webdesign » / « Maquette » si la catégorie existe dans le formulaire) |
+| Titre | Je vais redessiner la page d'accueil de votre site : maquette responsive |
+| Mots-clés | refonte site internet, maquette site web, webdesign, page d'accueil, site responsive, site vitrine, redesign |
+| Délai de la formule de base | 3 jours (le travail en demande un ; la marge évite les retards, qui pèsent sur le classement) |
+| Retours inclus | Une série de retours (à confirmer par le propriétaire) |
+| Prix | **À décider par le propriétaire.** Proposition de départ : 45 € la formule de base (environ une journée à 50 € par jour, un peu moins pour un service d'appel) |
 
 **Description**
 
@@ -187,25 +186,49 @@ La maquette vous appartient : vous pouvez ensuite me confier la refonte complèt
 Exemple dans mon portfolio : le site de Maison Vellane, biscuiterie artisanale (projet concept, marque fictive).
 ```
 
-**Options**
+**Options** (prix et délais : proposition, à décider par le propriétaire)
+
+| Option | Prix proposé | Délai en plus |
+|---|---|---|
+| Une page intérieure supplémentaire en maquette (services, contact…) | 20 € | + 1 jour |
+| Une seconde proposition de style | 25 € | + 2 jours |
+| Les fichiers de la maquette en HTML, prêts à être intégrés | 35 € | + 2 jours |
+| Livraison express (en 24 heures) | 15 € | le délai passe à 1 jour |
+
+**Consignes à l'acheteur** (champ « instructions » ou questions posées après la commande)
 
 ```text
-Une page intérieure supplémentaire en maquette (services, contact…)
+Pour commencer, envoyez-moi :
+1. L'adresse de votre site actuel.
+2. Ce que vous aimeriez changer ou ce qui vous gêne aujourd'hui.
+3. En une phrase : qui sont vos clients ?
+4. Votre logo, s'il n'est pas sur le site.
+5. Facultatif : un ou deux sites que vous aimez, pour le style.
 ```
+
+**Questions fréquentes** (si le formulaire en propose)
 
 ```text
-Une seconde proposition de style
+Q : Vous refaites tout mon site ?
+R : Non, ce service concerne la page d'accueil, en maquette. La refonte complète est un autre service, que vous pouvez commander ensuite.
+
+Q : Je n'ai pas de site, ce service est-il pour moi ?
+R : Pas vraiment : il part d'un site existant. Pour un premier site, voyez mon service de création de site vitrine.
+
+Q : Dans quel format recevrai-je la maquette ?
+R : En images haute définition (ordinateur et téléphone), avec l'image avant / après et la note. Les fichiers HTML sont disponibles en option.
 ```
 
-```text
-Les fichiers de la maquette en HTML, prêts à être intégrés
-```
+**Images** (dans `briefs/comeup-maquette/sortie/`, à mettre dans cet ordre)
 
-```text
-Livraison express
-```
+1. `galerie-1.jpg` : image principale, « Voyez votre nouveau site avant de le refaire », avant / après sur ordinateur.
+2. `galerie-2.jpg` : ce que vous recevez (quatre éléments), maquette sur ordinateur et téléphone.
+3. `galerie-3.jpg` : la différence sur téléphone, avant / après.
+4. `galerie-4.jpg` : les trois étapes et « la maquette vous appartient ».
 
-**À fournir par le client** : l'adresse de son site actuel ; son logo s'il n'est pas sur le site.
+L'exemple est un faux ancien site de Maison Vellane, façon 2011 (`briefs/comeup-maquette/avant-vellane.html`), comparé à la version moderne. La mention « marque fictive (projet concept) » figure sur les images.
+
+**Pour livrer une commande** : la méthode de prospection fonctionne telle quelle (capture du site actuel, maquette HTML de l'accueil, image avant / après composée automatiquement ; voir `prospection/gilles-patissier/` pour un exemple complet). Donner l'adresse du site du client à l'assistant suffit pour démarrer.
 
 ---
 
