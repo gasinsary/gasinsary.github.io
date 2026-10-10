@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="galerie-site.css">
+<style>
+  .gauche { position: absolute; left: 64px; top: 0; bottom: 0; width: 420px; display: flex; flex-direction: column; justify-content: center; }
+  h2 { font-size: 50px; margin: 14px 0 18px; }
+  .gauche p { margin: 0; font-size: 17.5px; line-height: 1.6; color: var(--gris); }
+  .cle { width: 74px; height: 74px; border-radius: 22px; margin-bottom: 22px; background: var(--orange); display: grid; place-items: center; box-shadow: 0 20px 40px rgba(232,117,50,0.35); }
+  .cle svg { width: 40px; height: 40px; stroke: #fff; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .liste { position: absolute; left: 520px; right: 64px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; gap: 14px; }
+  .ligne { display: flex; align-items: center; gap: 18px; padding: 18px 22px; border-radius: 16px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); }
+  .ligne b { font-family: "DM Serif Display", serif; font-weight: 400; font-size: 24px; width: 230px; flex: none; }
+  .ligne span { color: var(--gris); font-size: 15.5px; }
+  .ligne em { font-style: normal; color: #fff; background: rgba(79,195,224,0.18); border: 1px solid rgba(79,195,224,0.4); padding: 5px 12px; border-radius: 999px; font-size: 13.5px; font-weight: 700; margin-left: auto; flex: none; }
+</style></head>
+<body>
+  <div class="gauche">
+    <div class="cle"><svg viewBox="0 0 24 24"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></svg></div>
+    <div class="sur">Votre site vous appartient</div>
+    <h2>Vous restez <em>propriétaire</em> de tout</h2>
+    <p>Pas d'abonnement caché chez le prestataire, pas de site prisonnier. Si un jour vous changez de prestataire, vous gardez tout.</p>
+  </div>
+  <div class="liste">
+    <div class="ligne"><b>Le nom de domaine</b><span>Réservé à votre nom, chez le prestataire de votre choix</span><em>À votre nom</em></div>
+    <div class="ligne"><b>L'hébergement</b><span>Ouvert à votre nom ; je le mets en place avec vous</span><em>À votre nom</em></div>
+    <div class="ligne"><b>Le code source</b><span>Livré à la fin du projet, réutilisable par qui vous voulez</span><em>Remis</em></div>
+    <div class="ligne"><b>Les fichiers</b><span>Maquettes, images et logo, rangés et nommés</span><em>Remis</em></div>
+  </div>
+</body></html>

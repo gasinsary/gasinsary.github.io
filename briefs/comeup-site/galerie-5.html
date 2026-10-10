@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="galerie-site.css">
+<style>
+  .titre { position: absolute; left: 0; right: 0; top: 80px; text-align: center; }
+  h2 { font-size: 48px; margin-top: 10px; }
+  .frise { position: absolute; left: 80px; right: 80px; top: 300px; height: 3px; background: linear-gradient(90deg, var(--orange), var(--bleu)); border-radius: 3px; }
+  .etapes { position: absolute; left: 64px; right: 64px; top: 268px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .etape { text-align: center; }
+  .etape b { display: grid; place-items: center; width: 66px; height: 66px; margin: 0 auto 22px; border-radius: 50%; background: var(--nuit); border: 3px solid var(--orange); font-family: "DM Serif Display", serif; font-weight: 400; font-size: 30px; }
+  .etape:nth-child(n+3) b { border-color: var(--bleu); }
+  .etape h3 { font-size: 25px; margin-bottom: 8px; }
+  .etape p { margin: 0 auto; max-width: 240px; color: var(--gris); font-size: 15.5px; line-height: 1.55; }
+  .bas { position: absolute; left: 0; right: 0; bottom: 92px; text-align: center; }
+</style></head>
+<body>
+  <div class="titre"><div class="sur">Comment ça se passe</div><h2>De votre idée à votre site <em>en ligne</em></h2></div>
+  <div class="frise"></div>
+  <div class="etapes">
+    <div class="etape"><b>1</b><h3>L'échange</h3><p>Vous me décrivez votre activité, vos clients et ce que le site doit faire.</p></div>
+    <div class="etape"><b>2</b><h3>La maquette</h3><p>Je dessine la page d'accueil. Vous la validez avant tout développement.</p></div>
+    <div class="etape"><b>3</b><h3>Le développement</h3><p>Le site prend forme sur une adresse de test, consultable à tout moment.</p></div>
+    <div class="etape"><b>4</b><h3>La mise en ligne</h3><p>Installation sur votre nom de domaine, puis remise du code et des accès.</p></div>
+  </div>
+  <div class="bas"><span class="pastille"><i></i>Refonte : vos anciennes adresses sont redirigées, votre référencement est conservé</span></div>
+</body></html>

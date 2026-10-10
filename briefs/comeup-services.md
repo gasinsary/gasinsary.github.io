@@ -250,79 +250,111 @@ L'exemple est un faux ancien site de Maison Vellane, façon 2011 (`briefs/comeup
 
 ---
 
-## 6. Nouveau service principal : site vitrine sur mesure ou refonte
+## 6. Nouveau service principal : site vitrine sur mesure ou refonte (réglages complets)
 
-**Catégorie** : Création site vitrine
+Rédigé le 10/10/2026 avec la même exigence de clarté que le service maquette : ce qui est livré, ce qui ne l'est pas, ce que paie le client à côté. La phrase « je ne fais pas de site WordPress à partir d'un thème acheté », écrite par l'assistant sans accord du propriétaire, a été retirée.
 
-**Titre**
-
-```text
-Je vais créer ou refondre votre site vitrine sur mesure et optimisé SEO
-```
-
-**Mots-clés** : site vitrine, création site internet, refonte site web, site responsive, référencement SEO, site sur mesure, site entreprise, site artisan
+| Réglage | Valeur |
+|---|---|
+| Catégorie | Création site vitrine |
+| Titre | Je vais créer ou refondre votre site vitrine sur mesure et optimisé SEO |
+| Mots-clés | site vitrine, création site internet, refonte site web, site responsive, référencement SEO, site sur mesure, site entreprise, site artisan |
+| Formule de base | Site vitrine de 3 pages (accueil, présentation ou services, contact), mis en ligne |
+| Délai de la formule de base | 7 jours (sans compter le temps de vos réponses et de vos retours) |
+| Retours inclus | Deux séries de retours : une sur la maquette, une sur le site (à confirmer par le propriétaire) |
+| Prix | **À décider par le propriétaire.** Proposition de départ : 150 € (environ trois jours à 50 € par jour) |
 
 **Description**
 
 ```text
-Un site vitrine clair, rapide, lisible sur téléphone et pensé pour Google, qui donne envie de vous contacter. Je le conçois de l'identité visuelle à la mise en ligne.
+Un site vitrine clair, rapide, lisible sur téléphone et pensé pour Google, qui donne envie de vous contacter. Je le conçois pour votre activité, de la maquette à la mise en ligne. Pour un nouveau site comme pour la refonte d'un ancien.
 
-Ce que vous recevez :
-• un site sur mesure, dessiné pour votre activité (pas un modèle générique) ;
-• une version téléphone soignée, testée sur mobile ;
-• les bases du référencement : un titre et une description par page, des adresses propres, un plan du site, des images légères ;
-• un formulaire de contact ;
-• une connexion sécurisée (https) ;
-• le code source, à vous.
+CE QUE VOUS RECEVEZ (formule de base)
+• Un site de 3 pages : accueil, présentation ou services, contact
+• Un design sur mesure, dessiné à partir de votre logo et de vos couleurs
+• Une version téléphone soignée, testée sur mobile
+• Les bases du référencement : un titre et une description par page, des adresses propres, un plan du site, des images légères
+• Un formulaire de contact
+• Une connexion sécurisée (https)
+• La mise en ligne sur votre nom de domaine et votre hébergement
+• Le code source et les fichiers, remis à la fin du projet
 
-Vous restez propriétaire de tout : le nom de domaine et l'hébergement sont à votre nom, je les mets en place avec vous.
+VOUS RESTEZ PROPRIÉTAIRE DE TOUT
+Le nom de domaine et l'hébergement sont souscrits à votre nom. Je vous indique quoi choisir et je les mets en place avec vous. Si un jour vous changez de prestataire, vous gardez tout.
 
-Refonte d'un site existant : je reprends ce qui fonctionne, je refais le reste, et je redirige vos anciennes adresses pour ne pas perdre votre référencement.
+CE QUI N'EST PAS COMPRIS
+• Le nom de domaine et l'hébergement : ils sont à votre nom et vous les payez directement (comptez environ 10 à 15 € par an pour un nom de domaine en .com ; l'hébergement d'un site vitrine simple peut être gratuit ou coûter quelques euros par mois).
+• La boutique en ligne, le paiement en ligne et les espaces membres : parlons-en avant de commander.
+• La rédaction des textes et les photos : vous les fournissez, ou vous prenez l'option rédaction.
+• La maintenance après la livraison : possible, à définir ensemble.
 
-Comment ça se passe :
-1. Vous me décrivez votre activité et vos clients.
-2. Je vous présente la maquette de l'accueil, que vous validez avant le développement.
+REFONTE D'UN SITE EXISTANT
+Je reprends ce qui fonctionne, je refais le reste, et je redirige vos anciennes adresses pour ne pas perdre votre référencement (option « reprise et redirections »).
+
+COMMENT ÇA SE PASSE
+1. Vous me décrivez votre activité, vos clients et ce que le site doit faire.
+2. Je vous présente la maquette de la page d'accueil, que vous validez avant le développement.
 3. Je développe le site sur une adresse de test, consultable à tout moment.
-4. Je le mets en ligne sur votre nom de domaine.
+4. Je le mets en ligne sur votre nom de domaine et je vous remets le code et les accès.
 
-Chaque site est conçu pour vous, en HTML/CSS, ou avec React et Next.js pour les projets plus complexes.
+Technologies : HTML et CSS pour la plupart des sites vitrines ; React, Next.js ou PHP selon les besoins du projet.
 
 Exemples dans mon portfolio : Maison Vellane, site vitrine d'une biscuiterie artisanale (projet concept), et Voolapp, application de gestion conçue et développée par mon studio.
 ```
 
-**Options**
+**Options** (prix et délais : proposition, à décider par le propriétaire)
+
+| Option (texte à coller) | Prix proposé | Délai en plus |
+|---|---|---|
+| Page supplémentaire (galerie, réalisations, à propos, tarifs…) | 30 € | + 1 jour |
+| Création du logo, si vous n'en avez pas | 40 € | + 3 jours |
+| Rédaction des textes, par page | 20 € | + 1 jour |
+| Blog intégré : page des articles et modèle d'article, prêts pour vos publications | 60 € | + 3 jours |
+| Version anglaise du site (traduction et mise en page) | 50 € | + 3 jours |
+| Refonte : reprise du contenu de votre ancien site et redirection des anciennes adresses | 40 € | + 2 jours |
+| Livraison accélérée (délai de base ramené de 7 à 4 jours) | 40 € | − 3 jours |
+
+**Consignes à l'acheteur**
 
 ```text
-Page supplémentaire
+Pour bien démarrer, envoyez-moi :
+1. Votre activité et vos clients, en quelques phrases.
+2. Les pages que vous voulez (3 dans la formule de base).
+3. Votre logo et vos couleurs, si vous en avez.
+4. Vos textes et vos photos, ou dites-moi si vous prenez l'option rédaction.
+5. Pour une refonte : l'adresse de votre site actuel.
+6. Avez-vous déjà un nom de domaine ? Si oui, lequel et chez quel prestataire.
+7. Facultatif : deux ou trois sites que vous aimez, pour le style.
+
+Pour la mise en ligne, je vous guiderai pour me donner un accès technique à votre hébergement, sans jamais avoir à me transmettre votre mot de passe.
 ```
+
+**Questions fréquentes**
 
 ```text
-Création du logo (si vous n'en avez pas)
+Q : Le site est-il vraiment mis en ligne ?
+R : Oui. À la fin du projet, il est installé sur votre nom de domaine et accessible à tous. Vous recevez aussi le code source et les fichiers.
+
+Q : Combien coûtent le nom de domaine et l'hébergement ?
+R : Ils sont à votre nom et vous les payez directement : environ 10 à 15 € par an pour un nom de domaine en .com. L'hébergement d'un site vitrine simple peut être gratuit ou coûter quelques euros par mois. Je vous conseille avant de souscrire.
+
+Q : Pourrai-je modifier le site moi-même ?
+R : Dites-le-moi avant la commande : si vous voulez changer vos textes ou vos photos vous-même, je choisis une solution qui le permet.
+
+Q : Faites-vous les boutiques en ligne ?
+R : Oui, mais ce n'est pas ce service. Écrivez-moi : je vous ferai une offre adaptée.
+
+Q : Je n'ai pas de logo.
+R : Prenez l'option « Création du logo », ou commandez d'abord mon service logo et identité visuelle.
 ```
 
-```text
-Rédaction des textes des pages
-```
+**Images** (dans `briefs/comeup-site/sortie/`, à mettre dans cet ordre ; style bleu nuit, différent des services bannière et maquette)
 
-```text
-Blog intégré
-```
-
-```text
-Version anglaise du site
-```
-
-```text
-Mise en ligne sur votre nom de domaine et votre hébergement
-```
-
-```text
-Livraison express
-```
-
-**À fournir par le client** : son logo (ou l'option logo), ses textes ou les informations pour les rédiger, ses photos, l'accès à son nom de domaine et à son hébergement (ou les créer avec lui).
-
----
+1. `galerie-1.jpg` : image principale, « Un site qui donne envie de vous contacter », ordinateur portable et téléphone.
+2. `galerie-2.jpg` : « Chaque page a un rôle », trois pages et la version téléphone.
+3. `galerie-3.jpg` : « Un site en ligne, prêt à travailler pour vous », six points livrés.
+4. `galerie-4.jpg` : « Vous restez propriétaire de tout » (domaine, hébergement, code, fichiers).
+5. `galerie-5.jpg` : les quatre étapes, et la mention des redirections en cas de refonte.
 
 ## 7. Portfolio du profil
 

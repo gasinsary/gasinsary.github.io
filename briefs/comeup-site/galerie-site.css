@@ -1,0 +1,38 @@
+/* Images du service ComeUp « site vitrine » : version sombre (bleu nuit) du style Gas'in Sary,
+   pour se distinguer des services bannière et maquette (fond crème). Aucune coordonnée ni adresse. */
+:root { --nuit: #0f2943; --nuit2: #163657; --nuit3: #1d4470; --creme: #f4f1ea; --gris: #a9bacb; --bleu: #4fc3e0; --orange: #e87532; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { width: 1260px; height: 708px; overflow: hidden; position: relative; font-family: "Manrope", sans-serif; color: var(--creme);
+  background: radial-gradient(circle at 85% 20%, #1d4a78 0%, rgba(29,74,120,0) 45%), radial-gradient(circle at 10% 95%, #173c63 0%, rgba(23,60,99,0) 40%), var(--nuit); }
+body::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,0.07) 1.2px, transparent 1.2px); background-size: 26px 26px; }
+h1, h2, h3 { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; margin: 0; line-height: 1.05; }
+h1 em, h2 em { color: var(--orange); font-style: italic; }
+.sur { font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; color: var(--bleu); }
+.pastille { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); font-size: 14.5px; font-weight: 700; }
+.pastille i { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); }
+.note { position: absolute; right: 60px; bottom: 22px; font-size: 12.5px; color: var(--gris); }
+
+/* Ordinateur portable */
+.portable { position: absolute; }
+.portable .ecran { background: #15171c; border-radius: 16px 16px 4px 4px; padding: 12px 12px 16px; box-shadow: 0 30px 60px rgba(0,0,0,0.45); }
+.portable .ecran img { display: block; width: 100%; border-radius: 4px; }
+.portable .base { position: relative; height: 18px; margin: 0 -7%; background: linear-gradient(#e2e6ea, #9aa3ad); border-radius: 0 0 16px 16px; }
+.portable .base::after { content: ""; position: absolute; left: 50%; top: 0; width: 90px; height: 7px; transform: translateX(-50%); background: #b7bec6; border-radius: 0 0 8px 8px; }
+
+/* Téléphone */
+.tel { position: absolute; background: #15171c; border-radius: 30px; padding: 8px; box-shadow: 0 24px 50px rgba(0,0,0,0.5); }
+.tel img { display: block; width: 100%; border-radius: 23px; }
+
+/* Fenêtre de navigateur */
+.fenetre { position: absolute; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 22px 50px rgba(0,0,0,0.45); }
+.fenetre .barre { height: 20px; background: #e8ebee; display: flex; align-items: center; gap: 5px; padding-left: 9px; }
+.fenetre .barre b { width: 7px; height: 7px; border-radius: 50%; background: #c3c9d0; }
+.fenetre img { display: block; width: 100%; }
+
+/* Tuiles */
+.tuile { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 22px 24px; }
+.tuile .ico { width: 46px; height: 46px; border-radius: 13px; background: var(--orange); display: grid; place-items: center; margin-bottom: 14px; }
+.tuile .ico svg { width: 24px; height: 24px; stroke: #fff; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.tuile h3 { font-size: 23px; margin-bottom: 6px; }
+.tuile p { margin: 0; color: var(--gris); font-size: 15px; line-height: 1.5; }
