@@ -15,12 +15,66 @@ const NUIT = '#0f2943', BLEU = '#1c99bb', ORANGE = '#e87532', ROUGE = '#d5241a',
 const GRIS = '#c8d5de', GRIS_CLAIR = '#e6edf2';
 const POLICE = "font-family=\"Segoe UI, Arial, sans-serif\"";
 
-// Petit logo fictif utilisé dans toutes les illustrations : un disque, une vague, un point.
+// Logo fictif des illustrations : chaque article a le sien (forme et couleurs), pour que les images ne se ressemblent pas.
+// Le motif est choisi dans MOTIFS d'après le nom de l'illustration, juste avant de la dessiner.
+// Dans les appels, BLEU et ORANGE désignent « la couleur principale » et « l'accent » du motif en cours.
+const MOTIFS = {
+  'logo-identite-visuelle-charte-graphique-differences': { forme: 'feuille', couleur: '#2f8f6b', accent: '#f2b63d' },
+  'brief-creation-logo': { forme: 'arcs', couleur: '#3d5a98', accent: '#f08a4b' },
+  'formats-fichiers-logo': { forme: 'monogramme', couleur: '#7a4bc2', accent: '#ffb547' },
+  'travailler-avec-graphiste-freelance-a-distance': { forme: 'etoile', couleur: '#d0573a', accent: '#2f8f6b' },
+  'pages-indispensables-site-vitrine': { forme: 'soleil', couleur: '#e09a1f', accent: '#0f2943' },
+  'ia-remplacer-graphiste': { forme: 'goutte', couleur: '#13a89e', accent: '#e8546b' },
+};
+let MOTIF = null;
+
 function marque(cx, cy, r, couleur = BLEU, vague = BLANC, point = ORANGE) {
-  const e = (0.2 * r).toFixed(1);
-  return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${couleur}"/>
-    <path d="M ${cx - 0.52 * r} ${cy + 0.12 * r} C ${cx - 0.2 * r} ${cy - 0.5 * r}, ${cx + 0.2 * r} ${cy + 0.5 * r}, ${cx + 0.52 * r} ${cy - 0.12 * r}" fill="none" stroke="${vague}" stroke-width="${e}" stroke-linecap="round"/>
-    ${point ? `<circle cx="${cx + 0.78 * r}" cy="${cy - 0.78 * r}" r="${0.24 * r}" fill="${point}"/>` : ''}`;
+  const m = MOTIF || { forme: 'feuille', couleur: BLEU, accent: ORANGE };
+  if (couleur === BLEU) couleur = m.couleur;
+  if (vague === BLEU) vague = m.couleur;
+  if (point === ORANGE) point = m.accent;
+  const n = v => v.toFixed(1);
+  const pastille = point ? `<circle cx="${n(cx + 0.78 * r)}" cy="${n(cy - 0.78 * r)}" r="${n(0.24 * r)}" fill="${point}"/>` : '';
+  switch (m.forme) {
+    case 'feuille':
+      return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${couleur}"/>
+        <path d="M ${n(cx - 0.45 * r)} ${n(cy + 0.42 * r)} C ${n(cx - 0.52 * r)} ${n(cy - 0.3 * r)}, ${n(cx + 0.08 * r)} ${n(cy - 0.62 * r)}, ${n(cx + 0.5 * r)} ${n(cy - 0.48 * r)} C ${n(cx + 0.46 * r)} ${n(cy + 0.14 * r)}, ${n(cx - 0.08 * r)} ${n(cy + 0.56 * r)}, ${n(cx - 0.45 * r)} ${n(cy + 0.42 * r)} Z" fill="${vague}"/>
+        <path d="M ${n(cx - 0.42 * r)} ${n(cy + 0.38 * r)} L ${n(cx + 0.24 * r)} ${n(cy - 0.24 * r)}" stroke="${couleur}" stroke-width="${n(0.08 * r)}" stroke-linecap="round"/>${pastille}`;
+    case 'montagne':
+      return `<rect x="${n(cx - r)}" y="${n(cy - r)}" width="${n(2 * r)}" height="${n(2 * r)}" rx="${n(0.32 * r)}" fill="${couleur}"/>
+        <path d="M ${n(cx - 0.66 * r)} ${n(cy + 0.48 * r)} L ${n(cx - 0.16 * r)} ${n(cy - 0.28 * r)} L ${n(cx + 0.1 * r)} ${n(cy + 0.08 * r)} L ${n(cx + 0.3 * r)} ${n(cy - 0.12 * r)} L ${n(cx + 0.66 * r)} ${n(cy + 0.48 * r)} Z" fill="${vague}"/>
+        ${point ? `<circle cx="${n(cx + 0.36 * r)}" cy="${n(cy - 0.46 * r)}" r="${n(0.17 * r)}" fill="${point}"/>` : ''}`;
+    case 'arcs': {
+      let arcs = '';
+      for (const k of [0.62, 0.42, 0.22]) arcs += `<path d="M ${n(cx - k * r)} ${n(cy + 0.3 * r)} A ${n(k * r)} ${n(k * r)} 0 0 1 ${n(cx + k * r)} ${n(cy + 0.3 * r)}" fill="none" stroke="${vague}" stroke-width="${n(0.11 * r)}" stroke-linecap="round"/>`;
+      return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${couleur}"/>${arcs}${pastille}`;
+    }
+    case 'monogramme':
+      return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${couleur}"/>
+        <path d="M ${n(cx - 0.44 * r)} ${n(cy + 0.48 * r)} L ${n(cx)} ${n(cy - 0.5 * r)} L ${n(cx + 0.44 * r)} ${n(cy + 0.48 * r)} M ${n(cx - 0.24 * r)} ${n(cy + 0.12 * r)} L ${n(cx + 0.24 * r)} ${n(cy + 0.12 * r)}" fill="none" stroke="${vague}" stroke-width="${n(0.17 * r)}" stroke-linecap="round" stroke-linejoin="round"/>
+        ${point ? `<rect x="${n(cx + 0.58 * r)}" y="${n(cy - 0.98 * r)}" width="${n(0.4 * r)}" height="${n(0.4 * r)}" rx="${n(0.08 * r)}" fill="${point}"/>` : ''}`;
+    case 'etoile': {
+      const hexa = [0, 1, 2, 3, 4, 5].map(k => { const a = Math.PI / 6 + k * Math.PI / 3; return `${n(cx + r * Math.cos(a))},${n(cy + r * Math.sin(a))}`; }).join(' ');
+      return `<polygon points="${hexa}" fill="${couleur}" stroke="${couleur}" stroke-width="${n(0.16 * r)}" stroke-linejoin="round"/>
+        <path d="M ${cx} ${n(cy - 0.6 * r)} Q ${n(cx + 0.1 * r)} ${n(cy - 0.1 * r)} ${n(cx + 0.6 * r)} ${cy} Q ${n(cx + 0.1 * r)} ${n(cy + 0.1 * r)} ${cx} ${n(cy + 0.6 * r)} Q ${n(cx - 0.1 * r)} ${n(cy + 0.1 * r)} ${n(cx - 0.6 * r)} ${cy} Q ${n(cx - 0.1 * r)} ${n(cy - 0.1 * r)} ${cx} ${n(cy - 0.6 * r)} Z" fill="${vague}"/>${pastille}`;
+    }
+    case 'soleil': {
+      let rayons = '';
+      for (const a of [-150, -120, -90, -60, -30]) {
+        const t = a * Math.PI / 180;
+        rayons += `<path d="M ${n(cx + 0.5 * r * Math.cos(t))} ${n(cy + 0.24 * r + 0.5 * r * Math.sin(t))} L ${n(cx + 0.68 * r * Math.cos(t))} ${n(cy + 0.24 * r + 0.68 * r * Math.sin(t))}" stroke="${vague}" stroke-width="${n(0.09 * r)}" stroke-linecap="round"/>`;
+      }
+      return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${couleur}"/>
+        <path d="M ${n(cx - 0.36 * r)} ${n(cy + 0.24 * r)} A ${n(0.36 * r)} ${n(0.36 * r)} 0 0 1 ${n(cx + 0.36 * r)} ${n(cy + 0.24 * r)} Z" fill="${vague}"/>
+        <path d="M ${n(cx - 0.62 * r)} ${n(cy + 0.36 * r)} L ${n(cx + 0.62 * r)} ${n(cy + 0.36 * r)}" stroke="${vague}" stroke-width="${n(0.09 * r)}" stroke-linecap="round"/>${rayons}${pastille}`;
+    }
+    case 'goutte':
+      return `<rect x="${n(cx - r)}" y="${n(cy - r)}" width="${n(2 * r)}" height="${n(2 * r)}" rx="${n(0.5 * r)}" fill="${couleur}"/>
+        <path d="M ${cx} ${n(cy - 0.62 * r)} C ${n(cx + 0.14 * r)} ${n(cy - 0.32 * r)}, ${n(cx + 0.44 * r)} ${n(cy - 0.06 * r)}, ${n(cx + 0.44 * r)} ${n(cy + 0.2 * r)} A ${n(0.44 * r)} ${n(0.44 * r)} 0 0 1 ${n(cx - 0.44 * r)} ${n(cy + 0.2 * r)} C ${n(cx - 0.44 * r)} ${n(cy - 0.06 * r)}, ${n(cx - 0.14 * r)} ${n(cy - 0.32 * r)}, ${cx} ${n(cy - 0.62 * r)} Z" fill="${vague}"/>
+        <circle cx="${n(cx - 0.14 * r)}" cy="${n(cy + 0.22 * r)}" r="${n(0.1 * r)}" fill="${couleur}"/>${pastille}`;
+    default:
+      throw new Error('motif inconnu : ' + m.forme);
+  }
 }
 
 // Carte blanche avec une ombre plate
@@ -374,6 +428,7 @@ const VISUELS = {
 (async () => {
   fs.mkdirSync(SORTIE, { recursive: true });
   for (const [nom, dessiner] of Object.entries(VISUELS)) {
+    MOTIF = MOTIFS[nom];
     // Rendu deux fois plus grand puis réduit, pour des contours nets
     const image = await sharp(Buffer.from(dessiner()), { density: 144 }).resize(W, H).png().toBuffer();
     await sharp(image).webp({ quality: 86 }).toFile(path.join(SORTIE, nom + '.webp'));

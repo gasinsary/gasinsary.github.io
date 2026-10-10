@@ -89,7 +89,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 - Dans le texte : sous-titres en `##` puis `###` (le `#` est réservé au titre de la page), liens internes avec `relative_url`, par exemple `[notre page logo]({{ '/creation-logo-identite-visuelle/' | relative_url }})`. Chaque article renvoie vers au moins une page de service et, si possible, un autre article.
 - Mêmes règles de ton que le reste du site : « nous », pas de promesse non confirmée, pas de client ni de témoignage inventé.
 - **Le propriétaire écrit ses articles et les envoie pour mise en ligne** (toutes les une à deux semaines) : garder son texte, corriger les fautes, proposer le titre SEO, la description et les liens internes, puis passer par la version de test.
-- Les quatre premiers articles ont été rédigés par l'assistant le 05/10/2026 avec des dates échelonnées du 25/08 au 02/10/2026, à la demande du propriétaire. Leurs illustrations sont produites par `briefs/outils/generer-visuels-blog.js`.
+- Les quatre premiers articles ont été rédigés par l'assistant le 05/10/2026 avec des dates échelonnées du 25/08 au 02/10/2026, à la demande du propriétaire. Leurs illustrations sont produites par `briefs/outils/generer-visuels-blog.js`. **Chaque illustration a son propre logo fictif** (table `MOTIFS` du script) : pour un nouvel article, ajouter un motif et des couleurs différents des précédents, pour que les images ne se répètent pas.
 
 ## Supabase
 
