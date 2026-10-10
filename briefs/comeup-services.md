@@ -304,12 +304,15 @@ Exemples dans mon portfolio : Maison Vellane, site vitrine d'une biscuiterie art
 
 **Options** (prix et délais : proposition, à décider par le propriétaire)
 
+Blog : deux options distinctes depuis le 10/10/2026. Sans espace d'administration, le site reste en HTML pur et le client ne peut pas publier seul. Avec espace d'administration, le client publie depuis un formulaire : soit un outil d'administration léger branché sur le site statique (type Decap CMS), soit WordPress si le client y tient ; choix à faire avec lui. Jamais d'articles chargés en JavaScript depuis une base de données (mauvais pour le référencement, même décision que pour le portfolio).
+
 | Option (texte à coller) | Prix proposé | Délai en plus |
 |---|---|---|
 | Page supplémentaire (galerie, réalisations, à propos, tarifs…) | 30 € | + 1 jour |
 | Création du logo, si vous n'en avez pas | 40 € | + 3 jours |
 | Rédaction des textes, par page | 20 € | + 1 jour |
-| Blog intégré : page des articles et modèle d'article, prêts pour vos publications | 60 € | + 3 jours |
+| Blog intégré : page des articles et modèle d'article ; vous m'envoyez vos textes et je les publie | 60 € | + 3 jours |
+| Blog avec espace d'administration : vous publiez vos articles vous-même, depuis un formulaire en ligne, sans toucher au code | 120 € | + 5 jours |
 | Version anglaise du site (traduction et mise en page) | 50 € | + 3 jours |
 | Refonte : reprise du contenu de votre ancien site et redirection des anciennes adresses | 40 € | + 2 jours |
 | Livraison accélérée (délai de base ramené de 7 à 4 jours) | 40 € | − 3 jours |
@@ -340,6 +343,9 @@ R : Ils sont à votre nom et vous les payez directement : environ 10 à 15 € p
 
 Q : Pourrai-je modifier le site moi-même ?
 R : Dites-le-moi avant la commande : si vous voulez changer vos textes ou vos photos vous-même, je choisis une solution qui le permet.
+
+Q : Avec l'option blog, qui publie les articles ?
+R : Deux options. « Blog intégré » : vous m'envoyez vos textes et je les publie. « Blog avec espace d'administration » : vous publiez vous-même, depuis un formulaire en ligne, sans toucher au code. Dans les deux cas, les articles font partie des pages du site, ce qui est le mieux pour Google.
 
 Q : Faites-vous les boutiques en ligne ?
 R : Oui, mais ce n'est pas ce service. Écrivez-moi : je vous ferai une offre adaptée.
