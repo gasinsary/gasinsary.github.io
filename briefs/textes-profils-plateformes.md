@@ -136,3 +136,39 @@ Ne pas publier de projet réel sans l'accord écrit du client.
 Sur chaque profil : le lien du site dans le champ « site web », le même logo, la même phrase de présentation.
 
 **Exception : ComeUp interdit tout lien externe** (site, e-mail, réseaux sociaux), dans le profil, les services et les images. Vérifier les règles de chaque plateforme avant d'y mettre l'adresse du site. Textes ComeUp dédiés : `briefs/comeup-services.md`.
+
+## 11. Codeur.com (relevé du 10/10/2026)
+
+Profil : https://www.codeur.com/-mirado-ramanana (membre depuis juillet 2018, Codeur Rank 11 389 sur 410 000, profil vu 1 627 fois, aucun avis).
+
+**Ce que Codeur permet sans abonnement** : le profil public est indexé par Google, mais **les adresses web sont masquées** (« [URL MASQUÉE] ») dans les réalisations : pas de lien vers le site. Seules les trois premières réalisations sont visibles sans connexion. Pour envoyer des offres sur les projets, il faut l'abonnement (à partir de 31,90 € HT par mois, sans engagement, plus 4 % de commission, minimum 5 € HT, sur un projet remporté). Les clients peuvent aussi demander un devis directement depuis le profil.
+
+**Problèmes du texte en ligne** : « Déjà plusieurs témoignages clients en vidéo » (à garder seulement si c'est vrai), « Livraison rapide » (promesse non chiffrée), adresses web dans les réalisations (affichées masquées), offre web limitée à « WordPress / HTML-CSS ».
+
+**Titre du profil**
+
+> Graphiste et développeur web freelance : logo, identité visuelle, site vitrine
+
+**À propos**
+
+> Graphiste et développeur web freelance, je crée des logos, des identités visuelles, des sites vitrines et des applications web pour les entreprises et les agences, en France et à l'international. Avec mon studio, Gas'in Sary, je m'occupe à la fois de l'image et du site : le logo, les couleurs et le site sont pensés ensemble.
+>
+> Ce que je fais :
+> • Logos et identités visuelles complètes : charte graphique, variantes, fichiers sources
+> • Sites vitrines sur mesure, adaptés au téléphone et prêts pour le référencement
+> • Sites et applications web sur mesure : React, Next.js, PHP, MySQL, PostgreSQL
+> • Refonte de sites anciens, en conservant les pages déjà référencées
+> • Bannières et visuels pour les réseaux sociaux
+>
+> Pour les agences : sous-traitance en freelance de votre production graphique ou web, et intégration à partir de vos maquettes.
+>
+> Comment je travaille :
+> • Une maquette de la page d'accueil, à valider avant tout développement
+> • Le nom de domaine et l'hébergement sont à votre nom : vous restez propriétaire de votre site
+> • Le code source et les fichiers vous sont remis à la fin du projet
+>
+> Je travaille en français, à distance, avec une à deux heures de décalage avec Paris. Échanges écrits en anglais possibles.
+
+**Compétences à ajouter** : Identité visuelle, Logo, UI design, Responsive design, JavaScript, React, Next.js, PHP, MySQL, PostgreSQL, Refonte de site, Intégration de maquettes.
+
+**Réalisations** (sans aucune adresse web, elle serait masquée) : ajouter Maison Vellane et Voolapp avec les textes et les images ComeUp (`briefs/comeup-portfolio/sortie/`), pour qu'elles fassent partie des trois réalisations visibles. Dans « Visuel pour site web » (Gas'in Sary) et Prospect-ia, retirer les adresses ; pour Prospect-ia, coller à la place le texte du témoignage si le client est d'accord.
