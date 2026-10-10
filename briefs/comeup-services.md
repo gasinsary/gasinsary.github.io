@@ -373,14 +373,31 @@ R : Prenez l'option « Création du logo », ou commandez d'abord mon service lo
 
 ## 7. Portfolio du profil
 
-| Titre | Description |
-|---|---|
-| Maison Vellane : site vitrine et identité visuelle | Site vitrine d'une biscuiterie artisanale, sur ordinateur et téléphone : accueil, gamme, espace professionnels. Projet concept, marque fictive. |
-| Voolapp : identité et application web de gestion | Logo, interface et développement d'une application de gestion commerciale (factures, stock, caisse). Produit conçu par mon studio, écrans sur données de démonstration. |
-| Voara : campagne Instagram | Posts, story et carrousel pour le lancement d'un sérum. Projet concept, marque fictive. |
-| Bao Fizz : bannières publicitaires | Un visuel de campagne décliné en quatre bannières et en posts Instagram. Projet concept, marque fictive. |
+**Relevé du 10/10/2026.** Le profil (titre et présentation) est à jour. Le portfolio contient encore quatre éléments anciens :
 
-Images : les couvertures du site (`portfolio/<projet>/img/couverture.jpg`), qui ne contiennent ni adresse ni coordonnée. Pour PICSHOP et « Identité visuelle pour un client » déjà en ligne : vérifier l'accord des clients.
+| Élément en ligne | Problème | Que faire |
+|---|---|---|
+| « Identité visuelle » : PICSHOP | Vrai client ? Son nom est cité et sa devanture sert aussi d'image au service logo. | Garder seulement si le client est d'accord. Sinon, supprimer et changer l'image du service logo. |
+| « Identité visuelle » : « Projet de création d'identité visuelle pour un client » (Aquafish Farms) | **Trompeur** : Aquafish est un projet concept (marque fictive) sur le site. | Renommer et corriger la description (voir ci-dessous), ou supprimer. |
+| « Logo divers » (logos Voolapp) | Titre vague ; doublon avec le nouvel élément Voolapp. | Supprimer, ses images vont dans l'élément Voolapp. |
+| « Visuelle pour site web » | Faute (« Visuelle »), description pauvre. | Renommer (voir ci-dessous). |
+
+Les services renvoient au portfolio (« Exemples dans mon portfolio : Maison Vellane… Voolapp… ») : ces deux éléments doivent exister, en tête.
+
+**Portfolio cible, dans cet ordre.** Images prêtes, 1260 × 708, sans adresse ni coordonnée, dans `briefs/comeup-portfolio/sortie/` (script : `briefs/comeup-portfolio/preparer.js`). La première image de chaque dossier sert de couverture.
+
+| # | Titre | Description | Images |
+|---|---|---|---|
+| 1 | Maison Vellane : site vitrine et identité visuelle | Site vitrine d'une biscuiterie artisanale, de l'identité visuelle à la mise en page : accueil, gamme de biscuits, espace professionnels, version téléphone. Projet concept, marque fictive. | `1-maison-vellane/` (6) |
+| 2 | Voolapp : logo, interface et application web | Application de gestion commerciale conçue et développée par mon studio : logo, interface, tableau de bord, factures, caisse, stock, version téléphone. Produit du studio, écrans sur données de démonstration. | `2-voolapp/` (6) + images de « Logo divers » |
+| 3 | Bannières Facebook, LinkedIn et YouTube | Trois bannières de réseaux sociaux, chacune dans le style de sa marque, aux formats de chaque plateforme. Projets concept, marques fictives. | `5-bannieres/` (3) |
+| 4 | Voara : identité et campagne Instagram | Lancement d'un sérum : direction artistique, posts, story et carrousel Instagram. Projet concept, marque fictive. | `3-voara/` (5) |
+| 5 | Bao Fizz : identité et campagne publicitaire | Logo et palette d'une boisson, visuel de campagne décliné en bannières web et en posts Instagram. Projet concept, marque fictive. | `4-bao-fizz/` (5) |
+| 6 | Aquafish Farms : identité visuelle | Logo et déclinaisons (papeterie, véhicules) d'une ferme piscicole. Projet concept, marque fictive. | images déjà en ligne |
+| 7 | Illustrations pour un site web | Illustrations vectorielles de personnages, dessinées sur Illustrator pour les pages d'un site. | images déjà en ligne |
+| 8 | PICSHOP : identité visuelle | Seulement avec l'accord du client. | images déjà en ligne |
+
+Règle : la mention « Projet concept, marque fictive » reste dans chaque description concernée (règle du site, et ComeUp exige des informations vraies).
 
 ---
 
