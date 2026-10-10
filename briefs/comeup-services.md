@@ -1,151 +1,305 @@
-# ComeUp : profil et services web (textes prêts à coller)
+# ComeUp : tous les textes du profil et des services (prêts à coller)
 
 Rédigé le 10/10/2026 pour le profil https://comeup.com/fr/@mirado (vendeur depuis 2016, 1 vente, 1 avis positif).
+Un seul compte : ComeUp interdit d'en avoir plusieurs (vérifié dans ses conditions d'utilisation). Le nom d'utilisateur peut être changé (« mirado » → « gasinsary ») sans perdre l'avis.
 
-## Les règles de ComeUp à respecter (support officiel, vérifié le 10/10/2026)
+## Règles de ComeUp à respecter (support officiel, vérifié le 10/10/2026)
 
-- **Aucun moyen de contact externe** dans le profil, les services, les images ni le portfolio : pas d'adresse du site gasinsary.github.io, pas d'e-mail, pas de WhatsApp, pas de réseaux sociaux. Même discrètement dans une image. Sanction possible : suspension du compte.
+- **Aucun moyen de contact externe** dans le profil, les services, les images ni le portfolio : pas d'adresse du site gasinsary.github.io, pas d'e-mail, pas de WhatsApp, pas de réseaux sociaux. Même discrètement dans une image.
 - Tous les échanges passent par la messagerie ComeUp (ou ComeUp Direct pour la visio).
-- Pas de statistiques de vendeur (« 100 % satisfaits ») ni de badge (« Top service ») dans les textes ou les images. Les chiffres stables sont permis (« plus de 50 commandes »).
+- Pas de statistiques de vendeur ni de badge (« Top service ») dans les textes ou les images.
 - Tout doit être « vrai et vérifiable » : les projets concept sont annoncés comme tels.
+- **Pas de prix dans les descriptions** : ComeUp affiche ses propres prix (frais compris), différents de ceux écrits à la main. Les prix se règlent uniquement dans les formules et les options.
 
 ## Comment ComeUp classe les services
 
-D'après le support : l'essentiel du classement vient du **score de vente des 6 derniers mois** (chiffre d'affaires réalisé, bonus au-dessus de la moyenne). Le titre, la description et la catégorie ne font qu'ajuster. Ensuite : statistiques vendeur (temps de réponse, livraisons à l'heure, annulations), taux de conversion.
-
-Conséquence : le premier levier n'est pas le texte, ce sont **les premières ventes**. D'où la stratégie en deux services ci-dessous : un service d'appel, facile à acheter, qui amène des commandes et des avis ; un service principal, plus cher, vers lequel le premier mène.
-
-La catégorie « Création site vitrine » compte plus de 2 600 services, presque tous sur le même discours (« WordPress, optimisé SEO, qui convertit »). La différence possible : **un designer qui crée l'identité et le site**, et **la refonte d'un site ancien**, peu occupée.
+L'essentiel du classement vient du **chiffre d'affaires des 6 derniers mois** ; titre, description et catégorie ne font qu'ajuster. Ensuite : temps de réponse, livraisons à l'heure, annulations, taux de conversion. D'où deux services web qui s'enchaînent : un service d'appel facile à acheter (maquette de page d'accueil), qui amène commandes et avis, puis le service principal (site vitrine ou refonte).
 
 ---
 
-## 1. Le profil
+## 1. Profil
+
+**Nom d'utilisateur** : garder « mirado » (plus chaleureux) ou passer à « gasinsary » (cohérent avec les autres profils). Une seule fois.
 
 **Titre du profil**
 
-> Graphiste et développeur web freelance : logo, identité visuelle, site vitrine et refonte
+```text
+Graphiste et développeur web freelance : logo, identité visuelle, site vitrine
+```
 
 **Présentation**
 
-> Bonjour, je suis Mirado, graphiste et développeur web. Avec mon studio, Gas'in Sary, je crée des logos, des identités visuelles et des sites vitrines pour les entreprises, les artisans et les agences, en France et à l'international.
->
-> Ma particularité : je m'occupe à la fois de l'image et du site. Votre logo, vos couleurs et votre site sont pensés ensemble, pour que votre marque se reconnaisse partout, sur un écran de téléphone comme sur une carte de visite.
->
-> Ce que je fais :
-> • Logos et identités visuelles complètes (charte, variantes, fichiers sources)
-> • Sites vitrines sur mesure, adaptés au téléphone et prêts pour le référencement
-> • Refonte de sites anciens, sans perdre les pages déjà référencées
-> • Visuels pour les réseaux sociaux et bannières publicitaires
->
-> Je travaille en français, à distance, avec une à deux heures de décalage avec Paris. Je réponds aux questions avant la commande : décrivez-moi votre projet en message.
+```text
+Bonjour, je suis Mirado, graphiste et développeur web. Avec mon studio, Gas'in Sary, je crée des logos, des identités visuelles et des sites vitrines pour les entreprises, les artisans et les agences, en France et à l'international.
 
-**À faire sur le profil**
+Ma particularité : je m'occupe à la fois de l'image et du site. Votre logo, vos couleurs et votre site sont pensés ensemble, pour que votre marque se reconnaisse partout, sur un écran de téléphone comme sur une carte de visite.
 
-1. **Retirer ou mettre en pause le service « mécanismes mentaux liés au passage à l'action »** : il brouille le profil. Un client qui cherche un graphiste et voit un service de développement personnel doute de votre spécialité.
-2. **Corriger la faute du service logo** : « Je vais **créer** le logo… » (pas « crée »).
-3. **Portfolio** : ajouter Maison Vellane (site vitrine), Voolapp (application), Voara et Bao Fizz (campagnes), en écrivant « projet concept » pour les marques fictives et « projet du studio » pour Voolapp. Pour PICSHOP et l'« identité visuelle pour un client », vérifier que les clients sont d'accord pour être montrés.
-4. **Temps de réponse** : il affiche « — ». Répondre vite aux messages (dans l'heure si possible, en journée française) compte dans le classement et rassure. Activer les notifications de l'application ComeUp sur le téléphone.
+Ce que je fais :
+• Logos et identités visuelles complètes (charte, variantes, fichiers sources)
+• Sites vitrines sur mesure, adaptés au téléphone et prêts pour le référencement
+• Refonte de sites anciens, sans perdre les pages déjà référencées
+• Visuels pour les réseaux sociaux et bannières
+
+Je travaille en français, à distance, avec une à deux heures de décalage avec Paris. Décrivez-moi votre projet en message : je vous réponds avant toute commande.
+```
 
 ---
 
-## 2. Service d'appel : la maquette de refonte de la page d'accueil
+## 2. Service existant : logo et identité visuelle (à modifier)
 
-C'est la méthode « avant / après » utilisée en prospection, vendue comme un petit service. Elle amène des commandes rapides, des avis, et des clients qui voient déjà leur nouveau site : la suite (la refonte complète) se vend presque seule.
+**Titre** (le formulaire commence peut-être déjà par « Je vais » : coller seulement la suite)
 
-**Catégorie** : Création site vitrine (ou Webdesign / maquette si la catégorie existe)
+```text
+Je vais créer votre logo professionnel et votre identité visuelle sur mesure
+```
+
+**Description**
+
+```text
+« J'ai une idée de projet, mais il me faut une image professionnelle. »
+« J'ai besoin d'un vrai logo, pas d'une image générée par une IA. »
+« J'aimerais une identité simple et élégante, pas trop chargée. »
+
+Vous vous reconnaissez dans ces phrases ? Ce service est fait pour vous.
+
+Ce que vous recevez :
+• Un logo 100 % personnalisé (typographique ou avec un symbole simple)
+• Une proposition, déclinée en version claire et en version foncée
+• Des couleurs harmonieuses, accordées à votre activité
+• Des typographies lisibles et cohérentes
+• Les fichiers PNG et JPG, prêts pour vos réseaux sociaux et votre site
+• Le fichier source
+• Deux révisions pour ajuster le résultat
+
+Pourquoi me confier votre logo :
+Je traduis une idée floue en une image claire. Je vous écoute, je vous pose les bonnes questions, et je dessine ce que vous imaginiez sans pouvoir le formuler.
+
+En plus :
+• Un conseil sur votre nom ou votre positionnement visuel, si vous hésitez
+• Des fichiers rangés proprement, pour vous ou pour un futur prestataire
+• Un échange simple : vous êtes impliqué à chaque étape, sans stress
+
+Ce service est idéal si :
+• Vous démarrez un projet et voulez poser de bonnes bases visuelles
+• Votre logo actuel a été bricolé ou généré par une IA, et vous voulez du sur-mesure
+• Vous voulez une image simple, professionnelle et cohérente
+
+Comment ça se passe :
+1. Vous passez commande
+2. Je vous envoie un court questionnaire
+3. Nous échangeons sur vos envies
+4. Je vous présente le logo, puis je l'ajuste avec vous
+5. Vous recevez vos fichiers, clairs et organisés
+
+Exemples dans mon portfolio : les identités de Maison Vellane et de Voolapp.
+```
+
+**Option à modifier** (le texte actuel promettait le fichier source en option alors qu'il est déjà dans la formule de base)
+
+```text
+Deuxième proposition de logo + présentation sur maquettes réalistes (carte de visite, enseigne, réseaux sociaux)
+```
+
+---
+
+## 3. Service existant : bannière réseaux sociaux (à modifier)
 
 **Titre**
 
-> Je vais redessiner la page d'accueil de votre site, maquette moderne et responsive
+```text
+Je vais créer votre bannière Facebook, LinkedIn ou YouTube professionnelle
+```
+
+**Description**
+
+```text
+Le fil d'actualité est saturé : votre visuel se noie dans la masse ?
+
+Quelques secondes suffisent à convaincre, ou à perdre un prospect. Je crée une bannière professionnelle qui attire l'œil dès le premier regard et qui ressemble à votre marque.
+
+Ce que vous recevez :
+• Une bannière sur mesure, à vos couleurs et avec votre logo
+• Le format exact du réseau choisi (Facebook, LinkedIn ou YouTube)
+• Un fichier haute définition, prêt à publier
+• Une révision incluse
+
+Pourquoi me choisir :
+• Un design réfléchi, pas seulement joli : attirer, intriguer, faire cliquer
+• Mon expérience en identité visuelle garde votre image cohérente d'un réseau à l'autre
+• Un échange simple et rapide
+
+À m'envoyer après la commande :
+• Le nom de votre entreprise ou de votre projet
+• Le réseau visé (Facebook, LinkedIn, YouTube…)
+• Votre texte ou slogan (facultatif)
+• Vos couleurs ou l'ambiance souhaitée
+• Votre logo, si vous en avez un
+```
+
+**Options** (remplacent les « tarifs » écrits dans le texte ; prix à régler dans ComeUp)
+
+```text
+Bannière supplémentaire, ou même bannière adaptée à un autre réseau
+```
+
+```text
+Pack trois réseaux : Facebook, LinkedIn et YouTube, avec deux révisions
+```
+
+---
+
+## 4. Service existant : « passage à l'action »
+
+**Le mettre en pause** (ou le supprimer). Il brouille le profil : un client qui cherche un graphiste et voit un service de développement personnel doute de la spécialité.
+
+---
+
+## 5. Nouveau service d'appel : maquette de la page d'accueil
+
+**Catégorie** : Création site vitrine (ou Webdesign / maquette si cette catégorie existe)
+
+**Titre**
+
+```text
+Je vais redessiner la page d'accueil de votre site : maquette responsive
+```
 
 **Mots-clés** : refonte site internet, maquette site web, webdesign, page d'accueil, site responsive, site vitrine, redesign
 
 **Description**
 
-> Votre site a quelques années, s'affiche mal sur téléphone ou ne ressemble plus à votre entreprise ? Avant de tout refaire, voyez à quoi il pourrait ressembler.
->
-> Je redessine la page d'accueil de votre site actuel, avec votre logo, vos textes et vos photos, et je vous livre :
-> • la maquette de la page d'accueil sur ordinateur ;
-> • la même page sur téléphone ;
-> • une image « avant / après » qui compare votre site actuel et la proposition ;
-> • une courte note avec les trois points qui gênent le plus vos visiteurs aujourd'hui.
->
-> Comment ça se passe :
-> 1. Vous m'envoyez l'adresse de votre site et, si vous le souhaitez, ce que vous aimeriez changer.
-> 2. Je vous pose une ou deux questions sur vos clients.
-> 3. Je vous livre la maquette, puis j'intègre vos retours.
->
-> Vous pouvez ensuite me confier la refonte complète, ou la remettre à votre propre prestataire : la maquette vous appartient.
->
-> Exemple dans mon portfolio : le site de Maison Vellane, biscuiterie artisanale (projet concept, marque fictive).
+```text
+Votre site a quelques années, s'affiche mal sur téléphone ou ne ressemble plus à votre entreprise ? Avant de tout refaire, voyez à quoi il pourrait ressembler.
+
+Je redessine la page d'accueil de votre site actuel, avec votre logo, vos textes et vos photos, et je vous livre :
+• la maquette de la page d'accueil sur ordinateur ;
+• la même page sur téléphone ;
+• une image « avant / après » qui compare votre site actuel et la proposition ;
+• une courte note avec les trois points qui gênent le plus vos visiteurs aujourd'hui.
+
+Comment ça se passe :
+1. Vous m'envoyez l'adresse de votre site et ce que vous aimeriez changer.
+2. Je vous pose une ou deux questions sur vos clients.
+3. Je vous livre la maquette, puis j'intègre vos retours.
+
+La maquette vous appartient : vous pouvez ensuite me confier la refonte complète, ou la remettre à votre propre prestataire.
+
+Exemple dans mon portfolio : le site de Maison Vellane, biscuiterie artisanale (projet concept, marque fictive).
+```
 
 **Options**
 
-- Une page intérieure supplémentaire en maquette (page services, page contact…)
-- Une seconde proposition de style
-- Livraison express
-- Les fichiers de la maquette en HTML, prêts à être intégrés
+```text
+Une page intérieure supplémentaire en maquette (services, contact…)
+```
 
-**Ce que le client doit fournir** : l'adresse de son site actuel ; son logo s'il n'est pas sur le site.
+```text
+Une seconde proposition de style
+```
+
+```text
+Les fichiers de la maquette en HTML, prêts à être intégrés
+```
+
+```text
+Livraison express
+```
+
+**À fournir par le client** : l'adresse de son site actuel ; son logo s'il n'est pas sur le site.
 
 ---
 
-## 3. Service principal : site vitrine sur mesure ou refonte
+## 6. Nouveau service principal : site vitrine sur mesure ou refonte
 
 **Catégorie** : Création site vitrine
 
 **Titre**
 
-> Je vais créer ou refondre votre site vitrine sur mesure, responsive et optimisé SEO
+```text
+Je vais créer ou refondre votre site vitrine sur mesure et optimisé SEO
+```
 
 **Mots-clés** : site vitrine, création site internet, refonte site web, site responsive, référencement SEO, site sur mesure, site entreprise, site artisan
 
 **Description**
 
-> Un site vitrine clair, rapide, lisible sur téléphone et pensé pour Google, qui donne envie de vous contacter. Je le conçois de l'identité visuelle à la mise en ligne.
->
-> Ce que vous recevez :
-> • un site sur mesure, dessiné pour votre activité (pas un modèle générique) ;
-> • une version téléphone soignée, testée sur mobile ;
-> • les bases du référencement : un titre et une description par page, des adresses propres, un plan du site, des images légères ;
-> • un formulaire de contact ;
-> • une connexion sécurisée (https) ;
-> • le code source, à vous.
->
-> Vous restez propriétaire de tout : le nom de domaine et l'hébergement sont à votre nom, je les mets en place avec vous.
->
-> Refonte d'un site existant : je reprends ce qui fonctionne, je refais le reste, et je redirige vos anciennes adresses pour ne pas perdre votre référencement.
->
-> Comment ça se passe :
-> 1. Vous me décrivez votre activité et vos clients.
-> 2. Je vous présente la maquette de l'accueil, que vous validez avant le développement.
-> 3. Je développe le site sur une adresse de test, consultable à tout moment.
-> 4. Je le mets en ligne sur votre nom de domaine.
->
-> Je ne fais pas de site WordPress à partir d'un thème acheté : chaque site est conçu pour vous, en HTML/CSS, ou avec React et Next.js pour les projets plus complexes.
->
-> Exemples dans mon portfolio : Maison Vellane, site vitrine d'une biscuiterie artisanale (projet concept), et Voolapp, application de gestion conçue et développée par mon studio.
+```text
+Un site vitrine clair, rapide, lisible sur téléphone et pensé pour Google, qui donne envie de vous contacter. Je le conçois de l'identité visuelle à la mise en ligne.
+
+Ce que vous recevez :
+• un site sur mesure, dessiné pour votre activité (pas un modèle générique) ;
+• une version téléphone soignée, testée sur mobile ;
+• les bases du référencement : un titre et une description par page, des adresses propres, un plan du site, des images légères ;
+• un formulaire de contact ;
+• une connexion sécurisée (https) ;
+• le code source, à vous.
+
+Vous restez propriétaire de tout : le nom de domaine et l'hébergement sont à votre nom, je les mets en place avec vous.
+
+Refonte d'un site existant : je reprends ce qui fonctionne, je refais le reste, et je redirige vos anciennes adresses pour ne pas perdre votre référencement.
+
+Comment ça se passe :
+1. Vous me décrivez votre activité et vos clients.
+2. Je vous présente la maquette de l'accueil, que vous validez avant le développement.
+3. Je développe le site sur une adresse de test, consultable à tout moment.
+4. Je le mets en ligne sur votre nom de domaine.
+
+Chaque site est conçu pour vous, en HTML/CSS, ou avec React et Next.js pour les projets plus complexes.
+
+Exemples dans mon portfolio : Maison Vellane, site vitrine d'une biscuiterie artisanale (projet concept), et Voolapp, application de gestion conçue et développée par mon studio.
+```
 
 **Options**
 
-- Page supplémentaire
-- Création du logo (si vous n'en avez pas)
-- Rédaction des textes des pages
-- Blog intégré
-- Version anglaise
-- Mise en ligne sur votre nom de domaine et votre hébergement
-- Livraison express
+```text
+Page supplémentaire
+```
 
-**Ce que le client doit fournir** : son logo (ou l'option logo), ses textes ou les informations pour les rédiger, ses photos, l'accès à son nom de domaine et à son hébergement (ou les créer avec lui).
+```text
+Création du logo (si vous n'en avez pas)
+```
+
+```text
+Rédaction des textes des pages
+```
+
+```text
+Blog intégré
+```
+
+```text
+Version anglaise du site
+```
+
+```text
+Mise en ligne sur votre nom de domaine et votre hébergement
+```
+
+```text
+Livraison express
+```
+
+**À fournir par le client** : son logo (ou l'option logo), ses textes ou les informations pour les rédiger, ses photos, l'accès à son nom de domaine et à son hébergement (ou les créer avec lui).
 
 ---
 
-## 4. Les images des services (1260 × 708 px, format 16:9)
+## 7. Portfolio du profil
 
-- **Aucune adresse de site ni coordonnée** dans les images, même petite.
-- Image principale : la mise en scène ordinateur + téléphone (comme la couverture de Maison Vellane), avec le titre court du service en grand. C'est elle qui fait cliquer dans la liste de résultats.
-- Images suivantes : « ce que vous recevez », « avant / après » (sur un exemple fictif), « comment ça se passe ».
+| Titre | Description |
+|---|---|
+| Maison Vellane : site vitrine et identité visuelle | Site vitrine d'une biscuiterie artisanale, sur ordinateur et téléphone : accueil, gamme, espace professionnels. Projet concept, marque fictive. |
+| Voolapp : identité et application web de gestion | Logo, interface et développement d'une application de gestion commerciale (factures, stock, caisse). Produit conçu par mon studio, écrans sur données de démonstration. |
+| Voara : campagne Instagram | Posts, story et carrousel pour le lancement d'un sérum. Projet concept, marque fictive. |
+| Bao Fizz : bannières publicitaires | Un visuel de campagne décliné en quatre bannières et en posts Instagram. Projet concept, marque fictive. |
 
-## 5. Les prix
+Images : les couvertures du site (`portfolio/<projet>/img/couverture.jpg`), qui ne contiennent ni adresse ni coordonnée. Pour PICSHOP et « Identité visuelle pour un client » déjà en ligne : vérifier l'accord des clients.
 
-Décision du propriétaire. Repères relevés le 10/10/2026 dans la catégorie : de 50 € à environ 580 $ pour un site vitrine, souvent « à partir de » avec des options. Au tarif journalier fixé par le propriétaire (50 € par jour), un site vitrine de cinq pages représente trois à cinq jours de travail. D'après des guides de vendeurs (non confirmé par ComeUp), l'algorithme favorise les paniers moyens élevés : mieux vaut un prix de base raisonnable et des options utiles qu'un prix d'appel très bas.
+---
+
+## 8. Images des services
+
+Format 1260 × 708 px (16:9), aucune adresse de site ni coordonnée. Image principale : mise en scène ordinateur + téléphone avec le titre court du service. Suivantes : « ce que vous recevez », « avant / après » sur un exemple fictif, « comment ça se passe ».
+
+## 9. Prix
+
+Décision du propriétaire, à régler dans les formules et les options (jamais dans le texte). Repères relevés le 10/10/2026 dans la catégorie site vitrine : de 50 € à environ 580 $. Au tarif journalier fixé (50 € par jour), un site vitrine de cinq pages représente trois à cinq jours de travail.
