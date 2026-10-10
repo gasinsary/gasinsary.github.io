@@ -377,7 +377,7 @@ R : Prenez l'option « Création du logo », ou commandez d'abord mon service lo
 
 | Élément en ligne | Problème | Que faire |
 |---|---|---|
-| « Identité visuelle » : PICSHOP | Vrai client ? Son nom est cité et sa devanture sert aussi d'image au service logo. | Garder seulement si le client est d'accord. Sinon, supprimer et changer l'image du service logo. |
+| « Identité visuelle » : PICSHOP | Projet personnel du propriétaire (boutique en ligne de mockups, jamais lancée : logo et maquette HTML seulement). La description « identité visuelle complète » en dit trop. | Garder, avec un titre et une description exacts (voir ci-dessous). L'image du service logo peut rester. |
 | « Identité visuelle » : « Projet de création d'identité visuelle pour un client » (Aquafish Farms) | **Trompeur** : Aquafish est un projet concept (marque fictive) sur le site. | Renommer et corriger la description (voir ci-dessous), ou supprimer. |
 | « Logo divers » (logos Voolapp) | Titre vague ; doublon avec le nouvel élément Voolapp. | Supprimer, ses images vont dans l'élément Voolapp. |
 | « Visuelle pour site web » | Faute (« Visuelle »), description pauvre. | Renommer (voir ci-dessous). |
@@ -393,9 +393,9 @@ Les services renvoient au portfolio (« Exemples dans mon portfolio : Maison Vel
 | 3 | Bannières Facebook, LinkedIn et YouTube | Trois bannières de réseaux sociaux, chacune dans le style de sa marque, aux formats de chaque plateforme. Projets concept, marques fictives. | `5-bannieres/` (3) |
 | 4 | Voara : identité et campagne Instagram | Lancement d'un sérum : direction artistique, posts, story et carrousel Instagram. Projet concept, marque fictive. | `3-voara/` (5) |
 | 5 | Bao Fizz : identité et campagne publicitaire | Logo et palette d'une boisson, visuel de campagne décliné en bannières web et en posts Instagram. Projet concept, marque fictive. | `4-bao-fizz/` (5) |
-| 6 | Aquafish Farms : identité visuelle | Logo et déclinaisons (papeterie, véhicules) d'une ferme piscicole. Projet concept, marque fictive. | images déjà en ligne |
-| 7 | Illustrations pour un site web | Illustrations vectorielles de personnages, dessinées sur Illustrator pour les pages d'un site. | images déjà en ligne |
-| 8 | PICSHOP : identité visuelle | Seulement avec l'accord du client. | images déjà en ligne |
+| 6 | PICSHOP : logo et maquette d'une boutique en ligne | Projet personnel : logo et maquette de la page d'une boutique en ligne de mockups. Projet non lancé. | images déjà en ligne |
+| 7 | Aquafish Farms : identité visuelle | Logo et déclinaisons (papeterie, véhicules) d'une ferme piscicole. Projet concept, marque fictive. | images déjà en ligne |
+| 8 | Illustrations pour un site web | Illustrations vectorielles de personnages, dessinées sur Illustrator pour les pages d'un site. | images déjà en ligne |
 
 Règle : la mention « Projet concept, marque fictive » reste dans chaque description concernée (règle du site, et ComeUp exige des informations vraies).
 
