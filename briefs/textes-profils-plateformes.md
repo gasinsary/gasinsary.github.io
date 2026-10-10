@@ -134,3 +134,5 @@ Ne pas publier de projet réel sans l'accord écrit du client.
 | Fiche Google (Google Business Profile) | Description, site, horaires, catégorie « graphiste » | Moyenne (4) |
 
 Sur chaque profil : le lien du site dans le champ « site web », le même logo, la même phrase de présentation.
+
+**Exception : ComeUp interdit tout lien externe** (site, e-mail, réseaux sociaux), dans le profil, les services et les images. Vérifier les règles de chaque plateforme avant d'y mettre l'adresse du site. Textes ComeUp dédiés : `briefs/comeup-services.md`.
