@@ -156,11 +156,13 @@ Pack trois réseaux : Facebook, LinkedIn et YouTube, avec deux révisions
 
 ## 5. Nouveau service d'appel : maquette de la page d'accueil (réglages complets)
 
+Version clarifiée le 10/10/2026 : le propriétaire lui-même avait compris qu'un site était livré. Le service livre **une maquette** (images et PDF), jamais un site en ligne. Cela doit se lire dans le titre, la description, les options, la FAQ et les images.
+
 | Réglage | Valeur |
 |---|---|
 | Catégorie | Création site vitrine (ou « Webdesign » / « Maquette » si la catégorie existe dans le formulaire) |
-| Titre | Je vais redessiner la page d'accueil de votre site : maquette responsive |
-| Mots-clés | refonte site internet, maquette site web, webdesign, page d'accueil, site responsive, site vitrine, redesign |
+| Titre | Je vais créer la maquette de la nouvelle page d'accueil de votre site |
+| Mots-clés | maquette site web, maquette page d'accueil, refonte site internet, webdesign, redesign, site responsive, site vitrine |
 | Délai de la formule de base | 3 jours (le travail en demande un ; la marge évite les retards, qui pèsent sur le classement) |
 | Retours inclus | Une série de retours (à confirmer par le propriétaire) |
 | Prix | **À décider par le propriétaire.** Proposition de départ : 45 € la formule de base (environ une journée à 50 € par jour, un peu moins pour un service d'appel) |
@@ -170,32 +172,40 @@ Pack trois réseaux : Facebook, LinkedIn et YouTube, avec deux révisions
 ```text
 Votre site a quelques années, s'affiche mal sur téléphone ou ne ressemble plus à votre entreprise ? Avant de tout refaire, voyez à quoi il pourrait ressembler.
 
-Je redessine la page d'accueil de votre site actuel, avec votre logo, vos textes et vos photos, et je vous livre :
-• la maquette de la page d'accueil sur ordinateur ;
-• la même page sur téléphone ;
-• une image « avant / après » qui compare votre site actuel et la proposition ;
-• une courte note avec les trois points qui gênent le plus vos visiteurs aujourd'hui.
+Je crée la maquette de la nouvelle page d'accueil de votre site, à partir de votre site actuel : votre logo, vos textes et vos photos, dans une mise en page moderne.
 
-Le tout réuni dans un document PDF de présentation, avec les images en haute définition à part. Il s'agit d'une maquette, c'est-à-dire d'une proposition visuelle : votre site actuel n'est pas modifié et rien n'est mis en ligne.
+CE QUE VOUS RECEVEZ
+• La maquette de la page d'accueil sur ordinateur, en image haute définition
+• La même page sur téléphone, en image haute définition
+• Une image « avant / après » : votre site actuel à côté de la proposition
+• Une note avec les trois points qui gênent le plus vos visiteurs aujourd'hui
+Le tout réuni dans un document PDF de présentation, facile à transmettre à vos associés, avec les images à part.
 
-Comment ça se passe :
+CE QUE CE SERVICE N'EST PAS
+• Ce n'est pas un site en ligne : c'est une proposition visuelle, en images.
+• Votre site actuel n'est pas modifié.
+• Seule la page d'accueil est dessinée (d'autres pages sont disponibles en option).
+• Je reprends les textes de votre site ; je ne rédige pas de nouveaux contenus.
+
+ET ENSUITE ?
+La maquette vous appartient. Vous pouvez me confier la création du nouveau site (c'est un autre service), ou la remettre à votre propre prestataire. En option, je vous livre aussi la page codée en HTML, pour faciliter le travail d'un développeur.
+
+COMMENT ÇA SE PASSE
 1. Vous m'envoyez l'adresse de votre site et ce que vous aimeriez changer.
 2. Je vous pose une ou deux questions sur vos clients.
-3. Je vous livre la maquette, puis j'intègre vos retours.
+3. Je vous livre le PDF et les images, puis j'intègre vos retours.
 
-La maquette vous appartient : vous pouvez ensuite me confier la refonte complète, ou la remettre à votre propre prestataire.
-
-Exemple dans mon portfolio : le site de Maison Vellane, biscuiterie artisanale (projet concept, marque fictive).
+Exemple dans mon portfolio : Maison Vellane, biscuiterie artisanale (projet concept, marque fictive).
 ```
 
 **Options** (prix et délais : proposition, à décider par le propriétaire)
 
-| Option | Prix proposé | Délai en plus |
+| Option (texte à coller) | Prix proposé | Délai en plus |
 |---|---|---|
-| Une page intérieure supplémentaire en maquette (services, contact…) | 20 € | + 1 jour |
-| Une seconde proposition de style | 25 € | + 2 jours |
-| Les fichiers de la maquette en HTML, prêts à être intégrés | 35 € | + 2 jours |
-| Livraison express (en 24 heures) | 15 € | le délai passe à 1 jour |
+| Maquette d'une page supplémentaire (services, contact, à propos…), sur ordinateur et téléphone | 20 € | + 1 jour |
+| Une seconde proposition de style pour la page d'accueil | 25 € | + 2 jours |
+| La page d'accueil codée en HTML/CSS : fichiers à ouvrir dans un navigateur ou à remettre à votre développeur (pas de mise en ligne) | 35 € | + 2 jours |
+| Livraison express en 24 heures | 15 € | le délai passe à 1 jour |
 
 **Consignes à l'acheteur** (champ « instructions » ou questions posées après la commande)
 
@@ -211,20 +221,26 @@ Pour commencer, envoyez-moi :
 **Questions fréquentes** (si le formulaire en propose)
 
 ```text
-Q : Vous refaites tout mon site ?
-R : Non, ce service concerne la page d'accueil, en maquette. La refonte complète est un autre service, que vous pouvez commander ensuite.
+Q : Est-ce que vous refaites mon site ?
+R : Non. Ce service livre la maquette de votre future page d'accueil, en images et en PDF. Rien n'est mis en ligne et votre site actuel n'est pas modifié. La création du nouveau site est un autre service, que vous pouvez commander ensuite.
+
+Q : Qu'est-ce qu'une maquette ?
+R : Une image fidèle de ce à quoi ressemblera la page : mise en page, couleurs, textes, photos, sur ordinateur et sur téléphone. Elle sert à valider le résultat avant de lancer le développement.
+
+Q : Je pourrai l'utiliser avec un autre prestataire ?
+R : Oui, la maquette vous appartient. Avec l'option HTML, votre développeur reçoit en plus la page déjà codée.
 
 Q : Je n'ai pas de site, ce service est-il pour moi ?
 R : Pas vraiment : il part d'un site existant. Pour un premier site, voyez mon service de création de site vitrine.
 
-Q : Dans quel format recevrai-je la maquette ?
-R : Un document PDF de présentation (avant / après, maquette sur ordinateur et sur téléphone, note en trois points) et les images en haute définition à part. En option, la page en HTML, prête à être intégrée par un développeur ; elle n'est pas mise en ligne.
+Q : Vous écrivez les textes ?
+R : Je reprends ceux de votre site, en les raccourcissant si besoin pour la mise en page. La rédaction de nouveaux textes fait partie du service de création de site.
 ```
 
 **Images** (dans `briefs/comeup-maquette/sortie/`, à mettre dans cet ordre)
 
 1. `galerie-1.jpg` : image principale, « Voyez votre nouveau site avant de le refaire », avant / après sur ordinateur.
-2. `galerie-2.jpg` : ce que vous recevez (quatre éléments), maquette sur ordinateur et téléphone.
+2. `galerie-2.jpg` : ce que contient la maquette (quatre éléments), avec l'encadré « Livré en PDF + images HD. C'est une maquette : votre site actuel n'est pas modifié, rien n'est mis en ligne ».
 3. `galerie-3.jpg` : la différence sur téléphone, avant / après.
 4. `galerie-4.jpg` : les trois étapes et « la maquette vous appartient ».
 
