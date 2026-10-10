@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* Couverture du profil Behance : 3200 × 410. Behance coupe les côtés sur les petits écrans :
+     le texte est au centre, les projets de chaque côté sont décoratifs. */
+  html, body { margin: 0; width: 3200px; height: 410px; overflow: hidden; }
+  body { position: relative; font-family: Roboto, sans-serif; color: #fff;
+    background: radial-gradient(ellipse at 50% 40%, #1d5f86 0, transparent 55%), linear-gradient(90deg, #0d2338 0%, #143a5c 50%, #0d2338 100%); }
+  .texte { position: absolute; left: 1050px; width: 1100px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+  .sur { font-size: 20px; letter-spacing: 0.18em; text-transform: uppercase; color: #9fdcf0; font-weight: 500; }
+  h1 { font-family: Quicksand, sans-serif; font-weight: 700; font-size: 58px; line-height: 1.1; margin: 12px 0 16px; }
+  h1 em { font-style: normal; color: #ffb27a; }
+  .points { font-size: 21px; color: #d5e6f0; }
+  .points b { color: #fff; font-weight: 500; }
+  .vue { position: absolute; top: 65px; width: 420px; height: 280px; border-radius: 14px; overflow: hidden; box-shadow: 0 24px 50px rgba(0,0,0,0.4); }
+  .vue img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .a { left: 110px; transform: rotate(-2deg); } .b { left: 570px; top: 80px; transform: rotate(1.5deg); }
+  .c { left: 2210px; top: 80px; transform: rotate(-1.5deg); } .d { left: 2670px; transform: rotate(2deg); }
+</style></head>
+<body>
+  <div class="vue a"><img src="../../portfolio/campagne-reseaux-sociaux-voara/img/couverture.webp" alt=""></div>
+  <div class="vue b"><img src="../../portfolio/campagne-publicitaire-bao-fizz/img/couverture.webp" alt=""></div>
+  <div class="texte">
+    <div class="sur">Gas'in Sary · studio créatif à distance</div>
+    <h1>Logos, identités visuelles et <em>sites web</em></h1>
+    <div class="points"><b>Graphiste et développeur web freelance</b> · Entreprises et agences · France et international</div>
+  </div>
+  <div class="vue c"><img src="../../portfolio/site-vitrine-biscuiterie-maison-vellane/img/couverture.webp" alt=""></div>
+  <div class="vue d"><img src="../../portfolio/application-web-gestion-commerciale-voolapp/img/couverture.webp" alt=""></div>
+</body></html>
