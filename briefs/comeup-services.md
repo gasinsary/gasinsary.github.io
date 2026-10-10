@@ -279,12 +279,17 @@ CE QUE VOUS RECEVEZ (formule de base)
 • La mise en ligne sur votre nom de domaine et votre hébergement
 • Le code source et les fichiers, remis à la fin du projet
 
+COMMENT EST FAIT LE SITE
+Le site de base est un site statique : des pages en HTML et CSS, avec un peu de JavaScript pour les animations et le formulaire de contact. Concrètement :
+• il est rapide, sûr, très bien lu par Google, et peu coûteux à héberger ;
+• il n'a pas d'espace d'administration : pour changer un texte ou une photo, il faut passer par moi ou par un développeur. Si vous voulez modifier votre site vous-même, prenez l'option « espace d'administration ».
+
 VOUS RESTEZ PROPRIÉTAIRE DE TOUT
 Le nom de domaine et l'hébergement sont souscrits à votre nom. Je vous indique quoi choisir et je les mets en place avec vous. Si un jour vous changez de prestataire, vous gardez tout.
 
 CE QUI N'EST PAS COMPRIS
 • Le nom de domaine et l'hébergement : ils sont à votre nom et vous les payez directement (comptez environ 10 à 15 € par an pour un nom de domaine en .com ; l'hébergement d'un site vitrine simple peut être gratuit ou coûter quelques euros par mois).
-• La boutique en ligne, le paiement en ligne et les espaces membres : parlons-en avant de commander.
+• La boutique en ligne, le paiement en ligne et les espaces membres : ce sont d'autres projets, sur devis. Parlons-en avant de commander.
 • La rédaction des textes et les photos : vous les fournissez, ou vous prenez l'option rédaction.
 • La maintenance après la livraison : possible, à définir ensemble.
 
@@ -297,7 +302,7 @@ COMMENT ÇA SE PASSE
 3. Je développe le site sur une adresse de test, consultable à tout moment.
 4. Je le mets en ligne sur votre nom de domaine et je vous remets le code et les accès.
 
-Technologies : HTML et CSS pour la plupart des sites vitrines ; React, Next.js ou PHP selon les besoins du projet.
+Pour un site avec boutique ou fonctions sur mesure, j'utilise d'autres technologies (PHP et MySQL, React et Next.js) : c'est un devis à part.
 
 Exemples dans mon portfolio : Maison Vellane, site vitrine d'une biscuiterie artisanale (projet concept), et Voolapp, application de gestion conçue et développée par mon studio.
 ```
@@ -313,6 +318,7 @@ Blog : deux options distinctes depuis le 10/10/2026. Sans espace d'administratio
 | Rédaction des textes, par page | 20 € | + 1 jour |
 | Blog intégré : page des articles et modèle d'article ; vous m'envoyez vos textes et je les publie | 60 € | + 3 jours |
 | Blog avec espace d'administration : vous publiez vos articles vous-même, depuis un formulaire en ligne, sans toucher au code | 120 € | + 5 jours |
+| Espace d'administration : vous modifiez vous-même les textes et les photos de vos pages, depuis un formulaire en ligne | 100 € | + 4 jours |
 | Version anglaise du site (traduction et mise en page) | 50 € | + 3 jours |
 | Refonte : reprise du contenu de votre ancien site et redirection des anciennes adresses | 40 € | + 2 jours |
 | Livraison accélérée (délai de base ramené de 7 à 4 jours) | 40 € | − 3 jours |
@@ -342,7 +348,10 @@ Q : Combien coûtent le nom de domaine et l'hébergement ?
 R : Ils sont à votre nom et vous les payez directement : environ 10 à 15 € par an pour un nom de domaine en .com. L'hébergement d'un site vitrine simple peut être gratuit ou coûter quelques euros par mois. Je vous conseille avant de souscrire.
 
 Q : Pourrai-je modifier le site moi-même ?
-R : Dites-le-moi avant la commande : si vous voulez changer vos textes ou vos photos vous-même, je choisis une solution qui le permet.
+R : Pas avec la formule de base : c'est un site statique (HTML et CSS), sans espace d'administration ; les modifications passent par moi ou par un développeur. Avec l'option « espace d'administration », vous changez vous-même vos textes et vos photos depuis un formulaire en ligne.
+
+Q : Pourquoi un site statique ?
+R : Pour un site vitrine, c'est le plus rapide, le plus sûr et le moins cher à héberger, et Google le lit parfaitement. Il n'y a pas de mises à jour de sécurité à faire comme sur un WordPress.
 
 Q : Avec l'option blog, qui publie les articles ?
 R : Deux options. « Blog intégré » : vous m'envoyez vos textes et je les publie. « Blog avec espace d'administration » : vous publiez vous-même, depuis un formulaire en ligne, sans toucher au code. Dans les deux cas, les articles font partie des pages du site, ce qui est le mieux pour Google.
