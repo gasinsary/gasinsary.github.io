@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="galerie.css">
+<style>
+  .gauche { position: absolute; left: 76px; top: 0; bottom: 0; width: 470px; display: flex; flex-direction: column; justify-content: center; }
+  h1 { font-size: 64px; margin: 18px 0 18px; }
+  h1 em { color: var(--orange); font-style: italic; }
+  .reseaux { font-size: 20px; font-weight: 700; color: var(--texte); margin-bottom: 18px; }
+  .scene { position: absolute; left: 560px; top: 0; right: 0; bottom: 0; }
+  .p1 { position: absolute; left: 30px; top: 70px; width: 560px; transform: rotate(-1.5deg); }
+  .p2 { position: absolute; left: 150px; top: 380px; width: 500px; transform: rotate(1.2deg); }
+  .p3 { position: absolute; left: 310px; top: 300px; width: 360px; }
+  .tag { position: absolute; z-index: 2; }
+</style></head>
+<body>
+  <div class="rond r1"></div><div class="rond r2"></div>
+  <div class="gauche">
+    <div class="sur">Bannière réseaux sociaux</div>
+    <h1>Une bannière qui <em>vous ressemble</em></h1>
+    <div class="reseaux">Facebook · LinkedIn · YouTube</div>
+    <div class="coche"><i>✓</i>Sur mesure, à vos couleurs</div>
+    <div class="coche"><i>✓</i>Au format exact de chaque réseau</div>
+    <div class="coche"><i>✓</i>Haute définition, prête à publier</div>
+  </div>
+  <div class="scene">
+    <div class="p1 profil ombre">
+      <div class="barre"><b></b><b></b><b></b></div>
+      <img src="sortie/banniere-facebook-voara.png" alt="">
+      <div class="bas"><div class="avatar" style="background:#1d2a21"><span style="font-family:'DM Serif Display';color:#c9a26b;font-size:26px">V</span></div><div class="l1"></div><div class="l2"></div></div>
+    </div>
+    <div class="tag" style="left:44px; top:44px"><span class="etiquette">Facebook</span></div>
+    <div class="p2 profil ombre">
+      <div class="barre"><b></b><b></b><b></b></div>
+      <img src="sortie/banniere-linkedin-vellane.png" alt="">
+      <div class="bas"><div class="avatar"><img src="../maison-vellane/illus/embleme.svg" alt=""></div><div class="l1"></div><div class="l2"></div></div>
+    </div>
+    <div class="tag" style="left:166px; top:356px"><span class="etiquette" style="background:var(--bleu)">LinkedIn</span></div>
+  </div>
+</body></html>

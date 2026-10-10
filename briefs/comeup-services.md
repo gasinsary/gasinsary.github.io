@@ -298,6 +298,8 @@ Images : les couvertures du site (`portfolio/<projet>/img/couverture.jpg`), qui 
 
 ## 8. Images des services
 
+**Service bannière : fait le 10/10/2026**, dans `briefs/comeup-banniere/sortie/` : `galerie-1.jpg` (image principale) à `galerie-4.jpg`, au format 1260 × 708. Les trois bannières d'exemple (Voara pour Facebook, Maison Vellane pour LinkedIn, Bao Fizz pour YouTube) sont aussi livrées seules, en JPG, pour le portfolio ComeUp. Sources HTML et rendu : `briefs/comeup-banniere/rendre.js`.
+
 Format 1260 × 708 px (16:9), aucune adresse de site ni coordonnée. Image principale : mise en scène ordinateur + téléphone avec le titre court du service. Suivantes : « ce que vous recevez », « avant / après » sur un exemple fictif, « comment ça se passe ».
 
 ## 9. Prix

@@ -1,0 +1,27 @@
+/* Images de présentation du service ComeUp « bannière » (1260 × 708). Aucune coordonnée ni adresse de site. */
+:root { --fond: #f4f1ea; --carte: #ffffff; --nuit: #0f2943; --texte: #4f5d6b; --bleu: #1c99bb; --orange: #e87532; --ligne: #e3ddd1; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { width: 1260px; height: 708px; overflow: hidden; background: var(--fond); font-family: "Manrope", sans-serif; color: var(--nuit); position: relative; }
+h1, h2 { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; margin: 0; line-height: 1.05; }
+.sur { font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; color: var(--bleu); }
+.rond { position: absolute; border-radius: 50%; }
+.r1 { width: 520px; height: 520px; left: -180px; top: -220px; background: #ebe5d8; }
+.r2 { width: 620px; height: 620px; right: -220px; bottom: -300px; background: #e3ecef; }
+.coche { display: flex; align-items: center; gap: 12px; font-size: 18px; font-weight: 600; margin-top: 14px; }
+.coche i { width: 28px; height: 28px; border-radius: 50%; background: var(--nuit); color: #fff; font-style: normal; font-size: 15px; display: grid; place-items: center; flex: none; }
+.etiquette { display: inline-block; padding: 6px 14px; border-radius: 999px; background: var(--nuit); color: #fff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; }
+.format { color: var(--texte); font-size: 13px; font-weight: 600; margin-left: 8px; }
+.ombre { box-shadow: 0 18px 40px rgba(15, 41, 67, 0.16); }
+.legende { position: absolute; left: 0; right: 0; bottom: 26px; text-align: center; font-size: 13px; color: var(--texte); }
+
+/* Faux profil générique (pas l'interface exacte d'un réseau) */
+.profil { background: var(--carte); border-radius: 16px; overflow: hidden; }
+.profil .barre { height: 26px; background: #eceef1; display: flex; align-items: center; gap: 6px; padding-left: 12px; }
+.profil .barre b { width: 9px; height: 9px; border-radius: 50%; background: #c9cfd6; }
+.profil img { display: block; width: 100%; }
+.profil .bas { position: relative; height: 66px; padding: 14px 0 0 118px; }
+.profil .avatar { position: absolute; left: 22px; top: -36px; width: 80px; height: 80px; border-radius: 50%; border: 5px solid #fff; background: var(--fond); display: grid; place-items: center; overflow: hidden; }
+.profil .avatar img { width: 60%; }
+.profil .l1 { width: 150px; height: 12px; border-radius: 6px; background: #2b3a4a; }
+.profil .l2 { width: 230px; height: 9px; border-radius: 5px; background: #d5dbe1; margin-top: 10px; }

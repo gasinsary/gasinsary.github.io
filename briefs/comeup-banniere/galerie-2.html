@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="galerie.css">
+<style>
+  .titre { position: absolute; left: 70px; top: 50px; right: 70px; display: flex; justify-content: space-between; align-items: end; }
+  h2 { font-size: 46px; margin-top: 10px; }
+  .titre p { margin: 0; color: var(--texte); font-size: 16px; max-width: 380px; text-align: right; }
+  .grille { position: absolute; left: 70px; right: 70px; top: 172px; display: grid; grid-template-columns: 1fr 1fr; gap: 26px 30px; }
+  .ex img { display: block; width: 100%; border-radius: 12px; }
+  .ex .tete { margin-bottom: 10px; }
+  .large { grid-column: span 2; }
+</style></head>
+<body>
+  <div class="rond r2"></div>
+  <div class="titre">
+    <div><div class="sur">Exemples</div><h2>Trois réseaux, trois formats</h2></div>
+    <p>Chaque bannière est composée au format exact du réseau, en tenant compte de la photo de profil et des zones coupées sur téléphone. Exemples pour des marques fictives (projets concept).</p>
+  </div>
+  <div class="grille">
+    <div class="ex"><div class="tete"><span class="etiquette">Facebook</span><span class="format">1640 × 624 px</span></div><img class="ombre" src="sortie/banniere-facebook-voara.png" alt=""></div>
+    <div class="ex"><div class="tete"><span class="etiquette" style="background:var(--bleu)">LinkedIn</span><span class="format">1584 × 396 px</span></div><img class="ombre" src="sortie/banniere-linkedin-vellane.png" alt=""></div>
+    <div class="ex large"><div class="tete"><span class="etiquette" style="background:#c4302b">YouTube</span><span class="format">2560 × 1440 px, zone visible partout</span></div><img class="ombre" src="sortie/banniere-youtube-baofizz-ordinateur.png" alt=""></div>
+  </div>
+</body></html>

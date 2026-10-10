@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Bannière de chaîne YouTube (2560 × 1440) de Bao Fizz, marque fictive.
+     Zone visible sur tous les écrans : 1546 × 423 au centre (x 507 à 2053, y 508 à 931). */
+  html, body { margin: 0; }
+  body { width: 2560px; height: 1440px; overflow: hidden; position: relative; font-family: "Inter", sans-serif; background: #fbc43a; }
+  .fond { position: absolute; inset: -60px; background: url("../../portfolio/campagne-publicitaire-bao-fizz/img/couverture.jpg") center / cover; filter: blur(40px) saturate(1.1); opacity: 0.55; }
+  .halo { position: absolute; left: 50%; top: 50%; width: 2200px; height: 900px; transform: translate(-50%, -50%); background: radial-gradient(ellipse, #ffd75e 0%, rgba(251,196,58,0) 70%); }
+  .zone { position: absolute; left: 507px; top: 508px; width: 1546px; height: 423px; }
+  /* Le logo et les canettes sont des découpes des visuels de la campagne */
+  .logo { position: absolute; left: 10px; top: 6px; width: 394px; height: 366px;
+    background: url("../../portfolio/campagne-publicitaire-bao-fizz/img/planche-1.webp") -58px -29px / 983px auto no-repeat;
+    -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 66%, transparent 100%); }
+  .canette { position: absolute; right: -330px; top: -150px; width: 658px; height: 700px;
+    background: url("../../portfolio/campagne-publicitaire-bao-fizz/img/couverture.jpg") -458px -44px / 1116px auto no-repeat;
+    -webkit-mask-image: radial-gradient(ellipse 50% 52% at 50% 48%, #000 62%, transparent 100%); }
+  .texte { position: absolute; left: 450px; top: 52px; width: 760px; }
+  h1 { font-family: "Archivo Black", sans-serif; font-size: 100px; line-height: 0.98; color: #14213d; margin: 0; letter-spacing: -0.01em; }
+  h1 span { color: #ff5a4e; }
+  p { font-size: 30px; font-weight: 600; color: #14213d; margin: 22px 0 0; }
+  .pastille { display: inline-block; margin-top: 20px; background: #14213d; color: #fff; font-weight: 700; font-size: 25px; padding: 13px 30px; border-radius: 999px; }
+</style></head>
+<body>
+  <div class="fond"></div>
+  <div class="halo"></div>
+  <div class="zone">
+    <div class="logo"></div>
+    <div class="canette"></div>
+    <div class="texte">
+      <h1>L'été a du <span>peps.</span></h1>
+      <p>Nouveaux parfums et coulisses, chaque semaine</p>
+      <div class="pastille">Nouvelle vidéo chaque mercredi</div>
+    </div>
+  </div>
+</body></html>

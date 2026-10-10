@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="galerie.css">
+<style>
+  .titre { position: absolute; left: 0; right: 0; top: 52px; text-align: center; }
+  h2 { font-size: 46px; margin-top: 10px; }
+  .etapes { position: absolute; left: 70px; right: 70px; top: 200px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .etape { background: var(--carte); border-radius: 18px; padding: 28px 28px 30px; position: relative; }
+  .etape b { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--nuit); color: #fff; font-family: "DM Serif Display", serif; font-weight: 400; font-size: 26px; margin-bottom: 18px; }
+  .etape h3 { font-family: "DM Serif Display", serif; font-weight: 400; font-size: 26px; margin: 0 0 8px; }
+  .etape p { margin: 0; color: var(--texte); font-size: 16px; line-height: 1.55; }
+  .atouts { position: absolute; left: 0; right: 0; bottom: 92px; display: flex; justify-content: center; gap: 14px; }
+  .atouts span { padding: 12px 22px; border-radius: 999px; background: var(--carte); font-weight: 700; font-size: 16px; box-shadow: 0 8px 20px rgba(15,41,67,0.08); }
+  .atouts span i { color: var(--orange); font-style: normal; margin-right: 8px; }
+</style></head>
+<body>
+  <div class="rond r2"></div>
+  <div class="titre"><div class="sur">Comment ça se passe</div><h2>Trois étapes, sans prise de tête</h2></div>
+  <div class="etapes">
+    <div class="etape ombre"><b>1</b><h3>Votre commande</h3><p>Vous m'envoyez votre logo, vos couleurs et le réseau visé, avec votre slogan si vous en avez un.</p></div>
+    <div class="etape ombre"><b>2</b><h3>La création</h3><p>Je compose votre bannière au bon format, puis je vous la présente avec ses zones visibles.</p></div>
+    <div class="etape ombre"><b>3</b><h3>La livraison</h3><p>Après votre retour, vous recevez le fichier final en haute définition, prêt à publier.</p></div>
+  </div>
+  <div class="atouts"><span><i>✓</i>Format exact du réseau</span><span><i>✓</i>Haute définition</span><span><i>✓</i>Une révision incluse</span></div>
+</body></html>

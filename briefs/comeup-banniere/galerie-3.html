@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="galerie.css">
+<style>
+  .titre { position: absolute; left: 70px; top: 50px; }
+  h2 { font-size: 46px; margin-top: 10px; }
+  .cartes { position: absolute; left: 70px; right: 70px; top: 170px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+  .carte { background: var(--carte); border-radius: 18px; padding: 30px 34px; }
+  .carte h3 { font-family: "DM Serif Display", serif; font-weight: 400; font-size: 30px; margin: 0 0 6px; }
+  .carte .coche { font-size: 17px; }
+  .carte.sombre { background: var(--nuit); color: #fff; }
+  .carte.sombre .coche i { background: var(--orange); }
+  .vignettes { position: absolute; left: 70px; right: 70px; bottom: 52px; display: flex; justify-content: space-between; align-items: end; }
+  .vignettes img { height: 86px; border-radius: 10px; display: block; }
+  .vignettes .lab { font-size: 12px; font-weight: 700; color: var(--texte); margin-bottom: 8px; letter-spacing: 0.06em; text-transform: uppercase; }
+</style></head>
+<body>
+  <div class="rond r1"></div>
+  <div class="titre"><div class="sur">Le service</div><h2>Simple, du début à la fin</h2></div>
+  <div class="cartes">
+    <div class="carte ombre">
+      <h3>Vous recevez</h3>
+      <div class="coche"><i>✓</i>Une bannière sur mesure, à vos couleurs</div>
+      <div class="coche"><i>✓</i>Le format exact du réseau choisi</div>
+      <div class="coche"><i>✓</i>Un fichier haute définition, prêt à publier</div>
+      <div class="coche"><i>✓</i>Une révision incluse</div>
+    </div>
+    <div class="carte sombre ombre">
+      <h3>Vous m'envoyez</h3>
+      <div class="coche"><i>1</i>Le nom de votre entreprise</div>
+      <div class="coche"><i>2</i>Le réseau visé</div>
+      <div class="coche"><i>3</i>Votre logo et vos couleurs</div>
+      <div class="coche"><i>4</i>Votre slogan, si vous en avez un</div>
+    </div>
+  </div>
+  <div class="vignettes">
+    <div><div class="lab">Facebook</div><img class="ombre" src="sortie/banniere-facebook-voara.png" alt=""></div>
+    <div><div class="lab">LinkedIn</div><img class="ombre" src="sortie/banniere-linkedin-vellane.png" alt=""></div>
+    <div><div class="lab">YouTube</div><img class="ombre" src="sortie/banniere-youtube-baofizz-ordinateur.png" alt=""></div>
+  </div>
+</body></html>
