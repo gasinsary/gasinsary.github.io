@@ -9,7 +9,7 @@ Les défauts connus du site et l'ordre de traitement proposé sont dans [AUDIT.m
 
 - Site vitrine de **Gas'in Sary**, studio de graphisme et de création de sites web basé à Antananarivo (Madagascar), dirigé par Mirado R.
 - **Cible du site : des clients étrangers**, pas des clients à Madagascar (précisé par le propriétaire le 04/10/2026). Deux publics : des **entreprises** qui commandent directement un logo, une identité ou un site, et des **agences** qui sous-traitent leur production graphique ou web. Francophones d'abord ; les anglophones sont acceptés, mais **le site reste en français**.
-- Production : <https://gasinsary.github.io/> — dépôt `gasinsary/gasinsary.github.io`, branche `main`, publié par GitHub Pages.
+- Production : <https://gasinsary.com/> (domaine acheté chez LWS le 14/10/2026 ; l'ancienne adresse <https://gasinsary.github.io/> redirige vers lui) — dépôt `gasinsary/gasinsary.github.io`, branche `main`, publié par GitHub Pages.
 - Le propriétaire n'est pas développeur de métier sur ces outils et écrit en **français** : répondre en français, en langage simple.
 - Priorité du propriétaire : le **référencement (SEO)**. Le contenu doit être dans le HTML généré, pas chargé en JavaScript.
 
@@ -68,7 +68,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 
 ### Règles de code
 
-- **Tous les liens et chemins internes passent par le filtre `relative_url`** (ex. `{{ '/assets/css/main.css' | relative_url }}`). Ne jamais écrire `/assets/...` ou `https://gasinsary.github.io/...` en dur : la version de test vit sous un sous-dossier.
+- **Tous les liens et chemins internes passent par le filtre `relative_url`** (ex. `{{ '/assets/css/main.css' | relative_url }}`). Ne jamais écrire `/assets/...` ou `https://gasinsary.com/...` en dur : la version de test vit sous un sous-dossier.
 - `baseurl` n'est volontairement pas défini dans `_config.yml` : GitHub Pages le règle selon le dépôt.
 - Les adresses existantes ne doivent pas changer (SEO) : `/`, `/portfolio/`, les pages de `/portfolio/<projet>/`, `/externalisation-creation-graphique-madagascar/`, `/creation-logo-identite-visuelle/`, `/creation-site-web/`, `/blog/` et les articles de `/blog/<nom>/` (ne pas renommer le fichier d'un article publié).
 - Chaque page définit `titre_seo` (ou `title`) et `description` dans son en-tête ; `_includes/head.html` produit le titre, la description, l'adresse canonique et les balises de partage.
@@ -105,15 +105,17 @@ Deux versions du site, deux dépôts GitHub sous le compte `gasinsary` :
 
 | Version | Dépôt (remote git) | Adresse |
 |---|---|---|
-| **Production** | `gasinsary/gasinsary.github.io` (remote `origin`), branche `main` | <https://gasinsary.github.io/> |
-| **Test (staging)** | `gasinsary/staging-t4sj762s` (remote `staging`), branche `main` | <https://gasinsary.github.io/staging-t4sj762s/> |
+| **Production** | `gasinsary/gasinsary.github.io` (remote `origin`), branche `main` | <https://gasinsary.com/> |
+| **Test (staging)** | `gasinsary/staging-t4sj762s` (remote `staging`), branche `main` | <https://gasinsary.com/staging-t4sj762s/> |
 
 Marche à suivre :
 
 1. Travailler sur la branche locale `staging`.
 2. Publier sur la version de test : `git push staging staging:main`. GitHub régénère le site de test en une à deux minutes.
 3. Le propriétaire vérifie la version de test.
-4. Seulement après son accord explicite : fusionner `staging` dans `main`, puis `git push origin main` (mise en production).
+4. Seulement après son accord explicite : fusionner `staging` dans `main` avec `git merge --no-edit staging` (pas `--ff-only` : `main` a un commit en plus, le fichier `CNAME`), puis `git push origin main` (mise en production).
+
+**Domaine `gasinsary.com`** (DNS chez LWS : quatre enregistrements A vers 185.199.108-111.153, `www` en CNAME vers `gasinsary.github.io`, ne pas toucher aux enregistrements des e-mails). Le fichier `CNAME` (contenu : `gasinsary.com`) existe **uniquement sur `main`**. Ne jamais fusionner `main` dans `staging` ni copier `CNAME` sur `staging` : le dépôt de test réclamerait le même domaine et GitHub le refuserait.
 
 - **Ne jamais pousser sur `origin main` sans l'accord explicite du propriétaire.** Ne pas commiter sans qu'il le demande.
 - Le nom du dépôt de test est volontairement difficile à deviner, et la version de test porte une balise `noindex` (ajoutée automatiquement dans `_includes/head.html` quand `baseurl` n'est pas vide). Ne pas mettre de lien vers la version de test depuis le site de production.

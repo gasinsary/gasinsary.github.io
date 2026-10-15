@@ -3,7 +3,9 @@
 
 title: "Gas'in Sary"
 description: "Studio créatif francophone basé à Madagascar : logos, identités visuelles et sites web pour les entreprises et les agences, en France et à l'international."
-url: "https://gasinsary.github.io"
+url: "https://gasinsary.com"
+# Domaine acheté chez LWS le 14/10/2026. Le fichier CNAME n'existe QUE sur la branche main
+# (production) : la version de test ne doit pas le recevoir (voir AGENTS.md, « Publication »).
 # "baseurl" n'est volontairement PAS défini : GitHub Pages le règle tout seul.
 #   - dépôt de production (gasinsary.github.io) : baseurl vide
 #   - dépôt de test (ex. "test")               : baseurl = /test
