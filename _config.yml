@@ -14,7 +14,9 @@ lang: fr
 author: "Gas'in Sary"
 
 # Coordonnées affichées sur le site (liens téléphone, e-mail, WhatsApp, formulaire)
-email: direction.gasinsary@gmail.com
+email: contact@gasinsary.com
+# Depuis le 15/10/2026 : redirection LWS vers la boîte mirado@gasinsary.com. Le formulaire passe par
+# FormSubmit : tout changement d'adresse demande de cliquer sur le lien d'activation reçu à la première demande.
 telephone: "+261 32 84 718 67"
 
 # Sert à calculer l'âge affiché dans « À propos » (format année-mois-jour)
