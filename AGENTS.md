@@ -13,6 +13,10 @@ Les défauts connus du site et l'ordre de traitement proposé sont dans [AUDIT.m
 - Le propriétaire n'est pas développeur de métier sur ces outils et écrit en **français** : répondre en français, en langage simple.
 - Priorité du propriétaire : le **référencement (SEO)**. Le contenu doit être dans le HTML généré, pas chargé en JavaScript.
 
+## Organisation du studio (depuis le 16/10/2026)
+
+Le studio travaille comme une agence de communication : **une discussion par service** (direction générale, commercial, visibilité & marketing, puis une discussion par projet client et plus tard l'administration). Le pilotage commun est dans le dossier **`interne/`**, local et non versionné (comme `prospection/` : ne jamais l'ajouter au dépôt). Toute discussion lit au début `interne/LISEZMOI.md`, `interne/tableau-de-bord.md`, `interne/decisions.md` et le fichier de son service, et met ce dernier à jour à la fin. Ne jamais promettre ce qui n'est pas dans `interne/decisions.md`. HISTORIQUE.md (public) ne contient ni prix, ni noms de prospects, ni chiffres commerciaux.
+
 ## Ton et positionnement des textes
 
 Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouveau texte.
@@ -61,6 +65,7 @@ Décidé avec le propriétaire les 03 et 04/10/2026. À respecter dans tout nouv
 | `_data/categories.yml` | Catégories et filtres du portfolio |
 | `portfolio/<nom>/img/` | Images d'un projet |
 | `briefs/` | Briefs de création des projets concept, maquette HTML du site Maison Vellane (`maison-vellane/`), captures d'écran d'origine de Voolapp (`voolapp-captures/`), outils de mise en scène (`outils/`, dont le module `mise-en-scene.js`) ; non publiés |
+| `interne/` | **Local, non versionné** (dans `.gitignore`) : pilotage du studio (tableau de bord, registre des décisions, un fichier par service). Ne jamais l'ajouter au dépôt |
 | `prospection/` | **Local, non versionné** (dans `.gitignore`) : liste des prospects, maquettes « avant / après » avec des marques réelles, brouillons d'e-mails. Ne jamais l'ajouter au dépôt : les deux dépôts sont publics |
 | `assets/js/supabase.js` | Connexion Supabase (clé publique uniquement) |
 | `mpatk.html` | Politique de confidentialité du chatbot MPATKBOT. Sans rapport avec le site : **ne pas modifier** |

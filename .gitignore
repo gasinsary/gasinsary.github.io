@@ -12,3 +12,6 @@ _site/
 
 # Prospection (maquettes avec des marques réelles, listes de prospects) : jamais publiée
 prospection/
+
+# Pilotage interne du studio (priorités, décisions, prix, chiffres) : jamais publié
+interne/
