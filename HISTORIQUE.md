@@ -8,8 +8,10 @@ Dernière mise à jour : 07/11/2026
 
 ## État actuel
 
+- **Publication du 07/11/2026** : Maison Avelune est en production sur <https://gasinsary.com/portfolio/site-hotel-restaurant-reservation-maison-avelune/>. Projet concept, date Décembre 2025. Test puis production contrôlés : page et images accessibles, carte dans le portfolio, affichage mobile, titre et description, canonique, données structurées et sitemap. Test en noindex ; production indexable. Changement fonctionnel : `f7e7601`, première fusion de production : `c087d49`.
+
 - **Point de reprise du 30/10/2026** : production sur <https://gasinsary.com/>, test sur <https://gasinsary.com/staging-t4sj762s/>. Les deux accueils répondent en HTTP 200 ; `noindex` présent sur le test, absent en production. Les balises de la nouvelle icône sont présentes sur les deux accueils.
-- Branche locale active : `staging`, au même commit que le dépôt de test (`98d842b`). `main` local et production distante : `238ea09`. Les paragraphes datés ci-dessous retracent les états antérieurs, et ne décrivent pas tous la situation actuelle.
+- Branche de travail : `staging`. Le domaine `CNAME` reste uniquement sur `main`. Les paragraphes datés ci-dessous retracent les états antérieurs et ne décrivent pas tous la situation actuelle.
 
 - **En production depuis le 04/10/2026** (<https://gasinsary.github.io/>) : le site Jekyll complet (accueil réorienté vers les clients étrangers, portfolio avec les projets concept Voara et Bao Fizz, connexion Supabase). Mise en production demandée explicitement par le propriétaire. La branche `main` du dépôt de production et la branche `staging` pointent sur le même commit.
 - **Version de test** (<https://gasinsary.github.io/staging-t4sj762s/>) : identique à la production à cette date. Elle reste l'endroit où vérifier tout changement avant de le publier.
@@ -17,7 +19,7 @@ Dernière mise à jour : 07/11/2026
 
 ## En cours
 
-- **Nouvelle réalisation (07/11/2026)** : Maison Avelune, site d'hôtel-restaurant fictif avec recherche de disponibilités et réservation simulée. Statut concept confirmé ; date demandée pour la fiche : Décembre 2025. Maquette interactive, fiche et sept visuels WebP préparés et contrôlés localement dans les dossiers habituels. Publication demandée explicitement par le propriétaire ; fiche activée avec inclusion au sitemap. Contrôle sur test puis mise en production en cours.
+- **Suivi SEO Maison Avelune (07/11/2026)** : réalisation publiée et contrôlée. Suivre sa découverte et son indexation dans Search Console ; aucun classement ni délai d’indexation garanti.
 - **Fiche externe (06/11/2026)** : titre, description et consignes révisés après vérification des offres publiques et de la documentation de recherche. Éléments remis au propriétaire, qui choisit de publier lui-même.
 - **Supports visuels (06/11/2026)** : créations concept et exports pour une plateforme externe préparés localement et soumis à validation visuelle. Site inchangé ; aucune publication.
 - **Suivi du 06/11/2026** : étude des offres publiques de la plateforme de services, documentation vérifiée et proposition éditoriale préparée localement ; aucune modification du site, aucun commit ni déploiement.
@@ -55,7 +57,7 @@ But : voir le site en ligne avant de le mettre en production. Marche à suivre :
 
 ## À faire ensuite
 
-Terminer la publication autorisée de Maison Avelune, contrôler la version de test puis la production et suivre ensuite son indexation.
+Suivre l’indexation de la nouvelle page Maison Avelune dans Search Console.
 
 Le suivi des propositions de services externes est tenu localement ; aucune nouvelle publication du site n'est demandée au 06/11/2026.
 
@@ -94,6 +96,8 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 ## Journal
 
 ### 07/11/2026 (assistant : Codex)
+
+- Publication terminée à la demande explicite du propriétaire. Commit fonctionnel `f7e7601` envoyé au test ; génération GitHub Pages réussie et contrôles en ligne validés. Fusion `c087d49` envoyée à la production ; génération réussie. Page et huit fichiers image en HTTP 200, carte présente dans le portfolio, date Décembre 2025 et mention Projet concept visibles, lien de service correct, affichage mobile contrôlé, données structurées valides, URL canonique de production correcte, page présente dans le sitemap et absence de noindex en production. Domaine CNAME conservé exclusivement sur main. Les travaux LinkedIn et les dossiers internes ne sont pas publiés.
 
 - Publication de Maison Avelune explicitement demandée après présentation des textes et visuels. Activation de la fiche et du sitemap ; préparation du commit ciblé, du passage sur test et de la fusion vers la production. Les travaux LinkedIn restent hors de cette publication.
 
