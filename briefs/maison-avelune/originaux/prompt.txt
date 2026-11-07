@@ -1,0 +1,7 @@
+Outil : image_gen intégré (Imagegen), génération du 07/11/2026.
+Illustrations synthétiques d'un établissement fictif, aucun hôtel réel.
+Fichier source : hotel-contact-sheet.png (copie conservée dans ce dossier).
+Exports : quatre quadrants de l'image, WebP, sans retouche du contenu.
+
+Prompt de la génération réussie :
+A photorealistic editorial contact sheet, four equal images in a precise 2x2 grid without gaps. No text, no people, no logos. A fictional French countryside boutique hotel in warm limestone, sage shutters, green gardens. Top left: wide exterior of the elegant two storey hotel with garden in golden sunlight. Top right: restful double bedroom with cream linen, oak furniture and sage cushions. Bottom left: intimate elegant restaurant in limestone building with linen tables and bentwood chairs. Bottom right: a larger suite with bed and seating nook, tall windows opening on greenery. Consistent natural architectural photography across all four scenes, refined warm earthy colors. Overall landscape 3:2 composition.
