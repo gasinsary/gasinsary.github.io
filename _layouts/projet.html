@@ -222,6 +222,9 @@ layout: default
               </div>
 
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                {%- if page.service_url and page.service_libelle %}
+                <a href="{{ page.service_url | relative_url }}" class="btn-view-project">{{ page.service_libelle | escape }}</a>
+                {%- endif %}
                 <a href="{{ '/#contact' | relative_url }}" class="btn-view-project">Contactez maintenant</a>
                 <a href="https://wa.me/{{ site.telephone | remove: ' ' | remove: '+' }}" class="btn-whatsapp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
               </div>

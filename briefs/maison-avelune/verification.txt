@@ -1,0 +1,2 @@
+Contrôles réussis : réservation simulée complète, effacement des coordonnées, retour au choix, dates inversées, absence de disponibilités, capacité, séjours adjacents, montant total, paramètres depuis accueil, absence de débordement à 390 et 320 px, absence d’erreurs JavaScript et de ressources manquantes.
+Aucune réservation réelle ni requête externe. Vérification Jekyll en ligne à effectuer après autorisation de commit et publication de test.

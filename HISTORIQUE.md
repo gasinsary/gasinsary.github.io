@@ -4,9 +4,12 @@ Document de passation entre sessions et entre assistants IA.
 Règles et organisation du projet : voir [AGENTS.md](AGENTS.md).
 **À mettre à jour à la fin de chaque session.**
 
-Dernière mise à jour : 17/10/2026
+Dernière mise à jour : 07/11/2026
 
 ## État actuel
+
+- **Point de reprise du 30/10/2026** : production sur <https://gasinsary.com/>, test sur <https://gasinsary.com/staging-t4sj762s/>. Les deux accueils répondent en HTTP 200 ; `noindex` présent sur le test, absent en production. Les balises de la nouvelle icône sont présentes sur les deux accueils.
+- Branche locale active : `staging`, au même commit que le dépôt de test (`98d842b`). `main` local et production distante : `238ea09`. Les paragraphes datés ci-dessous retracent les états antérieurs, et ne décrivent pas tous la situation actuelle.
 
 - **En production depuis le 04/10/2026** (<https://gasinsary.github.io/>) : le site Jekyll complet (accueil réorienté vers les clients étrangers, portfolio avec les projets concept Voara et Bao Fizz, connexion Supabase). Mise en production demandée explicitement par le propriétaire. La branche `main` du dépôt de production et la branche `staging` pointent sur le même commit.
 - **Version de test** (<https://gasinsary.github.io/staging-t4sj762s/>) : identique à la production à cette date. Elle reste l'endroit où vérifier tout changement avant de le publier.
@@ -14,6 +17,12 @@ Dernière mise à jour : 17/10/2026
 
 ## En cours
 
+- **Nouvelle réalisation (07/11/2026)** : Maison Avelune, site d'hôtel-restaurant fictif avec recherche de disponibilités et réservation simulée. Statut concept confirmé ; date demandée pour la fiche : Décembre 2025. Maquette interactive, fiche et sept visuels WebP préparés et contrôlés localement dans les dossiers habituels. Publication demandée explicitement par le propriétaire ; fiche activée avec inclusion au sitemap. Contrôle sur test puis mise en production en cours.
+- **Fiche externe (06/11/2026)** : titre, description et consignes révisés après vérification des offres publiques et de la documentation de recherche. Éléments remis au propriétaire, qui choisit de publier lui-même.
+- **Supports visuels (06/11/2026)** : créations concept et exports pour une plateforme externe préparés localement et soumis à validation visuelle. Site inchangé ; aucune publication.
+- **Suivi du 06/11/2026** : étude des offres publiques de la plateforme de services, documentation vérifiée et proposition éditoriale préparée localement ; aucune modification du site, aucun commit ni déploiement.
+- **Reprise technique (30/10/2026)** : accès SSH aux deux dépôts vérifié en lecture ; connexions administratives aux services externes à compléter. Aucun changement du site, commit ou déploiement pendant cette reprise.
+- **Supabase (vérification du code le 30/10/2026)** : bibliothèque chargée et client initialisé sur l'accueil, mais aucune fonction du site ne l'utilise. Le contact passe par FormSubmit. Aucun accès administratif Supabase n'est nécessaire pour poursuivre le travail sur le site actuel.
 - **Prospection par e-mail** (depuis le 10/10/2026, discussion dédiée) : six dossiers prêts dans `prospection/` (local, non versionné), envois échelonnés du 13 au 20/10/2026 par le propriétaire lui-même, une relance une semaine après chacun. Suivi, calendrier et méthode dans `prospection/suivi.md`.
 - **Formulaire de contact** : fonctionne. Le propriétaire a reçu le 07/10/2026 un premier message envoyé depuis le formulaire du site (plus un e-mail direct). Jamais testé par l'assistant lui-même.
 - **Visibilité au 07/10/2026** (vérifiée dans Google et Bing depuis le navigateur) : Google a indexé cinq pages du nouveau site (accueil avec le nouveau titre, blog, portfolio, Voara, Bao Fizz) ; pas encore la page agences, la page logo, Aquafish ni les articles. Bing n'a encore que l'ancienne copie de l'accueil. Sur « graphiste freelance Madagascar » et « externaliser création graphique Madagascar », le site n'est pas dans les dix premiers résultats, ni sur Google ni sur Bing. Sur le nom du studio, Bing place la page Facebook avant le site, et le profil LinkedIn de Mirado affiche encore « CEO ».
@@ -46,7 +55,15 @@ But : voir le site en ligne avant de le mettre en production. Marche à suivre :
 
 ## À faire ensuite
 
-1. Après accord du propriétaire : fusionner `staging` dans `main` et pousser sur `origin` (mise en production de la conversion Jekyll).
+Terminer la publication autorisée de Maison Avelune, contrôler la version de test puis la production et suivre ensuite son indexation.
+
+Le suivi des propositions de services externes est tenu localement ; aucune nouvelle publication du site n'est demandée au 06/11/2026.
+
+Les supports visuels préparés localement restent à relire par le propriétaire avant utilisation externe.
+
+La fiche externe révisée et les étapes de publication sont suivies dans le dossier interne.
+
+1. Reprendre le suivi SEO et les points encore ouverts de l'audit, en distinguant les constats anciens des corrections déjà publiées. La conversion Jekyll est déjà en production ; aucune nouvelle publication n'est demandée au 30/10/2026.
 2. Formulaire de contact : enregistrer les messages dans Supabase (table avec insertion publique seule, lecture réservée). Aujourd'hui il envoie à formsubmit.co.
 3. Ajouter les nouveaux projets du portfolio (le propriétaire veut mettre le portfolio à jour : c'est l'objectif de départ).
 
@@ -75,6 +92,35 @@ Liste complète et ordre de traitement proposé : voir [AUDIT.md](AUDIT.md). Rap
 | Supabase chargé seulement sur l'accueil | Inutile ailleurs pour l'instant (`supabase: true` dans l'en-tête de la page) |
 
 ## Journal
+
+### 07/11/2026 (assistant : Codex)
+
+- Publication de Maison Avelune explicitement demandée après présentation des textes et visuels. Activation de la fiche et du sitemap ; préparation du commit ciblé, du passage sur test et de la fusion vers la production. Les travaux LinkedIn restent hors de cette publication.
+
+- Maison Avelune : concept d'hôtel-restaurant confirmé par le propriétaire, avec date éditoriale « Décembre 2025 ». Sources et brief dans `briefs/maison-avelune/`, fiche `_projets/site-hotel-restaurant-reservation-maison-avelune.md`, exports dans `portfolio/site-hotel-restaurant-reservation-maison-avelune/img/`. Illustrations synthétiques créées avec Imagegen ; écrans capturés depuis une maquette HTML/CSS/JavaScript locale. Couverture et six planches WebP 1024 × 683 (22 à 80 Ko), plus couverture JPG. Le module de mise en scène existant est réutilisé. Aucun client, résultat commercial ou moteur de réservation réel revendiqué.
+- Contrôles de la maquette réussis : parcours de réservation simulée, dates inversées, absence de disponibilités, capacité, séjours adjacents, calcul du total, retour à la recherche, effacement des coordonnées et absence de débordement à 320 et 390 px. Images inspectées ; YAML, chemins et dimensions vérifiés. Ajout d'un lien de service facultatif au modèle projet, compatible avec `relative_url` et sans changement pour les anciennes fiches. La fiche reste non publiée : après validation, retirer `published: false` et `sitemap: false`, puis contrôler le rendu Jekyll réel et le sitemap sur la version de test. Aucun commit ni déploiement.
+
+- Complément demandé par le propriétaire : emplacements vérifiés, sources dans `briefs/` (exclues du site généré, mais pas privées), fiche `_projets/<slug>.md`, images finales `portfolio/<slug>/img/`, adresse générée `/portfolio/<slug>/`. Organisation à conserver pour la prochaine réalisation. Modèles SEO relus : titre, description, canonique, partage et données structurées déjà prévus. À préparer dès le brief : ciblage du service, contenu concret, images légères et descriptives, maillage interne. Idée et périmètre toujours attendus ; aucun nouveau projet, commit ou déploiement.
+
+- À la demande du propriétaire, relecture de la méthode employée pour Voara, Bao Fizz, Aquafish, Maison Vellane et Voolapp : briefs, rédaction des fiches, images finales, modèles et outils de mise en scène. Distinction rappelée entre les premiers visuels générés et les versions retravaillées par le propriétaire, ainsi qu'entre projets concept et produit du studio. Aucun changement des pages ou images, aucun commit ni déploiement.
+
+### 06/11/2026 (assistant : Codex)
+
+- Comparaison documentée des moyens de visibilité de la plateforme externe et de leurs conditions. Conseil consigné dans le suivi interne ; aucune souscription ni dépense.
+- Révision du titre et du contenu d'une fiche externe, avec vérification des sources officielles sur la recherche et préparation des textes à copier. Aucun changement du site ni déploiement.
+- Précision du conseil sur le choix d'une offre à mettre en avant, à partir de la fiche publique et de la documentation officielle. Suivi interne complété ; aucune campagne ni publication lancée.
+- Création de supports visuels concept à la demande du propriétaire, avec vérification des formats dans la documentation de la plateforme et contrôle des exports. Fichiers conservés localement ; aucun changement du site, commit ou déploiement.
+- Étude complémentaire de l'offre de services et préparation locale d'une proposition éditoriale. Le catalogue public du studio et le code du site restent inchangés ; aucun commit ni déploiement.
+- Consultation des offres publiques de la plateforme de services et vérification de sa documentation. Suivi interne mis à jour ; aucun changement du site ni publication.
+
+### 30/10/2026 (assistant : Codex)
+
+- Suite de la session : reprise des discussions de travail autorisée par le propriétaire, à partir des fichiers de passation existants. Aucun changement du code ni déploiement.
+- Vérification de la continuité des discussions et des fichiers locaux de passation ; aucun changement du site ni création de discussion supplémentaire.
+- Après remarque du propriétaire, vérification de l'usage de Supabase : seule l'initialisation du client est présente, sans utilisation fonctionnelle ; formulaire envoyé par FormSubmit. Reconnexion Supabase retirée des prérequis de reprise ; code conservé en l'état.
+- Reprise du projet : lecture des consignes, de l'historique et de l'audit ; vérification de la branche de travail et des références distantes GitHub.
+- Contrôle HTTP des accueils de production et de test : réponses 200, titre SEO présent, protection `noindex` du test présente, références de la nouvelle icône présentes.
+- Documentation de reprise mise à jour localement. Aucun fichier du site modifié, aucun commit ni envoi vers GitHub.
 
 ### 03/10/2026 (assistant : Claude)
 
