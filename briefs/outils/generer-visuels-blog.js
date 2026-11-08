@@ -1,5 +1,5 @@
 // Génère les illustrations de couverture des premiers articles du blog (1024 × 683).
-// Usage : node generer-visuels-blog.js <dossier-du-site>
+// Usage : node generer-visuels-blog.js <dossier-du-site> [nom-du-visuel,...]
 // Demande le module « sharp » (npm install sharp). Les textes utilisent la police Segoe UI de Windows.
 // Chaque illustration est écrite en WebP (pour la page) et en JPG (pour les partages sur les réseaux sociaux).
 const path = require('path');
@@ -19,6 +19,8 @@ const POLICE = "font-family=\"Segoe UI, Arial, sans-serif\"";
 // Le motif est choisi dans MOTIFS d'après le nom de l'illustration, juste avant de la dessiner.
 // Dans les appels, BLEU et ORANGE désignent « la couleur principale » et « l'accent » du motif en cours.
 const MOTIFS = {
+  'cahier-des-charges-site-vitrine': { forme: 'montagne', couleur: '#20716d', accent: '#d6a34e' },
+  'cahier-des-charges-site-vitrine-parcours': { forme: 'montagne', couleur: '#20716d', accent: '#d6a34e' },
   'logo-identite-visuelle-charte-graphique-differences': { forme: 'feuille', couleur: '#2f8f6b', accent: '#f2b63d' },
   'brief-creation-logo': { forme: 'arcs', couleur: '#3d5a98', accent: '#f08a4b' },
   'formats-fichiers-logo': { forme: 'monogramme', couleur: '#7a4bc2', accent: '#ffb547' },
@@ -416,7 +418,67 @@ function visuelIA() {
   return svg(s);
 }
 
+// ---------------------------------------------------------------- 7. Cahier des charges : nouvelle palette et emblème fictif
+function visuelCahierCharges() {
+  const vert = '#20716d', fonce = '#153f3c', sable = '#d6a34e';
+  let s = decor('#f5f1e8', '#e7eee6', '#eee3cf');
+  s += texte(56, 65, 'PRÉPARER SON SITE VITRINE', 19, vert, 700, 'start');
+  s += texte(56, 120, 'Du besoin au devis', 46, fonce, 700, 'start');
+  s += texte(56, 159, 'Un projet clair, des choix partagés.', 23, fonce, 400, 'start');
+  s += carte(56, 205, 365, 390, 20);
+  s += marque(101, 251, 22) + texte(143, 249, 'LE CAHIER DES CHARGES', 17, fonce, 700, 'start');
+  s += barre(143, 265, 185, 7, '#d9e3de');
+  ['Objectif et visiteurs', 'Pages et contenus', 'Fonctions utiles', 'Budget et validations'].forEach((label, i) => {
+    const y = 320 + i * 66;
+    s += `<rect x="85" y="${y - 21}" width="27" height="27" rx="7" fill="#e5f1eb"/>`;
+    s += `<path d="M 92 ${y - 8} l 5 5 l 10 -12" fill="none" stroke="${vert}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`;
+    s += texte(126, y, label, 20, fonce, 600, 'start');
+    s += barre(126, y + 15, 208 - i * 20, 6, '#e4eae6');
+  });
+  s += `<path d="M 445 382 h 58 l -14 -14 m 14 14 l -14 14" fill="none" stroke="${vert}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>`;
+  s += carte(529, 228, 439, 296, 18, fonce);
+  s += `<rect x="545" y="249" width="407" height="254" rx="10" fill="#f9faf6"/>`;
+  s += marque(570, 273, 12) + barre(593, 267, 84, 8, fonce);
+  [0, 1, 2].forEach(i => { s += barre(788 + i * 47, 270, 33, 5, '#82968b'); });
+  s += `<rect x="565" y="306" width="366" height="125" rx="11" fill="#dfece4"/>`;
+  s += texte(583, 342, 'Une offre lisible.', 22, fonce, 700, 'start');
+  s += barre(583, 355, 160, 6, '#a2b6a9') + barre(583, 370, 135, 6, '#a2b6a9');
+  s += `<rect x="583" y="389" width="117" height="25" rx="7" fill="${vert}"/>`;
+  s += texte(642, 407, 'Nous contacter', 12, BLANC, 600);
+  s += `<path d="M 787 408 L 829 330 L 855 373 L 877 351 L 915 408 Z" fill="${vert}"/><circle cx="900" cy="331" r="13" fill="${sable}"/>`;
+  [0, 1, 2].forEach(i => { const x = 565 + i * 126; s += `<rect x="${x}" y="445" width="112" height="39" rx="7" fill="#e8eae0"/>`; s += barre(x + 12, 460, 72, 6, '#7f9c8c'); });
+  s += `<path d="M 716 524 v 28 h -47 v 10 h 160 v -10 h -47 v -28" fill="${fonce}"/>`;
+  s += texte(747, 600, 'Un périmètre à valider ensemble', 20, fonce, 600);
+  s += texte(56, 644, 'Modèle à remplir + exemple fictif', 19, vert, 600, 'start');
+  return svg(s);
+}
+
+function visuelCahierParcours() {
+  const vert = '#20716d', fonce = '#153f3c';
+  let s = decor('#f5f1e8', '#e7eee6', '#eee3cf');
+  s += texte(56, 65, 'LE FIL CONDUCTEUR DU PROJET', 19, vert, 700, 'start');
+  s += texte(56, 122, 'Quatre décisions à relier', 43, fonce, 700, 'start');
+  const etapes = [
+    {x:56, y:170, n:'01', titre:'Le besoin', a:'Pour quels visiteurs ?', b:'Pour quelle action ?'},
+    {x:532, y:170, n:'02', titre:'Les contenus', a:'Textes, images, preuves', b:'Qui fournit quoi ?'},
+    {x:56, y:401, n:'03', titre:'Les fonctions', a:'Parcours et priorités', b:'Que fait le site ?'},
+    {x:532, y:401, n:'04', titre:'La livraison', a:'Tests, accès, validation', b:'Comment vérifier ?'}
+  ];
+  for (const e of etapes) {
+    s += carte(e.x,e.y,436,197,18);
+    s += `<circle cx="${e.x+46}" cy="${e.y+46}" r="24" fill="${vert}"/>`;
+    s += texte(e.x+46,e.y+54,e.n,21,BLANC,700);
+    s += texte(e.x+86,e.y+54,e.titre,28,fonce,700,'start');
+    s += texte(e.x+28,e.y+111,e.a,24,fonce,500,'start');
+    s += texte(e.x+28,e.y+150,e.b,23,vert,600,'start');
+  }
+  s += texte(512,650,'Chaque demande doit pouvoir être comprise et vérifiée.',21,fonce,500);
+  return svg(s);
+}
+
 const VISUELS = {
+  'cahier-des-charges-site-vitrine': visuelCahierCharges,
+  'cahier-des-charges-site-vitrine-parcours': visuelCahierParcours,
   'logo-identite-visuelle-charte-graphique-differences': visuelDifferences,
   'brief-creation-logo': visuelBrief,
   'formats-fichiers-logo': visuelFormats,
@@ -427,12 +489,15 @@ const VISUELS = {
 
 (async () => {
   fs.mkdirSync(SORTIE, { recursive: true });
-  for (const [nom, dessiner] of Object.entries(VISUELS)) {
+  const choix = process.argv[3] ? process.argv[3].split(',') : Object.keys(VISUELS);
+  for (const nom of choix) {
+    if (!VISUELS[nom]) throw new Error('Visuel inconnu : ' + nom);
+    const dessiner = VISUELS[nom];
     MOTIF = MOTIFS[nom];
     // Rendu deux fois plus grand puis réduit, pour des contours nets
     const image = await sharp(Buffer.from(dessiner()), { density: 144 }).resize(W, H).png().toBuffer();
     await sharp(image).webp({ quality: 86 }).toFile(path.join(SORTIE, nom + '.webp'));
-    await sharp(image).flatten({ background: BLANC }).jpeg({ quality: 86 }).toFile(path.join(SORTIE, nom + '.jpg'));
+    if (!nom.endsWith('-parcours')) await sharp(image).flatten({ background: BLANC }).jpeg({ quality: 86 }).toFile(path.join(SORTIE, nom + '.jpg'));
     console.log(nom, Math.round(fs.statSync(path.join(SORTIE, nom + '.webp')).size / 1024) + ' Ko (webp)');
   }
 })();

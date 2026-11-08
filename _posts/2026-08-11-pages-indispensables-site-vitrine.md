@@ -92,3 +92,5 @@ Trois choses pèsent plus lourd que la septième page :
 Un dernier point, qui n'est pas une page mais une règle : le nom de domaine, l'hébergement et le site doivent être **à votre nom**, pas à celui de votre prestataire. C'est ainsi que nous travaillons, et c'est ce qu'il faut exiger de n'importe quel studio.
 
 Vous préparez un site vitrine ? Notre page [création de site web et d'application]({{ '/creation-site-web/' | relative_url }}) décrit ce que nous créons et comment se passe un projet, et nos conseils pour [travailler avec un prestataire à distance]({{ '/blog/travailler-avec-graphiste-freelance-a-distance/' | relative_url }}) s'appliquent aussi aux projets web.
+
+Pour passer de cette liste de pages à une demande de devis précise, préparez votre [cahier des charges de site vitrine avec notre modèle et son exemple]({{ '/blog/cahier-des-charges-site-vitrine/' | relative_url }}).
