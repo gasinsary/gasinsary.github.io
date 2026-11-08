@@ -82,4 +82,7 @@ etapes:
 appel: "Vous avez un projet d'application web ou de site sur mesure ? Le studio Gas'in Sary le conçoit et le développe à distance, de l'identité visuelle à la mise en ligne, en vous laissant propriétaire de votre domaine, de votre hébergement et de votre code. Parlons de votre projet."
 
 resultat: "Voolapp est en ligne. De l'identité au code, le produit a été conçu de bout en bout par le studio : c'est l'exemple le plus complet de notre façon de travailler sur une application."
+service_url: /creation-site-web/
+service_libelle: "Découvrir notre offre de sites et d’applications web"
+
 ---

@@ -74,4 +74,7 @@ etapes:
 appel: "Vous avez une entreprise, un atelier ou un commerce, et un site qui ne vous ressemble plus ? Le studio Gas'in Sary conçoit votre site vitrine à distance, de l'identité visuelle à la mise en ligne. Parlons de votre projet."
 
 resultat: "Un site qui réunit les deux publics de la biscuiterie sans les mélanger, et une identité qui se reconnaît aussi bien sur un écran de téléphone que sur une boîte en métal."
+service_url: /creation-site-web/
+service_libelle: "Découvrir notre service de création de site web"
+
 ---

@@ -70,4 +70,7 @@ etapes:
 appel: "Vous avez besoin d'un logo ou d'une identité visuelle complète ? Le studio Gas'in Sary les conçoit à distance, du premier croquis au kit de marque. Parlons de votre projet."
 
 resultat: "L'identité forme un ensemble cohérent, du logo aux supports imprimés : une image de marque professionnelle, prête à être déployée."
+service_url: /creation-logo-identite-visuelle/
+service_libelle: "Découvrir notre service de création d’identité visuelle"
+
 ---
