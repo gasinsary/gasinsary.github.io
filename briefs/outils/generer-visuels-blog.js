@@ -19,6 +19,8 @@ const POLICE = "font-family=\"Segoe UI, Arial, sans-serif\"";
 // Le motif est choisi dans MOTIFS d'après le nom de l'illustration, juste avant de la dessiner.
 // Dans les appels, BLEU et ORANGE désignent « la couleur principale » et « l'accent » du motif en cours.
 const MOTIFS = {
+  'sous-traitance-graphique-agence': { forme: 'modules', couleur: '#334071', accent: '#ed8b75' },
+  'sous-traitance-graphique-agence-parcours': { forme: 'modules', couleur: '#334071', accent: '#ed8b75' },
   'cahier-des-charges-site-vitrine': { forme: 'montagne', couleur: '#20716d', accent: '#d6a34e' },
   'cahier-des-charges-site-vitrine-parcours': { forme: 'montagne', couleur: '#20716d', accent: '#d6a34e' },
   'logo-identite-visuelle-charte-graphique-differences': { forme: 'feuille', couleur: '#2f8f6b', accent: '#f2b63d' },
@@ -38,6 +40,11 @@ function marque(cx, cy, r, couleur = BLEU, vague = BLANC, point = ORANGE) {
   const n = v => v.toFixed(1);
   const pastille = point ? `<circle cx="${n(cx + 0.78 * r)}" cy="${n(cy - 0.78 * r)}" r="${n(0.24 * r)}" fill="${point}"/>` : '';
   switch (m.forme) {
+    case 'modules':
+      return `<rect x="${n(cx-r)}" y="${n(cy-r)}" width="${n(2*r)}" height="${n(2*r)}" rx="${n(.35*r)}" fill="${couleur}"/>
+        <rect x="${n(cx-.55*r)}" y="${n(cy-.55*r)}" width="${n(.48*r)}" height="${n(1.1*r)}" rx="${n(.12*r)}" fill="${vague}"/>
+        <rect x="${n(cx+.07*r)}" y="${n(cy-.55*r)}" width="${n(.48*r)}" height="${n(.48*r)}" rx="${n(.12*r)}" fill="${vague}"/>
+        <circle cx="${n(cx+.31*r)}" cy="${n(cy+.31*r)}" r="${n(.24*r)}" fill="${point || vague}"/>`;
     case 'feuille':
       return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${couleur}"/>
         <path d="M ${n(cx - 0.45 * r)} ${n(cy + 0.42 * r)} C ${n(cx - 0.52 * r)} ${n(cy - 0.3 * r)}, ${n(cx + 0.08 * r)} ${n(cy - 0.62 * r)}, ${n(cx + 0.5 * r)} ${n(cy - 0.48 * r)} C ${n(cx + 0.46 * r)} ${n(cy + 0.14 * r)}, ${n(cx - 0.08 * r)} ${n(cy + 0.56 * r)}, ${n(cx - 0.45 * r)} ${n(cy + 0.42 * r)} Z" fill="${vague}"/>
@@ -476,7 +483,60 @@ function visuelCahierParcours() {
   return svg(s);
 }
 
+// ---------------------------------------------------------------- 8. Sous-traitance : identité modulaire fictive
+function visuelSousTraitance() {
+  const indigo = '#334071', corail = '#ed8b75', doux = '#e9eaf3';
+  let s = decor('#f5f3f0', '#eceaf2', '#f1ded7');
+  s += texte(56,65,'SOUS-TRAITANCE GRAPHIQUE',19,indigo,700,'start');
+  s += texte(56,122,'Une campagne, plusieurs formats',43,NUIT,700,'start');
+  s += texte(56,163,'Un cadre commun pour déléguer la production.',22,indigo,400,'start');
+  s += carte(56,230,285,315,18);
+  s += texte(80,267,'VISUEL DE RÉFÉRENCE',17,indigo,700,'start');
+  s += `<rect x="80" y="290" width="237" height="200" rx="14" fill="${indigo}"/>`;
+  s += marque(132,345,28,BLANC,indigo,corail);
+  s += barre(105,403,150,12,BLANC)+barre(105,429,108,8,'#b8bfdc');
+  s += `<circle cx="278" cy="471" r="42" fill="${corail}"/>`;
+  s += texte(80,521,'Message + direction validés',17,indigo,500,'start');
+  s += `<path d="M 364 387 h 50 l -13 -13 m 13 13 l -13 13" fill="none" stroke="${indigo}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`;
+  s += carte(440,230,528,315,18);
+  s += texte(466,267,'DÉCLINAISONS',17,indigo,700,'start');
+  s += `<rect x="466" y="291" width="474" height="74" rx="11" fill="${doux}"/>`;
+  s += marque(506,328,20)+barre(548,313,210,10,indigo)+barre(548,335,138,7,'#929bbc');
+  s += `<circle cx="908" cy="328" r="22" fill="${corail}"/>`;
+  s += `<rect x="466" y="386" width="120" height="120" rx="11" fill="${indigo}"/>`;
+  s += marque(500,420,18,BLANC,indigo,corail)+barre(483,459,82,8,BLANC)+barre(483,478,56,6,'#b8bfdc');
+  s += `<rect x="610" y="386" width="80" height="135" rx="11" fill="${corail}"/>`;
+  s += marque(650,423,21)+barre(624,465,52,7,indigo)+barre(624,483,40,5,indigo);
+  s += texte(722,416,'Bannière',19,indigo,600,'start');
+  s += texte(722,451,'Publication carrée',19,indigo,600,'start');
+  s += texte(722,486,'Visuel vertical',19,indigo,600,'start');
+  s += texte(512,611,'Même identité · Composition adaptée · Fichiers vérifiés',23,indigo,600);
+  return svg(s);
+}
+
+function visuelSousTraitanceParcours() {
+  const indigo='#334071', corail='#ed8b75';
+  let s=decor('#f5f3f0','#eceaf2','#f1ded7');
+  s+=texte(56,65,'QUI FAIT QUOI ?',19,indigo,700,'start');
+  s+=texte(56,122,'Un circuit de validation clair',43,NUIT,700,'start');
+  s+=carte(56,166,436,430,18)+carte(532,166,436,430,18);
+  s+=`<rect x="80" y="190" width="388" height="57" rx="12" fill="${indigo}"/>`;
+  s+=`<rect x="556" y="190" width="388" height="57" rx="12" fill="${corail}"/>`;
+  s+=texte(274,227,'L’agence',27,BLANC,700)+texte(750,227,'Le studio partenaire',27,indigo,700);
+  const bloc=(x,y,n,titre,ligne)=>`<circle cx="${x+22}" cy="${y-9}" r="20" fill="#e9eaf3"/>`+texte(x+22,y-2,n,18,indigo)+texte(x+58,y,titre,24,indigo,700,'start')+texte(x+58,y+32,ligne,18,NUIT,400,'start');
+  s+=bloc(80,300,'1','Cadre le besoin','Brief, charte et contenus');
+  s+=bloc(556,370,'2','Produit une référence','Première déclinaison à vérifier');
+  s+=bloc(80,442,'3','Regroupe les retours','Un interlocuteur, une validation');
+  s+=bloc(556,514,'4','Finalise et livre','Déclinaisons et fichiers convenus');
+  s+=`<path d="M 460 303 C 505 303 505 359 550 359 M 550 375 C 510 375 510 433 470 433 M 460 449 C 505 449 505 503 550 503" stroke="${indigo}" stroke-width="3" fill="none"/>`;
+  s+=`<path d="M 540 351 l 10 8 -10 8 M 480 425 l -10 8 10 8 M 540 495 l 10 8 -10 8" stroke="${indigo}" stroke-width="3" fill="none" stroke-linejoin="round"/>`;
+  s+=texte(512,649,'Périmètre, échéance et livrables définis avant de commencer.',21,indigo,600);
+  return svg(s);
+}
+
 const VISUELS = {
+  'sous-traitance-graphique-agence': visuelSousTraitance,
+  'sous-traitance-graphique-agence-parcours': visuelSousTraitanceParcours,
   'cahier-des-charges-site-vitrine': visuelCahierCharges,
   'cahier-des-charges-site-vitrine-parcours': visuelCahierParcours,
   'logo-identite-visuelle-charte-graphique-differences': visuelDifferences,

@@ -73,3 +73,5 @@ La langue pèse bien plus lourd que l'horloge. Un brief compris à demi coûte p
 Un graphiste freelance ou un petit studio vous apporte un contact direct avec la personne qui fait le travail, de la souplesse et des décisions rapides. Sa limite est sa capacité : pour des volumes très importants à produire du jour au lendemain, une structure plus grande sera mieux armée. Le bon choix dépend de votre besoin réel, pas d'une règle générale.
 
 Gas'in Sary travaille à distance pour des entreprises et pour des agences. Si vous êtes une agence et cherchez du renfort sur votre production, consultez notre page [externaliser sa création graphique à Madagascar]({{ '/externalisation-creation-graphique-madagascar/' | relative_url }}).
+
+Vous pilotez une agence et devez répartir la production ? Notre guide de la [sous-traitance graphique : tâches à déléguer, brief et livraison]({{ '/blog/sous-traitance-graphique-agence/' | relative_url }}) vous aide à définir un lot avant de démarrer la collaboration.
