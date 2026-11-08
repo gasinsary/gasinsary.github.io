@@ -1,0 +1,46 @@
+MODÈLE DE CAHIER DES CHARGES — SITE VITRINE
+Gas’in Sary — https://gasinsary.com/
+Guide : https://gasinsary.com/blog/cahier-des-charges-site-vitrine/
+Mise à jour : 8 novembre 2026
+
+Copiez ce modèle et remplacez les indications entre crochets.
+Indiquez « à définir » si une réponse manque. Ne renseignez aucun mot de passe.
+
+1. ENTREPRISE ET INTERLOCUTEUR
+[Nom, activité, personne qui rassemble les retours.]
+
+2. PROJET
+[Création ou refonte ; adresse du site actuel si elle existe.]
+
+3. PUBLICS ET LANGUES
+[Types de clients, pays visés, langues des contenus.]
+
+4. OBJECTIF PRINCIPAL
+[Action attendue du visiteur et façon de suivre les demandes.]
+
+5. PAGES AU LANCEMENT
+[Liste ; nombre de services et de réalisations à intégrer.]
+
+6. CONTENUS
+[Textes, logo, photos et documents disponibles ; éléments à produire ; responsables.]
+
+7. FONCTIONS INDISPENSABLES
+[Décrire chaque parcours et les outils auxquels il doit se connecter.]
+
+8. OPTIONS ET EXCLUSIONS
+[Ce qui doit être chiffré séparément ; ce qui n’est pas prévu au lancement.]
+
+9. STYLE ET RÉFÉRENCES
+[Liens vers des sites appréciés et raisons précises ; éléments à éviter.]
+
+10. VISIBILITÉ ET QUALITÉ ATTENDUE
+[Sujets prioritaires, anciennes adresses à conserver, usage sur téléphone, vérifications prévues.]
+
+11. BUDGET ET ORGANISATION
+[Enveloppe ou demande de variantes, échéance, disponibilités, étapes de validation.]
+
+12. APRÈS LA LIVRAISON
+[Personne qui modifiera les contenus, accès et fichiers à remettre, besoins de maintenance à discuter.]
+
+ANNEXES
+[Contenus réglementaires adaptés à votre situation, inventaire des contenus et anciennes URL, références visuelles.]

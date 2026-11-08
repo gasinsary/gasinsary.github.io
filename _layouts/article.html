@@ -20,7 +20,7 @@ layout: default
 
       <div class="title-wrapper">
         <h1>{{ page.title | escape }}</h1>
-        <p class="article-meta"><span class="rubrique">{{ page.rubrique | escape }}</span> · <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include date-fr.html date=page.date %}</time> · {{ minutes }} min de lecture</p>
+        <p class="article-meta"><span class="rubrique">{{ page.rubrique | escape }}</span> · <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{% include date-fr.html date=page.date %}</time>{% if page.maj %} · Mis à jour le <time datetime="{{ page.maj | date: '%Y-%m-%d' }}">{% include date-fr.html date=page.maj %}</time>{% endif %} · {{ minutes }} min de lecture</p>
       </div>
     </div><!-- End Page Title -->
 
