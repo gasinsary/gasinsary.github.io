@@ -266,7 +266,7 @@ description: "Site vitrine, sur mesure, application web ou mobile, boutique, ref
             <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
           </svg>
         </div>
-        <p>Un site vitrine imaginé pour une marque fictive, et Voolapp, notre propre application de gestion. Le site que vous lisez est lui aussi une réalisation du studio. Par respect de la confidentialité de nos clients, certaines de nos réalisations ne sont pas publiées.</p>
+        <p>Maison Vellane illustre un site vitrine, Maison Avelune un parcours de réservation pour un hôtel-restaurant : deux projets concept pour des marques fictives. Voolapp est notre propre application de gestion. Le site que vous lisez est lui aussi une réalisation du studio. Par respect de la confidentialité de nos clients, certaines de nos réalisations ne sont pas publiées.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -275,6 +275,8 @@ description: "Site vitrine, sur mesure, application web ou mobile, boutique, ref
           {%- assign voolapp = site.projets | where: "slug", "application-web-gestion-commerciale-voolapp" | first -%}
 {% include carte-portfolio.html item=vellane %}
 {% include carte-portfolio.html item=voolapp %}
+          {%- assign avelune = site.projets | where: "slug", "site-hotel-restaurant-reservation-maison-avelune" | first -%}
+{% include carte-portfolio.html item=avelune %}
         </div>
         <div class="text-center mt-5">
           <a href="{{ '/portfolio/' | relative_url }}" class="btn btn-outline-primary">Voir tout le portfolio</a>
@@ -345,6 +347,18 @@ description: "Site vitrine, sur mesure, application web ou mobile, boutique, ref
         </div>
       </div>
 
+    </section>
+
+    <section class="section" aria-labelledby="conseils-avant-projet">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2 id="conseils-avant-projet" class="mb-3">Préparer le contenu de votre site</h2>
+            <p>Avant les maquettes, définissez ce que vos visiteurs doivent comprendre et pouvoir faire. Notre guide des <a href="{{ '/blog/pages-indispensables-site-vitrine/' | relative_url }}">pages indispensables d’un site vitrine</a> vous aide à organiser ces informations. Pour les échanges avec le studio, consultez aussi nos conseils pour <a href="{{ '/blog/travailler-avec-graphiste-freelance-a-distance/' | relative_url }}">travailler avec un prestataire créatif à distance</a>.</p>
+            <p><a href="{{ '/blog/' | relative_url }}">Tous nos conseils sur le blog</a></p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Appel à l'action -->

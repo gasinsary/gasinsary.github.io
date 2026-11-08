@@ -62,4 +62,7 @@ etapes:
 appel: "Vous voulez des visuels cohérents pour Instagram, Facebook ou LinkedIn ? Depuis Antananarivo, le studio Gas'in Sary crée vos posts, stories et carrousels. Parlons de votre projet."
 
 resultat: "La campagne forme un ensemble cohérent de huit visuels, prêts à être publiés, qui partagent les mêmes couleurs, les mêmes typographies et la même mise en page."
+service_url: /externalisation-creation-graphique-madagascar/
+service_libelle: "Découvrir notre offre de production graphique pour les agences"
+
 ---

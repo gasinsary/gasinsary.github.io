@@ -62,4 +62,7 @@ etapes:
 appel: "Vous devez décliner une campagne en bannières ou en visuels pour les réseaux sociaux ? Le studio Gas'in Sary prend en charge la production à distance, pour les marques comme pour les agences. Parlons de votre projet."
 
 resultat: "La campagne se décline en bannières publicitaires et en posts pour les réseaux sociaux. Dans le format le plus contraint comme dans le plus généreux, la marque reste reconnaissable et le message complet."
+service_url: /externalisation-creation-graphique-madagascar/
+service_libelle: "Découvrir notre offre de production graphique pour les agences"
+
 ---
